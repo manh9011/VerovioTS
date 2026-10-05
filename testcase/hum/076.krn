@@ -1,0 +1,144 @@
+!!!!SEGMENT: erk076.krn
+!!!OTL@@DE: Mei Schatzerl
+!!!COM: Weber, Carl Maria von
+!!!ODT: 1818
+!!!OMD: Sehr lebendig
+!!!ONB: Volkslied (1808). Str. 2 neu hinzu gedichtet (1835)
+!!!LDT: 1808, 1835
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#c#]	*k[f#c#]	*k[f#c#]
+*D:	*D:	*D:
+*M3/8	*M3/8	*M3/8
+*MM72	*MM72	*MM72
+8r	(16f#LL	16f#LL
+.	16gJJ	16gJJ
+=1	=1	=1
+8DD 8DL	8aL)	8a
+8DD 8D	8A 8d 8f#	8f#
+8DD 8DJ	8A 8d 8f#J	16f#LL
+.	.	16ff#JJ
+=2	=2	=2
+4DD; 4D;	4A; 4d; 4f#;	4dd;
+8r	8r	16f#
+.	.	16b
+=3	=3	=3
+8AAL	8G 8c# 8eL	16bLL
+.	.	16c#JJ
+8AA	8G 8c# 8e	16c#LL
+.	.	16aJJ
+8AAJ	8G 8c# 8eJ	16aLL
+.	.	16c#JJ
+=4	=4	=4
+4D	4F# 4A 4d	8d
+.	.	8r
+8r	8r	16c#LL
+.	.	16dJJ
+=5	=5	=5
+8AAAL	8r	8e
+8AA	8A 8c# 8eL	8e
+8AAJ	8A 8c# 8eJ	16f#LL
+.	.	16g#JJ
+=6	=6	=6
+8AAAL	8r	8a
+8AA	8A 8c# 8eL	8a
+8AAJ	8A 8c# 8eJ	16bLL
+.	.	16cc#JJ
+=7	=7	=7
+8EEL	8r	16eeLL
+.	.	16ddJJ
+8E	8B 8d 8g#L	16cc#LL
+.	.	16bJJ
+8EJ	8B 8d 8g#J	16aLL
+.	.	16g#JJ
+=8	=8	=8
+4.AA;	4.A; 4.c#; 4.a;	4.a;
+=9	=9	=9
+(16DDLL	8r	16f#LL
+16D	.	16gnJJ
+16AA	8F# 8A 8d 8f#L	16a
+16D	.	16b
+16AA	8F# 8A 8d 8f#J	8a
+16DJJ)	.	.
+=10	=10	=10
+(16DDLL	8r	16aLL
+16D	.	16ddJJ
+16AA	8F# 8A 8d 8f#L	16f#
+16D	.	16b
+16AA	8F# 8A 8d 8f#J	8a
+16DJJ)	.	.
+=11	=11	=11
+(16AALL	8r	16aLL
+16G	.	16gJJ
+16E	8A 8c# 8eL	(16g
+16G	.	16f#)
+16AA	8A 8c# 8eJ	16gLL
+16GJJ)	.	16bJJ
+=12	=12	=12
+(16DDLL	8r	16bLL
+16D	.	16aJJ
+16AA	8F# 8A 8d 8f#L	16aLL
+16D	.	16gJJ
+16DD	8F# 8A 8d 8f#J	8f#
+16DJJ)	.	.
+=13	=13	=13
+(16DDLL	8r	16d
+16D	.	16e
+16AA	8F# 8A 8d 8f#L	16f#LL
+16D	.	16gJJ
+16DD	8F# 8A 8d 8f#J	16aLL
+16DJJ	.	16bJJ
+=14	=14	=14
+(16AALL)	8r	16aLL
+16G	.	16gJJ
+16E	8A 8c# 8eL	16gLL
+16G	.	16f#JJ
+16C#	8A 8eJ	8e
+16GJJ)	.	.
+=15	=15	=15
+(16DDLL	8r	(16d
+16D	.	16e)
+16AA	8F# 8A 8d 8f#L	16f#LL
+16D	.	16gJJ
+16DD	8F# 8A 8d 8f#J	16aLL
+16DJJ)	.	16bJJ
+=16	=16	=16
+(16AALL	8r	16aLL
+16G	.	16gJJ
+16E	8A 8c# 8eL	16gLL
+16G	.	16f#JJ
+[16AA	[8A [8c# [8eJ	[8e
+16AA_ [16GJJ)	.	.
+=17	=17	=17
+4AA;] 4G;]	4A;] 4c#;] 4e;]	4e;]
+8r	8r	16f#LL
+.	.	16gJJ
+=18	=18	=18
+8DD 8DL	8F# 8A 8d 8f#L	8a
+8DD 8D	8F# 8A 8d 8f#	8f#
+8DD 8DJ	8F# 8A 8d 8f#J	16f#LL
+.	.	16ff#JJ
+=19	=19	=19
+4DD; 4D;	4F#; 4A; 4d; 4f#;	4dd;
+8r	8r	16f#LL
+.	.	16bJJ
+=20	=20	=20
+8AAL	8G 8c# 8eL	16bLL
+.	.	16c#JJ
+8AA	8G 8c# 8e	16c#LL
+.	.	16aJJ
+8AAJ	8G 8c# 8eJ	16aLL
+.	.	16c#JJ
+=21	=21	=21
+8DD	8F# 8A 8d	8d
+8r	8r	8r
+=	=	=
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 076/651

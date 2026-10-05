@@ -1,0 +1,71 @@
+!!!!SEGMENT: erk419.krn
+!!!OTL@@DE: Das Leben welkt wie Gras
+!!!ONB: Nach Ps. 103
+!!!ONB: Schottische Weise von Maurice Green. Um 1730
+!!!ODT: 1730
+!!!OMD: Langsam
+!!!LYR: Karl Straube
+!!!LDT: 1829
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 3
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/4	*M3/4	*M3/4
+*MM80	*MM80	*MM80
+*^	*	*
+[4E	4E	4e	4e
+=1	=1	=1	=1
+*	*	*^	*
+8GL	8EL]	8bL	8eL	8b
+8AJ	8CJ	8aJ	8eJ	8a
+4B	2BB	4g	4e	4g
+4A	.	4f#	4d#	4f#
+=2	=2	=2	=2	=2
+2G	4E	2e	2e	2e
+.	4E	.	.	.
+4E	4E	4b	4g	4b
+=3	=3	=3	=3	=3
+4A	8DnL	8ddL	4f#	8dd
+.	[8DJ	8ccJ	.	8cc
+4B	4D]	4b	4g	4b
+4c	4D	4a	4f#	4a
+*	*	*v	*v	*
+=4	=4	=4	=4
+2B	4G	2b	2b
+*	*	*^	*
+.	4GG	.	.	.
+4B	4E	4g	4e	4g
+=5	=5	=5	=5	=5
+8AL	4BB	8f#L	8d#L	8f#
+8GJ	.	8eJ	8eJ	8e
+4F#	4D#	4b	4B	4b
+4E	4E	4g	4B	4g
+*v	*v	*	*	*
+*	*v	*v	*
+=6	=6	=6
+*	*^	*
+8AA	8aL	8e 8cL	8a
+8E	8gJ	8BJ	8g
+4.BB	4.d# 4.f#	4B	4.f#
+.	.	4B	.
+8AA	8d# 8f#	.	8f#
+*	*v	*v	*
+=7	=7	=7
+*	*^	*
+8GGL	8e 8bL	8BL	8b
+8AAJ	8aJ	8cJ	8a
+[4BB	4e 4g	4B	4g
+4BBB 4BB]	4d# 4f#	4A	4f#
+=8	=8	=8	=8
+2EE 2BB	2e	2G	2e
+*	*v	*v	*
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/25/
+!!!EFL: 419/600

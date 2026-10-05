@@ -1,0 +1,88 @@
+!!!!SEGMENT: erk215.krn
+!!!OTL@@DE: Seligkeit der Liebe
+!!!COM: Schulz, J.A.P.
+!!!CDT: 1779
+!!!OMD: Zärtlich
+!!!LYR: Hölty, L.H.Ch.
+!!!LDT: 1776
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 2
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#c#g#d#]	*k[f#c#g#d#]	*k[f#c#g#d#]
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM92	*MM92	*MM92
+8r	8e	8e
+=1	=1	=1
+4r	8bL	4.b
+.	[8B	.
+4BB	8B] 8e 8g#	.
+.	8A 8d# 8f#J	8a
+4C#	8r	(8a
+.	8G# 8e	4g#)
+4GG#	8r	.
+.	8B 8e	8g#
+=2	=2	=2
+4AA	8r	8f#
+.	8c# 8e 8f#	8f#
+4BB	8r	8b
+.	8B 8d# 8a	8a
+4EE	8r	8a
+.	8B 8e 8g#	8g#
+4E	8r	8r
+.	8e 8g#	(16g#LL
+.	.	16cc#JJ)
+=3	=3	=3
+4D#	8r	(8cc#
+.	8f# 8a 8b#	4b#)
+4E	8r	.
+.	8e 8g# 8cc#	8cc#
+4C#	8r	8.ee
+.	8e 8g# 8cc#L	.
+.	.	(32dd#LLL
+.	.	32cc#JJJ)
+4F#	8d# 8f# 8bn	8bn
+.	8c# 8e 8a#J	8a#
+=4	=4	=4
+4BB	4d# 4b	4b
+8B	4r	8r
+8r	.	8b
+2C#	8r	8.bL
+.	8c# 8e# 8g# 8bL	.
+.	.	16cc#k
+.	8dn 8g# 8b	8ddnJ
+.	8c# 8e# 8g# 8bJ	16cc#LL
+.	.	16bJJ
+=5	=5	=5
+4FF#	8r	8bL
+.	8c# 8f# 8a#	8a#J
+4F#	8r	4an
+.	8c# 8f# 8an	.
+4BB	8r	8g#
+.	8B 8e 8f#	8f#
+4BB	8r	8b
+.	8B 8d# 8a	8a
+=6	=6	=6
+4EE	8r	8a
+.	4B 4e 4g#	4g#
+4E	.	.
+.	8B 8dn 8e 8g#	8e
+4AA 4A	4c# 4e 4cc#	4cc#
+4A	4d# 4f# 4b	4b
+=7	=7	=7
+8G# 8BL	8.e 8.eeL	8.ee
+8A 8c#	.	.
+.	16ek	16e
+8B	8e 8g#	8g#
+8BB 8AJ	8d# 8f#J	8f#
+4E 4G#	4e	4e
+8EE	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/19/
+!!!EFL: 215/600

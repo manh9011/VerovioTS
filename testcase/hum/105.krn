@@ -1,0 +1,158 @@
+!!!!SEGMENT: erk105.krn
+!!!OTL@@DE: Liebesqual
+!!!ONB: Schaäbisches Volkslied
+!!!OMD: Bewegt
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**dynam	**kern	**dynam
+*staff3	*staff2	*staff2/3	*staff1	*
+*Ipiano	*Ipiano	*	*Ivox	*
+*clefF4	*clefG2	*	*clefG2	*
+*k[]	*k[]	*	*k[]	*
+*C:	*C:	*	*C:	*
+*M2/4	*M2/4	*	*M2/4	*
+*MM120	*MM120	*	*MM120	*
+8r	8e 8g	p	8g	p
+=1	=1	=1	=1	=1
+8CL	8d# 8f#L	.	8f#	.
+8G	8e 8g	.	8g	.
+8c	8fn 8a	.	8a	.
+8GJ	8e 8gJ	.	8g	.
+=2	=2	=2	=2	=2
+8CL	8d# 8f#L	.	8f#	.
+8G	8e 8g	.	8g	.
+8c	8fn 8a	.	8a	.
+8GJ	8e 8gJ	.	8g	.
+=3	=3	=3	=3	=3
+8GGL	8e 8gL	.	8g	.
+8G	8dn 8fn	.	8fn	.
+8B	8f 8dd	.	8dd	.
+8GJ	8d 8fJ	.	8f	.
+=4	=4	=4	=4	=4
+8CL	8d 8fL	.	8f	.
+8G	8c 8e	.	8e	.
+8c	8e 8cc	.	8cc	.
+8GJ	8e 8gJ	.	8g	.
+!!LO:LB:g=original
+=5	=5	=5	=5	=5
+8CL	8d# 8f#L	.	8f#	.
+8G	8e 8g	.	8g	.
+8c	8fn 8a	.	8a	.
+8GJ	8e 8gJ	.	8g	.
+=6	=6	=6	=6	=6
+8CL	8d# 8f#L	.	8f#	.
+8G	8e 8g	.	8g	.
+8c	8fn 8a	.	8a	.
+8GJ	8e 8gJ	.	8g	.
+=7	=7	=7	=7	=7
+8GG	8e 8gL	.	8g	.
+8r	8dn 8fnJ	.	8fn	.
+!	!LO:TX:c:i:t=rit.	!	!LO:TX:a:i:t=rit.	!
+4G 4B	4f 4g 4dd	.	8.ff	.
+.	.	.	16b	.
+=8	=8	=8	=8	=8
+8cL	4e 4g 4cc	.	4cc	.
+8GJ	.	.	.	.
+8C	4r	.	4r	.
+8r	.	.	.	.
+=9	=9	=9	=9	=9
+2GG	8r	mf	4d	mf
+.	8dL	.	.	.
+.	8B 8g	.	4g	.
+.	8dJ	.	.	.
+!!LO:LB:g=original
+=10	=10	=10	=10	=10
+2G	8r	.	4.b	.
+.	8dL	.	.	.
+.	8B 8g	.	.	.
+.	8dJ	.	16bLL	.
+.	.	.	16ccJJ	.
+=11	=11	=11	=11	=11
+2D	8r	.	8b	.
+.	8dL	.	8a	.
+.	8c 8f#	.	8a	.
+.	8dJ	.	16aLL	.
+.	.	.	16bJJ	.
+=12	=12	=12	=12	=12
+4GG	8r	.	8a	.
+.	8dL	.	8g	.
+4r	8B 8g	.	4g	.
+.	8dJ	.	.	.
+=13	=13	=13	=13	=13
+2GG	8r	.	4d	.
+.	8dL	.	.	.
+.	8B 8g	.	4g	.
+.	8dJ	.	.	.
+=14	=14	=14	=14	=14
+2G	8r	.	4.b	.
+.	8dL	.	.	.
+.	8B 8g	.	.	.
+.	8dJ	.	16bLL	.
+.	.	.	16ccJJ	.
+!!LO:LB:g=original
+=15	=15	=15	=15	=15
+2D	8r	.	8b	<
+.	8dL	<	8a	[
+!	!	!	!LO:TX:a:i:t=rit.	!
+.	8c 8f#	[ >	8.ee	>
+.	8dJ	]]	.	.
+.	.	.	16dd	]
+=16	=16	=16	=16	=16
+*	*^	*	*	*
+8GG	4.g	(8BL	.	4.g;	.
+8r	.	8d	.	.	.
+8G; 8B;	.	8fn;>J)	.	.	.
+!	!	!LO:TX:a:i:t=a tempo	!	!LO:TX:a:i:t= a tmmpo:vg=3	!LO:DY:a:rj:vg=3
+8r	8g	8e	p	8g	p
+*	*v	*v	*	*	*
+=17	=17	=17	=17	=17
+8CL	8d# 8f#L	.	8f#	.
+8G	8e 8g	.	8g	.
+8c	8fn 8a	.	8a	.
+8GJ	8e 8gJ	.	8g	.
+=18	=18	=18	=18	=18
+8CL	8d# 8f#L	.	8f#	.
+8G	8e 8g	.	8g	.
+8c	8fn 8a	.	8a	.
+8GJ	8e 8gJ	.	8g	.
+=19	=19	=19	=19	=19
+8GGL	8e 8gL	.	8g	.
+8G	8dn 8fn	.	8fn	.
+8B	8f 8dd	.	8dd	.
+8GJ	8d 8fJ	.	8f	.
+!!LO:LB:g=original
+=20	=20	=20	=20	=20
+8CL	8d 8fL	.	8f	.
+8G	8c 8e	.	8e	.
+8c	8e 8ccJ	.	8cc	.
+8GJ	8ee 8gg	f	8g	f
+=21	=21	=21	=21	=21
+8CL	8dd# 8ff#L	.	8f#	.
+8G	8ee 8gg	.	8g	.
+8c	8ffn 8aa	.	8a	.
+8GJ	8ee 8ggJ	.	8g	.
+=22	=22	=22	=22	=22
+8CL	8dd# 8ff#L	.	8f#	.
+8G	8ee 8gg	.	8g	.
+8c	8ffn 8aa	.	8a	.
+8GJ	8ee 8ggJ	.	8g	.
+=23	=23	=23	=23	=23
+8GGL	8ee 8ggL	.	8g	.
+8GJ	8ddn 8ffnJ	.	8fn	.
+!	!	!LO:DY:t=%s rit.	!LO:TX:a:i:t=rt.	!
+4G 4B 4d 4f	8.ff 8.bb 8.fffL	f	8.ff	.
+.	16bbJk	.	16b	.
+=24	=24	=24	=24	=24
+8c 8eL	4ee 4ccc	.	4cc	.
+8GJ	.	.	.	.
+8C	8r	.	8r	.
+==	==	==	==	==
+*-	*-	*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!RDF**kern: > = above
+!!!RDF**kern: < = below
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/27
+!!!EED: Craig Stuart Sapp
+!!!EEV: 2025/07/21
+!!!EFL: 105/651

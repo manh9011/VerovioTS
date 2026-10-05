@@ -1,0 +1,124 @@
+!!!!SEGMENT: erk099.krn
+!!!OTL@@DE: Tyroler
+!!!COM: Haibel, Jacob
+!!!ODT: 1795
+!!!OMD: Wiegend, nicht zu schnell
+!!!LYR: Schikaneder, Em.
+!!!ONB: Aus der Operette: "Der Tyroler Wastl."
+!!!LDT: 1795
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,A]	*>[A,B,A]	*>[A,B,A]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[f#c#]	*k[f#c#]	*k[f#c#]
+*D:	*D:	*D:
+*M3/4	*M3/4	*M3/4
+*MM120	*MM120	*MM120
+8r	8r	8aL
+4r	4r	8f#
+.	.	8aJ
+=1	=1	=1
+4DD 4D	4r	8ddL
+.	.	8aJ
+4r	4A 4d 4f#	4.f#
+4r	4A 4d 4f#	.
+.	.	8d
+=2	=2	=2
+4AAA 4AA	4r	8c#L
+.	.	8eJ
+4r	4A 4c# 4e 4g	4.g
+4r	4A 4c# 4e 4g	.
+.	.	8b
+=3	=3	=3
+4AAA 4AA	4r	8gL
+.	.	8eJ
+4r	4A 4c# 4e	4c#
+4r	4A 4c# 4e	8c#L
+.	.	8aJ
+=4	=4	=4
+4DD 4D	4r	4.a
+4r	4A 4d 4f#	.
+.	.	8gL
+4r	4A 4d 4f#	8f#
+.	.	8aJ
+=5	=5	=5
+4DD 4D	4r	8ddL
+.	.	8aJ
+4r	4A 4d 4f#	4.f#
+4r	4A 4d 4f#	.
+.	.	8d
+=6	=6	=6
+4AAA 4AA	4r	8c#L
+.	.	8eJ
+4r	4A 4c# 4e 4g	4.g
+4r	4A 4c# 4e 4g	.
+.	.	8b
+=7	=7	=7
+4AAA 4AA	4r	8gL
+.	.	8eJ
+4r	4G 4A 4c#	4c#
+4r	4G 4A 4c#	4c#
+=8	=8	=8
+4DD 4D	4r	4d
+4r	4F# 4A 4d	4r
+=	=	=
+*>B	*>B	*>B
+4r	4r	4a
+=9	=9	=9
+4EE 4E	4r	8g#L
+.	.	8bJ
+4r	4G# 4B 4d 4e	4.e
+4r	4G# 4B 4d 4e	.
+.	.	8g#
+=10	=10	=10
+4AAA 4AA	4r	8aL
+.	.	8cc#J
+4r	4A 4c# 4e	4.e
+4r	4A 4c# 4e	.
+.	.	8a
+=11	=11	=11
+4EE 4E	4r	8g#L
+.	.	8aJ
+4r	4G# 4B 4d 4e	8bL
+.	.	8cc#J
+4r	4G# 4B 4d 4e	8ddL
+.	.	8b'J
+=12	=12	=12
+4AAA 4AA	4r	8cc#L
+.	.	8ee
+4r	4A 4c# 4e	8dd
+.	.	8cc#J
+4r	4A 4c# 4e	8bL
+.	.	8aJ
+=13	=13	=13
+4EE 4E	4r	8g#L
+.	.	8bJ
+4r	4G# 4B 4d 4e	4.e
+4r	4G# 4B 4d 4e	.
+.	.	8g#
+=14	=14	=14
+4AAA 4AA	4r	8aL
+.	.	8cc#J
+4r	4A 4c# 4e	4.e
+4r	4A 4c# 4e	.
+.	.	8a
+=15	=15	=15
+4EE 4E	4r	8g#L
+.	.	8ff#J
+4r	4B 4d 4e 4g#	8eeL
+.	.	8ddJ
+4r	4B 4d 4e 4g#	8bL
+.	.	8g#J
+=16	=16	=16
+4AAA 4AA	4r	4.a
+8r	8c# 8e 8a	.
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/27/
+!!!EFL: 099/651

@@ -1,0 +1,170 @@
+!!!!SEGMENT: erk159.krn
+!!!OTL@@DE: Soldatenmuth
+!!!ONB: Mel. Mein Lebenslauf ist Lieb' und Lust
+!!!ODT: 1825
+!!!OMD: Munter
+!!!LYR: Hauff, Wilhelm
+!!!LDT: 1824
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-e-a-]	*k[b-e-a-]	*k[b-e-a-]
+*E-:	*E-:	*E-:
+*M6/8	*M6/8	*M6/8
+*MM118	*MM118	*MM118
+8r	8r	8b-
+=1	=1	=1
+4E-	8r	4b-
+.	8G 8B- 8e-L	.
+8r	8G 8B- 8e-J	8g
+4E-	8r	4e-
+.	8G 8B- 8e-L	.
+8r	8G 8B- 8e-J	8g
+=2	=2	=2
+*^	*	*
+8r	4BB-	8r	4b-
+8FL	.	8B- 8dL	.
+8FJ	8r	8B- 8dJ	8a-
+8r	4BB-	8r	4f
+8FL	.	8B- 8dL	.
+8FJ	8r	8B- 8dJ	8d
+*v	*v	*	*
+=3	=3	=3
+4EE-	8r	4e-
+.	8G 8B- 8e-L	.
+8r	8G 8B- 8e-J	8e-
+4E-	8r	8e-L
+.	8B- 8d 8fL	8fJ
+8r	8B- 8e- 8gJ	8g
+=4	=4	=4
+[4.BB-	8r	[4.f
+.	8B- 8d 8fL	.
+.	8B- 8d 8fJ	.
+4BB-]	4B- 4d 4f	8f]
+.	.	8r
+8r	8r	8b-
+=5	=5	=5
+4EE-	8r	4b-
+.	8G 8B- 8e-L	.
+8r	8G 8B- 8e-J	8g
+4E-	8r	4e-
+.	8G 8B- 8e-L	.
+8r	8G 8B- 8e-J	8ee-
+=6	=6	=6
+4FF	8r	4ee-
+.	8F 8An 8e-L	.
+8r	8F 8A 8e-J	8cc
+*^	*	*
+8r	4FF	8r	4an
+8F	.	8c 8e-	.
+8F	8r	8c 8e-	8f
+=7	=7	=7	=7
+8r	4BBB-	8r	(8.b-L
+8F	.	8B- 8d	.
+.	.	.	16ccJk)
+8F	8r	8B- 8d	8dd
+8r	4FF	8r	(8fL
+8F	.	8c 8e-	8gJ)
+8F	8FF	8c 8e-	8an
+=8	=8	=8	=8
+8r	8BB-L	8r	4.b-
+8F	8FF	8B- 8d	.
+8F	8DDJ	8B- 8d	.
+4F	4BBB-	4B- 4d	4r
+8ryy	8r	8r	8dd
+*v	*v	*	*
+=9	=9	=9
+4BB-	8r	4dd
+.	8A- 8B- 8dL	.
+8r	8A- 8B- 8dJ	8b-
+4BB-	8r	(8.b-L
+.	8A- 8B- 8fL	.
+.	.	16ccJk)
+8r	8A- 8B- 8fJ	8dd
+=10	=10	=10
+4EE-	8r	4ee-
+.	8G 8B- 8e-L	.
+8r	8G 8B- 8e-J	8b-
+4E-	8r	4b-
+.	8G 8B- 8e-L	.
+8r	8G 8B- 8e-J	8g
+=11	=11	=11
+4D	8r	4a-
+.	8A- 8B- 8fL	.
+8r	8A- 8fJ	8b-
+4E-	8r	4g
+.	8G 8B- 8e-L	.
+8r	8G 8B- 8e-J	8b-
+=12	=12	=12
+*^	*	*
+8r	[4.BB-	8r	[4.f
+8F	.	8B- 8d	.
+8F	.	8B- 8d	.
+4F	4BB-]	4B- 4d	8f]
+.	.	.	8r
+8ryy	8r	8r	8B-
+*v	*v	*	*
+=13	=13	=13
+4EE-	8r	4e-
+.	8G 8B- 8e-L	.
+8r	8G 8B- 8e-J	8g
+4E-	8r	4b-
+.	8G 8B- 8e-L	.
+8r	8G 8B- 8e-J	8g
+=14	=14	=14
+4AA-	8r	4a-
+.	8A- 8c 8e-L	.
+8r	8A- 8c 8e-J	8cc
+4AA-	8r	4ee-
+.	8A- 8c 8e-L	.
+8r	8A- 8c 8e-J	8cc
+=15	=15	=15
+4BB-	8r	4b-
+.	8G 8B- 8e-L	.
+8r	8G 8B- 8e-J	8g
+4BBB-	8r	8b-L
+.	8A- 8B- 8dL	8a-J
+8r	8A- 8B- 8dJ	8f
+=16	=16	=16
+4EE-	8r	4e-
+.	8G 8B- 8e-L	.
+8r	8G 8B- 8e-J	8e-
+4E-	8r	4g
+.	8G 8B- 8e-L	.
+8r	8G 8B- 8e-J	8e-
+=17	=17	=17
+8BB-	4d 4f	4b-
+4B-	.	.
+.	8e- 8g	8b-
+8BB-	4f 4a-	4b-
+4B-	.	.
+.	8d 8f	8b-
+=18	=18	=18
+8EE-L	4e- 4g	4g
+8BB-	.	.
+8E-J	8g 8b-	8b-
+8GL	4b- 4ee-	4ee-
+8E-	.	.
+8BB-J	8e- 8g	8g
+=19	=19	=19
+8BBB-	4d 4f	4b-
+4B-	.	.
+.	8e- 8g	8b-
+8BB-	4f 4a-	4b-
+4B-	.	.
+.	8d 8f	8b-
+=20	=20	=20
+8E-L	8r	[4.e-
+8BB-	8G 8B- 8e-L	.
+8GGJ	8G 8B- 8e-J	.
+8EE-	8G 8B- 8e-	8e-]
+8r;	8r;	8r;
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/27/
+!!!EFL: 159/651

@@ -1,0 +1,127 @@
+!!!!SEGMENT: erk149.krn
+!!!OTL@@DE: Der Soldat
+!!!COM: Silcher, Friedrich
+!!!ODT: 1837
+!!!OMD: Langsam
+!!!LYR: Chamisso, Adelbert von
+!!!LDT: 1832
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-e-a-d-g-]	*k[b-e-a-d-g-]	*k[b-e-a-d-g-]
+*D-:	*D-:	*D-:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM60	*MM60	*MM60
+*^	*	*
+8F 8A-	8D-	8d-	8d-
+=1	=1	=1	=1
+4F 4A-	4D-	4d-	4d-
+8.F 8.A-	8.D-L	8.d-	8.d-
+16F 16A-	16D-Jk	16d-	16d-
+4F 4A-	4D-	4d-	4d-
+4A-	4D-	4d- 4f	4f
+=2	=2	=2	=2
+4A-	4AA-	4c 4e-	4e-
+8.A-	32AA-LLL	8.c 8.e-	8.e-L
+.	32GGn	.	.
+.	32AA-	.	.
+.	32GGJJ	.	.
+.	32AA-LL	.	.
+.	32GG	.	.
+16r	32AA-	16d- 16f	16fJk
+.	32GGJJJ	.	.
+4A-	4AA-	4c 4e-	4e-
+8r	4AA-	8r	8r
+8A-	.	8c 8e-	8e-
+=3	=3	=3	=3
+4A-	4AA-	4c 4e-	4e-
+8.A-	8.AA-L	8.c 8.e-	8.e-
+16A-	16AA-Jk	16c 16e-	16e-
+4A-	4AA-	4c 4e-	4e-
+4A-	4AA-	4c 4e- 4g-	8.g-
+.	.	.	16g-
+=4	=4	=4	=4
+4A-	4D-	4d- 4f	4f
+8.A-	32DD-LLL	8.d- 8.f	8.fL
+.	32CC	.	.
+.	32DD-	.	.
+.	32CCJJ	.	.
+.	32DD-LL	.	.
+.	32CC	.	.
+16r	32DD-	16e- 16g-	16g-Jk
+.	32CCJJJ	.	.
+4A-	4DD-	4d- 4f	4f
+4r	4D-	8r	8r
+.	.	8d-	8d-
+*v	*v	*	*
+=5	=5	=5
+4GG-	4d- 4g- 4b-	4b-
+4G-	8d- 8g- 8b-L	8b-
+.	8d- 8g- 8b-J	8b-
+4GG-	4d- 4b- (4dd-	(4dd-
+*	*^	*
+4G-	8a- 8ccL)	4d-	8cc)
+.	8g- 8b-J	.	8b-
+=6	=6	=6	=6
+4D-	8.f 8.a-L	4d-	8.a-L
+.	16e- 16g-Jk	.	16g-Jk
+*	*v	*v	*
+32DD-LLL	8.d- 8.fL	8.f
+32CC	.	.
+32DD-	.	.
+32CCJJ	.	.
+32DD-LL	.	.
+32CC	.	.
+32DD-	16e- 16g-Jk	16g-
+32CCJJJ	.	.
+4DD-	4f 4a-	4a-
+4D-	8r	8r
+.	8f 8a-	8a-
+=7	=7	=7
+4DD-	(4f 4a-	(4a-
+4D-	8e-) 8g-L	8g-)
+.	8d- 8fJ	8f
+4DD-	(8g- 8b-L	8b-L
+.	8f) 8a-	8a-J
+4D-	8c 8e- 8g-	8g-
+.	8d- 8fJ	8f
+=8	=8	=8
+4AA-	4c 4e-	4e-
+*	*^	*
+32AA-LLL	8.d- (8.fL	4A-	8.fL
+32GGn	.	.	.
+32AA-	.	.	.
+32GGJJ	.	.	.
+32AA-LL	.	.	.
+32GG	.	.	.
+32AA-	16e- 16g-Jk)	.	16g-Jk
+32GGJJJ	.	.	.
+*	*v	*v	*
+4DD- 4AA-	4A- 4d- 4f	4f
+8D-L	8r	8r
+8D- 8FJ	8d- 8a-	8a-
+=9	=9	=9
+4D- 4A-	4f 4dd-	(4dd-
+*^	*	*
+8.FL	4D-	(8.d- 8.a-L	8.a-)
+16A-Jk	.	16f) 16dd-Jk	16dd-
+4d-	4D-	4a- 4ff	4ff
+4A-	4D-	8.g- 8.a- 8.ee-L	8.ee-L
+.	.	16f 16a- 16dd-Jk	16dd-Jk
+*v	*v	*	*
+=10	=10	=10
+4A-	4e- 4a- 4cc	4cc
+4AA- 4A-	(8.f 8.a- 8.dd-L	8.dd-L
+.	16g-) 16a- 16ee-Jk	16ee-Jk
+4DD- 4D-	4f 4a- 4dd-	4dd-
+8r	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/27/
+!!!EFL: 149/651

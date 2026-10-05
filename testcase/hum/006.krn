@@ -1,0 +1,91 @@
+!!!!SEGMENT: erk006.krn
+!!!OTL@@DE: Als der Grossvater die Grossmutter nahm
+!!!ONB: Das Grossvaterlied
+!!!ONB: Nach einer alten Tanzweise umgeformt
+!!!OMD: Mässig langsam
+!!!LYR: Langbein, August
+!!!LDT: 1812
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/4	*M3/4	*M3/4
+*MM96	*MM96	*MM96
+2GG 2D	4.B 4.g	4.g
+.	8B 8g	8g
+4GG 4D	4B 4g	4g
+=2	=2	=2
+2GG 2D	4.B 4.g	4.g
+.	8d 8a	8a
+4GG 4D	4g 4b	4b
+=3	=3	=3
+2DD 2D	4g 4b	4b
+.	4f# 4a	4a
+4DD 4D	4f# 4a	4a
+=4	=4	=4
+2DD 2D	2f# 2a	2a
+4D 4d	4f# 4a	4a
+=5	=5	=5
+2G 2d	4.g 4.b	4.b
+.	8a 8cc	8cc
+4G 4d	4b 4dd	4dd
+!!LO:LB:g=original
+=6	=6	=6
+2G 2d	4.b 4.dd	4.dd
+.	8a 8cc	8cc
+4G 4d	4g 4b	4b
+=7	=7	=7
+*^	*	*
+4r	2D	4g 4b	4b
+4d	.	4f# 4a	4a
+4ryy	4D 4d	4f# 4a	4a
+*v	*v	*	*
+=8	=8	=8
+2D 2d	2f# 2a	2a
+4D	4d	4d
+=9	=9	=9
+2GG 2D	4.B 4.g	4.g
+.	8B 8g	8g
+4GG 4D	4B 4g	4g
+=10	=10	=10
+2GG 2D	4.B 4.g	4.g
+.	8d 8a	8a
+4GG 4D	4g 4b	4b
+!!LO:LB:g=original
+=11	=11	=11
+2DD 2D	4g 4b	4b
+.	4f# 4a	4a
+4DD 4D	4f# 4a	4a
+=12	=12	=12
+2DD 2D	2f# 2a	2a
+4D 4d	4f# 4a	4a
+=13	=13	=13
+2G 2d	4.g 4.b	4.b
+.	8a 8cc	8cc
+4G 4d	4b 4dd	4dd
+=14	=14	=14
+(4C	4e 4a 4cc	4cc
+4D)	4d 4g 4b	4b
+4DD 4D	4c 4f# 4a	4a
+=15	=15	=15
+*^	*	*
+4r	[2.GG	4c 4d 4f# 4a	4a
+4BB	.	4B 4d 4g	4g
+4D	.	4B 4d 4g	4g
+=16	=16	=16	=16
+2G	2GG]	2B 2d 2g	2g
+*v	*v	*	*
+4r	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/17/
+!!!EED: Craig Stuart Sapp
+!!!EEV: 2025/07/21
+!!!EFL: 006/651

@@ -1,0 +1,160 @@
+!!!!SEGMENT: erk193.krn
+!!!OTL@@DE: Das Reich der Freude
+!!!COM: Volksweise
+!!!ODT: 1823
+!!!OMD: Lebhaft
+!!!LYR: Mahlmann, August
+!!!LDT: 1803
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#c#g#]	*k[f#c#g#]	*k[f#c#g#]
+*A:	*A:	*A:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM110	*MM110	*MM110
+4A	4c# 4e 4a	4a
+=1	=1	=1
+2.AA 2.A	4.c# 4.e	4.e
+.	8d 8f#	8f#
+.	4c# 4e	4e
+4A	4c# 4e 4a	4a
+=2	=2	=2
+*^	*^	*
+4.E	2.AA	4.c#	2.A	4.c#
+8F#	.	8d	.	8d
+4E	.	4c#	.	4c#
+*	*	*v	*v	*
+4E	4AA	4c# 4e	4e
+=3	=3	=3	=3
+4.G#	2.E	4.B 4.d	4.d
+8A	.	8A 8c#	8c#
+4G#	.	4B 4d	4d'
+4G#	4E	4B 4e	4e
+*v	*v	*	*
+=4	=4	=4
+2.AA 2.E	4A 4c#	2c#
+.	(8c# 8eL	.
+.	8A) 8c#J	.
+.	4c# 4a	4r
+4A	4c# 4e 4a	4a
+=5	=5	=5
+2.BB	4.d# 4.f# 4.a	4.a
+.	8e 8g#	8g#
+.	4d# 4f#	4f#
+4B	4e 4g#	4g#
+=6	=6	=6
+2.BB 2.B	4.d# 4.f# 4.a	4.a
+.	8e 8g#	8g#
+.	4d# 4f#	4f#
+4AA 4A	4d# 4f# 4b	4b
+=7	=7	=7
+4.GG# 4.G#	4.e 4.g# 4.b	4.b
+8AA 8A	8c# 8f# 8a	8a
+4BB 4B	4e 4g#	4g#
+4BB 4A	4B 4d# 4f#	4f#
+=8	=8	=8
+4E 4G#	4B 4e	2e
+*^	*^	*
+8G#L	4E	4e	(8bL	.
+8BJ	.	.	8g#J	.
+*v	*v	*	*	*
+*	*v	*v	*
+4E 4G#	4e)	4r
+4E 4G#	4B 4e	4e
+=9	=9	=9
+4E 4B	4e 4g#	4g#
+4BB 4B	4e 4g#	4g#
+4GG#	4dn 4e 4b	4b
+4BB	4d 4e 4b	4b
+=10	=10	=10
+4E 4B	4e 4g#	4g#
+4E 4B	4e 4g#	4g#
+4E 4G#	4B 4e	4e
+4A	4c# 4e	4e
+=11	=11	=11
+*^	*	*
+2.E	(4.GG#	(4.B 4.d	4.dn
+.	8AA	8A 8c#	8c#
+.	4BB)	4G#) 4d	4d
+*v	*v	*	*
+4EE 4E	4G# 4B 4e	4e
+=12	=12	=12
+2.AA 2.E	4A 4c#	2c#
+.	(8c# 8eL	.
+.	8A 8c#J	.
+.	4c#) 4a	4r
+4A	4c# 4e 4a	4a
+=13	=13	=13
+2.BB	(4.d# 4.f# 4.a	4.a
+.	8e 8g#	8g#
+.	4d#) 4f#	4f#
+4B	4e 4g#	4g#
+=14	=14	=14
+2.BB	(4.d# 4.f# 4.a	4.a
+.	8e 8g#	8g#
+.	4d#) 4f#	4f#
+4B	4d# 4f# 4b	4b
+=15	=15	=15
+4E 4B	4e 4g#	4g#
+4E 4G#	4e	4e
+4E 4A	4d# 4f#	4f#
+4E 4B	4dn 4g#	4g#
+=16	=16	=16
+[2AA [2A	(8c# 8aL	(8aL
+.	8B 8g#	8g#
+.	8c# 8a	8a
+.	8d 8bJ	8bJ
+8AA] 8A]	8e) 8cc#	8cc#)
+8r	8r	8r
+4A 4c#	4e 4a 4cc#	4cc#
+=17	=17	=17
+4A 4c#	4e 4a 4cc#	4cc#
+4AA 4A	4c# 4e 4a	4a
+4AA 4A	4c# 4e 4a	4a
+4A 4c#	4e 4a 4ee	4ee
+=18	=18	=18
+4A 4c#	4e 4a 4ee	4ee
+4AA 4A	4e 4a 4cc#	4cc#
+4AA 4A	4e 4a 4cc#	4cc#
+4A 4c#	4e 4a 4cc#	4cc#
+=19	=19	=19
+4E 4B	4e 4g# 4dd	4dd
+4E 4B	4e 4g# 4dd	4dd'
+4E 4d	4e 4g# 4b	4b
+4E 4d	4e 4g# 4b	4b
+=20	=20	=20
+8A (8c#L	8a (8cc#L	(8cc#L
+8E 8B	8g# 8b	8b
+8A 8c#	8a 8cc#	8cc#
+8B 8dJ	8b 8ddJ	8ddJ
+8c# 8e)	8cc# 8ee)	8ee)
+8r	8r	8r
+4A 4c#	4e 4a 4cc#	4cc#
+=21	=21	=21
+4A 4c#	4e^ 4a^ 4cc#^	4cc#^
+4AA 4A	4c# 4e 4a	4a
+4AA 4A	4c# 4e 4a	4a
+4A 4c#	4e 4a 4ee	4ee
+=22	=22	=22
+4A 4c#	4e 4a 4ee	4ee^
+4AA 4A	4e 4a 4cc#	4cc#
+4AA 4A	4e 4a 4cc#	4cc#
+4AA 4A	4e 4a 4cc#	4cc#
+=23	=23	=23
+4DD 4D	4f# 4b 4dd	4dd
+4DD 4D	4f# 4b 4dd	4dd
+4EE 4E	4d 4e 4g# 4b	4b
+4EE 4E	4d 4e 4g# 4b	4b
+=24	=24	=24
+2AA 2E 2A	2c# 2e 2a	2a
+4r	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/27/
+!!!EFL: 193/651

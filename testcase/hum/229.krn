@@ -1,0 +1,202 @@
+!!!!SEGMENT: erk416.krn
+!!!OTL@@DE: Bundeslied
+!!!COM: Mozart, Wolfgang Amadeus
+!!!ODT: 1791/11/15/
+!!!OMD: Andante
+!!!ONB: Text neuern Ursprungs
+!!!LDT: 1825
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 3
+**kern	**kern	**kern
+*staff2	*staff1	*staff1
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*Ipiano	*Ipiano	*Ivox
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*M3/4	*M3/4	*M3/4
+*MM92	*MM92	*MM92
+*	*^	*^
+4FF	2cc	2a	2cc	2a
+4AA	.	.	.	.
+4C	4b-	4g	4b-	4g
+=2	=2	=2	=2	=2
+4F	2a	2f	2a	2f
+4FF	.	.	.	.
+4r	8b-L	8gL	8b-L	8gL
+.	8ccJ	8aJ	8ccJ	8aJ
+=3	=3	=3	=3	=3
+4BB-	2b- 2dd	(4d	2b- 2dd	(4d
+4C	.	4e)	.	4e)
+4D	4a 4cc	4f#	4a 4cc	4f#
+=4	=4	=4	=4	=4
+4GG	8ccL	8aL	8ccL	8aL
+.	8b-J	8gJ	8b-J	8gJ
+8GL	4b-	4g	4b-	4g
+*	*v	*v	*	*
+*	*	*v	*v
+8Fn	.	.
+8E	4r	4r
+8DJ	.	.
+=5	=5	=5
+*	*^	*^
+4C	2b-	2g	2b-	2g
+4E	.	.	.	.
+4F	4a	4f	4a	4f
+=6	=6	=6	=6	=6
+4c	2g	2e	2g	2e
+4C	.	.	.	.
+4r	8aL	8fL	8aL	8fL
+.	8b-J	8gJ	8b-J	8gJ
+=7	=7	=7	=7	=7
+4C	2cc	2a	2cc	2a
+4D	.	.	.	.
+4E	4b-	4g	4b-	4g
+=8	=8	=8	=8	=8
+4F	8b-L	8gL	8b-L	8gL
+.	8aJ	8fJ	8aJ	8fJ
+4F	4a	4f	4a	4f
+*	*v	*v	*	*
+*	*	*v	*v
+4FF	4r	4r
+=9	=9	=9
+*	*^	*^
+4r	2bn	2f	2bn	2f
+4G	.	.	.	.
+4c	4cc	4e	4cc	4e
+=10	=10	=10	=10	=10
+4r	2dd	2bn	2dd	2bn
+4G	.	.	.	.
+4C	4ee	4cc	4ee	4cc
+=11	=11	=11	=11	=11
+2F	(4ff	4a	(4ff	4a
+.	4dd)	&(4f&)	4dd)	&(4f&)
+4G	4bn	4d	4bn	4d
+=12	=12	=12	=12	=12
+4C	4e	4cc	4e	4cc
+*	*v	*v	*	*
+*	*	*v	*v
+4r	(8ff#L	(8ff#L
+.	8gg	8gg
+4r	8aa	8aa
+.	8ggJ)	8ggJ)
+=13	=13	=13
+4r	(2bn	(2bn
+4G 4f	.	.
+4G 4f	8ddL	8ddL
+.	8ccJ)	8ccJ)
+=14	=14	=14
+4c 4e	4cc	4cc
+4r	(8ff#L	(8ff#L
+.	8gg	8gg
+4r	8aa	8aa
+.	8ggJ)	8ggJ)
+=15	=15	=15
+4r	(2bn	(2bn
+4G 4f	.	.
+4G 4f	8ddL	8ddL
+.	8ccJ)	8ccJ)
+=16	=16	=16
+4c 4e	4cc	4cc
+4E	4r	4r
+4G	4r	4r
+=17!|:	=17!|:	=17!|:
+*	*^	*^
+4C	2g	2e	2g	2e
+4C	.	.	.	.
+4F	4a	4f	4a	4f
+=18	=18	=18	=18	=18
+4E	(4cc	4a	(4cc	4a
+4r	4b-)	&(4g&)	4b-)	&(4g&)
+4C	4g	4e	4g	4e
+=19	=19	=19	=19	=19
+4FF	2a	2f	2a	2f
+4F	.	.	.	.
+4BB-	8ddL	8b-L	8ddL	8b-L
+.	8b-J	8gJ	8b-J	8gJ
+=20	=20	=20	=20	=20
+4C	4a	4f	4a	4f
+4c	4g	4e	4g	4e
+*	*v	*v	*	*
+*	*	*v	*v
+8GL	4r	4r
+8EJ	.	.
+=21	=21	=21
+*	*^	*^
+4C	2g	2e	2g	2e
+4BB-	.	.	.	.
+4AA	4a	4f	4a	4f
+=22	=22	=22	=22	=22
+2GG	(4cc	4a	(4cc	4a
+.	4b-)	&(4g&)	4b-)	&(4g&)
+4C	4g	4e	4g	4e
+=23	=23	=23	=23	=23
+4F	2a	2f	2a	2f
+4D	.	.	.	.
+4BB-	8ddL	8b-L	8ddL	8b-L
+.	8b-J	8gJ	8b-J	8gJ
+=24	=24	=24	=24	=24
+(8CL	4a	4f	4a	4f
+8c	.	.	.	.
+8Bn	4g	4e	4g	4e
+*	*v	*v	*	*
+*	*	*v	*v
+8c	.	.
+8d	4r	4r
+8cJ)	.	.
+=25	=25	=25
+*	*^	*^
+4r	2b-	2g	2b-	2g
+4C	.	.	.	.
+4F	4a	4f	4a	4f
+=26	=26	=26	=26	=26
+4r	2dd	2b-	2dd	2b-
+4E	.	.	.	.
+4F	4cc	4a	4cc	4a
+=27	=27	=27	=27	=27
+4BB-	(8ccL	8aL	(8ccL	8aL
+.	8b-J	8gJ	8b-J	8gJ
+4C	4a)	&(4f&)	4a)	&(4f&)
+4C	4g	4e	4g	4e
+=28	=28	=28	=28	=28
+8FL	2a	2f	2a	2f
+*	*v	*v	*	*
+*	*	*v	*v
+(8F	.	.
+8A	.	.
+8c	.	.
+8A	4r	4r
+8FJ)	.	.
+=29	=29	=29
+*	*^	*^
+(8.BB-L	2dd	2b-	2dd	2b-
+16CJk)	.	.	.	.
+(8.DL	.	.	.	.
+16EJk)	.	.	.	.
+4F	4cc	4a	4cc	4a
+=30	=30	=30	=30	=30
+4C	2ee	2b-	2ee	2b-
+4C#	.	.	.	.
+8DL	8ffL	4a	8ffL	4a
+8AAJ	8ccJ	.	8ccJ	.
+=31	=31	=31	=31	=31
+4BB-	(8ccL	8aL	(8ccL	8aL
+.	8b-J	8gJ	8b-J	8gJ
+4Cn	4a)	&(4f&)	4a)	&(4f&)
+4C	4g	4e	4g	4e
+=32	=32	=32	=32	=32
+*^	*	*	*	*
+*	*	*	*	*	*
+4F	2FF;	2f	2f	2f	2f
+*	*	*v	*v	*	*
+*	*	*	*v	*v
+4C	.	.	.
+*v	*v	*	*
+*	*	*
+4FF	4r	4r
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/20/
+!!!EFL: 416/600

@@ -1,0 +1,139 @@
+!!!!SEGMENT: erk104.krn
+!!!OTL@@DE: Die Würzburger Glöckli
+!!!ONB: Volksweise
+!!!ODT: 1824
+!!!OMD: Leicht bewegt
+!!!ONB: Volkslied
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#c#]	*k[f#c#]	*k[f#c#]
+*D:	*D:	*D:
+*M3/8	*M3/8	*M3/8
+*MM92	*MM92	*MM92
+8r	8r	(16f#
+*	*clefF4	*
+.	.	16g)
+=1	=1	=1
+4D	16r	8.a
+.	(16F#LL	.
+.	16d	.
+.	16A	16g
+8DD	16F#	8f#
+.	16AJJ)	.
+=2	=2	=2
+4AA	16r	8f#
+.	(16GLL	.
+.	16c#	8e
+.	16A	.
+8r	16G	16eLL
+.	16AJJ)	16f#JJ
+=3	=3	=3
+4AA	16r	8.g
+.	(16GLL	.
+.	16c#	.
+.	16A	16f#
+8AA	16G	8e
+.	16AJJ)	.
+=4	=4	=4
+4DD	16r	4f#
+.	(16F#LL	.
+.	16d	.
+.	16A	.
+8r	16F#	16f#
+.	16AJJ)	16g
+!!LO:LB:g=original
+=5	=5	=5
+4D	16r	8.a
+.	(16F#LL	.
+.	16d	.
+.	16A	16g
+8DD	16F#	8f#
+.	16AJJ)	.
+=6	=6	=6
+4AA	16r	8f#
+.	(16GLL	.
+.	16c#	8e
+.	16A	.
+8r	16G	8e
+.	16AJJ)	.
+=7	=7	=7
+4AA	16r	8b
+.	(16GLL	.
+.	16c#	8a
+.	16A	.
+8AA	16G	8c#
+.	16AJJ)	.
+=8	=8	=8
+8DL	16F#LL	4d
+.	16AJ	.
+8DDJ	8dJ	.
+!	!	!LO:TX:a:t=Jodler
+8r	8r	16r
+*	*clefG2	*
+.	.	16a
+=9	=9	=9
+8AAL	8r	(16aLL
+.	.	16aaJJ
+8A 8e 8g	8a 8cc# 8aaL	8.gg)
+8A 8e 8gJ	8a 8cc# 8aaJ	.
+.	.	16a
+=10	=10	=10
+8AAL	8r	(16aLL
+.	.	16ggJJ
+8A 8d 8f#	8a 8dd 8aaL	8.ff#)
+8A 8d 8f#J	8a 8dd 8aaJ	.
+.	.	16a
+!!LO:LB:g=original
+=11	=11	=11
+*	*^	*
+8AAL	8raa	16aLL	16aLL
+.	.	16cc#	16cc#
+8A 8e 8g	8aaL	16ee	16ee
+.	.	16a	16a
+8A 8e 8gJ	8aaJ	16cc#	16cc#
+.	.	16eeJJ	(16eeJJ
+*	*v	*v	*
+=12	=12	=12
+8DL	(16ddLL	16ddLL)
+.	16a	16a
+8A 8d 8f#	16dd	16dd
+.	16ff#JJ	(16ff#JJ
+8A 8d 8f#J	16aa)	16.aa)
+.	16r	.
+.	.	32a
+=13	=13	=13
+8AAL	8r	(16aLL
+.	.	16aaJJ
+8A 8e 8g	8a 8cc# 8aaL	8.gg)
+8A 8e 8gJ	8a 8cc# 8aaJ	.
+.	.	16a
+=14	=14	=14
+8AAL	8r	(16aLL
+.	.	16ggJJ
+8A 8d 8f#	8a 8dd 8aaL	8.ff#)
+8A 8d 8f#J	8a 8dd 8aaJ	.
+.	.	16a
+=15	=15	=15
+*	*^	*
+8AAL	8raa	16aLL	(16aLL
+.	.	16b	16b
+8A 8e 8g	8aaL	16cc#	16cc#
+.	.	16dd	16dd
+8A 8c# 8gJ	8aaJ	16ff#	16ff#
+.	.	16eeJJ	16eeJJ
+*	*v	*v	*
+=16	=16	=16
+8d 8f#L	4dd	4dd)
+8DJ	.	.
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/27/
+!!!EED: Craig Stuart Sapp
+!!!EEV: 2025/07/21
+!!!EFL: 104/651

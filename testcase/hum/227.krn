@@ -1,0 +1,142 @@
+!!!!SEGMENT: erk407.krn
+!!!OTL@@DE: Auf dem Berge dort oben, da wehet der Wind
+!!!COM: Burgwedel, Karl von
+!!!ODT: 1804
+!!!OMD: Mit Ausdruck
+!!!LYR: Tiedge, Christoph August
+!!!ONB: Romanze
+!!!LDT: 1804
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 3
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-e-]	*k[b-e-]	*k[b-e-]
+*g:	*g:	*g:
+*M6/8	*M6/8	*M6/8
+*MM60	*MM60	*MM60
+8r	8d	16d
+.	.	16d
+=1	=1	=1
+4G	(16B-LL	8.g
+.	16d	.
+.	16g	.
+.	16d	16f#
+8r	16B-	8g
+.	16dJJ)	.
+4GG	(16B-LL	8.b-
+.	16d	.
+.	16g	.
+.	16d	16a
+8r	16B-	8g
+.	16dJJ)	.
+=2	=2	=2
+4D	(16cLL	(8.a
+.	16d	.
+.	16f#	.
+.	16d	16g)
+8r	16c	8f#
+.	16dJJ)	.
+4G	(16B-LL	4g
+.	16d	.
+.	16g	.
+.	16d	.
+8r	16B-	8b-
+.	16dJJ)	.
+=3	=3	=3
+4.F#	(16cLL	8.dd
+.	16d	.
+.	16a	.
+.	16d	16cc
+.	16c	8a
+.	16dJJ)	.
+4G	(16B-LL	8.b-
+.	16d	.
+.	16g	.
+.	16d	16a
+8r	16B-	8g
+.	16dJJ)	.
+=4	=4	=4
+4E-	(16c#LL	(8.g
+.	16g	.
+.	16b-	.
+.	16g	16f#)
+8r	16c#	8g
+.	16gJJ)	.
+4D	(16ALL	4a
+.	16d	.
+.	16f#	.
+.	16d)	.
+8GG	(16fn	8bn
+.	16dJJ)	.
+=5	=5	=5
+4C	(16e-LL	8.cc
+.	16g	.
+.	16cc	.
+.	16g	16g
+8r	16e-	8a
+.	16gJJ)	.
+4D	(16dLL	8.b-
+.	16g	.
+.	16b-	.
+.	16g	16a
+8r	16d	8g
+.	16gJJ)	.
+=6	=6	=6
+*	*	*^
+4.FF#	(16cLL	8.ddL	8.dd
+.	16d	.	.
+.	16a	.	.
+.	16d	16ccJk	16cc
+.	16c	2ryy	8a
+.	16dJJ)	.	.
+4GG	(16B-LL	.	4b-
+.	16d	.	.
+.	16g	.	.
+.	16d)	.	.
+8AA	(16c	.	8f#
+*	*	*v	*v
+.	16f#JJ)	.
+=7	=7	=7
+4BB-	(16dLL	8g
+.	16g	.
+.	16b-	8g
+.	16g	.
+8r	16d	8g
+.	16gJJ)	.
+4C	(16e-LL	8.cc
+.	16g	.
+.	16cc	.
+.	16g	16b-
+8r	16e-	8a
+.	16gJJ)	.
+=8	=8	=8
+4.D	(16B-LL	(4.dd
+.	16d	.
+.	16g	.
+.	16d	.
+.	16B-)	.
+.	16dJJ	.
+4.DD	(16ALL	4cc)
+.	16d	.
+.	16f#	.
+.	16d	.
+.	16c	8f#
+.	16dJJ)	.
+=9	=9	=9
+*^	*	*
+16GGLL	4.GG	[4.B- [4.g	4.g
+(16D	.	.	.
+16BB-	.	.	.
+16G	.	.	.
+16D	.	.	.
+16BB-JJ	.	.	.
+4GG	4GG)	4B-] 4g]	4r
+*v	*v	*	*
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/20/
+!!!EFL: 407/600

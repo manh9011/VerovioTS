@@ -1,0 +1,80 @@
+!!!!SEGMENT: erk216.krn
+!!!OTL@@DE: Einkehr
+!!!COM: Gersbach, Jos.
+!!!CDT: 1822
+!!!OMD: Mässig
+!!!LYR: Uhland, L.
+!!!LDT: 1811
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 2
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM88	*MM88	*MM88
+8r	8d	8d
+=1	=1	=1
+4GG 4G	4B 4d	4d
+4GG 4G	4B 4d	4d
+4BB 4G	4d 4g	4g
+4GG 4G	4B 4d 4g	4g
+=2	=2	=2
+4D	4.d 4.g 4.b	4.b
+4DD	.	.
+.	8c 8f# 8a	8a
+4GG	4B 4g	4g
+4G	8r	8r
+.	8g	8g
+=3	=3	=3
+4C 4G	4c 4e	4e
+4C 4G	4c 4e	4e
+4D	4c 4d 4f#	4f#
+4D	4c 4d 4f#	4f#
+=4	=4	=4
+4G	2B 2d 2g	2g
+4GG	.	.
+4BB	4d	4d
+4D	8r	8r
+.	8d 8g 8b	8b
+=5	=5	=5
+*	*^	*
+4G	4b	4d 4g	4b
+4G	4b	4d 4g	4b
+4.B	4.dd	4d 4g	4.dd
+.	.	4d 4g	.
+8G	8b	.	8b
+*	*v	*v	*
+=6	=6	=6
+4D	4d 4g 4b	4b
+4D	8f# 8aL	8aL
+.	8fn 8bJ	8bJ
+4C	4e 4cc	4cc
+[4c	8r	8r
+.	8d 8f# 8a	8a
+=7	=7	=7
+(8cL]	4d 4f# 4a	4a
+8F#	.	.
+8A	4d 4f# 4a	4a
+8DJ)	.	.
+4G	(8g 8bL	4b
+.	8B	.
+4BB	8d 8g	4g
+.	8GJ)	.
+=8	=8	=8
+*	*^	*
+4C	2a	4e 4g	2a
+4D	.	8d 8f#L	.
+.	.	8cJ	.
+*	*v	*v	*
+4GG	4B 4g	4g
+8r	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/20/
+!!!EFL: 216/600

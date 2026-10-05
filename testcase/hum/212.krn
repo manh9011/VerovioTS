@@ -1,0 +1,189 @@
+!!!!SEGMENT: erk211.krn
+!!!OTL@@DE: Auf der Alm
+!!!COM: Poissl., J.N. Frhrr. v.
+!!!OMD: Mässig
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 2
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[P,A,A1,A,A2,B,B1,B,B2,C,C1,C,C2,D]	*>[P,A,A1,A,A2,B,B1,B,B2,C,C1,C,C2,D]	*>[P,A,A1,A,A2,B,B1,B,B2,C,C1,C,C2,D]
+*>P	*>P	*>P
+*clefF4	*clefG2	*clefG2
+*k[b-e-]	*k[b-e-]	*k[b-e-]
+*B-:	*B-:	*B-:
+*M3/4	*M3/4	*M3/4
+*MM96	*MM96	*MM96
+4r	4r	8.fL
+.	.	16e-Jk
+=1!|:	=1!|:	=1!|:
+*>A	*>A	*>A
+*^	*	*
+2BB-	4r	4r	(8dL
+.	.	.	8fJ)
+.	4F 4B-	4d	4.dd
+4r	4F 4B-	4d	.
+.	.	.	8cc
+=2	=2	=2	=2
+2BB-	4r	4r	(8b-L
+.	.	.	8dJ)
+.	4F 4B-	4d	4.f
+.	4F 4B-	4d	.
+.	.	.	8b-
+=3	=3	=3	=3
+2FF	4r	4r	8aL
+.	.	.	8cJ
+.	4F 4A	4c	(8e-L
+.	.	.	8fJ)
+.	4F 4A	4e-	(8aL
+.	.	.	8ccJ)
+*v	*v	*	*
+=4	=4	=4
+*>A1	*>A1	*>A1
+2BB-	4r	(8b-L
+.	.	8dJ)
+.	4F 4B- 4d	4.f
+4FF	4F 4A 4c	.
+.	.	8e-
+=5:|!	=5:|!	=5:|!
+*>A2	*>A2	*>A2
+2BB-	4r	4b-
+.	4F 4B- 4d	4r
+4r	4r	4dd
+=6!|:	=6!|:	=6!|:
+*>B	*>B	*>B
+*^	*	*
+4r	2C	4r	(8ccL
+.	.	.	8b-J)
+4En 4B-	.	4c	4.g
+4G 4B-	4r	4c	.
+.	.	.	8en
+=7	=7	=7	=7
+4r	2FF	4r	(8fL
+.	.	.	8aJ)
+4F 4A	.	4c	4.cc
+4F 4A	4r	4c	.
+.	.	.	8cc
+=8	=8	=8	=8
+4r	2CC	4r	(8ddL
+.	.	.	8ccJ)
+4En 4G 4B-	.	4r	(8b-L
+.	.	.	8cJ)
+4E 4G 4B-	4C	4c	(8enL
+.	.	.	8gJ)
+*v	*v	*	*
+=9	=9	=9
+*>B1	*>B1	*>B1
+*^	*	*
+4r	2FF	4r	(8fL
+.	.	.	8aJ)
+4F 4A	.	4c	4.ff
+4F 4B-	4BB-	4d	.
+.	.	.	8dd
+*v	*v	*	*
+=10:|!	=10:|!	=10:|!
+*>B2	*>B2	*>B2
+*^	*	*
+4r	4FF	4r	4f
+4F 4A	4FF	4c	4r
+4r	4r	4r	8.f
+.	.	.	16e-
+*v	*v	*	*
+=11!|:	=11!|:	=11!|:
+*>C	*>C	*>C
+*^	*	*
+4r	2BB-	4r	(8dL
+.	.	.	8fJ)
+4F 4B-	.	4d	4.dd
+4F 4B-	4r	4d	.
+.	.	.	8cc
+=12	=12	=12	=12
+4r	2BB-	4r	8b-L
+.	.	.	8dJ
+4F 4B-	.	4d	4.f
+4F 4B-	4r	4d	.
+.	.	.	8b-
+*v	*v	*	*
+=13	=13	=13
+*>C1	*>C1	*>C1
+*^	*	*
+4r	2FF	4r	(8aL
+.	.	.	8cJ)
+4F 4A	.	4c	(8e-L
+.	.	.	8fJ)
+4F 4A	4r	4e-	(8aL
+.	.	.	8ccJ)
+=14	=14	=14	=14
+4r	2BB-	4r	(8b-L
+.	.	.	8dJ)
+4F 4B-	.	4d	4.f
+4F 4A	4FF	4c	.
+.	.	.	8e-
+*v	*v	*	*
+=15:|!	=15:|!	=15:|!
+*>C2	*>C2	*>C2
+*^	*	*
+4r	2FF	4r	(8ggL
+.	.	.	8ffJ)
+4F 4A	.	4c	8ee-L
+.	.	.	8fJ
+4F 4A	4r	4e-	(8aL
+.	.	.	8ccJ)
+=16	=16	=16	=16
+4r	4BB-	4r	4b-
+4F 4B-	4BBB-	4d	4r
+4r	4r	4r	4ff
+*v	*v	*	*
+=17	=17	=17
+*>D	*>D	*>D
+2F	8r	(8ggL
+.	8cL	8ffJ
+.	8e- 8f 8a	8ee-L)
+.	8cJ	8fJ
+4F	4e- 4f 4a	4cc
+=18	=18	=18
+2B-	8r	(8ee-L
+.	8dL	8ddJ)
+.	8f 8b-	8b-L
+.	8dJ	8dJ
+4B-	4d 4f 4b-	4f
+=19	=19	=19
+2F	8r	4f
+.	8cL	.
+.	8e- 8f 8a	8ccL
+.	8cJ	8fJ
+4F	4e- 4f 4a	4cc
+=20	=20	=20
+2BB-	8r	4f
+.	8dL	.
+.	8f 8b-	8ddL
+.	8dJ	8fJ
+4BB-	4d 4f 4b-	4b-
+=21	=21	=21
+2F	8r	(8ggL
+.	8cL	8ffJ
+.	8e- 8f 8a	8ee-L)
+.	8cJ	8fJ
+4F	4e- 4f 4a	4cc
+=22	=22	=22
+2B-	8r	8fL
+.	8dL	8ddJ
+.	8f 8b-	8b-L
+.	8dJ	8dJ
+4B-	4d 4f 4b-	4f
+=23	=23	=23
+2F	8r	4f
+.	8cL	.
+.	8e- 8f 8a	8ee-L
+.	8cJ	8fJ
+4F	4e- 4f 4a	8ccL
+.	.	8fJ
+=24	=24	=24
+4B-	4r	2b-
+4BB-	4d 4f 4b-	.
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/20/
+!!!EFL: 211/600

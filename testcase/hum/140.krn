@@ -1,0 +1,130 @@
+!!!!SEGMENT: erk139.krn
+!!!OTL@@DE: Der deutsche Rhein
+!!!COM: Kunze, G.
+!!!ODT: 1840
+!!!OMD: Moderato
+!!!LYR: Becker, Niklas: Zuerst im Rheinischen Jahrbuch fü 1841
+!!!LDT: 1840
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,A]	*>[A,B,A]	*>[A,B,A]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM94	*MM94	*MM94
+8C (8cL	(8ccL	8ccL
+8AA 8AJ)	8aJ)	8aJ
+=1	=1	=1
+4FF 4F	4f	4f
+4GG 4G	4B- 4e	4e
+4AA 4A	4c 4f	4f
+4C 4E	4c 4g	4g
+=2	=2	=2
+4FF 4F	4.c 4.f (4.a	(4.a
+4CC 4C	.	.
+.	8B- &(8e&) 8g)	8g)
+4FF 4F	4A 4c 4f	4f
+*	*^	*
+4FF 4F	(8gL	4c 4f	8gL
+.	8aJ)	.	8aJ
+*	*v	*v	*
+=3	=3	=3
+4EE 4E	4c 4g 4b-	4b-
+4FF 4F	4c 4f 4a	4a
+4BBB- 4BB-	4G 4d 4g	4g
+4BBBn 4BBn	4G 4d 4f	4f
+=4	=4	=4
+4CC 4C	2.c 2.e 2.cc	2.cc
+4GG	.	.
+4C	.	.
+4AA 4A	4e 4g 4cc#	4cc#
+=5	=5	=5
+4D 4A	4.d 4.f# 4.dd	4.dd
+4DD 4D	.	.
+.	8f# 8a 8ee-	8ee-
+4DD 4D	4f# 4a 4dd	4dd
+4FF# 4F#	4d 4a 4ccn	4ccn
+=6	=6	=6
+4GG 4G	4.d 4.g (4.b-	(4.b-
+4AA	.	.
+.	&(8c&) 8f# 8a)	8a)
+4BB-	4B- 4d 4g	4g
+*^	*^	*
+4D	8AAL	8f# 8aL	4d	(8aL
+.	8GGJ	8g 8b-J	.	8b-J)
+*v	*v	*	*	*
+*	*v	*v	*
+=7	=7	=7
+4CC 4C	4c 4fn 4a 4cc	4cc
+4C 4A	4c 4f 4cc	4cc
+4C 4G	4B- 4c 4e	4e
+4CC 4C	4G 4B- 4c 4e	4e
+=8	=8	=8
+2FF 2F	2A 2c 2f	2f
+4r	4r	4r
+!! Fine
+=||	=||	=||
+*>B	*>B	*>B
+*	*^	*
+4F	8aL	4c 4f	(8aL
+.	8gJ	.	8gJ)
+*	*v	*v	*
+=9	=9	=9
+4C	4c 4e 4g	4g
+4E	4c 4g 4cc	4cc
+4G	4d 4g 4bn	4bn
+4Bn	4f 4g 4dd	4dd
+=10	=10	=10
+4c	4.e 4.g (4.cc	(4.cc
+4C	.	.
+.	8e 8g	8g)
+*	*^	*
+4C	4g)	4e	4g
+4E	(8ccL	4c 4g	8ccL
+.	8bnJ)	.	8bnJ
+*	*v	*v	*
+=11	=11	=11
+4F	4c 4f 4a	4a
+4E	4c 4g 4cc	4cc
+4D	4d 4f 4bn	4bn
+4D#	4c 4f# 4a	4a
+=12	=12	=12
+2E 2G#	2Bn 2e	2e
+4r	4r	4r
+4EE 4E	4e 4ee	4ee
+=13	=13	=13
+4.FF 4.F	4.f 4.ff	4.ff
+8EE 8E	8e 8ee	8ee
+4DD 4D	4d 4dd	4dd
+4CC 4C	4c 4cc	4cc
+=14	=14	=14
+(4BBBn 4BBn	(4Bn 4bn	(4bn
+4AAA) 4AA	4A) 4a	4a)
+4GGG 4GG	4G 4g	4g
+*	*^	*
+4EE 4E	(8ccL	4c 4g	(8ccL
+.	8bnJ)	.	8bJ)
+*	*v	*v	*
+=15	=15	=15
+4FF 4F	4.c 4.f 4.a	4.a
+4FF 4F	.	.
+.	8f 8a 8dd	8dd
+4GG 4G	4e 4g 4cc	4cc
+4GGG 4GG	4d 4g 4bn	4bn
+=16	=16	=16
+4CC 4C	4e 4g 4cc	2cc
+4C	4c	.
+4C	4c	4r
+=||	=||	=||
+!! D.C. al Fine
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/01/
+!!!EFL: 139/651

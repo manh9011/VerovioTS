@@ -1,0 +1,146 @@
+!!!!SEGMENT: erk031.krn
+!!!OTL@@DE: Zum letzten Mal
+!!!ONB: Mel: "Müssts ma mix übel aufnehma"
+!!!ODT: 1814
+!!!OMD: Wiegend
+!!!ONB: Volkslied
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#c#]	*k[f#c#]	*k[f#c#]
+*D:	*D:	*D:
+*M3/4	*M3/4	*M3/4
+*MM108	*MM108	*MM108
+8r	8r	8d
+4r	4r	8f#
+.	.	8g
+=1	=1	=1
+2DD 2D	(8d 8f#L	4.a
+.	8A	.
+.	8d 8f#	.
+.	8AJ)	8dd
+4r	(8aL	8cc#
+.	8gJ)	8b
+=2	=2	=2
+2DD 2D	(8f#L	8aL
+.	8A	8dJ
+.	8d 8f#	8f#L
+.	8AJ)	8dJ
+4r	(8d 8f#L	8.b
+.	8AJ)	.
+.	.	16a
+=3	=3	=3
+2AAA 2AA	(8c# 8eL	8aL
+.	8A	8c#J
+.	8c# 8e	8eL
+.	8AJ)	8c#J
+4r	(8c# 8eL	8.b
+.	8AJ)	.
+.	.	16a
+=4	=4	=4
+2DD 2D	(8d 8f#L	8aL
+.	8A	8dJ
+.	8d 8f#	8f#L
+.	8AJ)	8dJ
+4r	(8d 8f#L	8.f#
+.	8AJ)	.
+.	.	16g
+=5	=5	=5
+2DD 2D	(8d 8f#L	4a
+.	8A	.
+.	8d 8f#	4ff#
+.	8AJ)	.
+4r	(8d 8gL	8.ee
+.	8BJ)	.
+.	.	16dd
+=6	=6	=6
+2DD 2D	(8d 8f#L	8ddL
+.	8A	8dJ
+.	8d 8f#	8f#L
+.	8AJ)	8dJ
+4r	(8d 8f#L	8.b
+.	8AJ)	.
+.	.	16a
+=7	=7	=7
+2AAA 2AA	(8c# 8eL	8aL
+.	8A	8c#J
+.	8c# 8e	8eL
+.	8AJ)	8c#J
+4r	(8c# 8gL	8.bL
+.	8AJ)	.
+.	.	16aJk
+=8	=8	=8
+2DD 2D	(8d 8f#L	4d
+.	8A	.
+.	8d) 8f#J	8r
+.	8r	8dL
+4r	4r	8.b
+*	*clefF4	*
+.	.	16aJk
+=9	=9	=9
+2AA	8r	8aL
+.	(8AL	8c#J
+.	8G 8c#	8e
+.	8A	8c#L
+4AA	8G 8c#	8.b
+.	8AJ)	.
+.	.	16aJk
+=10	=10	=10
+2D	8r	8aL
+.	(8AL	8dJ
+.	8F# 8d	8f#
+.	8A	8dL
+4D	8F# 8d	8.b
+.	8AJ)	.
+.	.	16aJk
+=11	=11	=11
+2AA	8r	8aL
+.	(8AL	8c#J
+.	8G 8c#	8e
+.	8A	8c#L
+4AA	8G 8c#	8.b
+.	8AJ)	.
+.	.	16aJk
+=12	=12	=12
+2D;	(8F#L	8aL
+.	8AJ	8ddJ
+.	4d; 4f#;)	4a;
+4r	4r	8.f#
+*	*clefG2	*
+.	.	16g
+=13	=13	=13
+2DD 2D	(8d 8f#L	4a
+.	8A	.
+.	8d 8f#	4ff#
+.	8AJ)	.
+4r	(8d 8gL	8.ee
+.	8BJ)	.
+.	.	16dd
+=14	=14	=14
+2DD 2D	(8d 8f#L	8ddL
+.	8A	8dJ
+.	8d 8f#	8f#L
+.	8AJ)	8dJ
+4r	(8d 8f#L	8.b
+.	8AJ)	.
+.	.	16a
+=15	=15	=15
+2AAA 2AA	(8c# 8eL	(8a
+.	8A	4gg)
+.	8c# 8e	.
+.	8AJ)	8a
+4AAA 4AA	(8e 8gL	8.b
+.	8AJ)	.
+.	.	16cc#
+=16	=16	=16
+4DD 4D	[4A [4d [4f#	4dd
+8DDD; 8DD;	8A;] 8d;] 8f#;]	8r;
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 031/651

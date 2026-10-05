@@ -1,0 +1,74 @@
+!!!!SEGMENT: erk133.krn
+!!!OTL@@DE: Schwertlied
+!!!COM: Weber, Carl Maria von
+!!!ODT: 1814
+!!!OMD: Kräftig
+!!!LYR: Körner, Theodor: letztes Lied, gedichtet den 26 August 1812, wenige Stunden vor seinem Tode.
+!!!LDT: 1812/08/26
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[]	*k[]	*k[]
+*a:	*a:	*a:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM92	*MM92	*MM92
+16AA 16A	16e 16a 16cc	16cc
+=1	=1	=1
+4..AA 4..A	4..e 4..a 4..cc	4..cc
+16AA 16A	16e 16a 16cc	16cc
+4..AA 4..A	4..e 4..a 4..cc	4..cc
+16AA 16A	16e 16a 16cc	16cc
+=2	=2	=2
+4GG#' 4G#'	4e' 4b' 4dd'	4dd'
+4AA' 4A'	4e' 4a' 4cc'	4cc'
+4r	4r	4r
+4AA 4A	4e 4a 4cc	4cc
+=3	=3	=3
+4BB 4B	4e 4g# 4b	4b
+4BB 4B	4e 4g# 4ee	4ee
+4BB 4B	(8eeL	(8eeL
+.	8dd#	8dd#J)
+4BB 4B	(8cc#)	(8cc#L
+.	8dd#J)	8dd#J)
+=4	=4	=4
+2E; 2B;	2e; 2g#; 2ee;	2ee;
+4EE; 4E;	4e;	4e;
+4r	4r	4r
+=5	=5	=5
+8.CL	4gn 4ccn 4ee	4ee
+16Dk	.	.
+8.E	8.g 8.cc 8.eeL	8.ee
+16FJk	16g 16cc 16eeJk	16ee
+8.GL	8.g 8.b 8.ddL	8.dd
+16GGJk	16g 16b 16ddJk	16dd
+4GG	4g 4b 4dd	4dd
+=6	=6	=6
+8.AAL	4e 4a 4cc	4cc
+16BBk	.	.
+8.C	8.e 8.a 8.ccL	8.cc
+16DJk	16e 16a 16ccJk	16cc
+8.EL	8.e 8.g# 8.bL	8.b
+16EEJk	16e 16g# 16bJk	16b
+8EE	8e 8g# 8b	8b
+16r	16r	16r
+16AA 16A	16a	16a
+=7	=7	=7
+4.AA 4.A	4.a	4.a^
+16r	16r	16r
+16EE 16E	16e 16g# 16b	16b
+4.EE 4.E	4.e 4.g# 4.b	4.b^
+16r	16r	16r
+16AAA 16AA	16e 16a 16cc# 16ee	16ee
+=8	=8	=8
+2.AAA; 2.AA;	2.e; 2.a; 2.cc#; 2.ee;	2.ee^;
+8.r	8.r	8.r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/01/
+!!!EFL: 133/651

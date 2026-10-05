@@ -1,0 +1,176 @@
+!!!!SEGMENT: erk206.krn
+!!!OTL@@DE: Die Verlassene
+!!!COM: Vom Dichter
+!!!OMD: Mässig langsam, mit innerer Bewegung
+!!!LYR: Fink, G.W.
+!!!LDT: 1810
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 2
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[]	*k[]	*k[]
+*a:	*a:	*a:
+*M3/8	*M3/8	*M3/8
+*MM72	*MM72	*MM72
+8r	8e	8e
+=1	=1	=1
+4.AA 4.A	16cLL	8.a
+.	16a	.
+.	16e	.
+.	16a	16a
+.	16c	8a
+.	16aJJ	.
+=2	=2	=2
+4.AA 4.A	16cLL	8a
+.	16a	.
+.	16e	8a
+.	16a	.
+.	16c	8cc
+.	16aJJ	.
+=3	=3	=3
+[4.DD [4.D	16dLL	4cc
+.	16b	.
+.	16f	.
+.	16b	.
+.	16d	8b
+.	16bJJ	.
+=4	=4	=4
+4.DD] 4.D]	16dLL	4b
+.	16b	.
+.	16f	.
+.	16b	.
+.	16d	16b
+.	16bJJ	16b
+=5	=5	=5
+4.EE 4.E	16dLL	8.b
+.	16b	.
+.	16e	.
+.	16b	16b
+.	16d	16b
+.	16bJJ	16b
+=6	=6	=6
+4.GG# 4.G#	16dLL	4ee
+.	16b	.
+.	16e	.
+.	16b	.
+.	16d	8dd
+.	16bJJ	.
+=7	=7	=7
+4.AA 4.A	16cLL	8cc
+.	16a	.
+.	16e	8b
+.	16a	.
+.	16c	8cc
+.	16aJJ	.
+=8	=8	=8
+4.AA 4.A	16cLL	4a
+.	16a	.
+.	16e	.
+.	16a	.
+.	16c	8r
+.	16aJJ	.
+=9	=9	=9
+4.EE 4.E	16g#LL	4.r
+.	16b	.
+.	16gn	.
+.	16b	.
+.	16e	.
+.	16bJJ	.
+=10	=10	=10
+4.AA 4.A	16fLL	8.r
+.	16a	.
+.	16e	.
+.	16a	16a
+.	16c	16a
+.	16aJJ	16a
+=11	=11	=11
+4.GGn 4.Gn	16dLL	8.bL
+.	16g	.
+.	16f	.
+.	16g	16ccJk
+.	16d	16bLL
+.	16gJJ	16aJJ
+=12	=12	=12
+4.GG 4.G	16dLL	8b
+.	16g	.
+.	16f	8b
+.	16g	.
+.	16d	8cc
+.	16gJJ	.
+=13	=13	=13
+4.FF 4.F	16dLL	4dd
+*	*	*^
+.	16a	.	.
+.	16f	.	.
+.	16a	.	.
+.	16d	16cc	16ccLL
+.	16aJJ	16dd	16ddJJ
+*	*	*v	*v
+=14	=14	=14
+4.EE 4.E	16dLL	8ee
+.	16b	.
+.	16g#	8ee
+.	16b	.
+.	16d	8ee
+.	16bJJ	.
+=15	=15	=15
+4.GG# 4.G#	16dLL	8ee
+.	16b	.
+.	16e	8dd'
+.	16b	.
+.	16d	8dd
+.	16bJJ	.
+=16	=16	=16
+4.AA 4.A	16cLL	4cc
+.	16a	.
+.	16e	.
+.	16a	.
+.	16c	8cc'
+.	16aJJ	.
+=17	=17	=17
+4.EE 4.E	16dLL	4cc
+.	16g#	.
+.	16e	.
+.	16g#	.
+.	16d	8b
+.	16g#JJ	.
+=18	=18	=18
+4.AA	16cLL	8b
+.	16a	.
+.	16e	8a
+.	16a	.
+.	16c	8r
+.	16aJJ	.
+=19	=19	=19
+4.EE 4.BB	16eLL	4.r
+.	16ee	.
+.	16g#	.
+.	16ee	.
+.	(16b	.
+.	16eeJJ)	.
+=20	=20	=20
+4.AA	(16ccLL	4.r
+.	16eeJJ)	.
+.	4a 4dd 4ff	.
+=21	=21	=21
+4.AA 4.A	16cc 16eeLL	4.r
+.	16aJJ	.
+.	16g#LL	.
+.	16b	.
+.	16e	.
+.	16g# 16bJJ	.
+=22	=22	=22
+4AA 4A	8a 8cc	4.r
+.	4c 4a	.
+8r	.	.
+=23	=23	=23
+8r	8r	8r
+8r	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/19/
+!!!EFL: 206/600

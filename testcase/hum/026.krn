@@ -1,0 +1,146 @@
+!!!!SEGMENT: erk026.krn
+!!!OTL@@DE: Am Sylvester-Abend
+!!!COM: Schultz, Joh. Abraham Peter
+!!!ODT: 1784
+!!!OMD: Moderato
+!!!LYR: Voss, Joh. Heinrich
+!!!LDT: 1784
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-e-a-]	*k[b-e-a-]	*k[b-e-a-]
+*E-:	*E-:	*E-:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM92	*MM92	*MM92
+4BB-	4B-	4B-
+=1	=1	=1
+4E-	4e-	4e-
+4E-	4e- 4g	4g
+4G	4e- 4b-	4b-
+4G	4B- 4e- 4b-	4b-
+=2	=2	=2
+*	*^	*
+(4F	2B- 2d 2b-	4f	2b-
+4BB-)	.	4d	.
+4E-	(8a-L	4B- 4e-	8a-L
+.	8g	.	8gJ
+4GG	(8f)	4B-	8fL
+.	8e-J)	.	8e-J
+*	*v	*v	*
+=3	=3	=3
+4AA-	4c 4e- 4f	4f
+4AA-	4c 4e- 4f	4f
+4BB-	4B- 4d 4f	4f
+4BB-	4B-	4B-
+=4	=4	=4
+4E-	2B- 2e- 2g	2g
+(4E-	.	.
+4EE-)	4r	4r
+4G 4B-	4e-	4e-
+=5	=5	=5
+4E- 4B-	4e- 4g	4g
+4D 4F	4f 4b-	4b-
+4C 4G	4e- 4ee-	4ee-
+4C 4c	4g 4ee-	4ee-
+=6	=6	=6
+2F 2c	2an 2ee-	2ee-
+*	*^	*
+4F 4An	8ddL	4e-	8ddL
+.	8cc	.	8ccJ
+4F# 4c	8b-	4e-	8b-L
+.	8aJ	.	8anJ
+*	*v	*v	*
+=7	=7	=7
+4G 4B-	4d 4b-	4b-
+*	*^	*
+4E- 4B-	8.b-L	4g	8.b-L
+.	16ccJk	.	16ccJk
+*	*v	*v	*
+4F 4B-	4f 4dd	4dd
+4F 4An	4e- 4f 4cc	4cc
+=8	=8	=8
+4BB- 4B-	2d 2f 2b-	2b-
+4BB-	.	.
+4BBB-	4r	4r
+4F	4f	4f
+=9	=9	=9
+4D- 4F	4f 4b-	4b-
+4C 4An	4e- 4f 4cc	4cc
+4BB- 4B-	4d- 4f 4dd-	4dd-
+4B-	4f 4dd-	4dd-
+=10	=10	=10
+2En 2B-	2g 2dd-	2dd-
+4E 4G	4g 4cc	4cc
+4E 4c	4g 4b-	4b-
+=11	=11	=11
+4F 4c	4f 4a-	4a-
+4G 4B-	4en 4g	4g
+4A- 4c	4f	4f
+4An 4c	4e-	4e-
+=12	=12	=12
+2B-	2e- 2g	2g
+4BB- 4B-	4d 4f	4f
+4BB-	4B-	4B-
+=13	=13	=13
+4E-	4e-	4e-
+4G	4g	4g
+4B-	4b-	4b-
+*^	*^	*
+8GL	4E-	4b-	8e-L	4b-
+8A-J	.	.	8fJ	.
+=14	=14	=14	=14	=14
+4B-	4.E-	4.ee-	4g	4.ee-
+4c	.	.	4a-	.
+.	8E-	8ee-	.	8ee-
+2r	4E- 4B-	4g 4ee-	2r	4ee-
+.	4G 4B-	4e-	.	4e-
+*v	*v	*	*	*
+*	*v	*v	*
+=15	=15	=15
+4D 4B-	4f	4f
+4E- 4B-	4e- 4g	4g
+4F 4B-	4d 4a-	4a-
+4E- 4B-	4e- 4g	4g
+=16	=16	=16
+2AA- 2A-	2c	2c
+2BB- 2F	2B- 2d	2d
+=17	=17	=17
+2E- 2G	2B- 2e-	2e-'
+4r	4r	4r
+4E-	4e-	4e-
+=18	=18	=18
+4G	4g	4g
+4E-	4e-	4e-
+4B-	4b-	4b-
+4G	4g	4g
+=19	=19	=19
+*^	*^	*
+(2B-	2.E-	2.ee-	(2g	2.ee-
+4c)	.	.	4a-)	.
+4c	4E-	4ee-	4a-	4ee-
+*v	*v	*	*	*
+*	*v	*v	*
+=20	=20	=20
+2.E- 2.B-	2.g 2.ee-	2.ee-
+4G 4B-	4e-	4e-
+=21	=21	=21
+4D 4B-	4f	4f
+4E- 4B-	4e- 4g	4g
+4F 4B-	4d 4a-	4a-
+4E- 4B-	4e- 4g	4g
+=22	=22	=22
+2AA- 2A-	(2c 2e- 2cc	2cc
+2BB- 2F	2A- 2B- 2d)	2d
+=23	=23	=23
+2EE- 2E-	2G 2B- 2e-	2e-
+4r	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/02/
+!!!EFL: 026/651

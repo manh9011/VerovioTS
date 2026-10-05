@@ -1,0 +1,105 @@
+!!!!SEGMENT: erk062.krn
+!!!OTL@@DE: Drei Röselein
+!!!COM: Volkslied
+!!!ODT: 1824
+!!!OMD: Gemüthlich
+!!!ONB: Schwäbisch
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/8	*M3/8	*M3/8
+*MM80	*MM80	*MM80
+8r	8d	8d
+=1	=1	=1
+*^	*	*
+8GGL	4.GG	8.B 8.gL	8.g
+8D	.	.	.
+.	.	16A 16f#Jk	16f#
+8GJ	.	16B 16gLL	16gLL
+.	.	16c 16aJJ	16aJJ
+=2	=2	=2	=2
+8GGL	4.GG	8.d 8.bL	8.b
+8D	.	.	.
+.	.	16e 16cck	16cc
+8GJ	.	8d 8bJ	8b
+*v	*v	*	*
+=3	=3	=3
+8DL	8c 8aL	8a
+8DD	8B 8g	8g
+8DJ	8c 8aJ	8a
+=4	=4	=4
+8GGL	8B 8g	8g
+8GJ	8r	8r
+8r	8d 8a	8a
+=5	=5	=5
+*^	*	*
+8GGL	4.GG	8.g 8.bL	8.b
+8D	.	.	.
+.	.	16f# 16aJk	16a
+8GJ	.	16g 16bLL	16bLL
+.	.	16a 16ccJJ	16ccJJ
+=6	=6	=6	=6
+8GGL	4.GG	8.b 8.ddL	8.dd
+8D	.	.	.
+.	.	16cc 16eek	16ee
+8GJ	.	8b 8ddJ	8dd
+*v	*v	*	*
+=7	=7	=7
+8DL	8a 8ccL	8cc
+8DD	8g 8b	8b
+8DJ	8a 8ccJ	8cc
+=8	=8	=8
+8GGL	4g 4b	4b
+8GJ	.	.
+=	=	=
+8r	8b 8dd	8dd
+=9	=9	=9
+*	*^	*
+8DL	16b 16ddLL	[4.d	16ddLL
+.	16a 16ccJ	.	16ccJJ
+8F#	8a 8cc	.	8cc
+8DJ	8a 8ccJ	.	8cc
+=10	=10	=10	=10
+8GL	8g 8bL	4.d]	8b
+8GG	16b 16ddL	.	16ddLL
+.	16g 16bJ	.	16bJJ
+8BBJ	8g 8bJ	.	8b
+=11	=11	=11	=11
+8DL	16g 16bLL	[4.d	16b
+.	16f# 16aJ	.	16a
+8DD	8f# 8a	.	8a
+8DJ	8f# 8aJ	.	8a
+=12	=12	=12	=12
+8GGL	4g 4b	4d]	4b
+8GJ	.	.	.
+8r	8b 8dd	8r	8dd
+=13	=13	=13	=13
+8DL	16b 16ddLL	[4.d	16dd
+.	16a 16ccJ	.	16cc
+8F#	8a 8cc	.	8cc
+8DJ	8a 8ccJ	.	8cc
+=14	=14	=14	=14
+8GL	8g 8bL	4.d]	8b
+8GG	16b 16ddL	.	16dd
+.	16g 16bJ	.	16b
+8BBJ	8g 8bJ	.	8b
+*	*v	*v	*
+=15	=15	=15
+8DL	16d 16bLL	16b
+.	16c 16aJ	16a
+8DD	8c 8a	8a
+8DJ	8f# 8aJ	8a
+=16	=16	=16
+8GL	4B 4d 4g	4g
+8GGJ	.	.
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 062/651

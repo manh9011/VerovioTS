@@ -1,0 +1,107 @@
+!!!!SEGMENT: erk220.krn
+!!!OTL@@DE: Abenlied
+!!!COM: J.H. Rolle (1769)
+!!!ONB: Mel. "Lobt den Herrn! die Morgensonne.
+!!!LYR: Kurze (1784)
+!!!OMD: Mässig langsam
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 2
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[]	*k[]	*k[]
+*C:	*C:	*C:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM120	*MM120	*MM120
+=1-	=1-	=1-
+2C	2c	2c
+2C	2c 2e	2e
+=2	=2	=2
+2C 2c	2e 2g	2g
+2r	2r	2r
+=3	=3	=3
+*^	*	*
+2G	(4E	(4c 4g	(4g
+.	2r	2e) 2cc	2cc)
+4C	.	.	.
+4G)	4GG 4G	(8f 8ddL	8ddL
+.	.	8d) 8bJ	8bJ
+*v	*v	*	*
+=4	=4	=4
+2C 2G	2e 2cc	2cc
+4r	4r	4r
+4C 4c	4e 4g	4g
+=5	=5	=5
+2.F 2.c	(4.f 4.a	(4.a
+.	8g 8b	8b
+.	4a) 4cc	4cc)
+4F 4c	4f 4a	4a
+=6	=6	=6
+4C 4c	4f 4a	4a
+4C 4c	4e 4g	4g
+(8.CL	[2cc [2ee	[2ee
+16Dk	.	.
+8.E	.	.
+16FJk	.	.
+=7	=7	=7
+2.G)	4cc] 4ee]	4ee]
+.	8b (8ddL	8ddL
+.	8a 8ccJ)	8ccJ
+.	(8g 8bL	8bL
+.	8f) 8aJ	8aJ
+4GG 4G	(8e 8gL	8gL
+.	8d) 8fJ	8fJ
+=8	=8	=8
+*	*^	*
+4C (4G	(4.e	4c	(4.e
+4AA	.	4c 4e	.
+.	8a	.	8a
+4D)	4B 4d 4g)	2r	4g)
+4D	4A 4d 4f#	.	4f#
+*	*v	*v	*
+=9	=9	=9
+2GG	2B 2d 2g	2g
+2r	2r	2r
+=10	=10	=10
+*	*^	*
+2G 2B	2d 2g	2r	2g
+2G 2B	(4.b	2d	(4.b
+.	8cc)	.	8cc)
+*	*v	*v	*
+=11	=11	=11
+4F# 4A	4d 4dd	4dd
+4F# 4A	4d 4a	4a
+4Fn 4A	4d 4a	4a
+4F 4G	4d 4b	4b
+=12	=12	=12
+4E 4G	4c 4cc	4cc
+4E 4G	4c 4g	4g
+(8.CL	[2e [2g [2cc	[2cc
+16Dk	.	.
+8.E	.	.
+16FJk	.	.
+=13	=13	=13
+4G)	4e] 4g] 4cc]	4cc]
+4G	4d 4g 4b	4b
+4BB 4d	4g 4ff	4ff
+4C 4c	4g 4ee	4ee
+=14	=14	=14
+*^	*^	*
+(2A	4F	(4.a	2f	(4.a
+.	4D	.	.	.
+.	.	8dd	.	8dd
+4G)	4G	4cc)	4e	4cc)
+4G	4GG	4b	4d	4b
+*v	*v	*	*	*
+*	*v	*v	*
+=15	=15	=15
+2C 2G	2e 2cc	2cc
+2r	2r	2r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2008/07/07/
+!!!EFL: 220/600

@@ -1,0 +1,115 @@
+!!!!SEGMENT: erk209.krn
+!!!OTL@@DE: Abschiedslied
+!!!COM: Dichter
+!!!OMD: Entschlossen
+!!!LYR: Schubart, Chr. F. D.
+!!!LDT: 1787
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 2
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#c#]	*k[f#c#]	*k[f#c#]
+*D:	*D:	*D:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+4AA 4A	4a	4a
+=1	=1	=1
+4.D 4.d	4.dd	4.dd
+8AA 8A	8a	8a
+8AA 8AL	8aL	8aL
+8GG 8G	8g	8gJ
+8FF# 8F#	8f#	8f#L
+8EE 8EJ	8eJ	8eJ
+=2	=2	=2
+4DD 4D	4d	4d
+8.DL	8.F# 8.A 8.dL	4d
+16DJk	16F# 16A 16dJk	.
+4D	4F# 4A 4d	4.d
+4DD 4D	4f# 4a 4dd	.
+.	.	8f#
+=3	=3	=3
+4EE 4E	4e 4a 4cc#	8eL
+.	.	8aJ
+4EE 4E	4e 4a 4cc#	8cc#L
+.	.	8eeJ
+4EE 4E	4d 4g# 4b	8eeL
+.	.	8ddJ
+4EE 4E	4d 4g# 4b	8cc#L
+.	.	8bJ
+=4	=4	=4
+4AA 4A	4c# 4a	2a
+4AAA 4AA	8.AL	.
+.	16AJk	.
+4AAA 4AA	4A	4r
+4r	4r	8aL
+.	.	8gJ
+=5	=5	=5
+8D 8F#L	4d 4f#	4f#
+8A	.	.
+8AA	4d 4f#	4f#
+8AJ	.	.
+8D 8F#L	4.d 4.f#	4.f#
+8A	.	.
+8AA	.	.
+8AJ	8f# 8a	8a
+=6	=6	=6
+8C# 8EL	(8f# 8aL	(8aL
+8A	8e) 8g	8gJ)
+8AA	(8e 8g	(8gL
+8AJ	8d#) 8f#J	8f#J)
+8C# 8EL	4e 4g	4g
+8A	.	.
+8AA	(8e 8gL	8gL
+8AJ	8dn) 8f#J	8f#J
+=7	=7	=7
+8E 8GL	4c# 4e	4e
+8A	.	.
+8AA	4c# 4e	4e
+8AJ	.	.
+8E 8GL	4.c# 4.e	4.e
+8A	.	.
+8AA	.	.
+8AJ	8e 8g	8g
+=8	=8	=8
+8D 8F#L	(8e 8gL	8gL
+8A	8d) 8f#	8f#J
+8AA	(8d 8f#	8f#L
+8AJ	8c#) 8eJ	8eJ
+8D 8F#L	4.d 4.f#	4.f#
+8A	.	.
+8AA	.	.
+8AJ	8a	8a
+=9	=9	=9
+4.D 4.d	4.dd	4.dd
+8AA 8A	8a	8a
+8GG 8GL	8gL	8gL
+8FF# 8F#	8f#	8f#J
+8EE 8E	8e	8eL
+8DD 8DJ	8dJ	8dJ
+=10	=10	=10
+4AA 4A	4a	4a
+4AA 4A	4c# 4e 4a	4r
+4GG 4G	4e 4a 4cc#	2cc#^
+4GG 4G	4c# 4e 4a	.
+=11	=11	=11
+4FF# 4F#	4.d 4.a 4.dd	4.dd
+4GG 4G	.	.
+.	8d 8g 8b	8b
+4AA 4A	4d 4f# 4a	8aL
+.	.	8f#J
+4AAA 4AA	4G 4A 4c#	(8gL
+.	.	8eJ)
+=12	=12	=12
+4DD 4D	4F# 4A 4d	4d
+4DD 4D	8.F# 8.A 8.dL	4r
+.	16F# 16A 16dJk	.
+8DD 8D	8F# 8A 8d	4r;
+8r;	8r;	.
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/19/
+!!!EFL: 209/600

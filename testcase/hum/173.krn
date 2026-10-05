@@ -1,0 +1,93 @@
+!!!!SEGMENT: erk172.krn
+!!!OTL@@DE: Rudelsburg
+!!!COM: Fesca, Friedrich Ernst
+!!!ONB: Heute scheid' ich
+!!!ODT: 1822
+!!!OMD: Mässig langsam
+!!!LYR: Kugler, Franz
+!!!LDT: 1826
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/4	*M3/4	*M3/4
+*MM72	*MM72	*MM72
+4r	8B 8gL	8g
+.	8d 8aJ	8a
+=1	=1	=1
+2GG 2G	8g 8bL	4b
+.	8d	.
+.	8g 8b	4b
+.	8dJ	.
+4r	8c 8aL	8a
+.	8B 8gJ	8g
+=2	=2	=2
+2D	8f# 8aL	4a
+.	8d	.
+.	8f# 8a	4a
+.	8dJ	.
+4r	8B 8gL	8g
+.	8d 8aJ	8a
+=3	=3	=3
+*	*^	*
+8GL	8bL	8gL	8b
+8AJ	8ccJ	8dJ	8cc
+4B	4dd	8g	4dd
+.	.	4.d	.
+8F#L	8a 8ccL	.	(8ccL
+8GJ	8g 8bJ	.	8bJ)
+*	*v	*v	*
+=4	=4	=4
+2D	8f# (8aL	4a
+.	8dJ	.
+.	4f# 4a)	4r
+4r	4r	8dd
+.	.	8ee
+=5	=5	=5
+2DD 2D	8A 8f#L	(8ddL
+.	8d	8ccJ)
+.	8c 8f#	4a
+.	8d	.
+4D	8c 8f#	8a
+.	8dJ	8a
+=6	=6	=6
+2GG 2D	8B 8gL	4b
+.	8d	.
+.	8B 8g	4dd
+.	8d	.
+4D	8B 8g	8dd
+.	8dJ	8ee
+=7	=7	=7
+2DD 2D	8A 8f#L	(8ddL
+.	8d	8ccJ)
+.	8c 8f#	4a
+.	8d	.
+4D	8c 8f#	8a
+.	8dJ	8a
+=8	=8	=8
+2GG	8B 8gL	4b
+.	8d	.
+.	8B 8g	4dd
+.	8dJ	.
+4C	8c 8gL	8ee
+.	8eJ	8cc
+=9	=9	=9
+2D	8d 8gL	8b
+.	8B	8dd
+.	8d 8g	4b
+.	8bJ	.
+4DD 4D	8c 8f# 8aL	(8aL
+.	8B 8gJ	8gJ)
+=10	=10	=10
+4GG 4D	4B 4g	4g
+4r	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/28/
+!!!EFL: 172/651

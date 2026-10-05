@@ -1,0 +1,68 @@
+!!!!SEGMENT: erk042.krn
+!!!OTL@@DE: Der König in Thule
+!!!COM: Zelter, Karl Friedrich
+!!!ODT: 1812
+!!!OMD: Sanft und frei
+!!!LYR: Goethe, Wolfgang von
+!!!LDT: 1774
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[]	*k[]	*k[]
+*a:	*a:	*a:
+*M6/4	*M6/4	*M6/4
+*MM120	*MM120	*MM120
+4r	4r	4e
+=1	=1	=1
+2A	2e 2a 2cc	2a
+4A	4e 4a 4cc	4a
+2E	2e 2g 2b	4.e
+.	.	8e
+4E	4e 4g 4b	4e
+=2	=2	=2
+2.F	2.c 2.f 2.a	2.f
+2C	2c 2e 2g	2c
+4C	4e 4g	4c
+=3	=3	=3
+2D	2A 2d 2f	2d
+4E	4c 4e	4e
+2F	2B 2d	2f
+4D 4A	4f	4d
+=4	=4	=4
+[2.E [2.G#	[2.e	2.e
+4E] 4G#]	4e]	4r
+4r	4r	4r
+4E	4e 4g# 4b	4e
+=5	=5	=5
+2A	2e 2a 2cc	2a
+4A	4e 4a 4cc	4a
+2Gn	2f 2b 2dd	2g
+4G	4f 4b 4dd	4g
+=6	=6	=6
+2.C	2.g 2.cc 2.ee	2.c
+2D	2f 2a 2dd	2d
+4D	4f 4a 4dd	8dL
+.	.	8dJ
+=7	=7	=7
+2E	2e 2a 2cc	2e
+4F	4c 4a	4f
+2D	2d 2f 2b	2d
+4E	4B 4e 4g#	4e
+=8	=8	=8
+1.AA	2c 2a	1.A
+.	4c# 4e	.
+.	2A^ 2d^ 2f^	.
+.	4F 4d	.
+=9	=9	=9
+[2.AAA	[2.E^ [2.A^ [2.c#^	2.A
+4AAA]	4E] 4A] 4c#]	2r
+4r	4r	.
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/03/
+!!!EFL: 042/651

@@ -1,0 +1,165 @@
+!!!!SEGMENT: erk077.krn
+!!!OTL@@DE: Mich fliehen alle Freuden
+!!!COM: Paesiello, Giovanni
+!!!ODT: 1788
+!!!OMD: Andantino
+!!!ONB: Aus der Oper: "Die schöne Müllerin"
+!!!LDT: 1791
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*M6/8	*M6/8	*M6/8
+*MM96	*MM96	*MM96
+8r	8c	8cc
+=1	=1	=1
+4.F	8AL	4a
+.	8c	.
+.	8fJ	8a
+4.C	8B-L	4g
+.	8c	.
+.	8eJ	8g
+=2	=2	=2
+4.FF	8AL	4f
+.	8c	.
+.	8fJ	8f
+4.F	8AL	4r
+.	8c	.
+.	8fJ	8cc
+=3	=3	=3
+4.FF	8AL	4cc
+.	8c	.
+.	8fJ	8f
+4.BB-	8B-L	4dd
+.	8d	.
+.	8gJ	8dd
+=4	=4	=4
+2.C	8GL	4.g
+.	8c	.
+.	8eJ	.
+.	(8GL	4r
+.	8c	.
+.	8eJ)	8g
+=5	=5	=5
+4.F	8AL	4a
+.	8c	.
+.	8fJ	8a
+4.C	8GL	8b-L
+.	8c	8aJ
+.	8eJ	8b-
+=6	=6	=6
+4.FF	8AL	4.cc
+.	8c	.
+.	8fJ	.
+4.BB-	8B-L	4dd
+.	8d	.
+.	8gJ	8dd
+=7	=7	=7
+4.C	8AL	4f
+.	8c	.
+.	8fJ	8f
+4.CC	8B-L	(8gL
+.	8c	8fJ)
+.	8eJ	8g
+=8	=8	=8
+[4.FF	8AL	4.f
+.	8c	.
+.	8fJ	.
+8FF]	8A	4r
+8r	8r	.
+8r	8r	8cc
+*	*clefF4	*
+=9	=9	=9
+4.D	8AL	4f#
+.	8c	.
+.	8dJ	8f#
+4.D	8F#L	4dd
+.	8A	.
+.	8dJ	8cc
+=10	=10	=10
+2.GG	8GL	8.cc
+.	8B-	.
+.	.	16b-
+.	8dJ	8b-
+.	8GL	4r
+.	8B-	.
+.	8dJ	8b-
+=11	=11	=11
+4.C	8GL	4e
+.	8B-	.
+.	8cJ	8e
+4.C	8EL	4cc
+.	8G	.
+.	8cJ	8b-
+=12	=12	=12
+2.FF	8FL	8.b-
+.	8A	.
+.	.	16a
+.	8cJ	8a
+.	8FL	4r
+.	8A	.
+.	8cJ	8f
+=13	=13	=13
+4.GG	8FL	4bn
+.	8G	.
+.	8BnJ	8b
+4.GG	8FL	4b
+.	8G	.
+.	8BJ	8b
+=14	=14	=14
+[4.CC; [4.C;	[4.E; [4.G; [4.c;	4.cc;
+8CC] 8C]	8E] 8G] 8c]	4r
+8r	8r	.
+8r	8r	8cc
+=15	=15	=15
+4.C	8EL	4b-
+.	8G	.
+.	8cJ	8b-
+4.FF	8FL	4a
+.	8A	.
+.	8cJ	8a
+=16	=16	=16
+4.C	8EL	4g
+.	8G	.
+.	8cJ	8g
+4CC	8EL	4r
+.	8G	.
+8r	8cJ	8g
+=17	=17	=17
+4.FF	8F 8AL	4a
+.	8c	.
+.	8fJ	8a
+*	*clefG2	*
+4.GG	8B-L	4b-
+.	8c	.
+.	8eJ	8b-
+=18	=18	=18
+4.AA	(8cL	4.cc
+.	8f	.
+.	8e-J	.
+4.BB-	8dL	4r
+.	8g	.
+.	8B-) 8dJ	8dd
+=19	=19	=19
+4.C	8AL	4f
+.	8c	.
+.	8fJ	(8f
+4.CC	8B-L	8gL)
+.	8c	8fJ
+.	8enJ	8g
+=20	=20	=20
+[4.FF	(8AL	4.f
+.	8c	.
+.	8fJ)	.
+8FF]	8A	4r
+8r	8r	.
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 077/651

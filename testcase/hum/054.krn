@@ -1,0 +1,134 @@
+!!!!SEGMENT: erk054.krn
+!!!OTL@@DE: Das Steierland
+!!!COM: Seidel, Carl
+!!!ODT: 1844
+!!!OMD: Andantino
+!!!ONB: Nach dem Orig.-Ged. von Jacob Dirnböck
+!!!LDT: 1844
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*M3/4	*M3/4	*M3/4
+*MM92	*MM92	*MM92
+4r	4r	8.c
+.	.	16f
+=1	=1	=1
+4FF	8r	8a
+.	(8cL	8c
+4r	8A 8f	4a
+.	8c	.
+4F	8A	8.g
+.	8cJ)	.
+.	.	16f
+=2	=2	=2
+4BB-	8r	8g
+.	(8dL	8d
+4r	8B- 8g	4g
+.	8d	.
+4GG	8B- 8g	8b-
+.	8dJ)	8dd
+=3	=3	=3
+4C	8r	8.cc
+.	(8cL	.
+.	.	16g
+4r	8B- 8e	8cc
+.	8c	8dd
+4CC	8B- 8e	8g
+.	8cJ)	8b-
+=4	=4	=4
+4FF	8r	4a
+.	(8cL	.
+4r	8A 8f	4r
+.	8c	.
+4r	8A	8.f
+.	8cJ)	.
+.	.	16g
+=5	=5	=5
+4FF	8r	8a
+.	(8cL	8c
+4r	8A 8f	4a
+.	8c	.
+4F	8A	8g
+.	8cJ)	8f
+=6	=6	=6
+4GG	8r	8e
+.	(8GL	8g
+4r	8c 8e	4ee
+.	8G	.
+4GG	8c 8e	8.dd
+.	8GJ)	.
+.	.	16cc
+=7	=7	=7
+4GGG	8r	8.bn
+.	(8GL	.
+.	.	16cc
+4r	8Bn 8f	8.dd
+.	8G	.
+.	.	16ee
+4GG	8d 8f	8.ff
+.	8GJ)	.
+.	.	16b
+=8	=8	=8
+4CC	8r	4cc
+.	(8G	.
+4r	4c) 4e	4r
+4r	4r	8cc
+.	.	8cc#
+=9	=9	=9
+4BBB- 4BB-	4r	8dd
+.	.	8b-
+4r	4F 4B- 4d	4ff
+4BB-	4F 4B- 4d	8ee
+.	.	8dd
+=10	=10	=10
+4FF	4r	8.dd
+.	.	16cc
+4r	4A 4c 4f	4a
+4F	4A 4f	8.cc
+.	.	16cc#
+=11	=11	=11
+4C	4r	8.ee
+.	.	16dd
+4r	4B- 4c 4e	8.ccn
+.	.	16dd
+4CC	4B- 4c 4e	8b-
+.	.	8g
+=12	=12	=12
+4FF	4r	4f
+4r	4A 4c 4f	4r
+4r	8.a 8.ccL	8.cc
+.	16a 16cc#Jk	16cc#
+=13	=13	=13
+4BB-	[8.b- 8.ddL	8.dd
+.	16b-Jk]	16b-
+4F 4B- 4d	4b- 4ff	4ff
+4F 4B- 4d	8.ccn 8.eeL	8.ee
+.	16b- 16ddJk	16dd
+=14	=14	=14
+4FF	8g# 8bnL	8bn
+.	8a 8ccJ	8cc
+4F; 4c; 4f;	4a; 4cc; 4aa;	4aa;
+4r	8.ee 8.ggnL	8.gg
+.	16dd 16ffJk	16ff
+=15	=15	=15
+4C	8.cc 8.eeL	8.ee
+.	16g 16cck	16cc
+4B- 4c 4e	8.b- 8.dd	8.dd
+.	16a 16ccJk	16cc
+8cL	8.g 8.b-L	8.b-
+8B-J	.	.
+.	16c 16eJk	16e
+=16	=16	=16
+4F 4A	4c 4f	4f
+4FF	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 054/651

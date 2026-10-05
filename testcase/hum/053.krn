@@ -1,0 +1,113 @@
+!!!!SEGMENT: erk053.krn
+!!!OTL@@DE: Schweizer Heimweh
+!!!COM: Glück
+!!!ODT: 1814
+!!!OMD: Langsam
+!!!LYR: Wyss der Jüngere, Johann Rudolf
+!!!ONB: Ursprüglich in Berner Mundart
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-e-a-]	*k[b-e-a-]	*k[b-e-a-]
+*E-:	*E-:	*E-:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM54	*MM54	*MM54
+4r	4r	8.g
+.	.	16a-
+=1	=1	=1
+2EE-	8r	4.b-
+.	(8B-L	.
+.	8e- 8g	.
+.	8B-J)	8b-
+2E-	8r	8anL
+.	(8B-L	8b-
+.	8e- 8g	8ccJ
+.	8B-J)	8b-
+=2	=2	=2
+2BBB-	8r	(8b-L
+.	(8B-L	8a-J)
+.	8d 8a-	4a-X
+.	8B-J)	.
+2BB-	8r	4r
+.	(8B-L	.
+.	8d 8a-	8a-
+.	8B-J)	8a-
+=3	=3	=3
+2BBB-	8r	8a-L
+.	(8B-L	8fJ
+.	8A- 8d	8fL
+.	8B-J)	8dJ
+2BB-	8r	(4B-
+.	(8B-L	.
+.	8A- 8f	8c)
+.	8B-J)	8d
+=4	=4	=4
+2EE-	8r	2e-
+.	(8B-L	.
+.	8G 8e-	.
+.	8B-J)	.
+2E-	8r	4r
+.	(8B-L	.
+.	8e- 8g	8b-
+.	8B-J)	8b-
+=5	=5	=5
+2EE-	8r	8ee-L
+.	(8B-L	8ddJ
+.	8e- 8g	8ccL
+.	8B-J)	8b-J
+2GG	8r	8a-L
+.	(8B-L	8gJ
+.	8G	8fL
+.	8B-J)	8e-J
+=6	=6	=6
+2AA-	8r	8dL
+.	(8cL	8cJ
+.	8e- 8a-	4c
+.	8cJ)	.
+2AA-	8r	4r
+.	(8cL	.
+.	8e- 8a-	8a-
+.	8cJ)	8cc
+=7	=7	=7
+2BB-	8r	4.b-
+.	(8B-L	.
+.	8e- 8g	.
+.	8B-J)	8b-
+4.BB-	8r	(4b-
+.	(8A-L	.
+.	8d 8f	8cc)
+8BBn	8A-J)	8dd
+=8	=8	=8
+2C	8r	2ee-
+.	(8GL	.
+.	8c 8e-	.
+.	8GJ)	.
+2AA-	8r	8ffL
+.	(8cL	8ee-J
+.	8e- 8a-	8ddL
+.	8cJ)	8ccJ
+=9	=9	=9
+2BB-	8r	(4cc
+.	(8B-L	.
+.	8e- 8g	8b-)
+.	8B-J)	8b-
+2BBB- 2BB-	8r	4.b-
+.	(8B-L	.
+.	8A- 8d	.
+.	8B-J)	8d
+=10	=10	=10
+2.EE- 2.E-	8r	2e-
+.	(8B-L	.
+.	8G 8e-	.
+.	8B-J	.
+.	4G) 4e-	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 053/651

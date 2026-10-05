@@ -1,0 +1,118 @@
+!!!!SEGMENT: erk170.krn
+!!!OTL@@DE: Historia von Noah
+!!!COM: Reissinger, Carl Gottlieb
+!!!ODT: 1824///-1827///
+!!!OMD: Moderato
+!!!LYR: Kopisch, August
+!!!LDT: 1824///-1832///
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,B]	*>[A,B,B]	*>[A,B,B]
+*>norep[A,B]	*>norep[A,B]	*>norep[A,B]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[b-e-a-]	*k[b-e-a-]	*k[b-e-a-]
+*E-:	*E-:	*E-:
+*M3/4	*M3/4	*M3/4
+*MM104	*MM104	*MM104
+8r	8r	8g
+=1	=1	=1
+*^	*	*
+8r	2C	8r	8.c
+16E- 16G	.	16c	.
+16E- 16G	.	16c	16d
+2E- 2G	.	2c	8e-
+.	.	.	8f
+.	4r	.	8g
+.	.	.	8cc
+=2	=2	=2	=2
+8r	2C	8r	2g
+16E- 16G	.	16c	.
+16E- 16G	.	16c	.
+2E- 2G	.	2c	.
+.	4r	.	8r
+.	.	.	8g
+=3	=3	=3	=3
+8r	2GG	8r	8.g
+16F 16G 16BnLL	.	8r	.
+16F 16G 16BJJ	.	.	16a-
+2F 2G 2B	.	2r	8g
+.	.	.	8f
+.	4r	.	8e-
+.	.	.	8d
+=4	=4	=4	=4
+8r	2C	8r	2c
+16E- 16G	.	16c	.
+16E- 16G	.	16c	.
+2E- 2G	.	2c	.
+.	4r	.	8r
+.	.	.	8cc
+*v	*v	*	*
+=5	=5	=5
+2BB-	8r	8.b-
+.	16A- 16B- 16dLL	.
+.	16A- 16B- 16dJJ	16cc
+.	2A- 2B- 2d	8b-
+.	.	8a-
+4r	.	8g
+.	.	8f
+=6	=6	=6
+2EE-	8r	2e-'
+.	16G 16B- 16e-LL	.
+.	16G 16B- 16e-JJ	.
+.	2G 2B- 2e-	.
+4r	.	8r
+.	.	8cc
+=7	=7	=7
+2BB-	8r	8.b-
+.	16A- 16B- 16dLL	.
+.	16A- 16B- 16dJJ	16cc
+.	2A- 2B- 2d	8b-
+.	.	8a-
+4r	.	8g
+.	.	8f
+=8	=8	=8
+[2E-	8r	2e-
+.	16G 16B- 16e-LL	.
+.	16G 16B- 16e-JJ	.
+.	8G 8B- 8e-L	.
+.	8G 8B- 8e-	.
+8E-]	8G 8B- 8e-J	8r
+*>B	*>B	*>B
+8C	8G 8c 8e-	8ee-
+=9	=9	=9
+2D	8r	8.dd
+.	16F# 16c 16dLL	.
+.	16F# 16c 16dJJ	16ee-
+.	2F# 2c 2d	8dd
+.	.	8cc
+4r	.	8bn
+.	.	8an
+=10	=10	=10
+4.GG	8r	4g
+.	16G 16Bn 16d 16gLL	.
+.	16G 16B 16d 16gJJ	.
+.	8G 8B 8d 8g	8r
+8CC 8CL	8c 8ccL	8cc
+8CC 8C	8c 8cc	8cc
+8CC 8CJ	8c 8ccJ	8cc
+=11	=11	=11
+8AA-L	8A- 8a-L	8a-
+8FFJ	8F 8fJ	8f
+4GG	4G 4g	4g
+*^	*	*
+4D 4F 4G	4GGG 4GG	4Bn	4g
+=12	=12	=12	=12
+4E- 4G	4CC 4C	4c	2c
+*v	*v	*	*
+4CC 4GG 4C	4e- 4g 4cc	.
+8r	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/27/
+!!!EFL: 170/651

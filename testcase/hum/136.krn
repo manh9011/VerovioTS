@@ -1,0 +1,112 @@
+!!!!SEGMENT: erk136.krn
+!!!OTL@@DE: Oestereichisches Nationallied
+!!!COM: Haydn, Joseph
+!!!ODT: 1797
+!!!OMD: Poco adagio
+!!!LYR: Haschka, Laurenz Leopold
+!!!LDT: 1797
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,A,B,C,C]	*>[A,A,B,C,C]	*>[A,A,B,C,C]
+*>norep[A,B,C]	*>norep[A,B,C]	*>norep[A,B,C]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM92	*MM92	*MM92
+4.FF 4.AA 4.C 4.F	4.A 4.c 4.f	4.f
+8r	8c 8g	8g
+=1	=1	=1
+2r	4f (4a	4a
+.	4e 4g	4g
+*	*^	*
+4E 4G	4g 4b-	2c	4b-
+4F 4A	4f 4a)	.	4a
+=2	=2	=2	=2
+4C 4B-	2c	(8gL	(8gL
+.	.	8eJ	8eJ)
+4F 4A	.	4f)	4f
+*	*v	*v	*
+2r	4b- (4dd	4dd
+.	4a 4cc	4cc
+=3	=3	=3
+4C 4G	4e 4b-	4b-
+4F 4A	4f 4a)	4a
+*	*^	*
+4BB-	4g	2d	4g
+4BBn	8aL	.	(8aL
+.	8fJ	.	8fJ)
+*	*v	*v	*
+=4	=4	=4
+2CC 2C	2c 2e 2g 2cc	2cc
+=:|!	=:|!	=:|!
+*>B	*>B	*>B
+*^	*	*
+4E	2C	(4g	4g
+4F	.	4a)	4a
+=5	=5	=5	=5
+2E	2C	(8gL	(8gL
+.	.	8eJ)	8eJ)
+.	.	4c	4c
+4G	4C	4e (4b-	4b-
+4F	4C	4f 4a)	4a
+=6	=6	=6	=6
+2E	2C	(8gL	(8gL
+.	.	8eJ)	8eJ)
+.	.	4c	4c
+*v	*v	*	*
+4AA 4C	(4a 4cc	4cc
+8BB- 8DL	4g 4b-	4b-
+8C 8EJ	.	.
+=7	=7	=7
+&(2D&) 2F	4.f) 4.a	4.a
+.	8f 8a	8a
+*	*^	*
+4GG 4D	4bn	4f	4bn
+4GG 4D	8bL	4f	(8bL
+.	8ccJ	.	8ccJ)
+=8	=8	=8	=8
+2CC; 2C;	2cc;	2e	2cc;
+*	*v	*v	*
+=!|:	=!|:	=!|:
+*>C	*>C	*>C
+2AA 2C 2F	4.f 4.cc 4.ff	4.ff
+.	8ee	8ee
+=9	=9	=9
+4BB- 4D 4F	4f 4b- 4dd	4dd
+4FF 4F	4f 4a 4cc	4cc
+4.BB- 4.D 4.F 4.B-	4.f 4.b- 4.dd	4.dd
+8F 8A	8f 8cc	8cc
+=10	=10	=10
+4C 4G	4e 4b-	4b-
+*^	*	*
+4F	4F	4f 4a	4a
+2C 2E 2G	2BB-	4.c 4.e (4.g	4.g
+.	.	16aLL	16aLL
+.	.	16b-JJ	16b-JJ
+*v	*v	*	*
+=11	=11	=11
+4AA 4F	8ccL	(8ccL
+*	*^	*
+.	8ryy	8ddJ	8ddJ)
+&(4BB-&) 4G	8b-L	4d	(8b-L
+.	8gJ	.	8gJ)
+*^	*	*	*
+4A	2C	(4f)	4c	4f
+4B-	.	8gL	4e	(8gL
+.	.	8fJ)	.	8fJ)
+*v	*v	*	*	*
+*	*v	*v	*
+=12	=12	=12
+2FF 2F	2A 2c 2f	2f
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/04/
+!!!EFL: 136/651

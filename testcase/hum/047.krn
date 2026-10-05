@@ -1,0 +1,104 @@
+!!!!SEGMENT: erk047.krn
+!!!OTL@@DE: Zitherbubens Morgenlied
+!!!COM: Bornhardt, Johann Heinrch Carl
+!!!ODT: ~1810
+!!!OMD: Allegretto
+!!!LYR: Lübeck, Georg Philipp Schmidt von
+!!!LDT: 1801
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/8	*M3/8	*M3/8
+*MM80	*MM80	*MM80
+4GG	8r	8.b
+.	8D 8G 8dL	.
+.	.	16a
+8r	8D 8G 8dJ	8g
+=2	=2	=2
+4GG	8r	8.g
+.	8F# 8B 8f#L	.
+.	.	16d
+8r	8F# 8B 8f#J	8d
+=3	=3	=3
+8GGL	(16bLL	16BLL
+.	16dd)	16dJJ
+8D 8G 8B	16gg'	16g
+.	16bb'JJ	16b
+8D 8G 8BJ	8ddd'	8dd
+=4	=4	=4
+8GGL	(16bLL	16BLL
+.	16dd)	16dJJ
+8D 8G 8B	16gg'	16g
+.	16bb'JJ	16b
+8D 8G 8BJ	8ddd'	8dd
+=5	=5	=5
+4DD	8r	8.cc
+.	8D 8F# 8cL	.
+.	.	16b
+8r	8D 8F# 8cJ	8a
+=6	=6	=6
+4DD	8r	8.a
+.	8D 8F# 8cL	.
+.	.	16d
+8r	8D 8F# 8cJ	8d
+=7	=7	=7
+8DD	16r	16r
+.	16dd'LL	16d
+8D 8F# 8cL	16ff#'	16f#
+.	16aa'JJ	16a
+8D 8F# 8cJ	8ddd'	8dd
+=8	=8	=8
+8DD	16r	16r
+.	16dd'LL	16d
+8D 8F# 8cL	16ff#'	16f#
+.	16aa'JJ	16a
+8D 8F# 8cJ	8ddd'	8dd
+=9	=9	=9
+4GG	8r	8.b
+.	8D 8G 8BL	.
+.	.	16cc
+8r	8D 8G 8BJ	8dd
+=10	=10	=10
+4CC	8r	8dd
+.	8E 8A 8cL	8e
+8r	8E 8A 8cJ	8e
+=11	=11	=11
+4DD	8r	8cc
+.	8D 8A 8cL	8a
+8r	8D 8A 8cJ	8f#
+=12	=12	=12
+4GG	8r	16gLL
+.	.	16f#JJ
+.	8D 8G 8BL	16gLL
+.	.	16aJJ
+8r	8D 8G 8BJ	8g
+=13	=13	=13
+8GG	8.bbL	8.b
+8G 8B 8dL	.	.
+.	16ccck	16cc
+8G 8B 8dJ	8dddJ	8dd
+=14	=14	=14
+8C	8eeeL	8ee
+8G 8A 8eL	8aa	8a
+8G 8A 8eJ	8aaJ	8a
+=15	=15	=15
+8DL	8cccL	8cc
+8F# 8c	8aa	8a
+8A 8cJ	8ff#J	8f#
+=16	=16	=16
+8G 8BL	8ggL	8g
+8D 8F# 8c	(16bbL	16bLL
+.	16aaJ)	16aJJ
+8G 8BJ	8ggJ	8g
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 047/651

@@ -1,0 +1,122 @@
+!!!!SEGMENT: erk093.krn
+!!!OTL@@DE: 's ist mir Alles Eins!
+!!!COM: Fuss, Joh.
+!!!ODT: 1819
+!!!OMD: Munter
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[P,A,B,A]	*>[P,A,B,A]	*>[P,A,B,A]
+*>P	*>P	*>P
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/4	*M3/4	*M3/4
+*MM100	*MM100	*MM100
+4r	8.b 8.ddL	8.dd
+.	16a 16ccJk	16cc
+=1	=1	=1
+*>A	*>A	*>A
+4GG 4G	8g 8bL	8b
+.	8b 8ddJ	8dd
+4B 4d	4b 4dd	4dd
+*^	*^	*
+8.AL	4D	8.ccL	4f#	8.cc
+16cJk	.	16aJk	.	16a
+*v	*v	*	*	*
+*	*v	*v	*
+=2	=2	=2
+4G 4B	8gL	8g
+*^	*	*
+.	.	8d 8bJ	8b
+4ryy	4GG	4d 4b	4b
+4G	8cL	8aL	8a
+.	8BJ	8gJ	8g
+*v	*v	*	*
+=3	=3	=3
+4D 4A	(8f#L	(8f#L
+.	8a) 8ccJ	8ccJ)
+4DD 4D	4a 4cc	4cc
+4D	8g 8bL	8b
+.	8f# 8aJ	8a
+=4	=4	=4
+*	*^	*
+4G	4cc (4ee	4.g	(4ee
+8GG	8b 8dd)	.	8dd)
+8r	4.ryy	8r	8r
+4r	.	8.b 8.ddL	8.dd
+.	.	16a 16ccJk	16cc
+*	*v	*v	*
+=5	=5	=5
+4GG 4G	8g 8bL	8b
+.	8b 8ddJ	8dd
+4B 4d	4b 4dd	4dd
+*^	*^	*
+8.AL	4D	8.ccL	4f#	8.cc
+16cJk	.	16aJk	.	16a
+*v	*v	*	*	*
+*	*v	*v	*
+=6	=6	=6
+4G 4B	8gL	8g
+*^	*	*
+.	.	8d 8bJ	8b
+4ryy	4GG	4d 4b	4b
+4G	8cL	8aL	8a
+.	8BJ	8gJ	8g
+*v	*v	*	*
+=7	=7	=7
+4D 4A	(8f#L	8f#L
+.	8cc 8eeJ)	8eeJ
+4DD 4D	4f# 4cc 4ee	4ee
+4D 4A	4c 4d 4f#	8dd
+.	.	8f#
+=8	=8	=8
+4G	4B 4d 4g	4g
+4GG	4r	4r
+!! Fine
+==	==	==
+*>B	*>B	*>B
+4r	4r	8b
+.	.	8g
+=9	=9	=9
+2DD 2D	8r	(8f#L
+*^	*	*
+.	.	(8AL	8ccJ)
+.	.	8d	4cc
+.	.	8f#	.
+(8cL	4D	8a	8a
+8AJ)	.	8f#J)	8f#
+*v	*v	*	*
+=10	=10	=10
+2GG 2G	8r	(8g
+*^	*	*
+.	.	(8BL	8ee)
+.	.	8d	4dd
+.	.	8g	.
+4G	8dL	8b	8b
+.	8BJ	8gJ)	8g
+*v	*v	*	*
+=11	=11	=11
+2DD 2D	8r	(8f#L
+*^	*	*
+.	.	(8AL	8ccJ)
+.	.	8d	4cc
+.	.	8f#	.
+(8cL	4D	8a	8a
+8AJ)	.	8f#J)	8f#
+*v	*v	*	*
+=12	=12	=12
+2GG 2G	8r	(8g
+.	(8BL	8ee)
+.	8d	4dd
+.	8gJ)	.
+4r	8.b 8.ddL	8.dd
+.	16a 16ccJk	16cc
+=	=	=
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/08/
+!!!EFL: 093/651

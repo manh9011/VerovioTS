@@ -1,0 +1,124 @@
+!!!!SEGMENT: erk154.krn
+!!!OTL@@DE: Schlachtlied
+!!!COM: Silcher, Friedrich
+!!!ODT: 1837///-1839///
+!!!OMD: Gehalten und fest
+!!!LYR: Morhof, Daniel Georg
+!!!ONB: Urspr. altdeutsches Volkslied aus der Zeri der Minnesinger
+!!!LDT: 1682
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,A,B]	*>[A,A,B]	*>[A,A,B]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[b-e-a-]	*k[b-e-a-]	*k[b-e-a-]
+*E-:	*E-:	*E-:
+*M3/4	*M3/4	*M3/4
+*MM92	*MM92	*MM92
+8r	8B-	8B-
+=1	=1	=1
+2EE- 2E-	8G 8e-L	8e-
+.	8B-J	8g
+.	8e- 8gL	4.g
+.	8B-	.
+4r	8e- 8g	.
+.	8B-J	8g
+=2	=2	=2
+*^	*^	*
+8r	2E-	8gL	[4e-	8g
+8A-	.	8ccJ	.	8cc
+*	*	*v	*v	*
+4G	.	8e-] 8b-L	4b-
+.	.	8e-	.
+4G	[4E-	8b-	4ee-
+.	.	[8e-J	.
+=3	=3	=3	=3
+4E-]	8A-L	8e-] 8ccL	8cc
+.	8GJ	8e- 8b-J	8b-
+2ryy	4BB- 4F	8d 8a-L	4a-
+.	.	8B-	.
+.	4EE- 4E-	8e- 8g	4g
+.	.	8B-J	.
+*v	*v	*	*
+=4	=4	=4
+4BB-	8d (8fL	(8fL
+.	8B- 8a-)	8a-J)
+4.EE-	(8e- 8g	4g
+.	8B-J	.
+.	8G) 8e-	8r
+=:|!	=:|!	=:|!
+*>B	*>B	*>B
+8r	8b-	8b-
+=5	=5	=5
+*	*^	*
+(8BB-L	(8b-L	4d	8b-
+8F	8fJ)	.	8f
+*	*v	*v	*
+8B-	4.d 4.f	4.f
+8FJ	.	.
+4B-)	.	.
+.	8e- 8g	8g
+=6	=6	=6
+(8BB-L	(8d 8fL	8f
+8F	8c) 8e-J	8e-
+8B-	4B- 4d	4d
+8F	.	.
+8B-	4d 4f	4f
+8FJ)	.	.
+=7	=7	=7
+*	*^	*
+(8BB-L	(8fL	4d	8f
+8F	8b-J)	.	8b-
+*	*v	*v	*
+8B-	4d 4f 4b-	4b-
+8F	.	.
+8B-	4f 4b- 4dd	4dd
+8FJ)	.	.
+=8	=8	=8
+(8AnL	(8e- 8ccL	(8ccL
+8FJ)	8fJ)	8anJ)
+8B-L	4d 4b-	4b-
+8F	.	.
+8BB-J	8r	8r
+8r	8B-	8B-
+=9	=9	=9
+2EE- 2E-	8G 8e-L	8e-
+.	8B-J	8g
+.	8e- 8gL	4.g
+.	8B-	.
+4r	8e- 8g	.
+.	8B-J	8g
+=10	=10	=10
+*^	*^	*
+8r	2E-	8gL	[4e-	8g
+8A-	.	8ccJ	.	8cc
+*	*	*v	*v	*
+4G	.	8e-] 8b-L	4b-
+.	.	8e-	.
+4G	[4E-	8b-	4ee-
+.	.	[8e-J	.
+=11	=11	=11	=11
+4E-]	8A-L	8e-] 8ccL	8cc
+.	8GJ	8e- 8b-J	8b-
+2ryy	4BB- 4F	8d 8a-L	4a-
+.	.	8B-	.
+.	4EE- 4E-	8e- 8g	4g
+.	.	8B-J	.
+*v	*v	*	*
+=12	=12	=12
+4BB-	8d (8fL	(8fL
+.	8B- 8a-J)	8a-J)
+*^	*	*
+(8E-L	4.EE-	4.B- 4.e- 4.g	4g
+8BB-	.	.	.
+8E-J)	.	.	8r
+*v	*v	*	*
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/27/
+!!!EFL: 154/651

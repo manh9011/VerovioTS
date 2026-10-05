@@ -1,0 +1,110 @@
+!!!!SEGMENT: erk074.krn
+!!!OTL@@DE: Mein Harz ist im Hochland
+!!!ONB: Neuere Volksweise
+!!!ODT: <1865
+!!!OMD: Andante
+!!!ONB: Nach Rob. Burns von Ferd. Freiligrath
+!!!LDT: 1835
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-e-]	*k[b-e-]	*k[b-e-]
+*B-:	*B-:	*B-:
+*M3/4	*M3/4	*M3/4
+*MM92	*MM92	*MM92
+4r	4r	(8fL
+.	.	8ddJ)
+=1	=1	=1
+4BB-	4r	4cc
+4r	4F 4B- 4d	4.b-
+4D	4F 4B- 4f	.
+.	.	8d
+=2	=2	=2
+4E-	4r	4c
+4r	4G 4c 4e-	4.a
+4EE-	4G 4c 4e-	.
+.	.	8g
+=3	=3	=3
+4FF	4r	4f
+4r	4F 4A 4e-	4e-
+4FF	4F 4A 4e-	8cL
+.	.	8gJ
+=4	=4	=4
+4BB-	4r	4f
+4r	4F 4B- 4d	4r
+4r	4r	(8fL
+.	.	8ddJ)
+=5	=5	=5
+4BB-	4r	4cc
+4r	4F 4B- 4d	4.b-
+4D	4F 4B- 4f	.
+.	.	8d
+=6	=6	=6
+4E-	4r	4c
+4r	4G 4c 4e-	4.a
+4EE-	4G 4c 4e-	.
+.	.	8g
+=7	=7	=7
+4FF	4r	4f
+4r	4F 4A 4e-	4.e-
+4FF	4F 4A 4e-	.
+.	.	8c
+=8	=8	=8
+4BB-	4F 4B- 4d	4B-
+4BBB-	4r	4r
+4r	4r	4d
+=9	=9	=9
+4C	8r	4c
+.	(8cL	.
+4r	8B- 8en	8enL
+.	8c	8gJ
+4r	8B- 8e	8b-L
+.	8cJ)	8aJ
+=10	=10	=10
+2F	8r	4g
+.	(8cL	.
+.	8A 8f	4f
+.	8c	.
+4F#	8d	4d
+.	8AJ)	.
+=11	=11	=11
+2G	(8B-L	4c
+.	8c	.
+.	8B- 8en	8enL
+.	8c	8gJ
+4C	8B- 8e	8ddL
+.	8cJ)	8ccJ
+=12	=12	=12
+4Fn	8A 8fL	(4.a
+.	8c	.
+4FF	8f	.
+.	8e-	8g)
+4r	8d	8fL
+.	8fJ	8ddJ
+=13	=13	=13
+4BB-	4e-	4cc
+4r	4F 4B- 4d	4.b-
+4D	4F 4B- 4f	.
+.	.	8d
+=14	=14	=14
+4E-	4r	4c
+4r	4G 4c 4e-	4.a
+4EE-	4G 4c 4e-	.
+.	.	8g
+=15	=15	=15
+4FF	4r	4f
+4r	4F 4A 4e-	4.ee-
+4FF	4F 4A 4e-	.
+.	.	8a
+=16	=16	=16
+4BB-	4F 4B- 4d	4b-
+4B- 4f	4dd 4bb-	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/03/
+!!!EFL: 074/651

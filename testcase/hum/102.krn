@@ -1,0 +1,205 @@
+!!!!SEGMENT: erk102.krn
+!!!OTL@@DE: Maria auf dem Berge
+!!!COM: Nach L. Erk's Volksliedern, B.I.H.6
+!!!ODT: 1840
+!!!OMD: Sehr gemässigt
+!!!ONB: Oberschlesisches Volkslid
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**dynam	**kern
+*staff3	*staff2	*	*staff1
+*Ipiano	*Ipiano	*	*Ivox
+=1-	=1-	=1-	=1-
+*clefF4	*clefG2	*	*clefG2
+*k[b-e-a-d-]	*k[b-e-a-d-]	*	*k[b-e-a-d-]
+*A-:	*A-:	*	*A-:
+*M6/8	*M6/8	*	*M6/8
+*MM100	*MM100	*	*MM100
+*^	*	*	*
+4r	2.AA- 2.E-	(8cL	.	4r
+.	.	8e-	.	.
+8r	.	8a-J)	.	8r
+4.A-	.	(8cL	.	4r
+.	.	8e-	.	.
+.	.	8a-J)	.	16ee-
+.	.	.	.	16dd-
+=2	=2	=2	=2	=2
+4r	2.AA- 2.E-	(8cL	.	8.cc
+.	.	8e-	.	.
+.	.	.	.	16dd-
+8r	.	8a-J)	.	8cc
+4.G	.	(8d-L	.	8b-L
+.	.	8e-	.	8ccJ
+.	.	8b-J)	.	8b-
+=3	=3	=3	=3	=3
+4r	2.AA- 2.E-	(8cL	.	4.a-
+.	.	8e-	.	.
+8r	.	8a-J)	.	.
+4.A-	.	(8cL	.	4r
+.	.	8e-	.	.
+.	.	8a-J)	.	8a-
+*v	*v	*	*	*
+=4	=4	=4	=4
+4.D-	(8d-L	.	8.b-
+.	8f	.	.
+.	.	.	16cc
+.	8b-J)	.	8b-
+4.E-	(8B-L	.	8g
+.	8d-	.	8f
+.	8e-J)	.	8g
+!!LO:LB:g=original
+=5	=5	=5	=5
+*^	*	*	*
+4r	2.AA- 2.E-	(8cL	.	4.a-
+.	.	8e-	.	.
+8r	.	8a-J)	.	.
+4.A-	.	(8e-L	.	4r
+.	.	8a-	.	.
+.	.	8ccJ)	.	8cc
+=6	=6	=6	=6	=6
+(4.A-	2.BB-	(8dnL	.	8b-
+.	.	8f	.	8cc
+.	.	8b-J)	.	8ddn
+4.G)	.	(8e-L	.	(8ee-L
+.	.	8g	.	8gJ)
+.	.	8ccJ)	.	8cc
+=7	=7	=7	=7	=7
+(4F	4.BB-	(8dnL	.	(8b-L
+.	.	8f	.	8fJ)
+8B-)	.	8a-J)	.	8a-
+(4B-	4.E-	(8e-L	.	4g
+.	.	8g	.	.
+8An)	.	8g-) 8ccJ	.	8cc
+=8	=8	=8	=8	=8
+(4.A-X	2.BB-	(8fL	.	8b-
+.	.	8dn	.	8cc
+.	.	8B-J)	.	8ddn
+4.G)	.	(8e-L	.	(8ee-L
+.	.	8g	.	8b-J)
+.	.	8b-J)	.	8g
+!!LO:LB:g=original
+=9	=9	=9	=9	=9
+*	*	*^	*	*
+(4F	4.BB-	(8a-L	4dn	.	(8a-L
+.	.	8f)	.	.	8fJ)
+*	*	*v	*v	*	*
+8A-)	.	8d 8b-J	.	8b-
+4.ryy	4E-;> 4G;>	4e-;	.	4e-;
+.	8r	8f 8dd-X	.	8dd-X
+=10	=10	=10	=10	=10
+(4.G	2.E-	(16d-LL	.	(8cc^L
+.	.	16e-	.	.
+.	.	16b-	.	8b-J)
+.	.	16e-	.	.
+.	.	16d-	.	8b-
+.	.	16e-JJ)	.	.
+4.A-)	.	(16cLL	.	(8b-L
+.	.	16e-	.	.
+.	.	16a-	.	8a-J)
+.	.	16e-	.	.
+.	.	16c	.	8a-
+.	.	16e-JJ)	.	.
+=11	=11	=11	=11	=11
+(4.B-	2.E-	(16d-LL	.	(8gL
+.	.	16e-	.	.
+.	.	16d-	.	8fJ)
+.	.	16e-	.	.
+.	.	16d-	.	8g
+.	.	16e-JJ)	.	.
+4.A-)	.	(16cLL	.	4a-
+.	.	16e-	.	.
+.	.	16a-	.	.
+.	.	16e-	.	.
+.	.	16f	.	8dd-
+.	.	16dd-JJ)	.	.
+=12	=12	=12	=12	=12
+(4.G	2.E-	(16d-LL	.	(8ccL
+.	.	16e-	.	.
+.	.	16b-	.	8b-J)
+.	.	16e-	.	.
+.	.	16d-	.	8b-
+.	.	16e-JJ)	.	.
+4.A-)	.	(16cLL	.	8b-
+.	.	16e-	.	.
+.	.	16a-	.	8a-
+.	.	16e-	.	.
+.	.	16c	.	8a-
+.	.	16e-JJ)	.	.
+!!LO:LB:g=original
+=13	=13	=13	=13	=13
+(4.B-	(4.E-	(16d-LL	.	(8gL
+.	.	16e-	.	.
+.	.	16d-	.	8fJ)
+.	.	16e-	.	.
+.	.	16d-	.	8g
+.	.	[>16e-JJ	.	.
+4.ryy	4AA-;>) 4A-;>)	4c;) 4e-;]	.	4a-;
+!	!	!	!	!LO:TX:a:B:t=Joseph
+.	8r	8e-	.	8e-
+=14	=14	=14	=14	=14
+4r	2.AA- 2.E-	(8c-L	.	8a-
+.	.	8e-	.	8a-
+8r	.	8a-J)	.	8a-
+4.A-	.	(8c-L	.	(8cc-L
+.	.	8e-	.	8b-J)
+.	.	8a-J)	.	8a-
+*v	*v	*	*	*
+=15	=15	=15	=15
+4.EE- 4.E-	(8B-L	.	4g
+.	8e-	.	.
+.	8gJ)	.	8b-
+4.E- 4.G	(8B-L	.	4e-
+.	8d-	.	.
+.	8e-J)	.	8e-
+=16	=16	=16	=16
+*^	*	*	*
+4r	2.AA- 2.E-	(8c-L	.	8a-
+.	.	8e-	.	8a-
+8r	.	8a-J)	.	8a-
+4.A-	.	(8c-L	.	8cc-
+.	.	8e-	.	8b-
+.	.	8a-J)	.	8a-
+*v	*v	*	*	*
+!!LO:LB:g=original
+=17	=17	=17	=17
+4.EE- 4.E-	(8B-L	.	(8gL
+.	8e-	.	8a-J)
+.	8gJ)	.	8b-
+4E- 4G	4B- 4e-	.	4e-
+8r;	8r;	.	8r;
+=18	=18	=18	=18
+*^	*	*	*
+8AA-L	(4.AA-	4.cn 4.e- 4.a-	p	4r
+8E-	.	.	.	.
+!	!	!	!	!LO:TX:a:B:t=Maria
+8A-J)	.	.	.	8r
+8AA-L	4(.AA-	4.e- 4.a- 4.cc	.	4.cc
+8E-	.	.	.	.
+8A-J)	.	.	.	.
+=19	=19	=19	=19	=19
+8AA-L	(4.AA-	4.c 4.e- 4.a-	.	4.a-
+8E-	.	.	.	.
+8A-J)	.	.	.	.
+8AA-L	(4.AA-	4.e- 4.a- 4.cc	.	4.cc
+8E-	.	.	.	.
+8A-J)	.	.	.	.
+=20	=20	=20	=20	=20
+8AA-L	(4.AA-	4.c 4.e- 4.a-	.	2.a-
+8E-	.	.	.	.
+8A-J)	.	.	.	.
+8AA-L	(4.AA-	4.c 4.e-	pp	.
+8E-	.	.	.	.
+8A-J)	.	.	.	.
+*v	*v	*	*	*
+=21	=21	=21	=21
+2.AA-;< 2.E-;<	2.A-; 2.c;	.	2.r;
+==	==	==	==
+*-	*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!RDF**kern: > = above
+!!!RDF**kern: < = below
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/06/
+!!!EED: Craig Stuart Sapp
+!!!EEV: 2025/07/21
+!!!EFL: 102/651

@@ -1,0 +1,95 @@
+!!!!SEGMENT: erk083.krn
+!!!OTL@@DE: Alles ist hin!
+!!!ONB: Volkslied
+!!!ODT: 1799
+!!!OMD: Leicht
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,B]	*>[A,B,B]	*>[A,B,B]
+*>norep[A,B]	*>norep[A,B]	*>norep[A,B]
+*>A	*>A	*>A
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/4	*M3/4	*M3/4
+*MM116	*MM116	*MM116
+4GG	4.b 4.dd	4.dd
+4G	.	.
+.	8cc 8eeL	8ee
+4G	8b 8dd	8dd
+.	8a 8ccJ	8cc
+=2	=2	=2
+4GG 4D	4g 4b	4b
+4G 4B	4d 4g	4g
+4G 4B	4d 4g	4g
+=3	=3	=3
+4DD	4c 4a	4a
+4D 4F#	4c 4d	4d
+4D 4F#	4c 4d	4d
+=4	=4	=4
+4GG 4D	4d 4b	4b
+4G 4B	4d 4g	4g
+4G 4B	4d 4g	4g
+=5	=5	=5
+4GG	4.b 4.dd	4.dd
+4G	.	.
+.	8cc 8eeL	8ee
+4G	8b 8dd	8dd
+.	8a 8ccJ	8cc
+=6	=6	=6
+4GG 4D	4g 4b	4b
+4G 4B	4d 4g	4g
+4G 4B	4d 4g	4g
+=7	=7	=7
+4DD	4c 4a	4a
+4D 4F#	4c 4d	4d
+4D 4F#	4c 4d	4d
+=8	=8	=8
+4GG 4D	4B 4g	4g
+4G	4r	4r
+4r	4r	4r
+=9!|:	=9!|:	=9!|:
+*>B	*>B	*>B
+4DD	4c 4a	4a
+4D 4F#	4c 4d	4d
+4D 4F#	4c 4d	4d
+=10	=10	=10
+4GG 4D	4B 4g 4b	4b
+4G 4B	4d 4g	4g
+4G 4B	4d 4g	4g
+=11	=11	=11
+4DD 4D	4c 4a	4a
+4D 4F#	4c 4d	4d
+4D 4F#	4c 4d	4d
+=12	=12	=12
+4GG 4D	4B 4g 4b	4b
+4G 4B	4d 4g	4g
+4G 4B	4d 4g	4g
+=13	=13	=13
+4GG	4.b 4.dd	4.dd
+4G	.	.
+.	8cc 8eeL	8ee
+4G	8b 8dd	8dd
+.	8a 8ccJ	8cc
+=14	=14	=14
+4GG 4D	4g 4b	4b
+4G 4B	4d 4g	4g
+4G 4B	4d 4g	4g
+=15	=15	=15
+4DD	4c 4a	4a
+4D 4F#	4c 4d	4d
+4D 4F#	4c 4d	4d
+=16	=16	=16
+4GG 4D	4B 4g	4g
+4G	4r	4r
+4r	4r	4r
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/27/
+!!!EFL: 083/651

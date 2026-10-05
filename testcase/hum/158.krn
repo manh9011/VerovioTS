@@ -1,0 +1,80 @@
+!!!!SEGMENT: erk157.krn
+!!!OTL@@DE: Prinz Eugen
+!!!COM: Volkslied
+!!!ODT: 1717///-1745///
+!!!OMD: Nicht zu langsam und nachdrücklich
+!!!LYR: Der Sage nach gedichtet von einem preussichen Krieger, der unter dem Fürsten von Dessau im Heere des Prinzen Eugen diente.
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,B]	*>[A,B,B]	*>[A,B,B]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*M5/4	*M5/4	*M5/4
+*MM92	*MM92	*MM92
+8CL	8cL	8c
+8CJ	8cJ	8c
+=1	=1	=1
+4.FF 4.F	4.A 4.c 4.f	4.f
+8AA 8F	8c 8f	8f
+8AA 8FL	8c 8fL	8f
+8C 8GJ	8c 8e 8gJ	8g
+8F^ 8A^	8c^ 8f^ 8a^	8a^
+4F; 4A;	4c; 4f; 4a;	4a;
+8r	8r	8r
+=2	=2	=2
+8AA 8FL	8c 8fL	8f
+8C 8GJ	8c 8e 8gJ	8g
+4F 4A	4f 4a	4a
+4A 4c	4a 4cc	4cc
+8A 8cL	8a 8ccL	8cc
+8G 8B-	8g 8b-	8b-
+8G 8B-	8g 8b-	8b-
+8F 8AJ	8f 8aJ	8a
+=3	=3	=3
+8C 8GL	8e 8gL	8g
+8AA 8FJ	8c 8fJ	8f
+8C 8GL	8e 8gL	8g
+8F 8AJ	8f 8aJ	8a
+8G 8B-L	8g 8b-L	8b-
+8F 8AJ	8f 8aJ	8a
+4.C; 4.G;	4.e; 4.g;	4.g;
+8r	8r	8r
+=4!|:	=4!|:	=4!|:
+*>B	*>B	*>B
+8A 8cL	8a 8ccL	8cc
+8G 8B-J	8g 8b-J	8b-
+4F 4A	4f 4a	4a
+4A 4c	4a 4cc	4cc
+8B-L	8f 8ddL	8dd
+8A 8c	8f 8cc	8cc
+8G 8c	8e 8b-	8b-
+8F 8cJ	8f 8aJ	8a
+=5	=5	=5
+8CL	8c 8e 8gL	8g
+8AAJ	8c 8fJ	8f
+4C	4c 4e 4g	4g
+4G	4c 4e 4b-	4b-
+8AL	8c 8f 8ccL	8cc
+8E	8c 8g 8b-	8b-
+8F	8c 8f 8a	8a
+8CJ	8B- 8e 8gJ	8g
+=6	=6	=6
+8DL	8A 8d 8fL	8f
+8DJ	8A 8d 8fJ	8f
+4D	4A 4d 4f	4f
+4AA	4c 4f 4a	4a
+.	(aq	.
+8CL	8B- 8e 8gL)	8g
+8CCJ	8B- 8e 8gJ	8g
+4FF;	4A; 4c; 4f;	4f;
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/27/
+!!!EFL: 157/651

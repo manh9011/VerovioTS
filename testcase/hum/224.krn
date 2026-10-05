@@ -1,0 +1,112 @@
+!!!!SEGMENT: erk404.krn
+!!!OTL@@DE: Als mein schönster Tag begann
+!!!ONB: Russische Volkweise
+!!!ODT: 1809
+!!!OMD: Mässig bewegt
+!!!ONB: Russisches Volkslied Übertragen von Ch. A. Tiedge
+!!!LDT: 1809
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 3
+**kern	**kern	**kern
+*staff2	*staff1	*staff1
+*Ipiano	*Ipiano	*Ivox
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[]	*k[]	*k[]
+*C:	*C:	*C:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM112	*MM112	*MM112
+4.c	4.cc	4.cc
+8G	8g	8g
+4A	4a	4a
+4E	4e	4e
+=2	=2	=2
+4F	4f	4f
+4G	4g	4g
+8.CL	4c	4c
+16CJk	.	.
+8.EL	4r	4r
+16GJk	.	.
+=3	=3	=3
+4.c	4.cc	4.cc
+8G	8g	8g
+4A	4a	4a
+4E	4e	4e
+=4	=4	=4
+4F	4f	4f
+4G	4g	4g
+4C	4c	4c
+4r	4r	4r
+=5	=5	=5
+8CL	4g	4g
+8G	.	.
+8E	4g	4g
+8GJ	.	.
+8CL	8gL	8gL
+8G	8ccJ	8ccJ
+8E	8bL	8bL
+8GJ	8ccJ	8ccJ
+=6	=6	=6
+8CL	4.a	4.a
+8A	.	.
+8F	.	.
+8AJ	8b	8b
+8CL	8ddL	8ddL
+8A	8ccJ	8ccJ
+8F	8bL	8bL
+8AJ	8aJ	8aJ
+=7	=7	=7
+8CL	4g	4g
+8G	.	.
+8E	4g	4g
+8GJ	.	.
+8CL	8gL	8gL
+8G	8ccJ	8ccJ
+8E	8bL	8bL
+8GJ	8ccJ	8ccJ
+=8	=8	=8
+8CL	4.a	4.a
+8A	.	.
+8F	.	.
+8AJ	8b	8b
+8CL	8ddL	8ddL
+8A	8ccJ	8ccJ
+8F	8bL	8bL
+8AJ	8aJ	8aJ
+=9	=9	=9
+4C	4.e 4.g	4.g
+4E	.	.
+.	8e 8cc	8cc
+4G	4.e 4.cc	4.cc
+4c	.	.
+.	8g 8ee	8ee
+=10	=10	=10
+4G	8g 8eeL	8eeL
+.	8f 8ddJ	8ddJ
+4GG	8e 8ccL	8ccL
+.	8d 8bJ	8bJ
+8CL	4e 4cc	4cc
+8c	.	.
+8G	4r	4r
+8EJ	.	.
+=11	=11	=11
+4C	4.e 4.g	4.g
+4E	.	.
+.	8e 8cc	8cc
+4G	4.e 4.cc	4.cc
+4c	.	.
+.	8g 8ee	8ee
+=12	=12	=12
+4G	8g 8eeL	8eeL
+.	8f 8ddJ	8ddJ
+4GG	8e 8ccL	8ccL
+.	8d 8bJ	8bJ
+4C	4e 4cc	4cc
+4CC	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/20/
+!!!EFL: 404/600

@@ -1,0 +1,113 @@
+!!!!SEGMENT: erk108.krn
+!!!OTL@@DE: Wenn i håld frua afsteh
+!!!COM: Oesterreichisches Volkslied
+!!!ODT: 1849
+!!!OMD: Mässig geschwind
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,B]	*>[A,B,B]	*>[A,B,B]
+*>norep[A,B]	*>norep[A,B]	*>norep[A,B]
+*>A	*>A	*>A
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/4	*M3/4	*M3/4
+*MM86	*MM86	*MM86
+4GG	4B 4d 4g	4g
+4G	(8bL	8bL
+.	8dJ)	8dJ
+4D	(8gL	8gL
+.	8bJ)	8bJ
+=2	=2	=2
+(4B	4dd	4dd
+4D	(8ggL	8ggL
+.	8gJ)	8gJ
+4G)	4b	4b
+=3	=3	=3
+4F#	4a	4a
+4D	(8ccL	8ccL
+.	8dJ)	8dJ
+4A 4c	4f#	4f#
+=4	=4	=4
+4G 4B	4g	4g
+4D	(8bL	8bL
+.	8dJ)	8dJ
+4G 4B	4g	4g
+=5	=5	=5
+4GGG 4GG	4B 4d 4g	4g
+4GG	(8bL	8bL
+.	8dJ)	8dJ
+4G	(8gL	8gL
+.	8bJ)	8bJ
+=6	=6	=6
+4B	4dd	4dd
+*^	*	*
+2d;	4B	(8ggL	8ggL
+.	.	8gJ)	8gJ
+.	4G;	4b;	4b;
+*v	*v	*	*
+=7!|:	=7!|:	=7!|:
+*>B	*>B	*>B
+4D	4f# 4a	4a
+4d	8a' 8cc'L>	8cc
+.	8a' 8cc'J	8cc
+4D	4f# 4a	4a
+!!LO:LB:g=original
+=8	=8	=8
+*^	*	*
+4B	2.G	4g	4g
+4d	.	8b'L	8b
+.	.	8b'J	8b
+4B	.	4g	4g
+*v	*v	*	*
+=9	=9	=9
+4D	4f# 4a	4a
+4d	8a' 8cc'L>	8cc
+.	8a' 8cc'J	8cc
+4D	4f# 4a	4a
+=10	=10	=10
+*^	*	*
+4B	2.G	4g	4g
+4d	.	8b'L	8b
+.	.	8b'J	8b
+4B	.	4g	4g
+*v	*v	*	*
+=11	=11	=11
+4D	4f# 4a	4a
+4d	8a' 8cc'L>	8cc
+.	8a' 8cc'J	8cc
+4D	4f# 4a	4a
+=12	=12	=12
+(8GGL	2g 2b	2b
+8BB	.	.
+8D	.	.
+8G	.	.
+8B	8dd'L	8dd
+8dJ)	8dd'J	8dd
+=13	=13	=13
+4D	4g 4b 4gg	4gg
+*^	*^	*
+(8BL	4D	(8dd/L	4g	8dd
+8G	.	8bJ)	.	8b
+8A	4D	(8ccL	4f#	8ccL
+8cJ)	.	8aJ)	.	8aJ
+*	*	*v	*v	*
+=14	=14	=14	=14
+2B	4G	2d 2g	2g
+.	4GG	.	.
+*v	*v	*	*
+4r	4r	4r
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!RDF**kern: > = above
+!!!RDF**kern: < = below
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/06
+!!!EED: Craig Stuart Sapp
+!!!EEV: 2025/07/21
+!!!EFL: 108/651

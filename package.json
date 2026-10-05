@@ -1,0 +1,35 @@
+{
+  "name": "verovio-ts",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "description": "Pure TypeScript port of Verovio music engraving.",
+  "keywords": ["verovio", "mei", "musicxml", "humdrum", "music-engraving", "typescript"],
+  "author": "manh9011",
+  "license": "ISC",
+  "engines": { "node": ">=18" },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./browser": "./dist/browser/verovio-ts.mjs"
+  },
+  "files": ["dist/**/*.js", "dist/**/*.d.ts", "dist/browser/verovio-ts.mjs", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json --module node16 --moduleResolution node16 --outDir dist --pretty false",
+    "build:bundle": "vite build --config vite.browser.config.mts",
+    "embed-data": "node scripts/embed-data.mjs",
+    "verify": "node scripts/compare-all.mjs --skip-done",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "vue-tsc": "^3.3.11"
+  }
+}

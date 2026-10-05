@@ -1,0 +1,142 @@
+!!!!SEGMENT: erk080.krn
+!!!OTL@@DE: Nach Sevilla!
+!!!COM: Reichardt, Luise
+!!!ODT: <1815
+!!!OMD: Lebhaft
+!!!LYR: Brentano, Clemens
+!!!LDT: 1801
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#c#]	*k[f#c#]	*k[f#c#]
+*D:	*D:	*D:
+*M2/4	*M2/4	*M2/4
+*MM88	*MM88	*MM88
+8r	8r	16.a
+.	.	32a
+=1	=1	=1
+8r	8r	8a
+8DD 8DL	8A 8d 8f#L	8f#
+8DD 8DJ	8A 8d 8f#J	8r
+8r	8r	16.dd
+.	.	32dd
+=2	=2	=2
+8r	8r	8dd
+8DD 8DL	8A 8d 8f#L	8a
+8DD 8DJ	8A 8d 8f#J	8r
+8r	8r	16dd
+.	.	16cc#
+=3	=3	=3
+8DD 8D	(16d 16gLL	8.b
+.	16B	.
+8r	16d 16g	.
+.	16BJJ)	16a
+8DD 8D	(16d 16gLL	8gL
+.	16B	.
+8r	16d 16g	16aJk
+.	16BJJ)	16b
+=4	=4	=4
+8DD 8D	(16d 16f#LL	8b
+.	16A	.
+8r	16d 16f#	8a
+.	16AJJ)	.
+8DD 8D	(16d 16f#LL	8r
+.	16A	.
+8r	16d 16f#	16a
+.	16AJJ)	16dd
+=5	=5	=5
+8AA	16e 16gLL	16ddLL
+.	16A	16cc#JJ
+8r	16e 16g	16bLL
+.	16AJJ	16aJJ
+8AA	16c# 16eLL	8.a
+.	16A	.
+8r	16c# 16e	.
+.	16AJJ	16g
+=6	=6	=6
+8DD 8D	16d 16gLL	8g
+.	16A	.
+8r	16d 16f#	8f#
+.	16AJJ	.
+8DD 8D	16d 16f#LL	8r
+.	16A	.
+8r	16d 16f#	16f#
+.	16AJJ	16f#
+=7	=7	=7
+8BBB 8BB	16d# 16f#LL	8.b
+.	16B	.
+8r	16d# 16f#	.
+.	16BJJ	16ccn
+8BBB 8BB	16d# 16f#LL	8.b
+.	16B	.
+8r	16d# 16f#	.
+.	16BJJ	16a
+=8	=8	=8
+8EE 8E	16e 16aLL	8a
+.	16B	.
+8r	16e 16g	8g
+.	16BJJ	.
+8EE 8E	16e 16gLL	8.ee
+.	16B	.
+8r	16e 16g	.
+.	16BJJ	16b
+=9	=9	=9
+8AAA 8AA	16c# 16eLL	8.a
+.	16A	.
+8r	16c# 16e	.
+.	16AJJ	16b
+8AAA 8AA	16c# 16eLL	8.a
+.	16A	.
+8r	16c# 16e	.
+.	16AJJ	16g
+=10	=10	=10
+8DD 8D	16d 16gLL	8g
+.	16A	.
+8r	16d 16f#	8f#
+.	16AJJ	.
+4FF# 4F#	16r	8r
+.	16ALL	.
+.	16d 16a	16dd
+.	16AJJ	16a
+=11	=11	=11
+4GG 4G	16r	8b
+.	16BLL	.
+.	16e 16g	8g
+.	16BJJ	.
+4AA	16r	8e
+.	16ALL	.
+.	16c# 16e	8a
+.	16AJJ	.
+=12	=12	=12
+4D	16r	8.f#
+.	16ALL	.
+.	16d 16f#	.
+.	16AJJ	16r
+8FF# 8F#L	16r	8.a
+.	16ALL	.
+8DD 8DJ	16d 16f#	.
+.	16AJJ	16dd
+=13	=13	=13
+8GG 8GL	16r	8b
+.	16BLL	.
+8GGG 8GGJ	16e 16g	8ee
+.	16BJJ	.
+8AAA 8AAL	16d 16f#LL	8dd
+.	16A	.
+8AAA 8AAJ	16c# 16e	8cc#
+.	16AJJ	.
+=14	=14	=14
+4DD 4D	16r	4dd
+.	16ALL	.
+.	16d 16f#	.
+.	16AJJ	.
+8r	8d 8f#	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 080/651

@@ -1,0 +1,136 @@
+!!!!SEGMENT: erk046.krn
+!!!OTL@@DE: Freut euch des Lebens
+!!!COM: Nägeli, Hans Georg
+!!!ODT: 1793
+!!!OMD: Nich zu geschwind
+!!!LYR: Usteri, Martin
+!!!LDT: 1793
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*clefF4	*clefG2	*clefG2
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,A]	*>[A,B,A]	*>[A,B,A]
+*>A	*>A	*>A
+*k[b-e-a-]	*k[b-e-a-]	*k[b-e-a-]
+*E-:	*E-:	*E-:
+*M6/8	*M6/8	*M6/8
+*MM72	*MM72	*MM72
+=1-	=1-	=1-
+4.E-	8GL	4.g
+.	8B-	.
+.	8e-J	.
+4BB-	8FL	8a-L
+.	8B-	8gJ
+8BB-	8dJ	8a-
+=2	=2	=2
+4.E-	8GL	(4b-
+.	8B-	.
+.	8e-J	8ee-)
+4EE-	8GL	4ee-
+.	8B-	.
+8r	8e-J	8r
+=3	=3	=3
+4.E-	8GL	4.e-
+.	8B-	.
+.	8e-J	.
+4BB-	8FL	8fL
+.	8B-	8e-J
+8BB-	8dJ	8f
+=4	=4	=4
+4EE-	8GL	8gL
+.	8B-	8a-J
+8GG	8e-J	8g
+4BB-	8FL	4f
+.	8B-	.
+8r	8dJ	8r
+=5	=5	=5
+4.E-	8GL	4.g
+.	8B-	.
+.	8e-J	.
+4BB-	8FL	8a-L
+.	8B-	8gJ
+8BB-	8dJ	8a-
+=6	=6	=6
+4.E-	8GL	(4b-
+.	8B-	.
+.	8e-J	8ee-)
+4EE-	8GL	4ee-
+.	8B-	.
+8r	8e-J	8r
+=7	=7	=7
+4.E-	8GL	4.g
+.	8B-	.
+.	8e-J	.
+4BB-	8A-L	8fL
+.	8B-	8e-J
+8BB-	8dJ	8f
+=8	=8	=8
+4.E-	8GL	4.e-
+.	8B-	.
+.	8GJ	.
+4EE-	4E-	4r
+==	==	==
+*>B	*>B	*>B
+8r	8r	8b-
+=9	=9	=9
+4.BB-	8B-L	4b-
+.	8d	.
+.	8fJ	8a-
+4r	8B-L	8fL
+.	8d	8gJ
+8r	8fJ	8a-
+=10	=10	=10
+4.E-	8B-L	4b-
+.	8e-	.
+.	8gJ	8g
+4r	8B-L	4e-
+.	8e-	.
+8r	8gJ	8b-
+=11	=11	=11
+4.BB-	8B-L	4b-
+.	8d	.
+.	8fJ	8a-
+4r	8B-L	8fL
+.	8d	8gJ
+8r	8fJ	8a-
+=12	=12	=12
+4.E-	8B-L	4b-
+.	8e-	.
+.	8gJ	8g
+4r	8B-L	4e-
+.	8e-	.
+8r	8gJ	8b-
+=13	=13	=13
+4.AA-	8cL	4cc
+.	8e-	.
+.	8a-J	8a-
+4r	8cL	4ee-
+.	8e-	.
+8r	8a-J	8cc
+=14	=14	=14
+4.E-	8B-L	4b-
+.	8e-	.
+.	8gJ	8g
+4r	8B-L	4ee-
+.	8e-	.
+8r	8gJ	8b-
+=15	=15	=15
+4.E-	8g 8b-L	8b-L
+.	8a- 8cc	8ccJ
+.	8g 8b-J	8b-
+4D	8g 8b-L	8b-L
+.	8f 8a-	8a-J
+8E-	8e- 8gJ	8g
+=16	=16	=16
+(4BB-	[4.B- 4.e- (4.g	(4.g
+8AAn	.	.
+4BB-)	4B-] &(4d&) 4f)	4f)
+8r	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 046/651

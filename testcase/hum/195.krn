@@ -1,0 +1,135 @@
+!!!!SEGMENT: erk194.krn
+!!!OTL@@DE: Tischlied
+!!!COM: Eberwein, Max
+!!!ODT: 1810
+!!!OMD: Lebhaft
+!!!LYR: Goethe, Wolfgang von
+!!!LDT: 1802
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,B]	*>[A,B,B]	*>[A,B,B]
+*>norep[A,B]	*>norep[A,B]	*>norep[A,B]
+*>A	*>A	*>A
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[f#c#g#]	*k[f#c#g#]	*k[f#c#g#]
+*A:	*A:	*A:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM84	*MM84	*MM84
+4AA 4E	4c# 4e	4cc#
+4AA 4A	4c# 4e	4a
+4E 4G#	4d 4e	4e
+4E 4B	4d 4e	8f#L
+.	.	8g#J
+=2	=2	=2
+4AA 4A	4c# 4e	8aL
+.	.	8g#J
+4AA	4A 4c# 4e	8aL
+.	.	8bJ
+(8AAL	4A 4c# 4e	2cc#
+8GG#	.	.
+8AA	4A 4c# 4e	.
+8C#J)	.	.
+=3	=3	=3
+4D	4A 4f#	8cc#L
+.	.	8bJ
+4D	4d 4f# 4b	8ddL
+.	.	8bJ
+4E	4c# 4e 4a	4a
+4E	4B 4e 4g#	4g#
+=4	=4	=4
+4A	(2d 2e 2g# 2b	2b
+4E	.	.
+4AA	4c#) 4e 4a	4a
+4r	4r	4r
+=5	=5	=5
+4E 4B	(4.e 4.g#	4.g#
+4E 4B	.	.
+.	8f#) 8a	8a
+4E 4B	4g# 4b	4b
+4E	4e 4g# 4b	4b
+=6	=6	=6
+4B	4d# 4a 4b	4b
+4B	4f# 4a 4b	8cc#L
+.	.	8dd#J
+4E	4e 4g# 4b	2ee
+(8F#L	4e 4g# 4b	.
+8G#J)	.	.
+=7	=7	=7
+4A	4e 4cc#	8eeL
+.	.	8cc#J
+4AA 4A	8c# (8aL	8aL
+.	8f#J)	8f#J
+4BB 4G#	4B 4e	4e
+4BB 4F#	4A 4B 4d#	4d#
+=8	=8	=8
+4E	(2A 2B 2d# 2f#	2f#
+4BB	.	.
+4EE	4G#) 4B 4e	4e
+4r	4r	4r
+=9	=9	=9
+4E 4B	4dn 4e	8aL
+.	.	8g#J
+4E 4B	4d 4e	8f#L
+.	.	8g#J
+4AA 4A	4c# 4e	4a
+4A	4c# 4e 4a	4a
+=10	=10	=10
+4AA 4A	4e 4gn	8ddL
+.	.	8cc#J
+4AA	4A 4e 4g	8bL
+.	.	8cc#J
+4D	4A 4d 4f#	2dd
+4DD	4A 4d 4f#	.
+=11	=11	=11
+4EE	4G# 4d 4e	4.dd
+4E	4G# 4d 4e	.
+.	.	8b
+4AA	4A 4c# 4e	8ddL
+.	.	8cc#J
+4C#	4A 4e	8bL
+.	.	8aJ
+=12	=12	=12
+4E	2A 2c# [2e	2cc#
+4EE	.	.
+4EE	4G# 4B 4e]	4b
+(8FF#L	4r	4r
+8GG#J)	.	.
+=13!|:	=13!|:	=13!|:
+*>B	*>B	*>B
+4AA	4c# 4e 4cc#	4cc#
+4C# 4A	4c# 4e 4a	4a
+4E 4G#	4d 4e	4e
+4E 4B	4d 4e	8f#L
+.	.	8g#J
+=14	=14	=14
+4AA 4A	4c# 4e	8aL
+.	.	8g#J
+4AA	4A 4c# 4e	8aL
+.	.	8bJ
+(8AAL	4A 4c# 4e	2cc#
+8GG#	.	.
+8AA	4A 4c# 4e	.
+8C#J)	.	.
+=15	=15	=15
+4D	4A 4f#	8cc#L
+.	.	8bJ
+4D	4d 4f# 4b	8ddL
+.	.	8bJ
+4E	4c# 4e 4a	4a
+4EE 4E	4B 4e 4g#	4g#
+=16	=16	=16
+4A	(2d 2e 2g# 2b	2b
+4E	.	.
+4AA	4c#) 4e 4a	4a
+4r	4r	4r
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/28/
+!!!EFL: 194/651

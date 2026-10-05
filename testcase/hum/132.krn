@@ -1,0 +1,117 @@
+!!!!SEGMENT: erk132.krn
+!!!OTL@@DE: Vaterlandslied
+!!!COM: Methfessel, Albert
+!!!ODT: 1818
+!!!OMD: Fest
+!!!LYR: Arndt, E.M.
+!!!LDT: 1812
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[]	*k[]	*k[]
+*C:	*C:	*C:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM120	*MM120	*MM120
+4G	4g	4g
+=1	=1	=1
+4.C 4.G	4.e 4.cc	4.cc
+8C	8c	8c
+4E	4e	4e
+4C	4c	4c
+=2	=2	=2
+4.F	4.c 4.a	4.a
+8FF 8F	8c 8a	8a
+4FF 4F	4c 4a	4a
+4FF 4F	4c 4a	4a
+=3	=3	=3
+4.GG 4.D	4.B 4.g	4.g
+8GG 8G	8B 8f	8f
+4GG 4G	4B 4e	4e
+4GG 4G	4B 4d	4d
+=4	=4	=4
+4C 4G	4c 4e	4e
+4C 4E	4c	4c
+4r	4r	4r
+4G	4g	4g
+=5	=5	=5
+4.C 4.G	4.e 4.cc	4.cc
+8C	8c	8c
+4E	4e	4e
+4C	4c	4c
+=6	=6	=6
+4.F	4.c 4.a	4.a
+8FF 8F	8c 8a	8a
+4FF 4F	4c 4a	4a
+4FF# 4F#	4d 4a 4dd	4dd
+=7	=7	=7
+4.GG 4.G	4.d 4.g 4.b	4.b
+8D	8d 8f# 8a	8a
+4BB	4d 4g	4g
+4D	4d 4f# 4a	4a
+=8	=8	=8
+4GG	4d 4g 4b	4b
+4G	4B 4d 4g	4g
+2r	4r	4r
+.	4B 4d 4g	4g
+=9	=9	=9
+4GGG 4GG	4.B 4.d 4.g	4.g
+4BBB 4BB	.	.
+.	8d 8g	8g
+4DD 4D	4d 4f# 4a	4a
+4FF# 4F#	4d 4a	4a
+=10	=10	=10
+4GG 4G	4.d 4.g 4.b	4.b
+4FFn 4Fn	.	.
+.	8d 8g 8b	8b
+4EE 4E	4c 4g 4cc	4cc
+4CC 4C	4g 4cc 4ee	4g
+=11	=11	=11
+4BBB 4BB	4.g 4.dd 4.ff	4.ff
+4GGG 4GG	.	.
+.	8g 8b 8dd	8dd
+4CC 4C	4g 4cc 4ee	4ee
+4EE 4E	4g 4cc	4cc
+=12	=12	=12
+4GG 4G	(8.g 8.bL	(8.bL
+.	16a) 16ccJk	16ccJk)
+8.GL	4b 4dd	4dd
+16GGJk	.	.
+4GG	4r	4r
+=!|:	=!|:	=!|:
+4r	4g	4g
+=13	=13	=13
+4C 4c	4e 4g 4ee	4.ee
+4BB 4B	4e 4g# 4dd	.
+.	.	8dd
+4AA 4A	4e 4a 4cc	4cc
+4EE 4E	4e 4gn 4b	4b
+=14	=14	=14
+4FF 4F	4c 4f 4a	4a
+4GG 4G	4c 4e 4g	4g
+8AAL	4G 4d 4f	4f
+8BBJ	.	.
+4C	4G 4c 4e	4e
+=15	=15	=15
+*	*^	*
+2FF 2F	4d	2A	4d
+.	4a	.	4a
+*	*v	*v	*
+4EE 4E	4A 4c# 4g	4g
+4DD 4D	4A 4d 4f	4f
+=16	=16	=16
+2GG	2G 2cn (2e	(2e
+2GGG 2GG	2F 2B 2d)	2d)
+=17	=17	=17
+4CC 4C	4G 4c	2c
+4C 4G 4c	4e 4cc	.
+4r	4r	4r
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/01/
+!!!EFL: 132/651

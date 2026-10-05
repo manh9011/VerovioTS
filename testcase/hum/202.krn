@@ -1,0 +1,124 @@
+!!!!SEGMENT: erk201.krn
+!!!OTL@@DE: Herzensbeklemmung
+!!!COM: Thümmel, Jul.
+!!!OMD: Andante
+!!!LYR: Roquette, Otto
+!!!LDT: 1852
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 2
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/4	*M3/4	*M3/4
+*MM84	*MM84	*MM84
+8r	8d	8d
+=1	=1	=1
+8.GL	8.d 8.g 8.bL	8.b
+16GJk	16d 16g 16bJk	16b
+4.G	4.d 4.g 4.b	4.b
+8c	8d 8f# 8a	8a
+=2	=2	=2
+8.cL	8.d 8.f# 8.aL	8.a
+16BJk	16d 16gJk	16g
+4B	4d 4g	4g
+8r	8r	8r
+8B	8d 8g	8g
+=3	=3	=3
+8AL	8d 8f#L	8f#
+8BJ	8d 8gJ	8g
+4.c	4.e 4.g 4.ee	4.ee
+8B	8g 8dd	8dd
+=4	=4	=4
+*	*^	*
+8BL	8ddL	[4g	8dd
+8A#J	8cc#J	.	8cc#
+4An	4ccn	8gL]	4ccn
+.	.	8f#	.
+4r	4r	8e	8r
+.	.	8dJ	8d
+*	*v	*v	*
+=5	=5	=5
+8.F#L	8.d 8.a 8.ccL	8.cc
+16F#Jk	16d 16a 16ccJk	16cc
+(4.F#	4.d 4.a (4.cc	4.cc
+8G)	8d 8g 8b)	8b
+=6	=6	=6
+8.cL	8.d 8.f# 8.aL	8.a
+16cJk	16d 16f# 16aJk	16a
+(4.c	4.d 4.f# (4.a	4.a
+8B)	8d 8g)	8g
+=7	=7	=7
+*	*^	*
+2D 2A	8f#L	2d 2f#	8f#
+.	8aJ	.	8a
+.	4.dd	.	4.dd
+4D 4c	.	4d 4f#	.
+.	8a	.	8a
+=8	=8	=8	=8
+8BL	(8gL	4d	8g
+8GJ	8bJ)	.	8b
+4D; 4F#;	4a;	4d	4a;
+*	*v	*v	*
+4r	4r	4r
+=9	=9	=9
+4r	8.b 8.ddL	8.dd
+.	16b 16ddJk	16dd
+4r	4.b (4.dd	(4.dd
+4D	.	.
+.	8a 8cc)	8cc)
+=10	=10	=10
+*^	*	*
+4r	8.dL	8.g 8.bL	8.b
+.	16dJk	16g 16bJk	16b
+(2d	4.d	(4.g 4.b	(4.b
+.	8c)	8f#) 8a	8a)
+*v	*v	*	*
+=11	=11	=11
+8.B 8.dL	8.gL	8.g
+16B 16dJk	16gJk	16g
+4.c	4.e 4.g 4.ee	4.ee
+8B	8g 8dd	8dd
+=12	=12	=12
+*	*^	*
+8BL	8ddL	[4g	8dd
+8A#J	8cc#J	.	8cc#
+2An	2ccn	8gL]	2ccn
+.	.	8f#	.
+.	.	8e	.
+.	.	8dJ	.
+*	*v	*v	*
+=13	=13	=13
+4r	8.a 8.ccL	8.cc
+.	16a 16ccJk	16cc
+4r	(4.a 4.cc	(4.cc
+4D	.	.
+.	8g) 8b	8b)
+=14	=14	=14
+8.cL	8.d 8.f# 8.aL	8.a
+16cJk	16d 16f# 16aJk	16a
+(4.c	4.d 4.f# (4.a	(4.a
+8B)	8d 8g)	8g)
+=15	=15	=15
+*	*^	*
+2D 2A	8f#L	2d 2f#	8f#
+*^	*	*	*
+.	.	8aJ	.	8a
+.	.	8.ddL	.	8.dd
+.	.	16ddJk	.	16dd
+8AL	4D	8ccL	4d 4f#	8cc
+8cJ	.	8aJ	.	8a
+*v	*v	*	*	*
+*	*v	*v	*
+=16	=16	=16
+4G 4B	4d 4g	4g
+4GG	4r	4r
+8r	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/19/
+!!!EFL: 201/600

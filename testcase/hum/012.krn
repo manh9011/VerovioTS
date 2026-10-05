@@ -1,0 +1,146 @@
+!!!!SEGMENT: erk012.krn
+!!!OTL@@DE: Matrosenlied
+!!!COM: Pohlenz, August
+!!!ODT: 1823
+!!!OMD: Moderato
+!!!LYR: Gerhard, Wilhelm
+!!!LDT: 1817
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[I,A,A]	*>[I,A,A]	*>[I,A,A]
+*>norep[I,A]	*>norep[I,A]	*>norep[I,A]
+*>I	*>I	*>I
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[]	*k[]	*k[]
+*C:	*C:	*C:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM84	*MM84	*MM84
+4CC 4C	8c 8eL	2r
+.	8G	.
+4r	8c 8e	.
+.	8GJ	.
+2r	8c 8eL	4r
+.	8G	.
+.	8c 8e	8g
+.	8GJ	8g
+=2!|:	=2!|:	=2!|:
+*>A	*>A	*>A
+4CC 4C	8c 8eL	4cc
+.	8G	.
+4r	8c 8e	8cc
+.	8GJ	8cc
+4C	8c 8eL	4cc
+.	8G	.
+4r	8c 8e	8b
+.	8GJ	8cc
+=3	=3	=3
+4BB	8d 8fL	4dd
+.	8G	.
+4r	8d 8f	4g
+.	8GJ	.
+4GG	8d 8fL	4g
+.	8G	.
+4r	8d 8f	8g
+.	8GJ	8g
+=4	=4	=4
+4BB	8d 8fL	4g
+.	8G	.
+4GG	8d 8f	8r
+.	8GJ	8g
+4BB	8d 8fL	(4ff
+.	8G	.
+4GG	8d 8f	8ee)
+.	8GJ	8dd
+=5	=5	=5
+4C	8c 8eL	4ee
+.	8A	.
+4GG	8c 8e	4cc
+.	8GJ	.
+4EE	8c 8eL	2r
+.	8G	.
+4CC	8c 8e	.
+.	8GJ	.
+=6	=6	=6
+2AAA 2AA	8c 8eL	2cc
+.	8A	.
+.	8c 8e	.
+.	8AJ	.
+2EE 2E	8d 8eL	4b
+.	8B	.
+.	8d 8e	4b
+.	8BJ	.
+=7	=7	=7
+[2AA	8c 8eL	2a
+.	8A	.
+.	8c 8e	.
+.	8AJ	.
+8AAL]	8c 8eL	2r
+8F	8A	.
+8E	8c 8e	.
+8D#J	8AJ	.
+=8	=8	=8
+2E	8c 8eL	2a
+.	8A	.
+.	8c 8e	.
+.	8AJ	.
+4EE	8d 8eL	4b
+.	8G#	.
+4EE	8d 8e	4b
+.	8G#J	.
+=9	=9	=9
+2AA	8c 8eL	2cc
+.	8A	.
+.	8c 8e	.
+.	8AJ	.
+8BBL	8c 8eL	8ddL
+8AAJ	8A	8ccJ
+8GG#L	8c 8e	8b
+8AAJ	8AJ	8cc
+=10	=10	=10
+4BB'	8d 8fL	4dd
+.	8Gn	.
+4GGn'	8d 8f	8dd
+.	8GnJ	8dd
+4BB'	8d 8fL	8eeL
+.	8G	8ddJ
+4GG'	8d 8f	8ccL
+.	8GJ	8ddJ
+=11	=11	=11
+4C	8c 8eL	2ee
+.	8G	.
+4EE	8c 8e	.
+.	8GJ	.
+4FF	8dL	8ddL
+.	8A	8ffJ
+4DD	8d 8f	8ee
+.	8AJ	8dd
+=12	=12	=12
+4GG	8c 8eL	4cc
+.	8G	.
+4FF#	8c 8e	8cc
+.	8GJ	8cc
+4GG	8B 8dL	8ccL
+.	8G	8bJ
+4GGG	8d 8f	8aL
+.	8GJ	8bJ
+=13	=13	=13
+*^	*	*
+8FFL	(2CC	2G 2c 2e	2cc
+8GG	.	.	.
+8EE	.	.	.
+8GGJ	.	.	.
+*v	*v	*	*
+8C)	4r	4r
+8r	.	.
+4r	4r	4g
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/28/
+!!!EFL: 012/651

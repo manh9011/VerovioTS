@@ -1,0 +1,128 @@
+!!!!SEGMENT: erk096.krn
+!!!OTL@@DE: Treue Liebe
+!!!COM: Ältere Volksweise
+!!!ODT: 1818
+!!!OMD: Mässig langsam
+!!!LYR: Volkslied aus: "Des Knaben Wunderhorn"
+!!!LDT: 1808
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*>[A,A,B]	*>[A,A,B]	*>[A,A,B]
+*>norep[A,B]	*>norep[A,B]	*>norep[A,B]
+*>A	*>A	*>A
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/4	*M3/4	*M3/4
+*MM62	*MM62	*MM62
+*^	*	*
+8GL	4r	(8B 8gL	8g
+8DJ	.	8d) 8aJ	8a
+=1	=1	=1	=1
+8r	2.GG	4g 4b	4b
+8DL	.	.	.
+8G	.	4g 4b	4b
+8DJ	.	.	.
+8F#L	.	(8a 8ccL	8cc
+8DJ	.	8f#) 8aJ	8a
+=2	=2	=2	=2
+8r	2.GG	8cc (8eeL	(8eeL
+8DL	.	8b 8ddJ)	8ddJ)
+8G	.	4b 4dd	4dd
+8DJ	.	.	.
+8GL	.	8g (8bL	8b
+8DJ	.	8b 8ddJ)	8dd
+*v	*v	*	*
+=3	=3	=3
+8DDL	8b (8ddL	(8ddL
+8D	8a 8ccJ)	8ccJ)
+8F#	4a 4cc	4cc
+8DJ	.	.
+8F#L	8b (8ddL	8dd
+8DJ	8a 8ccJ)	8cc
+=4	=4	=4
+*^	*	*
+8r	2GG	4.g 4.b	4.b
+8DL	.	.	.
+8G	.	.	.
+8DJ	.	8r	8r
+*v	*v	*	*
+=:|!	=:|!	=:|!
+*>B	*>B	*>B
+*^	*	*
+8GL	4r	(8b 8ddL	8dd
+8DJ	.	8g) 8bJ	8b
+*v	*v	*	*
+=5	=5	=5
+8DD	(8g 8bL	(8bL
+4D	8f#) 8aJ	8aJ)
+.	4f# 4a	4a
+8D	.	.
+8F#L	8cc (8eeL	8ee
+8DJ	8a 8ccJ)	8cc
+=6	=6	=6
+*^	*	*
+8r	2GG	(8a 8ccL	(8ccL
+8DL	.	8g) 8bJ	8bJ)
+8G	.	4g 4b	4b
+8DJ	.	.	.
+8GL	4r	(8b 8ddL	8dd
+8DJ	.	8g) 8bJ	8b
+*v	*v	*	*
+=7	=7	=7
+8DD	(8g 8bL	(8bL
+4D	8f#) 8aJ	8aJ)
+.	4f# 4a	4a
+8D	.	.
+8F#L	8cc (8eeL	8ee
+8DJ	8a 8ccJ)	8cc
+=8	=8	=8
+*^	*	*
+8r	2GG	(8a 8ccL	8ccL
+8DL	.	8g) 8bJ	8bJ
+8G	.	4g 4b	4b
+8DJ	.	.	.
+8GL	4r	(8B 8gL	8g
+8DJ	.	8d) 8aJ	8a
+=9	=9	=9	=9
+8r	2.GG	4g 4b	4b
+8DL	.	.	.
+8G	.	4g 4b	4b
+8DJ	.	.	.
+8F#L	.	(8a 8ccL	8cc
+8DJ	.	8f#) 8aJ	8a
+=10	=10	=10	=10
+8r	2GG	4cc (4ee	(4ee
+8DL	.	.	.
+8G	.	4b 4dd)	4dd)
+8DJ	.	.	.
+*v	*v	*	*
+4EE 4E	8g# (8bL	8b
+.	8b 8ddJ)	8dd
+=11	=11	=11
+*^	*	*
+8r	2AA	8b (8ddL	(8ddL
+8EL	.	8a 8ccJ)	8ccJ)
+8A	.	4a 4cc	4cc
+*	*	*^	*
+8EJ	.	.	.	.
+*v	*v	*	*	*
+4DD 4D	8b (8ddL	4f#	8dd
+.	8a 8ccJ)	.	8cc
+*	*v	*v	*
+=12	=12	=12
+*^	*	*
+4.G	8GL	4.d 4.g 4.b	4.b
+.	8D	.	.
+.	8GGJ	.	.
+*v	*v	*	*
+8r;	8r;	8r;
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/08/
+!!!EFL: 096/651

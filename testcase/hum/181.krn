@@ -1,0 +1,87 @@
+!!!!SEGMENT: erk180.krn
+!!!OTL@@DE: Gaudeamus igitur
+!!!ONB: Alte Melodie
+!!!ODT: ~1750
+!!!OMD: Feierlich
+!!!ONB: Altes Studentenlied
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,A,B]	*>[A,A,B]	*>[A,A,B]
+*>norep[A,B]	*>norep[A,B]	*>norep[A,B]
+*>A	*>A	*>A
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[b-e-]	*k[b-e-]	*k[b-e-]
+*B-:	*B-:	*B-:
+*M3/4	*M3/4	*M3/4
+*MM120	*MM120	*MM120
+8.BBB- 8.BB-L	8.d 8.f 8.b-L	8.b-
+16DD 16DJk	16B- 16fJk	16f
+4DD 4D	4B- 4f	4f
+4BBB- 4BB-	4d 4f 4b-	4b-
+=2	=2	=2
+8.EE- 8.E-L	8.B- 8.e- 8.gL	8.g
+16EE- 16E-Jk	16B- 16e- 16gJk	16g
+2EE- 2E-	2B- 2e- 2g	2g
+=3	=3	=3
+8.FF 8.FL	8.c 8.e- 8.aL	8.a
+16FF 16FJk	16d 16b-Jk	16b-
+4FF 4F	4e- 4cc	4cc
+4FF 4F	4c 4e- 4f 4a	4a
+=4	=4	=4
+4BBB- 4BB-	(8d 8f 8b-L	(8b-L
+.	8f) 8b- 8ddJ	8ddJ)
+2BBB- 2BB-	2d 2f 2b-	2b-
+=5:|!	=5:|!	=5:|!
+*>B	*>B	*>B
+8.FF 8.FL	8.f 8.aL	8.a
+16FF 16FJk	16f 16g 16b-Jk	16b-
+4FF 4F	4f 4a 4cc	4cc
+4FF 4F	4f 4a 4cc	4cc
+=6	=6	=6
+8BBB- 8BB-L	8f 8b- 8ddL	8dd
+8DD 8DJ	8f 8b-J	8b-
+4FF 4F	4f 4a 4cc	4cc
+4FF 4F	4f 4a 4cc	4cc
+=7	=7	=7
+8.FF 8.FL	8.f 8.aL	8.a
+16FF 16FJk	16f 16g 16b-Jk	16b-
+4FF 4F	4f 4a 4cc	4cc
+4FF 4F	4f 4a 4cc	4cc
+=8	=8	=8
+8BBB- 8BB-L	8f 8b- 8ddL	8dd
+8DD 8DJ	8f 8b-J	8b-
+4FF 4F	4f 4a 4cc	4cc
+4FF 4F	4f 4a 4cc	4cc
+=9	=9	=9
+8.DD 8.DL	8.B- 8.f 8.b-L	8.b-
+16DD 16DJk	16B- 16f 16aJk	16a
+4EE- 4E-	4B- 4e- 4g	4g
+(8CC 8CL	(8g 8ee-L	(8ee-L
+8EE-) 8E-J	8e-) 8g 8ccJ	8ccJ)
+=10	=10	=10
+(4.FF 4.F	(4d 4f 4b-	(4b-
+.	4c) 4e- 4a	4a)
+8FF#) 8F#	.	.
+4GG; 4G;	4B-; 4d; 4b-;	4b-;
+=11	=11	=11
+8.DD 8.DL	8.B- 8.fn 8.b-L	8.b-
+16DD 16DJk	16B- 16f 16aJk	16a
+4EE- 4E-	4B- 4e- 4g	4g
+*	*^	*
+(8CC 8CL	4g	(8ee-L	(8ee-L
+8EE-) 8E-J	.	8ccJ)	8ccJ)
+*	*v	*v	*
+=12	=12	=12
+4FF 4F	4f 4b- (4dd	(4dd
+4FFF 4FF	&(4e-&) 4a 4cc)	4cc)
+4BBB-; 4BB-;	4d; 4f; 4b-;	4b-;
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/28/
+!!!EFL: 180/651

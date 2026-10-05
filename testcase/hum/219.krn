@@ -1,0 +1,181 @@
+!!!!SEGMENT: erk218.krn
+!!!OTL@@DE: Herbstlied
+!!!COM: Reichardt, J. Fr.
+!!!ODT: 1799
+!!!OMD: Etwas lebhaft
+!!!LYR: von Salis
+!!!LDT: 1782
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 2
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[f#c#g#]	*k[f#c#g#]	*k[f#c#g#]
+*A:	*A:	*A:
+*M6/8	*M6/8	*M6/8
+*MM84	*MM84	*MM84
+2.AA 2.E	16aLL	4a
+.	16e	.
+.	16c#	.
+.	16e	.
+.	16c# 16a	8a
+.	16eJJ	.
+.	16c# 16aLL	(8aL
+.	16e	.
+.	16B 16g#	8g#J)
+.	16e	.
+.	16c# 16a	8a
+.	16eJJ	.
+=2	=2	=2
+*^	*	*
+4.E	4.G#	16bLL	4.b
+.	.	16e	.
+.	.	16d	.
+.	.	16B	.
+.	.	16d	.
+.	.	16eJJ	.
+8A	4.AA 4.E	16aLL	4.a
+.	.	16e	.
+8r	.	16c#	.
+.	.	16A	.
+8r	.	16c#	.
+.	.	16eJJ	.
+*v	*v	*	*
+=3	=3	=3
+2.AA 2.E	16cc#LL	4cc#
+.	16a	.
+.	16e	.
+.	16a	.
+.	16cc#	8cc#
+.	16eJJ	.
+.	16a 16cc#LL	(8cc#L
+.	16e	.
+.	16g# 16b	8bJ)
+.	16e	.
+.	16a 16cc#	8cc#
+.	16eJJ	.
+=4	=4	=4
+4.GG# 4.E	16ddLL	4.dd
+.	16b	.
+.	16e	.
+.	16d	.
+.	16e	.
+.	16bJJ	.
+4.AA 4.E	16cc#LL	4.cc#
+.	16a	.
+.	16e	.
+.	16c#	.
+.	16e	.
+.	16aJJ	.
+=5	=5	=5
+4GG# 4E	16bLL	4b
+.	16e	.
+.	16B	.
+.	16e	.
+8GG# 8E	16b	8b
+.	16eJJ	.
+4AA 4F#	16aLL	(8aL
+.	16f#	.
+.	16c#	8cc#J)
+.	16f#	.
+8BB 8A	16d#	8d#
+.	16BJJ	.
+=6	=6	=6
+*^	*	*
+8E	8G#	16eLL	4.e
+.	.	16e	.
+8G#L	[4E	16ee	.
+.	.	16e	.
+8F# 8AJ	.	16dd#	.
+.	.	16eJJ	.
+8G# 8BL	4.E]	16ddnLL	4r
+.	.	16e	.
+8A 8c#	.	16cc#	.
+.	.	16e	.
+8B 8dJ	.	16b	8r
+.	.	16eJJ	.
+=7	=7	=7	=7
+8A	4AA 4E	16cc#LL	4cc#
+.	.	16e	.
+8r	.	16c#	.
+.	.	16e	.
+2ryy	8BB 8G#	16b	8b
+.	.	16eJJ	.
+.	4C# 4A	16aLL	4a
+.	.	16e	.
+.	.	16c#	.
+.	.	16e	.
+.	8C# 8B	16g#	8g#
+.	.	16e#JJ	.
+=8	=8	=8	=8
+8A	4.D	16f#LL	4.f#
+.	.	16d	.
+8r	.	16A	.
+.	.	16d	.
+8r	.	16f#	.
+.	.	16dJJ	.
+4.ryy	4.C# 4.A#	16f#LL	4.f#
+.	.	16en	.
+.	.	16c#	.
+.	.	16e	.
+.	.	16f#	.
+.	.	16eJJ	.
+*v	*v	*	*
+=9	=9	=9
+4BB 4F# 4B	16ddLL	4dd
+.	16f#	.
+.	16d	.
+.	16f#	.
+8C# 8A#	16cc#	8cc#
+.	16f#JJ	.
+4D 4B	16bLL	(8bL
+.	16f#	.
+.	16cc#	8cc#J)
+.	16f#	.
+8D# 8B	16a	8a
+.	16f#JJ	.
+=10	=10	=10
+*^	*	*
+[2.E	4.E	16g#LL	4.g#
+.	.	16e	.
+.	.	16B	.
+.	.	16e	.
+.	.	16g#	.
+.	.	16eJJ	.
+.	4.Dn	16g#LL	4.g#
+.	.	16e	.
+.	.	16B	.
+.	.	16e	.
+.	.	16g#	.
+.	.	16eJJ	.
+*v	*v	*	*
+=11	=11	=11
+4C# 4E]	16aLL	(8aL
+.	16e	.
+.	16a 16cc#	8cc#J)
+.	16e	.
+8C# 8A	16a 16ee	8ee
+.	16eJJ	.
+4E	16eLL	(8eL
+.	16d	.
+.	16B 16f#	8f#J)
+.	16d	.
+8EE 8E	16B 16g#	8g#
+.	16dJJ	.
+=12	=12	=12
+8AA	16c# 16aLL	4.a
+.	16e	.
+8r	16A	.
+.	16c#	.
+8r	16E	.
+.	16AJJ	.
+4AAA 4AA	4r	4r
+8r	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/20/
+!!!EFL: 218/600

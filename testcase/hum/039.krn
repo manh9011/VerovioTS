@@ -1,0 +1,168 @@
+!!!!SEGMENT: erk039.krn
+!!!OTL@@DE: Ewiger Wechsel
+!!!COM: Himmel, Friedrich Heinrich
+!!!ODT: 1803
+!!!OMD: Allegro moderato
+!!!LYR: Kotzebue, August von
+!!!LDT: 1802
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/4	*M3/4	*M3/4
+*MM118	*MM118	*MM118
+4r	8g 8bL	4b
+.	8dJ	.
+=1	=1	=1
+[2.GG [2.G	8g 8bL	4b
+.	8d	.
+.	8g 8b	4b
+.	8d	.
+.	8g 8b	4b
+.	8dJ	.
+=2	=2	=2
+2.GG] 2.G]	8g 8bL	4b
+.	8d	.
+.	8f# 8a	4a
+.	8d	.
+.	8g 8b	4b
+.	8dJ	.
+=3	=3	=3
+*	*^	*
+2.FF# 2.F#	(2dd	8r	(2dd
+.	.	8dL	.
+.	.	8a	.
+.	.	8d	.
+.	4cc)	8a	4cc)
+.	.	8dJ	.
+=4	=4	=4	=4
+2GG 2G	2b	8r	4b
+.	.	8dL	.
+.	.	8g	4r
+.	.	8d	.
+4r	4b	8g	4b
+.	.	8dJ	.
+*	*v	*v	*
+=5	=5	=5
+2.AAA 2.AA	8f# 8aL	4a
+.	8A	.
+.	8d 8f#	4dd
+.	8A	.
+.	8f# 8a	4a
+.	8AJ	.
+=6	=6	=6
+2AAA 2AA	8e 8gL	4g
+.	8A	.
+.	8d 8f#	4f#
+.	8A	.
+4AAA 4AA	8c# 8e	4e
+.	8AJ	.
+=7	=7	=7
+4D	(8dL	[2.d
+.	8A	.
+4AA	8f#	.
+.	8d	.
+4FF#	8a	.
+.	8f#J	.
+=8	=8	=8
+4DD	4dd)	4d]
+4r	4r	4r
+4r	[4d	4d
+=9	=9	=9
+(4D	8dL]	4d
+.	8d	.
+4C#	8e	4e
+.	8d	.
+4Cn	8f#	4f#
+.	8dJ	.
+=10	=10	=10
+4BB	8gL	4g
+.	8d	.
+4AA	8f# 8a	4a
+.	8d	.
+4GG)	8g 8b	4b
+.	8dJ	.
+=11	=11	=11
+*	*^	*
+(2FF#	2.cc	8r	2.cc
+.	.	8dL	.
+.	.	8a	.
+.	.	8d	.
+4AA	.	8f#	.
+.	.	8dJ	.
+*	*v	*v	*
+=12	=12	=12
+4D)	8f# 8aL	4a
+.	8dJ	.
+8AL	4r	4r
+8F#	.	.
+8D	4f# 4a 4dd	4dd
+8CJ	.	.
+=13	=13	=13
+8BBL	4d 4g	4g
+8D	.	.
+8BB	4d 4g	4g
+8D	.	.
+8BB	4d 4g	4g
+8DJ	.	.
+=14	=14	=14
+*	*^	*
+8CL	4a	2d	4a
+8D	.	.	.
+8C	4g	.	4g
+8D	.	.	.
+8C	4f#	4d	4f#
+8DJ	.	.	.
+=15	=15	=15	=15
+*^	*	*	*
+8BBL	2.BB	2.dd	2d 2g	(2.dd
+8D	.	.	.	.
+8G	.	.	.	.
+8BJ	.	.	.	.
+4r	.	.	8dL	.
+.	.	.	(8gJ	.
+*v	*v	*	*	*
+*	*v	*v	*
+=16	=16	=16
+2C	8eeL	4ee
+.	8e	.
+.	8cc	4cc)
+.	8e	.
+4C 4c	8a	4a
+.	8eJ)	.
+=17	=17	=17
+*^	*	*
+4B	2.D	8gL	4g
+.	.	8d	.
+4r	.	8B 8g	4g
+.	.	8d	.
+4r	.	8B 8g	4g
+.	.	8dJ	.
+*v	*v	*	*
+=18	=18	=18
+2DD 2D	8c 8aL	4a
+.	8d	.
+.	8B 8g	4g
+.	8d	.
+4DD 4D	8A 8f#	4f#
+.	8dJ	.
+=19	=19	=19
+4GG 4G	8B (8gL	[2.g
+.	8d	.
+4D	8b	.
+.	8g	.
+4BB	8dd	.
+.	8bJ	.
+=20	=20	=20
+4GG	4gg)	4g]
+4r	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/02/
+!!!EFL: 039/651

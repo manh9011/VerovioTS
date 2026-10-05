@@ -1,0 +1,114 @@
+!!!!SEGMENT: erk160.krn
+!!!OTL@@DE: Musketierlied
+!!!COM: Silcher, Friedrich
+!!!ODT: 1827
+!!!OMD: Lustig
+!!!LYR: Hebel, Johann Peter
+!!!LDT: 1809
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M2/4	*M2/4	*M2/4
+*MM104	*MM104	*MM104
+4GG 4G	4B 4d 4g	4g
+8DL	8A 8d 8f#L	8f#
+8D 8F#J	8c 8d 8aJ	8a
+=2	=2	=2
+8GL	8B 8d 8gL	4g
+16.GGL	16.GL	.
+32BBJJk	32BJJk	.
+8DL	8dL	4r
+8GJ	8gJ	.
+=3	=3	=3
+4GG 4G	4d 4g 4b	4b
+8DL	8d 8f# 8aL	8a
+8D 8F#J	8d 8a 8ccJ	8cc
+=4	=4	=4
+8GL	8d 8g 8bL	4b
+16.GGL	16.G 16.BL	.
+32BBJJk	32G 32dJJk	.
+8DL	8B 8gL	4r
+8GJ	8d 8bJ	.
+=5	=5	=5
+4DD 4D	(8d 8f# 8aL	8aL
+.	8e) 8g	8gJ
+8D 8AL	8d 8f#	8f#
+8D 8AJ	8e 8gJ	8g
+=6	=6	=6
+4DD 4D	8f# 8aL	8a
+.	8g 8b	8b
+8D 8AL	8f# 8a	4a
+8D 8AJ	8d 8f#J	.
+=7	=7	=7
+4AAA 4AA	8d 8eL	4e
+.	8d 8e	.
+8AA 8AL	8c# 8e 8a	8a
+8AA 8AJ	8c# 8e 8gJ	8g
+=8	=8	=8
+8AA 8AL	8d 8f#L	8f#
+8AA 8GJ	8c# 8eJ	8e
+4D 4F#	4d	4d
+=9	=9	=9
+4D 4A	4d 4f# 4ccn	4cc
+8D 8BL	8d 8g 8bL	8b
+8D 8cJ	8d 8f# 8aJ	8a
+=10	=10	=10
+8G 8B	8d 8gL	8g
+(16GGLL	8d 8g 8bJ	8b
+16BBJJ)	.	.
+8DL	4d 4f# 4a	4a
+8DDJ	.	.
+=11	=11	=11
+*	*^	*
+4D 4A	(8ddL	4d 4f#	8ddL
+.	8ccJ)	.	8ccJ
+*	*v	*v	*
+8D 8BL	8d 8g 8bL	8b
+8D 8cJ	8d 8f# 8aJ	8a
+=12	=12	=12
+8G 8B	8d 8gL	8g
+(16GGLL	8d 8g 8bJ	8b
+16BBJJ)	.	.
+8DL	4d 4f# 4a	4a
+8DDJ	.	.
+=13	=13	=13
+8GGL	4d^ 4g^ 4b^	4b^
+16.GL	.	.
+32GJJk	.	.
+8FF# 8F#L	8d 8aL	8a
+8FFn 8FnJ	8d 8g 8bJ	8b
+=14	=14	=14
+*	*^	*
+*	*	*^	*
+4EE 4E	(4cc	8gL	4c	(4cc
+.	.	16.gL	.	.
+.	.	32gJJk	.	.
+*	*	*v	*v	*
+8CC 8CL	4ee)	8e 8gL	8ee)
+8CC# 8C#J	.	8g 8b-J	8r
+*	*v	*v	*
+=15	=15	=15
+*^	*	*
+8DL	4DD	8d 8g 8bn 8ddL	(8ddL
+16.DL	.	8g 8bJ	8bJ)
+32DJJk	.	.	.
+8DL	4DD	8d 8f# 8ccL	8cc
+8DJ	.	8c 8d 8f# 8aJ	8a
+*v	*v	*	*
+=16	=16	=16
+8GG 8G	8B 8d 8gL	4g
+8r	16.GL	.
+.	32GJJk	.
+4GGG 4GG	4G	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/27/
+!!!EFL: 160/651

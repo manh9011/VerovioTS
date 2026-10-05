@@ -1,0 +1,214 @@
+!!!!SEGMENT: erk200.krn
+!!!OTL@@DE: Wanderlied
+!!!ONB: Nach der Volksweise: Dort oben auf dem Berg, da horstet der Aar.
+!!!ODT: 1827
+!!!OMD: Mässig bewegt
+!!!LYR: Justinus Kerner
+!!!LDT: 1811
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,A,B,C,C]	*>[A,A,B,C,C]	*>[A,A,B,C,C]
+*>norep[A,B,C]	*>norep[A,B,C]	*>norep[A,B,C]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[]	*k[]	*k[]
+*C:	*C:	*C:
+*M3/4	*M3/4	*M3/4
+*MM78	*MM78	*MM78
+*^	*	*
+8EL	4C	(8cL	(8cL
+8GJ	.	8eJ)	8eJ)
+*v	*v	*	*
+=1	=1	=1
+4C 4c	4e 4g	4g
+4C 4c	4e 4g	4g
+4C 4c	(8f 8aL	(8aL
+.	8e) 8gJ	8gJ)
+=2	=2	=2
+4C 4G	8c (8eL	(8eL
+.	&(8gJ&)	8gJ)
+4C 4G	4.e 4.cc)	4.cc
+4C 4G	.	.
+.	8c 8e	8e
+=3	=3	=3
+*	*^	*
+4G	8e (8gL	4B	(8gL
+.	8d 8fJ	.	8fJ)
+4GG	8d (8fL)	4B	(8fL
+.	8c# 8eJ)	.	8eJ)
+4G	8fL	4B 4d	(8fL
+.	8gJ	.	8gJ)
+*	*v	*v	*
+=4	=4	=4
+4C 4G	4cn 4e	4e
+4CC	4r	4r
+=:|!	=:|!	=:|!
+*>B	*>B	*>B
+4r	4c 4e	4e
+=5	=5	=5
+4GG	(8B 8dL	(8dL
+.	8bJ)	8bJ)
+4G	4.d 4.b	4.b
+4GG	.	.
+.	8d 8b	8b
+=6	=6	=6
+*	*^	*
+4C	(8bL	4e	(8bL
+.	8aJ	.	8aJ)
+*	*v	*v	*
+4C	4.e 4.a)	4.a
+4C	.	.
+.	8e 8a	8a
+=7	=7	=7
+*	*^	*
+4D	8f# (8aL	4d	(8aL
+.	8g 8bJ	.	8bJ)
+*	*v	*v	*
+4D	4d 4a 4cc)	4cc
+4D	4c 4d 4f#	4f#
+=8	=8	=8
+4GG	2B 2d 2g	2g
+4G	.	.
+4r	4B 4d	4d
+=9	=9	=9
+4GG	(8B 8dL	(8dL
+.	8bJ	8bJ)
+4G	4.d) 4.b	4.b
+4GG	.	.
+.	8d# 8b	8b
+=10	=10	=10
+*	*^	*
+4C	(8bL	4e	(8bL
+.	8aJ	.	8aJ)
+*	*v	*v	*
+4C	4.e 4.a)	4.a
+4C	.	.
+.	8e 8a	8a
+=11	=11	=11
+*	*^	*
+4D	8f# (8aL	4d	(8aL
+.	8g 8bJ	.	8bJ)
+*	*v	*v	*
+4DD	4d 4a 4cc)	4cc
+4D	4c 4d 4f#	4f#
+=12	=12	=12
+4GG	2B 2d 2g	2g
+4G	.	.
+4r	8r	8r
+.	8e 8g	8g
+=13	=13	=13
+4GG 4G	(8fn 8aL	(8aL
+.	8e) 8gJ	8gJ)
+4BB 4G	4.d 4.f	4.f
+4GG 4G	.	.
+.	8d 8f	8f
+=14	=14	=14
+4C 4G	8c (8eL	(8eL
+.	8gJ	8gJ)
+4C 4G	4.e 4.cc)	4.cc
+4C 4G	.	.
+.	8c 8e	8e
+=15	=15	=15
+*	*^	*
+4G	8e (8gL	4B	(8gL
+.	8d 8fJ	.	8fJ)
+4GG	8d (8fL)	4B	(8fL
+.	8c# 8eJ	.	8eJ)
+4G	8fL)	4B 4d	(8fL
+.	8gJ	.	8gJ)
+*	*v	*v	*
+=16	=16	=16
+4C 4G	2cn 2e	2e
+4CC	.	.
+4C 4G	4e 4g	4g
+=17	=17	=17
+4C 4c	(8e 8gL	(8gL
+.	8eeJ)	8eeJ)
+4C 4c	4.g 4.ee	4.ee
+4C 4c	.	.
+.	8g# 8ee	8ee
+=18	=18	=18
+*	*^	*
+4FF 4F	(8eeL	4a	(8eeL
+.	8ddJ	.	8ddJ)
+4F 4A	2ryy	4.a 4.dd)	4.dd
+4F 4A	.	.	.
+.	.	8a 8dd	8dd
+=19	=19	=19	=19
+4G	8b (8ddL	4g	(8ddL
+.	8cc 8eeJ)	.	8eeJ)
+*	*v	*v	*
+4GG	4g 4dd 4ff	4ff
+4GG 4G	4f 4g 4b	4b
+=20	=20	=20
+4C	2e 2g 2cc	2cc
+4CC	.	.
+4r	8r	8r
+.	8g	8g
+=21	=21	=21
+*	*^	*
+2C; 2G;	(8gL	2e	(8gL
+.	8eeJ	.	8eeJ
+.	4cc;)	.	4cc;)
+*	*v	*v	*
+=!|:	=!|:	=!|:
+*>C	*>C	*>C
+8GL	8gL	8g
+8GJ	8gJ	8g
+=22	=22	=22
+8.C 8.GL	8.e 8.ccL	8.cc
+16C 16GJk	16e 16ccJk	16cc
+4C 4G	4e 4cc	4cc
+8E 8GL	8g 8bL	8b
+8E 8GJ	8g 8bJ	8b
+=23	=23	=23
+8.F 8.AL	8.c 8.f 8.aL	8.a
+16FJk	16c 16f 16aJk	16a
+4F	4c 4f 4a	4a
+8CL	8c 8e 8gL	8g
+8CJ	8c 8e 8gJ	8g
+=24	=24	=24
+*	*^	*
+4GG	8.d 8.fL	4B	8.f
+.	16c# 16eJk	.	16e
+4G	8.d 8.fL	4B	8.f
+.	16c# 16eJk	.	16e
+4GG	8.d 8.fL	4B	8.f
+.	16f 16aJk	.	16a
+*	*v	*v	*
+=25	=25	=25
+4C	2cn 2e 2g	2g
+4CC	.	.
+8GL	8gL	8g
+8GJ	8gJ	8g
+=26	=26	=26
+8.C 8.cL	8.e 8.g 8.eeL	8.ee
+16C 16cJk	16e 16g 16eeJk	16ee
+4C 4c	4e 4g 4ee	4ee
+8E 8BL	8e 8g# 8ddL	8dd
+8E 8BJ	8e 8g# 8ddJ	8dd
+=27	=27	=27
+8.AA 8.AL	8.e 8.a 8.ccL	8.cc
+16AA 16AJk	16e 16a 16ccJk	16cc
+4AA 4A	4e 4a 4cc	4cc
+8.EL	8g 8cc 8eeL	8ee
+.	8g 8cc 8eeJ	8ee
+16FJk	.	.
+=28	=28	=28
+4G	8.f 8.g 8.ddL	8.dd
+.	16e 16ccJk	16cc
+4G	8.f 8.g 8.ddL	8.dd
+.	16e 16ccJk	16cc
+4GG 4G	8.f 8.g 8.ddL	8.dd
+.	16g 16eeJk	16ee
+=29	=29	=29
+2C 2G	2e 2g 2cc	2cc
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/28/
+!!!EFL: 200/651

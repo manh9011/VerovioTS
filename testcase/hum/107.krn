@@ -1,0 +1,170 @@
+!!!!SEGMENT: erk107.krn
+!!!OTL@@DE: Abschied vom Dirndel
+!!!ONB: Neueres Volkslied
+!!!OMD: Gemässigt und innig
+!!!ONB: Schweizerisch
+!!!LDT: 1839
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,A,B]	*>[A,A,B]	*>[A,A,B]
+*>norep[A,B]	*>norep[A,B]	*>norep[A,B]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/4	*M3/4	*M3/4
+*MM108	*MM108	*MM108
+8r	(8dL	8d
+4r	8B 8g	8g
+.	8d) 8aJ	8a
+=1	=1	=1
+*^	*	*
+8GGL	4GG	(4.g 4.b	4.b
+8D	.	.	.
+*v	*v	*	*
+8G 8B	.	.
+8D	8f#L	8f#
+8G 8B	8a	8a
+8DJ	8gJ)	8g
+=2	=2	=2
+8CC 8CL	(4f#	4f#
+8E	.	.
+8A 8c	8e)	8e
+8E	8r	8r
+8A 8c	8aL	8a
+8EJ	8bJ	8b
+=3	=3	=3
+*	*^	*
+8DDL	(4.dd	2f#	4.dd
+8D	.	.	.
+8A 8c	.	.	.
+8D	8cc	.	8cc
+*	*v	*v	*
+8A 8c	8eL	8e
+8DJ	8d 8f#J)	8f#
+=4	=4	=4
+4G 4B	4d 4g	4g
+8GG	8r	8r
+!!LO:LB:g=original
+=:|!	=:|!	=:|!
+*>B	*>B	*>B
+!	!	!LO:TX:a:t=Jodler:vg=2
+8r	8r	8r
+!	!	!LO:TX:a:i:t=  ad libitum:vg=2
+4r	8gL	8gL
+.	8aJ	8aJ
+=5	=5	=5
+4GG	(8.bL	8.bL
+.	16gk	16gJk
+4D 4G 4B	8.b	8.bL
+.	16gJk	16gJk
+4D 4G 4B	8.eeL	8.eeL
+.	16ddJk)	16ddJk
+=6	=6	=6
+4DD	(4dd	4dd
+4D 4F# 4A	8ccL	8ccL
+.	8f#J	8f#J
+4D 4F# 4c	8a)	8a
+.	8r	8r
+=7	=7	=7
+4DD	(8.ccL	8.ccL
+.	16ak	16aJk
+4D 4F# 4A	8.cc	8.ccL
+.	16aJk	16aJk
+4D 4F# 4c	8.ff#L	8.ff#L
+.	16eeJk)	16eeJk
+=8	=8	=8
+4GG	(4ee	4ee
+4D 4G 4B	8ddL	8ddL
+.	8gJ	8gJ
+4D 4G 4B	8b)	8b
+.	8r	8r
+!!LO:LB:g=original
+=9	=9	=9
+4BB	(8.ddL	(8.ddL
+.	16bJk	16bJk
+4G 4B 4d	4.gg	4.gg
+4G 4B 4d	.	.
+.	8ff#)	8ff#)
+=10	=10	=10
+4C	(4ff#	(4ff#
+4E 4A 4c	4ee)	4ee)
+4E 4A 4c	(8.aL	8.aL
+.	.	.
+.	(16bJk))	16bJ
+=11	=11	=11
+*^	*	*
+4r	2.D	(4dd	4dd
+4F# 4A 4d	.	8ccL	8ccL
+.	.	8f#J)	8f#J
+4A 4c 4d	.	(8ccL	8ccL
+.	.	8f#J)	8f#J
+*v	*v	*	*
+=12	=12	=12
+4G 4B 4d	4g	4g
+4GG	4r	4r
+4r	(8.bL	4r
+.	16aJk)	.
+=13	=13	=13
+4AA	(8.aL	8.aL
+.	16bk	16bJk
+4A 4c# 4g	8.a	8.aL
+.	16bk	16bJk
+4A 4c# 4g	8.a	8.aL
+.	16bJk)	16bJk
+=14	=14	=14
+!	!LO:TUP:a	!LO:TUP:a
+4D	(12aL	(12aL
+.	12dd	12dd
+.	12ff#J)	12ff#J)
+4A 4d 4f#	2aa	2aa
+4A 4d 4f#	.	.
+!!LO:LB:g=original
+=15	=15	=15
+4AA	(8aaL	(8aaL
+.	16ggL	16ggL
+.	16aJJ	16aJJ
+4A 4c# 4e	2ee)	2ee)
+4A 4c# 4e	.	.
+=16	=16	=16
+4D	(8ggL	(8ggL
+.	16ff#L	16ff#L
+.	16aJJ	16aJJ
+4A 4d 4f#	2dd)	2dd)
+4A 4d 4f#	.	.
+=17	=17	=17
+4DD 4D	8.a (8.ccnL	8.ccL
+.	16ddk	16ddJk
+4F# 4A 4d	8.a 8.cc	8.ccL
+.	16ddk	16ddJk
+4F# 4A 4d	8.a 8.cc	8.ccL
+.	16ddJk)	16ddJk
+=18	=18	=18
+!	!LO:TUP:a	!LO:TUP:a
+4GG	(12bL	(12bL
+.	12dd	12dd
+.	12ggJ	12ggJ)
+4B 4d	4.bb)	4.bb
+4G 4B 4d	.	.
+.	8dd	8dd
+=19	=19	=19
+4DD	(8bbL	(8bbL
+.	16aaL	16aaL
+.	16ddJJ	16ddJJ
+4D 4F# 4c	4.aa	4.aa
+4D 4F# 4c	.	.
+.	8bb)	8bb)
+=20	=20	=20
+4G 4B	4gg	4gg
+8GG	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/06
+!!!EED: Craig Stuart Sapp
+!!!EEV: 2025/07/21
+!!!EFL: 107/651

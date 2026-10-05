@@ -1,0 +1,99 @@
+!!!!SEGMENT: erk137.krn
+!!!OTL@@DE: Heil dir im Siegerkranz
+!!!COM: Carey, Henry
+!!!ODT: 1743
+!!!OMD: Mässig langsam
+!!!ONB: Nach dem englischen Nationaliede: God Save the King
+!!!ONB: Gedichte von Heinrich Harries (1790). In Berlin eingeführt 1793
+!!!LDT: 1793
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,B]	*>[A,B,B]	*>[A,B,B]
+*>norep[A,B]	*>norep[A,B]	*>norep[A,B]
+*>A	*>A	*>A
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/4	*M3/4	*M3/4
+*MM92	*MM92	*MM92
+4GG 4G	4B 4d 4g	4g
+4EE 4E	4B 4e 4g	4g
+4CC 4C	4A 4e 4a	4a
+=2	=2	=2
+*	*^	*
+4.DD 4.D	2A 2d	4.f#	4.f#
+8EE 8E	.	8g	8g
+4FF# 4F#	4A 4d	4a	4a
+*	*v	*v	*
+=3	=3	=3
+4GG 4G	4d 4g 4b	4b
+4EE 4E	4e 4g 4b	4b
+4AAA 4AA	4e 4a 4cc	4cc
+=4	=4	=4
+[4DD [4D	4.B 4.g 4.b	4.b
+8DD] 8DL]	.	.
+8DD# 8D#J	8c 8f# 8a	8a
+4EE 4E	4B 4g	4g
+=5	=5	=5
+4CC 4C	4c 4e 4a	4a
+4DD 4D	4B 4d 4g	4g
+4DD 4D	4A 4c 4d 4f#	4f#
+=6	=6	=6
+4GG 4G	2B 2D 2G	2g
+4D	.	.
+4GG	4r	4r
+=7!|:	=7!|:	=7!|:
+*>B	*>B	*>B
+4GGG 4GG	4d 4b 4dd	4dd
+4BBB 4BB	4d 4b 4dd	4dd
+4DD 4D	4d 4b 4dd	4dd
+=8	=8	=8
+4GG 4G	4.d 4.b 4.dd	4.dd
+4DD 4D	.	.
+.	8d 8a 8cc	8cc
+4GG 4G	4d 4g 4b	4b
+=9	=9	=9
+4DD 4D	4d 4f# 4a 4cc	4cc
+4FF# 4F#	4d 4a 4cc	4cc
+4AA 4A	4d 4f# 4cc	4cc
+=10	=10	=10
+4DD 4D	4.d 4.f# 4.a 4.cc	4.cc
+4GG	.	.
+.	8d 8g 8b	8b
+4DD 4D	4d 4f# 4a	4a
+=11	=11	=11
+8GG (8GL	4d 4g 4b	4b
+*	*^	*
+8F#	.	.	.
+8E	8g (8ccL	8cL	8ccL
+8D	8b	[8dJ	8bJ
+8C	8f# 8a	4d]	8aL
+8BBJ)	8gJ)	.	8gJ
+*	*v	*v	*
+=12	=12	=12
+*	*^	*
+4.GG 4.G	4.b 4.d	4g	4.b
+.	.	2g	.
+8AA 8A	8cc	.	8cc
+4BB 4B	4d 4dd	.	4dd
+*	*v	*v	*
+=13	=13	=13
+4C 4c	12e 12g (12eeL	12eeL
+.	12dd	12dd
+.	12a 12ccJ)	12ccJ
+4D 4d	4g 4b	4b
+4DD 4D	4c 4d 4f# 4a	4a
+=14	=14	=14
+4GG 4G	2B 2d 2g	2g
+4DD 4D	.	.
+4GGG 4GG	4r	4r
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/03/
+!!!EFL: 137/651

@@ -1,0 +1,93 @@
+!!!!SEGMENT: erk176.krn
+!!!OTL@@DE: Altes studentisches Tafellied
+!!!ONB: Mel. in A. Methfessel's Comers-Liederb.
+!!!ODT: 1818
+!!!OMD: Kräftig
+!!!ONB: Text in Kindeleben's Studentenliedern
+!!!LDT: 1781
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*M3/4	*M3/4	*M3/4
+*MM96	*MM96	*MM96
+4FF	4a' 4cc'	4cc'
+4F	4f' 4a'	4a'
+4F	4a' 4cc'	4cc'
+=2	=2	=2
+4C	(4a 4cc	(4cc
+4c	8g 8b-L	8b-L
+.	8f) 8aJ	8aJ)
+4c	4g 4b-	4b-
+=3	=3	=3
+4C	4g' 4b-'	4b-'
+4c	4e' 4g'	4g'
+4C	4g' 4b-'	4b-'
+=4	=4	=4
+4F	8f 8aL	8a'
+.	8e 8g	8g'
+4C	8f 8a	8a'
+.	8g 8b-J	8b-'
+4F	4f 4a	4a
+=5	=5	=5
+4FF	4a' 4cc'	4cc'
+4F	4f' 4a'	4a'
+4F	4a' 4cc'	4cc'
+=6	=6	=6
+4D	4a (4ff	(4ff
+4E	4g 4b-	8eeL
+.	.	8ddJ)
+4F	4a)	4cc
+=7	=7	=7
+4D	4f 4a 4dd	4dd
+4G	4e 4g 4cc	4cc
+4GG	4d 4f 4g 4bn	4bn
+=8	=8	=8
+4C	2e 2g 2cc	2cc
+4c	.	.
+4r	4r	4r
+=9	=9	=9
+4FF^	4.a^ 4.cc^	4.cc^
+4C	.	.
+.	8g 8b-	8b-
+4F	4f 4a	4a
+=10	=10	=10
+4FF^	4.a^ 4.cc^	4.cc^
+4C	.	.
+.	8g 8b-	8b-
+4F	4f 4a	4a
+=11	=11	=11
+4FF	4f' 4dd' 4ff'	4ff'
+4BB-	4f' 4cc' 4ee'	4ee'
+4D	4f' 4b-' 4dd'	4dd'
+=12	=12	=12
+4FF	4f 4b- 4dd	4dd
+4F	4f 4a 4cc	4cc
+4F	4r	4r
+=13	=13	=13
+4FF 4F	4f 4a 4cc	4cc
+4A	4c 4f 4cc	4cc
+4G	4c 4e 4cc	4cc
+=14	=14	=14
+4.A	4.c 4.f 4.cc	4.cc^
+8E	8c 8g 8b-	8b-
+4F	4c 4f 4a	4a
+=15	=15	=15
+4.C	4.c 4.a 4.cc	4.cc^
+8C 8E	8c 8g 8b-	8b-
+4F	4c 4f 4a	4a
+=16	=16	=16
+4C' 4B-'	4c 4e 4g	4g
+4F' 4A'	4c 4f	4f
+4r;	4r;	4r;
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/28/
+!!!EFL: 176/651

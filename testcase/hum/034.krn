@@ -1,0 +1,102 @@
+!!!!SEGMENT: erk034.krn
+!!!OTL@@DE: Das Schäfermädchen und der Kuckuk
+!!!ONB: Neueres Volkslied (Vox 1820)
+!!!ODT: <1820
+!!!OMD: Nich zu geschwind
+!!!ONB: Dichter unbekannt
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,A,B]	*>[A,A,B]	*>[A,A,B]
+*>norep[A,B]	*>norep[A,B]	*>norep[A,B]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M6/8	*M6/8	*M6/8
+*MM84	*MM84	*MM84
+8r	8d	8d
+=1	=1	=1
+4.GG	(8BL	4g
+.	8d	.
+.	8gJ)	8g
+4.G	(8BL	8gL
+.	8d	8f#J
+.	8gJ)	8g
+=2	=2	=2
+4.D	(8cL	4a
+.	8d	.
+.	8f#J)	8a
+4.DD	(8cL	4a
+.	8d	.
+.	8f#J)	8a
+=3	=3	=3
+4.GG	(8BL	4b
+.	8d	.
+.	8gJ)	8b
+4.D	(8AL	8ddL
+.	8d	8ccJ
+.	8f#J)	8a
+=4	=4	=4
+4.G	(8BL	4g
+.	8d	.
+.	8gJ)	8r
+4GG	(8GL	4r
+.	8BJ)	.
+=:|!	=:|!	=:|!
+*>B	*>B	*>B
+8r	8d	8dd
+=5	=5	=5
+4.AA	(8AL	4cc#
+.	8c#	.
+.	8eJ)	8a
+4.AA	(8AL	8aL
+.	8e	8bJ
+.	8gJ)	8cc#
+=6	=6	=6
+4.D	(8AL	4dd
+.	8d	.
+.	8f#J)	8a
+4.D	(8AL	4ff#
+.	8d	.
+.	8f#J)	8dd
+=7	=7	=7
+4.AA	(8AL	4cc#
+.	8c#	.
+.	8eJ)	8a
+4.AA	(8AL	8aL
+.	8e	8bJ
+.	8gJ)	8cc#
+=8	=8	=8
+4.D	(8f#L	(8eeL
+.	8a	8ddJ)
+.	8dJ)	8dd
+4D; 4A;	4f#; 4dd;	4dd;
+8r	8b 8dd	8dd
+=9	=9	=9
+4r	4g 4b	4b
+8B 8d	8r	8r
+4G 4B	4r	4r
+8r	8b 8dd	8dd
+=10	=10	=10
+4r	4a 4ccn	4cc
+8A 8c	8r	8r
+4D 4A	4r	4r
+8D 8A	8d 8f# 8dd	8dd
+=11	=11	=11
+4G	4d 4g 4b	4b
+8D 8A	8d 8f# 8dd	8dd
+4G	4d 4g 4b	4b
+8D 8A	8d 8f# 8dd	8dd
+=12	=12	=12
+4G	4d 4g 4b	4b
+8D	8r	8r
+4GG	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 034/651

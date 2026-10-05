@@ -1,0 +1,83 @@
+!!!!SEGMENT: erk199.krn
+!!!OTL@@DE: Wir hatten gebauet ein stattliches Haus
+!!!ONB: Thüringische Volksweise
+!!!ODT: 1819
+!!!OMD: Mässig und innig
+!!!LYR: Binzer, August von
+!!!LDT: 1819
+!!!ONB: Gesungen zu Jena bei Auflösung der Burschenschaft den 26. Novbr. 1819.
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM92	*MM92	*MM92
+4C	4c	4c
+=1	=1	=1
+2FF	2c 2f 2a	2a
+4C	4c 4e 4g	4g
+4C	4c 4a	4a
+=2	=2	=2
+2F	2A 2c 2f	2f
+4FF	4A 4c	4c
+4F	4A 4c	4c
+=3	=3	=3
+2F 2A	2c 2f 2cc	2cc
+4C 4G	4c 4f 4b-	4b-
+4C 4G	4c 4e 4cc	4cc
+=4	=4	=4
+2FF 2F	2c 2f 2a	2a
+4r	4r	4r
+4F 4A	4f	4f
+=5	=5	=5
+4BB- 4B-	4f 4dd	4dd
+4D 4B-	4f 4dd	4dd
+4F 4B-	4f 4dd	4dd
+4B-	4f 4dd	4dd
+=6	=6	=6
+2F 2A	2f 2cc	2cc
+4F 4c	4f 4a	4a
+4FF 4F	4f 4a 4cc	4cc
+=7	=7	=7
+2.C 2.c	4a 4cc	4cc
+.	(8g 8b-L	(8b-L
+.	8f) 8aJ	8aJ)
+.	4g 4b-	4b-
+4C 4G	4e 4g 4cc	4cc
+=8	=8	=8
+(4F 4A	2c 2f 2a	2a
+4FF	.	.
+4F)	4r	4r
+4F 4A	4f	4f
+=9	=9	=9
+4BB- 4B-	4f 4b- 4dd	4dd
+4F	4f 4b- 4dd	4dd
+4D	4f 4b- 4ff	4ff
+4BB-	4f 4b- 4dd	4dd
+=10	=10	=10
+*^	*	*
+2.F	(4FF	2f 2a (2cc	2cc
+.	4AA	.	.
+.	4C)	4f 4a)	4a
+4F	4F	4f 4a 4cc	4cc
+=11	=11	=11	=11
+4r	2.C	4a 4cc	4cc
+4c	.	(8g 8b-L	(8b-L
+.	.	8f) 8aJ	8aJ)
+4c	.	4g 4b-	4b-
+4c	4C	4e 4g 4cc	4cc
+*v	*v	*	*
+=12	=12	=12
+2F 2c	2f 2a	2a
+4r	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/28/
+!!!EFL: 199/651

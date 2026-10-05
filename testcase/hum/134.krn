@@ -1,0 +1,116 @@
+!!!!SEGMENT: erk134.krn
+!!!OTL@@DE: Die Wacht am Rhein
+!!!COM: Wilhelm, Carl
+!!!ODT: 1854
+!!!OMD: Allegro maestoso
+!!!LYR: Schneckenburger, Max
+!!!LDT: 1840
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-e-]	*k[b-e-]	*k[b-e-]
+*B-:	*B-:	*B-:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM118	*MM118	*MM118
+4BB-	4B-	4B-
+=1	=1	=1
+4.BB-	4.B-	4.B-
+8D	8d	8d
+4F	4f	4f
+4F	4f	4f
+=2	=2	=2
+4.D	4.d	4.d
+8F	8f	8f
+4BB-	4d 4b-	4b-
+4G'' 4B-''	4d'' 4b-''	4b-
+=3	=3	=3
+4E-'' 4G''	4c'' 4g'' 4cc''	4cc
+4D'' 4G''	4f'' 4bn'' 4dd''	4dd
+4C'' 4G''	4e-'' 4cc'' 4ee-''	4ee-
+4E-''	4e-'' 4g'' 4cc''	4cc
+=4	=4	=4
+4.F^	4.d^ 4.f^ 4.b-^	4.b-^
+8FF 8F	8c 8f 8a	8a
+4FF 4F	4c 4f 4a	4a
+4F	4f	4f
+=5	=5	=5
+4.BB- 4.B-	4.f 4.b- 4.dd	4.dd
+8BB- 8B-	8f 8b- 8dd	8dd
+8.C 8.cL	8.f 8.a 8.ccL	8.cc^
+16C 16cJk	16f 16a 16ccJk	16cc
+8.D 8.dL	8.f 8.g# 8.bnL	8.bn
+16D 16dJk	16f 16g# 16bJk	16b
+=6	=6	=6
+2C^ 2c^	2f 2a 2cc	2cc
+4r	4r	4r
+4C	4c 4f 4a	4a
+=7	=7	=7
+8.BB-L	8.d 8.f 8.gL	8.g
+16BB-Jk	16d 16f 16gJk	16g
+8.AAL	8.d 8.f 8.aL	8.a
+16GGJk	16d 16f 16b-Jk	16b-
+4C	4c 4f 4a	4a
+4CC 4C	4B- 4en 4g	4g
+=8	=8	=8
+2FF 2C	2A 2f	2f
+4r	4r	4r
+4FF 4F	4f	4f
+=9	=9	=9
+4.F 4.A	4.e-^ 4.f^ 4.cc^	4.cc
+8F 8B-	8d 8f 8b-	8b-
+4F	4c 4f 4a	4a
+4FF 4F	4e- 4f 4a	4a
+=10	=10	=10
+4.BB- 4.F	4.d 4.f 4.b-	4.b-
+8BB- 8B-	8d 8f	8f
+4BB- 4B-	4d 4f	4f
+4B- 4d	4f	4f
+=11	=11	=11
+4.A 4.c	4.f^ 4.cc^ 4.ee-^	4.ee-
+8B- 8d	8f 8b- 8dd	8dd
+4F 4f	4f 4a 4cc	4cc
+4F 4A	4f 4cc	4cc
+=12	=12	=12
+4.BB- 4.F	4.d 4.b- 4.dd	4.dd
+8C 8F	8e- 8a 8cc	8cc
+4D 4F	4f 4b-	4b-
+4r	4r	4r
+=13	=13	=13
+2BB- 2B-	2d 2f	2f
+4BB- 4B-	4d 4f	4f
+4BB- 4B-	4d 4f#	4f#
+=14	=14	=14
+4.E- 4.B-	4.e- 4.g	4.g
+8C' 8c'	8e- 8a	8a
+4D 4B-	4f 4b-	4b-
+4BB- 4B-	4d 4b-	4b-
+=15	=15	=15
+2G 2B-	2d 2b-	2b-^
+2E- 2G	2g 2cc	2cc^
+=16	=16	=16
+2.D 2.A	2.d 2.f# 2.dd	2.dd^
+4r	4r	4r
+=17	=17	=17
+2G	2B- 2b-	2b-
+4F	4B- 4a 4b-	4b-
+4E-	4B- 4g 4b-	4b-
+=18	=18	=18
+(4.D	4.B- 4.f (4.b-	4.b-
+8BB-	8f 8b- 8dd	8dd
+4D)	4f 4b- 4ff)	4ff
+4EE- 4E-	4g 4b- 4ee-	4ee-
+=19	=19	=19
+2FF 2F	2f 2b- 2dd	2dd^
+2FF 2F	2e- 2f 2a 2cc	2cc
+=20	=20	=20
+2.BBB-; 2.BB-;	2.d; 2.f; 2.b-;	2.b-;
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/01/
+!!!EFL: 134/651

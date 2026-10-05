@@ -1,0 +1,163 @@
+!!!!SEGMENT: erk071.krn
+!!!OTL@@DE: Die Auserwählte
+!!!ONB: Volksweise
+!!!ODT: 1828
+!!!OMD: Leicht bewegt
+!!!ONB: Schwäbisch
+!!!LDT: 1836
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM92	*MM92	*MM92
+4r	(12f 12aL	(12a
+.	12f 12a	12a
+.	12g) 12b-J	12b-)
+=1	=1	=1
+8FFL	8a 8ccL	8cc
+8C	8a 8cc	8cc
+8F	8a 8cc	8cc
+8CJ	8a 8ccJ	8cc
+8FFL	8g# 8bnL	8bn
+8C	8a 8cc	8cc
+8F	8b- 8dd	8dd
+8CJ	8a 8ccJ	8cc
+=2	=2	=2
+8FFL	8a (8ccL	(8ccL
+8C	8ffJ)	8ffJ)
+8F	4f 4a	4a
+8CJ	.	.
+8FFL	8r	8r
+8C	8f 8aL	8a
+8F	8f 8a	8a
+8AJ	8fJ	8f
+=3	=3	=3
+*M3/4	*M3/4	*M3/4
+8CL	(8.a^ 8.cc^L	8.cc
+8GJ	.	.
+.	16g) 16b-Jk	16b-
+8cL	8g 8b-L	8b-
+8C	8g 8b-	8b-
+8c	8f 8a	8a
+8CJ	8e 8gJ	8g
+=4	=4	=4
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+8FFL	8.b-^ (8.dd^L	(8.dd^L
+8C	.	.
+.	16a 16ccJk)	16ccJk)
+8F	4a 4cc	4cc
+8CJ	.	.
+8FFL	4r	4r
+8C	.	.
+8F	(12f 12aL	(12a
+.	12f 12a	12a
+8CJ	.	.
+.	12g) 12b-J	12b-)
+=5	=5	=5
+8FFL	8a 8ccL	8cc
+8C	8a 8cc	8cc
+8F	8a 8cc	8cc
+8CJ	8a 8ccJ	8cc
+8FFL	8g# 8bnL	8bn
+8C	8a 8cc	8cc
+8F	8b- 8dd	8dd
+8CJ	8a 8ccJ	8cc
+=6	=6	=6
+8FFL	8a (8ccL	(8ccL
+8C	8ffJ)	8ffJ)
+8F	4f 4a	4a
+8CJ	.	.
+8FFL	8r	8r
+8C	8f 8aL	8a
+8F	8f 8a	8a
+8AJ	8fJ	8f
+=7	=7	=7
+*M3/4	*M3/4	*M3/4
+4B-	8.b-^ (8.dd^L	8.dd^
+.	16a 16ccJk)	16cc
+4c	8g 8b-L	8b-
+.	8f 8a	8a
+4C	8g 8b-	8b-
+.	8B- 8eJ	8e
+=8	=8	=8
+4FF	(8.B-^ 8.e^ 8.g^L	(8.g^L
+.	16A) 16fJk	16fJk)
+8F	8A 8f	8f
+8r	8r	8r
+8FL	8aL	8a
+8AJ	8fJ	8f
+=9	=9	=9
+4C	(8a^ 8cc^L	8cc'^
+.	8g) 8b-J	8b-
+4E	8g 8b-L	8b-
+.	8c	8r
+4C	8f 8a	8a
+.	8e 8gJ	8g
+=10	=10	=10
+4FF	8b-^ (8dd^L	8dd^
+.	8a 8ccJ)	8cc
+4F	8a 8ccL	8cc
+.	8c	8r
+8FL	8a	8a
+8AJ	8fJ	8f
+=11	=11	=11
+4C	(8a^ 8cc^L	8cc^
+.	8g) 8b-J	8b-
+4E	8g 8b-L	8b-
+.	8c	8b-
+4C	8f 8a	8a
+.	8e 8gJ	8g
+=12	=12	=12
+4FF	8b-^ (8dd^L	8dd^
+.	8a 8ccJ)	8cc
+4F	8a 8ccL	8cc
+.	8cJ	8cc
+4F	(12f 12aL	(12a
+.	12f 12a	12a
+.	12g) 12b-J	12b-)
+=13	=13	=13
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+8FFL	8a 8ccL	8cc
+8C	8a 8cc	8cc
+8F	8a 8cc	8cc
+8CJ	8a 8ccJ	8cc
+8FFL	8g# 8bnL	8bn
+8C	8a 8cc	8cc
+8F	8b- 8dd	8dd
+8CJ	8a 8ccJ	8cc
+=14	=14	=14
+8FFL	8a (8ccL	(8ccL
+8C	8ffJ)	8ffJ)
+8F	4f 4a	4a
+8CJ	.	.
+8FFL	8r	8r
+8C	8f 8aL	8a
+8F	8f 8a	8a
+8AJ	8fJ	8f
+=15	=15	=15
+*M3/4	*M3/4	*M3/4
+4B-	8.b-^ (8.dd^L	8.dd^
+.	16a 16ccJk)	16cc
+4c	8g 8b-L	8b-
+.	8f 8a	8a
+4C	8g 8b-	8b-
+.	8B- 8eJ	8e
+=16	=16	=16
+4FF	(8.B-^ 8.e^ 8.g^L	(8.g^L
+.	[16A) 16fJk	16fJk)
+8F	8A] 8f	8f
+8r	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 071/651

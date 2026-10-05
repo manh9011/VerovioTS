@@ -1,0 +1,75 @@
+!!!!SEGMENT: erk040.krn
+!!!OTL@@DE: Der Baum im Odenwald
+!!!COM: Reichhardt, Joh. Friedr.
+!!!ONB: Volksweise
+!!!ODT: 1781
+!!!OMD: Mässig
+!!!ONB: Aus "Des Knaben Wunderhorn"
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-e-a-]	*k[b-e-a-]	*k[b-e-a-]
+*E-:	*E-:	*E-:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM76	*MM76	*MM76
+4r	(8e-L	(8e-L
+.	8gJ	8gJ)
+=1	=1	=1
+*	*^	*
+2E- 2G	4b-	2B- 2e-)	4b-
+.	4b-	.	4b-
+*	*v	*v	*
+4EE- 4E-	4B- 4e- 4g	4g
+4GG 4G	4B- 4e-	4e-
+=2	=2	=2
+4BB- 4B-	8d (8fL	(8fL
+.	8e-	8e-J)
+4BB- 4A-	8d 8f	(8fL
+.	8gJ	8gJ)
+4E- 4G	4e-)	4e-
+4r	(8e-L	(8e-L
+.	8gJ	8gJ)
+=3	=3	=3
+*	*^	*
+2E- 2G	4b-)	2B- 2e-	4b-
+.	4b-	.	4b-
+*	*v	*v	*
+4EE- 4E-	4B- 4e- 4g	4g
+4GG 4G	4B- 4e-	4e-
+=4	=4	=4
+2BB- 2B-	2.d 2.f	2.f
+4BB-	.	.
+4r	(8b-L	(8b-L
+.	8ddJ	8ddJ)
+=5	=5	=5
+*^	*	*
+2B-	(2D	4a- 4b- 4ff)	4ff
+.	.	4a- 4b- 4ff	4ff
+2B-	4BB-	4a- 4b- 4dd	4dd
+.	4D	4a- 4b-	4b-
+=6	=6	=6	=6
+2.B-	2.E-)	4.g 4.b-	4.b-
+.	.	8ee-	8ee-
+.	.	4g 4ee-	4ee-
+*v	*v	*	*
+4r	8b-L	(8b-L
+.	8ddJ	8ddJ)
+=7	=7	=7
+*^	*	*
+2B-	(2D	4a- 4b- &(4ff&)	4ff
+.	.	4a- 4b- 4ff	4ff
+2B-	4BB-	4a- 4b- 4dd	4dd
+.	4D	4a- 4b-	4b-
+*v	*v	*	*
+=8	=8	=8
+2.E-) 2.B-	2.g 2.ee-	2.ee-
+=	=	=
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/02/
+!!!EFL: 040/651

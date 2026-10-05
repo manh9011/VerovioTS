@@ -1,0 +1,100 @@
+!!!!SEGMENT: erk151.krn
+!!!OTL@@DE: Der gute Kamerad
+!!!ONB: Nach einer Volksweise
+!!!ODT: 1825
+!!!OMD: Schrittmässig
+!!!LYR: Uhland, Ludwig
+!!!LDT: 1809
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,A,B,B]	*>[A,A,B,B]	*>[A,A,B,B]
+*>norep[A,B]	*>norep[A,B]	*>norep[A,B]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM120	*MM120	*MM120
+*	*	*^
+4r	4d	4d	4d
+*	*	*v	*v
+=1	=1	=1
+4GG	4B 4d 4g	4g
+8GGL	4d 4g 4b	4b
+8BBJ	.	.
+4D	4d 4g 4b	4b
+4DD	4c 4f# 4a	4a
+=2	=2	=2
+4GG	2B 2d 2g	2g
+4D	.	.
+4G	4B 4d	4d
+4r	8B 8gL	8g
+.	8d 8aJ	8a
+=3	=3	=3
+4G	4d 4g 4b	4b
+4BB	4d 4g 4dd	4dd
+4D	4d 4f# 4dd	4dd
+4F#	4d 4a 4cc	4cc
+=4	=4	=4
+4G	2d 2g 2b	2b
+4D	.	.
+4GG	4r	4r
+=:|!|:	=:|!|:	=:|!|:
+*>B	*>B	*>B
+(8BL	(8gL	8gL
+8dJ)	8f#) 8aJ	8aJ
+=5	=5	=5
+4G 4d	4g 4b	4b
+4G 4d	4g 4b	4b
+4G 4d	4g 4b	4b
+4D 4d	4f# 4a	4a
+=6	=6	=6
+2G 2d	4.g (4.b	(4.b
+.	8a 8cc	8cc)
+4G 4d	4b 4dd)	4dd
+(8GGL	(8a 8ccL	8ccL
+8BBJ)	8g) 8bJ	8bJ
+=7	=7	=7
+4D	4f# 4a	4a
+4D 4d	4f# 4a	4a
+4D 4d	4f# 4a	4a
+4D 4d	(8f# 8aL	8aL
+.	8e) 8gJ	8gJ
+=8	=8	=8
+2D 2d	4.f# (4.a	(4.a
+.	8g 8b	8b)
+4D 4d	4a 4cc)	4cc
+4F# 4d	4a 4dd	4dd
+=9	=9	=9
+4G 4d	4g 4b	4b
+4G 4d	4g 4b	4b
+4D 4c	4f# 4a	4a
+*	*^	*
+4D 4c	(8aL	4f#	8aL
+.	8bJ)	.	8bJ
+*	*v	*v	*
+=10	=10	=10
+2E 2B	2g	2g
+2D 2d	2f#^ 2a^	2a
+=11	=11	=11
+4G 4d	4g 4b	4b
+4BB	4d 4g 4dd	4dd
+4D	4d 4f# 4a	4a
+*	*^	*
+*	*	*^	*
+4DD 4D	(8aL	4f#	8cL	8aL
+.	8bJ)	.	8dJ	8bJ
+*	*v	*v	*v	*
+=12	=12	=12
+2GG 2G	2B 2d 2g	2g
+4r	4r	4r
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/27/
+!!!EFL: 151/651

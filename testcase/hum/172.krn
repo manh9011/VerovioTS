@@ -1,0 +1,114 @@
+!!!!SEGMENT: erk171.krn
+!!!OTL@@DE: Fräulein Kunigund
+!!!ONB: Bairische Volksweise
+!!!ODT: 1830
+!!!OMD: Nicht zu rasch
+!!!ONB: Das Gedicht theilweise schon in der ersten Hälfte des 18. Jahrh. vorkommend.  Von Studenten umgeformt
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,B]	*>[A,B,B]	*>[A,B,B]
+*>norep[A,B,B]	*>norep[A,B,B]	*>norep[A,B,B]
+*>A	*>A	*>A
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[]	*k[]	*k[]
+*C:	*C:	*C:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM100	*MM100	*MM100
+8r	4e 4g	4g
+8CL	.	.
+8BB	4d 4f	4f
+8GGJ	.	.
+*	*^	*
+4C	8eL	4c	8eL
+.	8g	.	8gJ
+8EL	8cc	8cL	8ccL
+8CJ	8eJ	8cJ	8eJ
+*	*v	*v	*
+=2	=2	=2
+4GG	4.e 4.g	4g
+8AAL	.	8g
+8BBJ	8d 8f	8f
+4C	4c 4e	(4e
+4C 4E	4c	4c)
+=3	=3	=3
+8r	4e 4g	4g
+8CL	.	.
+8E	8e 8gL	8gL
+8GJ	8d 8fJ	8fJ
+*	*^	*
+4c	8eL	4e	(8eL
+.	8g	.	8gJ
+4C	8cc	8eL	8cc)
+.	8eJ	8cJ	8e
+*	*v	*v	*
+=4	=4	=4
+4GG	4.e 4.g	4g
+8AAL	.	8g
+8BBJ	8d 8f	8f
+4C	4c 4e	(4e
+4C 4E	4c	4c)
+=5	=5	=5
+4C	4c	4c
+8EL	8eL	8eL
+8GJ	8gJ	8gJ
+4C	4c	4c
+8EL	8eL	8eL
+8GJ	8gJ	8gJ
+=6	=6	=6
+4C	2c 2f 2a	2a
+8FL	.	.
+8AJ	.	.
+4C	4c 4e 4g	4g
+4c	4e 4g 4cc	4r
+=7	=7	=7
+4G	4d 4g 4b	4b
+4G	8d 8f 8aL	8aL
+.	8bJ	8bJ
+4A	4c 4e 4cc	4cc
+4AA 4A	8c 8eL	8eL
+.	8d 8fJ	8fJ
+=8	=8	=8
+4GG 4G	4e 4g	2g
+4G 4B	(8g 8eeL	.
+.	8f) 8ddJ	.
+4C 4G 4c	4e 4cc	4c
+4r	4r	4r
+=9!|:	=9!|:	=9!|:
+*>B	*>B	*>B
+4C	4c	4c
+8EL	8eL	8e
+8GJ	8gJ	8g
+4C	4c	4c
+8EL	8eL	8e
+8GJ	8gJ	8g
+=10	=10	=10
+4F	8f 8aL	8aL
+.	8c	8fJ
+8FFL	8a 8cc	8cc
+8AAJ	8f 8aJ	8a
+4C	4e 4g	4g
+(8CL	(8g 8eeL	4r
+8EJ)	8e) 8ccJ	.
+=11	=11	=11
+4G	4d 4g 4b	4b
+4G#	4d 4f 4b	4b
+4A	4c 4e 4cc	4cc
+4AA 4A	(8c 8eL	8eL
+.	8d) 8fJ	8fJ
+=12	=12	=12
+4GG 4G	4e 4g	(4g
+4G 4B	(8g 8eeL	8eeL
+.	8f) 8ddJ	8ddJ)
+4C 4G 4c	4e 4cc	4cc
+4r	4r	4r
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/27/
+!!!EFL: 171/651

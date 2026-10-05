@@ -1,0 +1,204 @@
+!!!!SEGMENT: erk045.krn
+!!!OTL@@DE: Clärchens Lied im "Egmont"
+!!!COM: Reichardt, Joh. Friedrich
+!!!ODT: 1798
+!!!OMD: Langsam und innig
+!!!LYR: Goethe, Wolfgang von
+!!!LDT: 1788
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+=1-	=1-	=1-
+*clefF4	*clefF4	*clefG2
+*Ipiano	*Ipiano	*Ivox
+*k[]	*k[]	*k[]
+*C:	*C:	*C:
+*M2/4	*M2/4	*M2/4
+*MM60	*MM60	*MM60
+4CC	16ELL	(8.ccL
+.	16G	.
+.	16c	.
+.	16GJJ	16gJk)
+4r	16ELL	8.g
+.	16G	.
+.	16c	.
+.	16GJJ	16g
+=2	=2	=2
+4C	16ELL	(8.gL
+.	16G	.
+.	16c	.
+.	16GJJ	16eJk)
+4r	16ELL	8.e
+.	16G	.
+.	16c	.
+.	16GJJ	16e
+=3	=3	=3
+2GG 2D	16FLL	8gL
+.	16G	.
+.	16B	8fJ
+.	16GJJ	.
+.	16FLL	8d
+.	16G	.
+.	16B	8B
+.	16GJJ	.
+=4	=4	=4
+4C	16ELL	4c
+.	16G	.
+.	16c	.
+.	16GJJ	.
+4r	16ELL	4r
+.	16G	.
+.	16c	.
+.	16GJJ	.
+=5	=5	=5
+4AA	16ELL	(8.ccL
+.	16A	.
+.	16c	.
+.	16AJJ	16aJk)
+4r	16ELL	8.a
+.	16A	.
+.	16c	.
+.	16AJJ	16a
+=6	=6	=6
+4AA	16ELL	(8.aL
+.	16A	.
+.	16c	.
+.	16AJJ	16eJk)
+4r	16ELL	8.e
+.	16A	.
+.	16c	.
+.	16AJJ	16e
+=7	=7	=7
+2EE 2BB	16ELL	4e
+.	16G#	.
+.	16d	.
+.	16G#JJ	.
+.	16ELL	8f#
+.	16G#	.
+.	16d	8g#
+.	16G#JJ	.
+=8	=8	=8
+4AA	16ELL	4.a
+.	16A	.
+.	16c	.
+.	16AJJ	.
+4r	16ELL	.
+.	16A	.
+.	16c	8r
+.	16AJJ	.
+*	*clefG2	*
+=9	=9	=9
+2F	16BLL	4gn
+.	16d	.
+.	16g	.
+.	16dJJ	.
+.	16BLL	8a
+.	16d	.
+.	16g	8b
+.	16dJJ	.
+=10	=10	=10
+2E	16cLL	(8.ccL
+.	16e	.
+.	16g	.
+.	16eJJ	16gJk)
+.	16cLL	8.g
+.	16e	.
+.	16g	.
+.	16eJJ	16g
+=11	=11	=11
+2BB	16GLL	(8.gL
+.	16d	.
+.	16g	.
+.	16dJJ	16f#Jk)
+.	16GLL	8.fn
+.	16d	.
+.	16f	.
+.	16dJJ	16f
+=12	=12	=12
+2C	16GLL	4e
+.	16c	.
+.	16e	.
+.	16cJJ	.
+.	16GLL	4r
+.	16c	.
+.	16e	.
+.	16cJJ	.
+=13	=13	=13
+2C	16GLL	4cc
+.	16c	.
+.	16e	.
+.	16cJJ	.
+.	16GLL	8b
+.	16c	.
+.	16e	8cc
+.	16cJJ	.
+=14	=14	=14
+2BB	16GLL	4dd
+.	16d	.
+.	16f	.
+.	16dJJ	.
+.	16GLL	16ccLL
+.	16d	16bJJ
+.	16f	16aLL
+.	16dJJ	16gJJ
+*	*clefF4	*
+=15	=15	=15
+4C	16GLL	4ee
+.	16c	.
+.	16e	.
+.	16cJJ	.
+4GG	16FLL	8.dd
+.	16B	.
+.	16d	.
+.	16BJJ	16b
+=16	=16	=16
+4CC	16ELL	4.cc
+.	16G	.
+.	16c	.
+.	16GJJ	.
+4r	16ELL	.
+.	16G	.
+.	16c	8r
+.	16GJJ	.
+=17	=17	=17
+2CC 2C	16GLL	4cc
+.	16c	.
+.	16e	.
+.	16cJJ	.
+.	16GLL	16ddLL
+.	16c	16ccJJ
+.	16e	16bLL
+.	16cJJ	16ccJJ
+=18	=18	=18
+2BBB 2BB	16GLL	4dd
+.	16d	.
+.	16f	.
+.	16dJJ	.
+.	16GLL	16ccLL
+.	16d	16bJJ
+.	16f	16aLL
+.	16dJJ	16gJJ
+=19	=19	=19
+4CC 4C	16GLL	[4ee
+.	16c	.
+.	16e	.
+.	16cJJ	.
+4GGG 4GG	16FLL	16eeLL]
+.	16B	16ffJJ
+.	16d	16dd
+.	16BJJ	16b
+=20	=20	=20
+[4CC [4C	16ELL	4.cc
+.	16G	.
+.	16c	.
+.	16GJJ	.
+8CC] 8C]	8E 8c	.
+8r	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 045/651

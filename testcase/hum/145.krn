@@ -1,0 +1,122 @@
+!!!!SEGMENT: erk144.krn
+!!!OTL@@DE: Nur in Deutschland!
+!!!ONB: Auf der Wanderung
+!!!ONB: Mel. vom Dichter des Liedes
+!!!ODT: 1824///-1844///
+!!!OMD: Mässig geschwind
+!!!LYR: Fallersleben, Hoffmann von
+!!!LDT: 1824
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,B]	*>[A,B,B]	*>[A,B,B]
+*>norep[A,B]	*>norep[A,B]	*>norep[A,B]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*M3/4	*M3/4	*M3/4
+*MM72	*MM72	*MM72
+4r	8fL	8f
+.	8aJ	8a
+=1	=1	=1
+4FF 4F	4a 4cc	4cc
+4F 4c	4a 4ff	4ff
+*^	*^	*
+8B-L	4F	(8eeL	4b-	8ee
+8dJ	.	8ddJ)	.	8dd
+*v	*v	*	*	*
+*	*v	*v	*
+=2	=2	=2
+2F 2f	8.b- (8.ddL	8.dd
+.	16a 16cck)	16cc
+.	8a 8cc	8cc
+.	8b- (8dd	8dd
+4r	8a 8cc	8cc
+.	8g 8b-J)	8b-
+=3	=3	=3
+*^	*^	*
+(8CL	2C	(8aL	4f	8aL
+8FJ	.	8ddJ	.	(8ddJ
+*	*	*v	*v	*
+4A)	.	4.f 4.cc)	4.cc)
+8GL	4C	.	.
+8B-J	.	8e	8e
+=4	=4	=4	=4
+(4B-	2F;	(4e 4g	4g
+4A;)	.	4f;)	4f;
+*v	*v	*	*
+4r	8g 8b-L	8b-
+.	8f 8aJ	8a
+=5	=5	=5
+4C	(8f 8aL	(8aL
+.	8e) 8gJ	8gJ)
+4c	4e 4g	4g
+4r	8b- 8ddL	8dd
+.	8a 8ccJ	8cc
+=6	=6	=6
+(8cL	(4g 4b-	(4b-
+16dL	.	.
+16eJJ	.	.
+8fL	4f) 4a	4a)
+8c	.	.
+*	*^	*
+8A	(8ccL	4f	8cc
+8FJ)	8aJ)	.	8a
+*	*v	*v	*
+=7	=7	=7
+4C	(8f 8aL	(8aL
+.	8e) 8gJ	8gJ)
+*	*^	*
+4c	(8gL	4e	(8gL
+.	8b-J)	.	8b-J)
+4C	8ddL	4e 4b-	8dd
+.	8ccJ	.	8cc
+=8	=8	=8	=8
+2F; 2c;	(4b-	2f	(4b-
+.	4a;)	.	4a;)
+*	*v	*v	*
+=!|:	=!|:	=!|:
+*>B	*>B	*>B
+8EL	(16g 16ccLL	16ccLL
+.	16b-	16b-JJ
+8CJ	16e 16a	16aLL
+.	16gJJ)	16gJJ
+=9	=9	=9
+*	*^	*
+4F	(8.aL	4f	(8.a^L
+.	16ffJk)	.	16ffJk)
+4F; 4c;	4ff;	4f; 4a;	4ff;
+*	*v	*v	*
+(16FLL	8fL	8f
+16E-	.	.
+16D	8fJ	8f
+16CJJ)	.	.
+=10	=10	=10
+4BB-	(8.d 8.fL	(8.fL
+.	16f) 16ddJk	16ddJk)
+8B-;	8f; 8dd;	8dd;
+8F#L	8e- 8a 8ccL	8cc
+8G	8d 8g 8b-	8b-
+8AJ	8c 8fn 8aJ	8a
+=11	=11	=11
+*	*^	*
+4B-	(8gL	4d	(8gL
+.	8ddJ	.	8ddJ
+4C 4A	4.cc)	4.c 4.f	4.cc)
+*^	*	*	*
+8GL	4C	.	.	.
+8B-J	.	8e	8c	8e
+=12	=12	=12	=12	=12
+(4B-;	2F	4e (4g	2c	4g
+4A;)	.	&(4f;&))	.	4f;
+*v	*v	*	*	*
+*	*v	*v	*
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/28/
+!!!EFL: 144/651

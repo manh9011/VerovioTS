@@ -1,0 +1,104 @@
+!!!!SEGMENT: erk088.krn
+!!!OTL@@DE: Heidenröslein
+!!!COM: Werner, Heinrich
+!!!ODT: 1827
+!!!OMD: Etwas bewegt
+!!!LYR: Goethe, Wolfgang von
+!!!LDT: 1771
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*M6/8	*M6/8	*M6/8
+*MM104	*MM104	*MM104
+4F 4c	4f 4a	4a
+8F 8c	8f 8a	8a
+8.AL	8.ccL	8.ccL
+16Gk	16b-k	16b-Jk
+8FJ	8aJ	8a
+=2	=2	=2
+4C 4c	4e 4g	4g
+8C 8c	8e 8g	8g
+4.C 4.c	4.e 4.g	4.g
+=3	=3	=3
+4F 4c	4f 4a	4a
+8E-	8a	8a
+8DL	8b-L	8b-L
+8C	8cc	8ccJ
+8BB-J	8b- 8ddJ	8dd
+=4	=4	=4
+4.F	4.f 4.b- 4.dd	4.dd
+4FF	4f 4a 4cc	4cc
+8r	8r	8r
+=5	=5	=5
+*^	*	*
+4.c	4E	4g 4cc	4cc
+.	8C	8e 8b-	8b-
+4c	4F	4f 4a	4a
+8A	8F	8d 8a	8a
+=6	=6	=6	=6
+*	*	*^	*
+4.A	4C#	4a	4e	4a
+.	8AA	8g	8c#	8g
+4.A	4.D	4.f	4.d	4.f
+*	*	*v	*v	*
+=7	=7	=7	=7
+4A	4AA	4c 4f	4f
+8c	8A	8f	8f
+*	*	*^	*
+4c	8AL	8fL	8fL	8fL
+.	8G	8e	8g	8gJ
+8c	8FJ	8fJ	8aJ	8a
+*	*	*v	*v	*
+=8	=8	=8	=8
+*	*	*^	*
+4c	4E	4b-	4g	4b-
+8c	8F	8a	8f	8a
+4.c	4.C	4.g	4.e	4.g
+=9	=9	=9	=9	=9
+4c	4F	4a	4f	4a
+8c	8F	8a	8f	8a
+4c	8.AL	8.ccL	8.fL	8.ccL
+.	16Gk	16b-k	16ek	16b-Jk
+8c	8FJ	8aJ	8fJ	8a
+*v	*v	*	*	*
+*	*v	*v	*
+=10	=10	=10
+4.c	4.a	4.a
+4C	4g	4g
+8r	8r	8r
+=11	=11	=11
+*^	*^	*
+4c	4F	4a	4f	4a
+8c	8A	8cc	8f	8cc
+4B-	4B-	4dd	4f	4dd
+8f	8B-	8dd	8b-	8dd
+*v	*v	*	*	*
+=12	=12	=12	=12
+4c	8ccL	8aL	8ccL
+.	8dd	8b-	8ddJ
+8C 8c	8eeJ	8g 8b-J	8ee
+4.D 4.d	4.ff	4.f 4.a	4.ff
+*	*v	*v	*
+=13	=13	=13
+4B- 4d	4f 4b- 4ff	4ff
+8B-	8dd	8dd
+4C	4f	4cc
+8C	8f	8a
+=14	=14	=14
+4.C	8.gL	8.gL
+.	16ak	16ak
+.	8gJ	8gJ
+4F	4f	4f
+8r	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/05/
+!!!EFL: 088/651

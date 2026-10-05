@@ -1,0 +1,105 @@
+!!!!SEGMENT: erk091.krn
+!!!OTL@@DE: Das Dreigespann
+!!!COM: Russische Volksweise
+!!!OMD: Mässig langsam
+!!!ONB: Russisch (1843 in Deutschland verbeitet)
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-e-a-]	*k[b-e-a-]	*k[b-e-a-]
+*E-:	*E-:	*E-:
+*M3/4	*M3/4	*M3/4
+*MM88	*MM88	*MM88
+8r	8b-L	8b-
+4r	8b-	8b-
+.	8b-J	8b-
+=1	=1	=1
+4BBB- 4BB-	8b-L	4.b-
+.	8B-	.
+4BB- 4F	8d 8a-	.
+.	8B-	8a-
+4BB- 4F	8d 8a-	8a-
+.	8B-J	8a-
+=2	=2	=2
+4EE- 4E-	8a-L	4a-
+.	8B-	.
+4E- 4G	8e- 8g	8g
+.	8B-J	8g
+4E- 4G	8e- 8gL	8g
+.	8B-J	8g
+=3	=3	=3
+4BBB- 4BB-	8gL	4.g
+.	8B-	.
+4BB- 4F	8A- 8d	.
+.	8B-J	8f
+4BB- 4F	8A- 8dL	8c
+.	8B-J	8d
+=4	=4	=4
+4E-	(8e-L	4e-
+.	8B-	.
+8EE-	8G) 8e-J	8r
+8r	8e-L	8e-
+4r	8g	8g
+.	8b-J	8b-
+=5	=5	=5
+4GGG 4GG	8ee-L	4.ee-
+.	8e-	.
+4G 4B-	8b-	.
+.	8e- 8dd	8dd
+4G	8cc	8cc
+.	8e- 8bnJ	8bn
+=6	=6	=6
+4AAA- 4AA-	8ddL	4dd
+.	8c	.
+4A-	8f 8cc	8cc
+.	8c	8f
+4F 4A-	8g	8g
+.	8c 8a-J	8a-
+=7	=7	=7
+4BBB- 4BB-	8ccL	4.cc
+.	8B-	.
+4BB-	8d	.
+.	8B- 8b-J	8b-
+8A-L	8fL	8f
+8B-J	8gJ	8g
+=8	=8	=8
+4E- 4G	(8e-L	4e-
+.	8B-	.
+8EE-	8G) 8e-J	8r
+8r	8e-L	8e-
+4r	8g	8g
+.	8b-J	8b-
+=9	=9	=9
+4GGG 4GG	8ee-L	4.ee-
+.	8e-	.
+4G 4B-	8b-	.
+.	8e- 8dd	8dd
+4G	8cc	8cc
+.	8e- 8bnJ	8bn
+=10	=10	=10
+4AAA- 4AA-	8ddL	4dd
+.	8c	.
+4A-	8f 8cc	8cc
+.	8c	8f
+4F 4A-	8g	8g
+.	8c 8a-J	8a-
+=11	=11	=11
+4BBB- 4BB-	8ccL	4.cc
+.	8B-	.
+4BB-	8d	.
+.	8B- 8b-J	8b-
+8A-L	8d 8fL	8f
+8B-J	8gJ	8g
+=12	=12	=12
+4E- 4G	(8e-L	4e-
+.	8B-	.
+8EE-	8G) 8e-J	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/27/
+!!!EFL: 091/651

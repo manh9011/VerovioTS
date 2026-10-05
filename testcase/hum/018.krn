@@ -1,0 +1,127 @@
+!!!!SEGMENT: erk018.krn
+!!!OTL@@DE: Schäfers Klagelied
+!!!COM: Zelter, Carl Friedrich
+!!!CDT: 1810
+!!!OMD: Mässig langsam
+!!!LYR: Goethe, Wolfgang von
+!!!LDT: 1802
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*Ipiano	*Ipiano	*Ivox
+*staff3	*staff2	*staff1
+*clefF4	*clefG2	*clefG2
+*k[b-e-]	*k[b-e-]	*k[b-e-]
+*g:	*g:	*g:
+*M6/8	*M6/8	*M6/8
+*MM88	*MM88	*MM88
+8r	8d	8d
+=1	=1	=1
+4.GG 4.G	(16B-LL	8.g
+.	16d	.
+.	16g	.
+.	16d	16f#
+.	16B-	8g
+.	16dJJ)	.
+4.FF# 4.F#	(16cLL	8aL
+.	16d	.
+.	16B-	8gJ
+.	16d	.
+.	16c	8a
+.	16dJJ)	.
+=2	=2	=2
+4.GG 4.G	(16gLL	4.b-
+.	16d	.
+.	16B-	.
+.	16d	.
+.	16g	.
+.	16dJJ)	.
+4.DD 4.D	(16f#LL	4a
+.	16d	.
+.	16A	.
+.	16d	.
+.	16f#	8a
+.	16dJJ)	.
+=3	=3	=3
+*	*	*^
+4.GG 4.G	(16B-LL	8.b-	8.b-L
+.	16d	.	.
+.	16g	.	.
+.	16d	16a	16aJk
+.	16B-	8b-	8b-
+.	16dJJ)	.	.
+4.FFn 4.Fn	(16ALL	8cc	8ccL
+.	16e-	.	.
+.	16cc	8b-	8b-J
+*	*	*v	*v
+.	16e-	.
+.	16A	8cc
+.	16e-JJ)	.
+=4	=4	=4
+*^	*	*
+[4BB-	4B-	(16dLL	4.dd
+.	.	16b-	.
+.	.	16f	.
+.	.	16d	.
+2ryy	16BB-]	16B-JJ)	.
+.	16FF	16r	.
+.	4BBB-	4r	4r
+.	8r	8r	8dd
+*v	*v	*	*
+=5	=5	=5
+*	*	*^
+2.GGG 2.GG	(16BnLL	8.ddL	8.dd
+.	16d	.	.
+.	16g	.	.
+.	16B	16ee-Jk	16ee-
+.	16c	2ryy	8cc
+.	16gJJ)	.	.
+.	(16dLL	.	8bn
+.	16g	.	.
+.	16e-	.	8cc
+.	16g	.	.
+.	16B	.	8dd
+*	*	*v	*v
+.	16gJJ)	.
+=6	=6	=6
+4.CC [4.C	(16cLL	[4.ee-
+.	16e-	.
+.	16g	.
+.	16cc	.
+.	16g	.
+.	16e-JJ)	.
+8CL]	(16cLL	8ee-]
+.	16g	.
+8D	16d	8dd
+.	16g	.
+8E-J	16e-	8cc
+.	16gJJ)	.
+=7	=7	=7
+*	*	*^
+4.D	(16dLL	8.b-L	8.b-
+.	16g	.	.
+.	16b-	.	.
+.	16g	16ccJk	16cc
+.	16d	8b-	8b-
+.	16B-JJ)	.	.
+4.DD	(16cLL	8aL	8a
+.	16d	.	.
+.	16f#	8b-J	8b-
+.	16d	.	.
+.	16c	8ryy	8a
+*	*	*v	*v
+.	16AJJ)	.
+=8	=8	=8
+4.GG	(16B-LL	4.g
+.	16d	.
+.	16g	.
+.	16d	.
+.	16B-	.
+.	16GJJ)	.
+4GGG	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/19/
+!!!EFL: 018/651

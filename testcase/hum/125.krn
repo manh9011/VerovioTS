@@ -1,0 +1,152 @@
+!!!!SEGMENT: erk125.krn
+!!!OTL@@DE: Trinklied
+!!!COM: Ebers, Karl Friedrich
+!!!ODT: ~1820
+!!!OMD: Froh
+!!!LYR: Starke, Gotthelf Wilhelm Christoph
+!!!LDT: 1794
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM120	*MM120	*MM120
+4r	8fL	8fL
+.	8aJ	8aJ
+=1	=1	=1
+4FF 4F	4.f 4.a 4.cc	4.cc
+4AA 4A	.	.
+.	8f 8a 8cc	8cc
+*	*^	*
+4C 4c	8.b-L	4e 4g	8.b-
+.	16ak	.	16a
+4C 4c	8.b-	4e 4g	8.b-
+.	16ccJk	.	16cc
+*	*v	*v	*
+=2	=2	=2
+4F 4c	2f 2a	2a
+4F	.	.
+4C	4r	4r
+4AA	4c 4f	4f
+=3	=3	=3
+4FF	4.c 4.f 4.a	4.a
+4F	.	.
+.	8c 8f 8a	8a
+*^	*^	*
+8B-L	4C	8e (8gL	4c	(8gL
+8A	.	8cc	.	8cc
+8G	4C	8b-	4c	8b-J)
+8B-J	.	8eJ)	.	8e
+*v	*v	*	*	*
+*	*v	*v	*
+=4	=4	=4
+4F 4B-	4c 4g	4g
+4F 4A	4c 4f	4f
+4C	4r	4r
+4AA	(8fL	8fL
+.	8aJ)	8aJ
+=5	=5	=5
+*^	*	*
+4r	2FF	4.f 4.a 4.cc	4.cc
+4F	.	.	.
+.	.	8c 8f 8a	8a
+4F	4FF	4.A 4.c 4.f	4.f
+4F	4AA	.	.
+.	.	8c 8e-	8e-
+*v	*v	*	*
+=6	=6	=6
+*	*^	*
+4BB- 4B-	8dL	(4d	(8dL
+.	8f	.	8f
+4FF 4F	8b-	4d	8b-J)
+.	8ddJ)	.	8dd
+4DD 4D	4ryy	4f 4b- (4ff	(4ff
+4BBBn 4BBn	8eenL)	4f 4a-	8een)
+.	8ddJ	.	8dd
+*	*v	*v	*
+=7	=7	=7
+4CC 4C	4.f 4.an 4.cc	4.cc
+4C	.	.
+.	8f 8a	8a
+4CC 4C	(8e 8ccL	(8ccL
+.	8d 8b-	8b-
+4CC 4C	8c 8e 8a	8aJ)
+.	8B-) 8gJ	8g
+=8	=8	=8
+4FF 4F	4B- 4c 4g	4g
+4FF 4F	4A 4c 4f	4f
+4AA 4A	4r	4r
+4FF 4F	4c 4f 4a	4a
+=9	=9	=9
+4CC 4C	4.c 4.e 4.g	4.g
+4C	.	.
+.	8c 8f 8a	8a
+4C 4c	8a 8ccL	8cc
+.	8g 8b-	8b-
+*^	*	*
+8cL	4C	8f 8a	8a
+8B-J	.	8e 8gJ	8g
+*v	*v	*	*
+=10	=10	=10
+4F 4A	2f	2f
+4FF 4F	.	.
+4AA 4A	4r	4r
+4FF 4F	4c 4f 4a	4a
+=11	=11	=11
+4CC 4C	4.c 4.e 4.g	4.g
+8BBB- 8BB-L	.	.
+8AAA 8AAJ	8f 8a	8a
+*	*^	*
+4GGG 4GG	8a 8ccL	4d	8cc
+.	8g 8b-	.	8b-
+4CC 4C	8f 8a	8cL	8a
+.	8e 8gJ	8B-J	8g
+*	*v	*v	*
+=12	=12	=12
+4FFF 4FF	2A 2c 2f	2f
+4CC 4C	.	.
+4FF 4F	4r	4r
+4r	(8fL	8fL
+.	8aJ)	8aJ
+=13	=13	=13
+*^	*	*
+4r	2FF	4.f 4.a 4.cc	4.cc
+4F	.	.	.
+.	.	8c 8f 8a	8a
+4F	4FF	4.A 4.c 4.f	4.f
+4F	4AA	.	.
+.	.	8c 8e-	8e-
+*v	*v	*	*
+=14	=14	=14
+4BB- 4B-	(8dL	(8dL
+.	8f	8f
+4FF 4F	8d 8b-	8b-J)
+.	8f 8ddJ)	8dd
+4DD 4D	4f 4b- (4ff	(4ff
+*	*^	*
+4BBBn 4BBn	8eenL)	4f 4a-	8een)
+.	8ddJ	.	8dd
+*	*v	*v	*
+=15	=15	=15
+4CC 4C	4.f 4.a 4.cc	4.cc
+4C	.	.
+.	8f 8a	8a
+4CC 4C	8e 8ccL	8cc
+.	8d 8b-	8b-
+4CC 4C	8c 8e 8a	8a
+.	8B- 8gJ	8g
+=16	=16	=16
+4FF 4F	2A 2c 2f	2f
+4CC 4C	.	.
+4FFF 4FF	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/04/
+!!!EFL: 125/651

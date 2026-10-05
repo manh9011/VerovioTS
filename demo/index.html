@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>verovio-ts browser demo (no Node, data embedded)</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 1rem; }
+  #out { border: 1px solid #ccc; overflow: auto; }
+  #out svg { max-width: 100%; height: auto; }
+</style>
+</head>
+<body>
+<h1>verovio-ts browser demo</h1>
+<p>Paste MEI / MusicXML / Humdrum / ABC / PAE below, or load a sample:</p>
+<div>
+  <button id="mei">sample MEI</button>
+  <button id="mxl">sample MusicXML</button>
+  <button id="hum">sample Humdrum</button>
+  <button id="render">render</button>
+  <span id="status"></span>
+</div>
+<textarea id="in" rows="10" cols="100" placeholder="paste score here"></textarea>
+<div id="out"></div>
+<script type="module">
+import { Toolkit, hasBundledData, bundledKeys } from '../dist/browser/verovio-ts.mjs';
+
+const status = (t) => { document.getElementById('status').textContent = t; };
+status(`bundled data files: ${hasBundledData() ? bundledKeys().length : 0}`);
+
+async function sample(name) {
+  document.getElementById('in').value = await (await fetch(`../testcase/${name}`)).text();
+}
+document.getElementById('mei').onclick = () => sample('mei/001.mei');
+document.getElementById('mxl').onclick = () => sample('mxl/001.musicxml');
+document.getElementById('hum').onclick = () => sample('hum/001.krn');
+document.getElementById('render').onclick = () => {
+  const tk = new Toolkit(true); // fonts resolve from embedded data/, no fetch needed
+  const t0 = performance.now();
+  if (!tk.LoadData(document.getElementById('in').value)) { status('load failed'); return; }
+  document.getElementById('out').innerHTML = tk.RenderToSVG(1);
+  status(`rendered in ${(performance.now() - t0).toFixed(0)} ms`);
+};
+sample('mei/001.mei');
+</script>
+</body>
+</html>

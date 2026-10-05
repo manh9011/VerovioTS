@@ -1,0 +1,182 @@
+!!!!SEGMENT: erk130.krn
+!!!OTL@@DE: Männer und Buben
+!!!COM: Volksweise des 18. Jahrh.
+!!!ODT: <1800
+!!!OMD: Marschmässig
+!!!LYR: Körner, Theodor
+!!!LDT: 1813
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**dynam	**kern
+*part2	*part2	*	*part1
+*staff3	*staff2	*staff 2/3	*staff1
+*Ipiano	*Ipiano	*	*Ivox
+*clefF4	*clefG2	*	*clefG2
+*k[f#]	*k[f#]	*	*k[f#]
+*G:	*G:	*	*G:
+*met(c)	*met(c)	*	*met(c)
+*M4/4	*M4/4	*	*M4/4
+*MM120	*MM120	*	*MM120
+4D	4d	f	4d
+=1	=1	=1	=1
+4GG 4G	4B 4g	.	4g
+4D	4d	.	4d
+4BB	4B	.	4B
+4D	4d	.	4d
+=2	=2	=2	=2
+4GG 4G	4B 4d 4g	.	4g
+4DD 4D	4d 4f# 4a	.	4a
+4GGG 4GG	4d 4g 4b	.	4b
+8r	8r	.	8r
+8GG	8d 8g 8b	.	8b
+=3	=3	=3	=3
+4G	4d 4g 4b	.	4b
+8.DL	8.d 8.f# 8.aL	.	8.aL
+16GJk	16d 16g 16bJk	.	16bJk
+4A	4d 4f# 4cc	.	4cc
+4G	4d 4g 4b	.	8.b
+.	.	.	16b
+!!LO:LB:g=original
+=4	=4	=4	=4
+*	*^	*	*
+4D	8g (8bL	4d	.	8bL
+.	8f# 8a)	.	.	8aJ
+*	*v	*v	*	*
+4DD 4D	8d 8f# 8a	.	8a
+.	8d 8f# 8aJ	.	8a
+4DD 4D	4d 4f# 4a	.	4a
+4r	4r	.	4r
+=5	=5	=5	=5
+4AA 4A	4a	.	4a
+4AA 4A	8.aL	.	12a
+.	.	.	12a
+.	.	.	12a
+.	16aJk	.	.
+4FF# 4F#	4d 4dd	.	4dd
+8.AA 8.AL	4a	.	4a
+16AA 16AJk	.	.	.
+=6	=6	=6	=6
+4D 4d	4f#	.	4f#
+4AA 4A	8.aL	.	8.a
+.	16aJk	.	16a
+4FF# 4F#	4f#	.	4f#
+4DD 4D	4d	.	4d
+!!LO:LB:g=original
+=7	=7	=7	=7
+4AA 4A	4c# 4e 4a	.	4a
+4GG 4G	8.c# 8.e 8.aL	.	8.a
+.	16c# 16e 16aJk	.	16a
+4FF# 4F#	4d 4a 4dd	.	4dd
+8.AA 8.AL	4a	.	8.a
+16AA 16AJk	.	.	16a
+=8	=8	=8	=8
+4D 4d	4f#	.	4f#
+4A	8.aL	.	8.a
+.	16aJk	.	16a
+8D 8dL	8ddL	.	8ddL
+8Cn 8cn	8ccn	.	8ccJ
+8BB 8B	8b	.	8bL
+8AA 8AJ	8aJ	.	8aJ
+=9	=9	=9	=9
+4GG 4G	4B 4d 4g	.	4g
+8.BB 8.GL	8.d 8.gL	.	8.g
+16BB 16GJk	16d 16gJk	.	16g
+4D 4A	4d 4f# 4a	.	4a
+8.D 8.AL	8.d 8.f# 8.aL	.	8.a
+16D 16AJk	16d 16f# 16aJk	.	16a
+!!LO:LB:g=original
+=10	=10	=10	=10
+4G 4B	4d 4g 4b	.	4b
+8.BL	8.d 8.g 8.ddL	.	8.dd
+16GJk	16d 16g 16bJk	.	16b
+4D; 4A;	4d; 4f#; 4a;	.	4a;
+!	!LO:TX:c:i:t=riten.	!	!LO:TX:a:i:t=riten.
+8.BB 8.GL	8.d 8.gL	.	8.g
+16D 16AJk	16d 16f# 16aJk	.	16a
+=11	=11	=11	=11
+4G 4B	4d 4g 4b	.	4b
+8BB 8BL	8d 8g 8ddL	.	8dd
+8GG 8GJ	8d 8g 8bJ	.	8b
+4DD; 4D;	4d; 4f#; 4a;	.	4a;
+!!LO:TX:a:B:t=Tempo.
+4G	8B 8gL	.	8gL
+.	8g 8bJ	.	8bJ
+=12	=12	=12	=12
+8GGL	4.d 4.b 4.dd	.	4.dd
+8D	.	.	.
+8E	.	.	.
+8F#J	8d 8a 8cc	.	8cc
+4G	4d 4g 4b	.	4b
+4BB	4d 4g 4b	.	4b
+=13	=13	=13	=13
+4D	8c 8f# (>8aL	.	8aL
+.	8B 8gJ)	.	8gJ
+*	*^	*	*
+4DD [4D	(8aL	4c 4f#	.	8aL
+.	8bJ)	.	.	8bJ
+*	*v	*v	*	*
+4GG 4D]	4B 4g	.	4g
+4G	8B 8gL	.	8gL
+.	8g 8bJ	.	8bJ
+!!LO:LB:g=original
+=14	=14	=14	=14
+8GGL	4.d 4.b 4.dd	.	4.dd
+8D	.	.	.
+8E	.	.	.
+8F#J	8d 8a 8cc	.	8cc
+4G	4d 4g 4b	.	4b
+4BB	4d 4g 4b	.	4b
+=15	=15	=15	=15
+4D	(>8c 8f# 8aL	.	8aL
+.	8B 8gJ)	.	8gJ
+*	*^	*	*
+4DD 4D	(8aL	4c 4f#	.	8aL
+.	8bJ)	.	.	8bJ
+*	*v	*v	*	*
+4GG 4D	4B 4g	.	4g
+4FF# 4F#	4a 4cc 4dd	.	4dd
+=16	=16	=16	=16
+4GG 4G	4g 4b 4gg	.	4gg
+4D 4d	4dd	.	4dd
+4BB 4B	4b	.	4b
+4GG 4G	4g	.	4g
+=17	=17	=17	=17
+2.DD; 2.D;	2.d; 2.f#; 2.a; 2.dd;	.	4.dd
+.	.	.	8dd
+.	.	.	4dd;
+8.GL	8.B 8.g 8.bL	.	8.b
+16F#Jk	16B 16g 16bJk	.	16b
+!!LO:LB:g=original
+=18	=18	=18	=18
+4E	4B 4g 4b	.	4b
+8.DL	8.B 8.g 8.bL	.	8.b
+16CJk	16B 16g 16bJk	.	16b
+8.BBL	4B 4g 4b	.	4b
+16AAJk	.	.	.
+8.GG 8.GL	8.B 8.g 8.bL	.	8.b
+16FF# 16F#Jk	16B 16g 16bJk	.	16b
+=19	=19	=19	=19
+4EE^> 4E^>	8.B 8.g 8.bL	.	8.b
+.	16B 16g 16bk	.	16b
+4DD^> 4D^>	8.d 8.f# 8.a 8.dd	.	8.dd
+.	16d 16f# 16a 16ddJk	.	16dd
+4GGG^> 4GG^>	4d 4g 4b 4dd	.	[2dd
+*clefG2	*	*	*
+8.g 8.bL	8.dd 8.gg 8.bbL	f	.
+16g 16bJk	16dd 16gg 16bbJk	.	.
+=20	=20	=20	=20
+8.g 8.bL	8.dd 8.gg 8.bbL	.	2dd]
+16g 16bJk	16dd 16gg 16bbJk	.	.
+8.d 8.aL	8.ff# 8.aa 8.dddL	.	.
+16d 16aJk	16ff# 16aa 16dddJk	.	.
+4G; 4g;	4gg; 4bb; 4ddd; 4ggg;	.	4r;
+==	==	==	==
+*-	*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/01/
+!!!EFL: 130/651
+!!!EED: Craig Stuart Sapp
+!!!EEV: 2025/07/19
+!!!RDF**kern: > = above
+!!!RDF**kern: < = below

@@ -1,0 +1,89 @@
+!!!!SEGMENT: erk066.krn
+!!!OTL@@DE: Heimliche Liebe
+!!!ONB: Volkweise (1807 gedruckt)
+!!!ODT: 1807
+!!!OMD: Sehr mässig
+!!!ONB: Volkslied des 18. Jahrhunderts.
+!!!LDT: 1786, 1791
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*M3/4	*M3/4	*M3/4
+*MM72	*MM72	*MM72
+4r	4c	4c
+=1	=1	=1
+4FF	4A 4c 4f	4f
+4AA	4c 4f	4f
+4C	4e 4g	8g
+.	.	8g
+=2	=2	=2
+4FF	4c 4f 4a	4a
+4F	4f 4a	4a
+4G	4f 4b-	8r
+.	.	8b-
+=3	=3	=3
+4A	4cc	4cc
+(8B-L	(8ddL	8ddL
+8A	8cc	8ccJ
+8G	8e 8b-	8b-L
+8FJ)	8f 8aJ)	8aJ
+=4	=4	=4
+4c	(4f 4a	(4a
+4C	4e) 4g	4g)
+4A	4f 4cc	4cc
+=5	=5	=5
+4B-	4f 4b- 4dd	(8ddL
+.	.	8b-J)
+4d	4f 4b-	4b-
+4B-	4f 4b- 4dd	8ddL
+.	.	8ffJ
+=6	=6	=6
+*	*^	*
+4F	(8ffL	4f 4a	(8ffL
+.	8ccJ)	.	8ccJ)
+4A	4cc	4f	4cc
+4F	(8aL	4f 4a	8a
+.	8ccJ)	.	8cc
+*	*v	*v	*
+=7	=7	=7
+4BB-	(8ccL	8ccL
+.	8b-J)	8b-J
+4C	4c 4f 4a	4a
+4CC	4B- 4e 4g	4g
+=8	=8	=8
+4FF	2A 2c 2f	[4f
+4F	.	8fL]
+.	.	8a
+4C	4e 4g	8g
+.	.	8b-J
+=9	=9	=9
+4FF	2f 2a	[4a
+4F	.	8aL]
+.	.	8cc
+4G	4f 4b-	8b-
+.	.	8ddJ
+=10	=10	=10
+4.A	4.f 4.cc	(4cc
+.	.	8ff)
+8r	8r	8r
+(8FL	(8aL	8a
+8AJ)	8ccJ)	8cc
+=11	=11	=11
+4BB-	(8ccL	8ccL
+.	8b-J	8b-J
+4C	4c 4f 4a)	4a
+4CC	4B- 4e 4g	4g
+=12	=12	=12
+4FF	2A 2c 2f	2f
+4F	.	.
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 066/651

@@ -1,0 +1,92 @@
+!!!!SEGMENT: erk033.krn
+!!!OTL@@DE: Einsam bin ich nicht alleine
+!!!COM: Weber, Carl Maria von
+!!!ODT: 1820
+!!!OMD: Larghetto
+!!!LYR: Wolf, Pius Alexander
+!!!ONB: Aus "Preciosa"
+!!!LDT: 1820
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[]	*k[]	*k[]
+*C:	*C:	*C:
+*M6/8	*M6/8	*M6/8
+*MM52	*MM52	*MM52
+4C 4G	4c 4e	4g
+8C 8G	8c 8e	8e
+4C 4G	4c 4e	4cc
+8C 8G	8c 8e	8g
+=2	=2	=2
+4GG 4G	4B 4d 4f	4f
+8GG 8G	8B 8d 8f	8d
+4GG 4G	4B 4d 4f	4dd
+8GG 8G	8B 8d 8f	8g
+=3	=3	=3
+4C 4G	4c 4e	(8gL
+.	.	8ccJ)
+8C 8G	8c 8e	8cc
+4GG 4G	4d 4f	(8ccL
+.	.	8bJ)
+8GG 8G	8d 8f	8g
+=4	=4	=4
+4C 4G	4c 4e	(8gL
+.	.	8eeJ)
+8C 8G	8c 8e	(16ddLL
+.	.	16ccJJ)
+4GG 4G	4d 4f	(8cc
+.	.	4b)
+8GG 8G	8d 8f	.
+=5	=5	=5
+4C 4G	4c 4e	4g
+8C	8B- 8c 8e	8cc
+4FF	4A 4c 4f	(8.ddL
+.	.	16ccJk)
+8FF	8A 8c 8f	(16aLL
+.	.	16fJJ)
+=6	=6	=6
+4DD	4A 4c 4f#	4f#
+8DD	8A 8c 8f#	8dd
+4GG	4G 4B 4fn	(8.eeL
+.	.	16ddJk)
+8GG	8G 8B 8f	(16bLL
+.	.	16gJJ)
+=7	=7	=7
+4C	4G 4c 4e	4ee
+8C	8A 8c 8f	(32ddLLL
+.	.	32cc
+.	.	32b
+.	.	32aJJJ)
+4C	4G 4c 4e	4g
+8C	8G 8c 8e	8e
+=8	=8	=8
+4GG	4G 4B 4f	4d
+8GG	8G 8B 8f	(16aLL
+.	.	16gJJ)
+(4GG	[4G 4B 4d (4f	(4f
+8C)	8G] 8c 8e)	8e)
+=9	=9	=9
+4C	4G 4c 4e	(8eL
+.	.	8gJ)
+8C	8G 8c 8e	8cc
+4GG	4G 4c 4e	(8.eeL
+.	.	16ccJk)
+8r	8r	(16gLL
+.	.	16eJJ)
+=10	=10	=10
+4GG	4G 4B 4f	(8.gL
+.	.	16fJk)
+8r	8r	(16eLL
+.	.	16dJJ)
+4C	4G 4c 4e	4c
+8r;	8r;	8r;
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 033/651

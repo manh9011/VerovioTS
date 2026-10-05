@@ -1,0 +1,92 @@
+!!!!SEGMENT: erk219.krn
+!!!OTL@@DE: Das Mühlrad
+!!!ONB: Volksweise (1803)
+!!!ONB: Volkslied (1784)
+!!!OMD: Mässig langsam
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 2
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,B]	*>[A,B,B]	*>[A,B,B]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M6/8	*M6/8	*M6/8
+*MM64	*MM64	*MM64
+8r	8d	8d
+=1	=1	=1
+*^	*^	*
+[4.D	4GG	4g	8BL	8.g
+.	.	.	8d	.
+.	.	.	.	16g
+.	8GG	8g	8BJ	8g
+4D]	8BBL	8gL	8dL	8gL
+.	8AA	8f#	8c	8f#J
+8D	8GGJ	8gJ	8BJ	8g
+*v	*v	*	*	*
+=2	=2	=2	=2
+4C	8GL	(4f#	(4f#
+.	8c	.	.
+8C	8eJ)	8e	8e)
+(8AAL	4.ryy	4F# 4d	4d
+8D	.	.	.
+8CJ)	.	8F# 8A 8d	8d
+=3	=3	=3	=3
+4BB	4g	8GL	8.gL
+.	.	8d	.
+.	.	.	16gJk
+8GG	8g	8BJ	8g
+4D	8.aL	8cL	8.aL
+.	.	8d	.
+.	16gk	.	16gJk
+8D	8aJ	8f#J	8a
+*	*v	*v	*
+=4	=4	=4
+8GGL	4g 4b	4.b
+8GJ	.	.
+8r	8B	.
+4r	8dL	4r
+.	8gJ	.
+=!|:	=!|:	=!|:
+*>B	*>B	*>B
+8r	(16bLL	16bLL
+.	16ccJJ)	16ccJJ
+=5	=5	=5
+*^	*^	*
+4G	4BB	4dd	8dL	8.dd
+.	.	.	8g	.
+.	.	.	.	16dd
+8G	8BB	8dd	8dJ	8dd
+*	*	*v	*v	*
+4.G	(8BBL	8d 8ddL	8ddL
+.	8C	8e 8ee	8eeJ
+.	8BBJ)	8d 8ddJ	8dd
+*v	*v	*	*
+=6	=6	=6
+4.AA 4.G	8d 8ddL	(4dd
+.	8e	.
+.	8c 8ccJ	8cc)
+4D 4F#	8c 8ccL	4cc
+.	8d	.
+8D 8F#	8c 8ccJ	8cc
+=7	=7	=7
+4GG 4G	8B 8bL	8.b
+.	8d	.
+.	.	16cc
+8BB	8g 8bJ	8b
+4D	8c 8f# 8aL	8a
+.	8B 8g	8g
+8DD 8D	8c 8f# 8aJ	8a
+=8	=8	=8
+8GGL	4.B 4.g	4.g
+8BB	.	.
+8DJ	.	.
+4GG	4r	4r
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/19/
+!!!EFL: 219/600

@@ -1,0 +1,126 @@
+!!!!SEGMENT: erk178.krn
+!!!OTL@@DE: Lob der edlen Musica
+!!!ONB: Volksweise
+!!!ODT: 1807
+!!!OMD: Allegretto
+!!!LYR: Geibel, Emanuel
+!!!LDT: 1840
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,A,B,C,C]	*>[A,A,B,C,C]	*>[A,A,B,C,C]
+*>norep[A,B,C]	*>norep[A,B,C]	*>norep[A,B,C]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[f#c#g#]	*k[f#c#g#]	*k[f#c#g#]
+*A:	*A:	*A:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM112	*MM112	*MM112
+4E	4e	4e
+=1	=1	=1
+2AA 2E	2c# 2a	4.a
+.	.	8g#
+4C# 4A	4e 4a	4a
+4D 4d	4f# 4b	4b
+=2	=2	=2
+*	*^	*
+2E 2B	(4a	2d	(4a
+.	4g#)	.	4g#)
+*	*v	*v	*
+4E 4A	4d 4f#	4f#
+4E 4G#	4d 4e	4e
+=3	=3	=3
+2AA 2E	2c# 2a	2a
+4C# 4E	4e 4a	(4a
+4AA 4A	4e 4cc#	4cc#)
+=4	=4	=4
+2.E 2.G#	2.e 2.b	2.b
+4E	4e	4e
+=5	=5	=5
+*^	*^	*
+2.E	(4.AA	2.a	(4.c#	2.a
+.	8BB	.	8d	.
+.	4C#	.	4e	.
+4A	4AA)	4g#	4e)	4g#
+*	*	*v	*v	*
+=6	=6	=6	=6
+2A	4D	2d 2f#	2f#
+.	4C#	.	.
+2ryy	4BB	2d 2f# 2b	2b
+.	4D	.	.
+*v	*v	*	*
+=7	=7	=7
+*	*^	*
+2E	(2c# 2e 2a	2r	(2a
+2EE	2e 2g#	4B)	2g#)
+.	.	4d	.
+*	*v	*v	*
+=8	=8	=8
+2AA	2c# 2e 2a	2a
+4r	4r	4r
+=:|!	=:|!	=:|!
+*>B	*>B	*>B
+4E	4e	4e
+=9	=9	=9
+4.A 4.c#	4.e 4.cc#	4.cc#
+8A 8c#	8e 8cc#	8cc#
+4A 4c#	4e 4cc#	4cc#
+4A 4c#	4e 4cc#	4cc#
+=10	=10	=10
+4G# 4B	4e^ 4dd^	4dd^
+2G# 2B	2e 2dd	2dd
+4A	4e 4cc#	4cc#
+=11	=11	=11
+4.E 4.G#	4.e 4.b	4.b
+8E 8G#	8e 8b	8b
+4E 4G#	4e 4b	4b
+4D 4G#	4e 4b	4b
+=12	=12	=12
+2.C# 2.A	2.e 2.a 2.ee	2.ee
+4BB 4G#	4d 4e	4e
+=13	=13	=13
+2AA 2A	2c# 2e 2cc#	2cc#
+4F# 4A#	4e 4f# 4cc#	4cc#
+4F# 4A#	4e 4f# 4cc#	4cc#
+=14	=14	=14
+*	*^	*
+2BB 2B	2d 2dd	(4f#	2.dd
+.	.	4g#)	.
+(4C#	2a 2cc#	(4e	.
+4D#)	.	4f#)	4cc#
+*	*v	*v	*
+=15	=15	=15
+4.E 4.G#	4.e 4.b	4.b
+8E 8G#	8e 8b	8b
+4E 4G#	4e 4b	4b
+4Dn 4G#	4e 4b	4b
+=16	=16	=16
+2.C# 2.A	2.e 2.a 2.ee	2.ee
+=!|:	=!|:	=!|:
+*>C	*>C	*>C
+4BB 4G#	4d 4e	4e
+=17	=17	=17
+4.AA 4.A	4.c# 4.a	4.a
+8BB 8A	8d 8a	8a
+4C# 4A	4e 4a	4a
+4AA 4A	4e 4g#	4g#
+=18	=18	=18
+4D 4A	4d 4f#	4f#
+4BB	4d 4f# 4dd	4dd
+4C#	4e 4f# 4cc#	4cc#
+4D	4d 4f# 4b	4b
+=19	=19	=19
+[2E	2c# 2a 2cc#	2cc#
+2EE 2E]	2d 2g# 2b	2b
+=20	=20	=20
+2AA 2E	2c# 2e 2a	2a
+4r	4r	4r
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/28/
+!!!EFL: 178/651

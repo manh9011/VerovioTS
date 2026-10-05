@@ -1,0 +1,207 @@
+!!!!SEGMENT: erk060.krn
+!!!OTL@@DE: Joseph
+!!!COM: Méhul, Etienne Henri
+!!!OPR: Oper: "Joseph"
+!!!ODT: 1807
+!!!OMD: Andante
+!!!ONB: Nach Duval's Dichtung, deutsch
+!!!LDT: 1809
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,B,C]	*>[A,B,B,C]	*>[A,B,B,C]
+*>norep[A,B,C]	*>norep[A,B,C]	*>norep[A,B,C]
+*>A	*>A	*>A
+*clefG2	*clefG2	*clefG2
+*k[]	*k[]	*k[]
+*C:	*C:	*C:
+*M2/4	*M2/4	*M2/4
+*MM76	*MM76	*MM76
+8e	(8gg	8r
+=1	=1	=1
+*>B	*>B	*>B
+8c 8gL	8ee 8cccL)	2r
+8e	(8gg	.
+8c 8g	8ee 8ccc)	.
+8eJ	(8ggJ	.
+=2	=2	=2
+4c 4g	4ee 4ccc)	4r
+4r	(16cLL	8r
+.	16e	.
+.	16g	16g
+.	16ccJJ)	16cc
+*clefF4	*	*
+=3	=3	=3
+*^	*	*
+16CLL	4.C	(8.eeL	8.ee
+16E	.	.	.
+16G	.	.	.
+16FJJ	.	16ddJk)	16dd
+16ELL	.	(16ddLL	(16ddLL
+16GJJ	.	16ccJJ)	16ccJJ)
+8c	8E	(8g	(16ccLL
+.	.	.	16bJJ)
+*v	*v	*	*
+=4	=4	=4
+4.F 4.c	4g (4b)	(8.bL
+.	.	16aJk)
+.	8f 8aL)	8a
+8D	8f 8ddJ	16dd
+.	.	16dd
+=5	=5	=5
+*	*^	*
+4G	(4cc	16eLL	8.cc
+.	.	16g	.
+.	.	16e	.
+.	.	16gJJ	16cc
+4GG	4b	16fLL	8.b
+.	.	16g	.
+.	.	16f	.
+.	.	16gJJ	16b
+=6	=6	=6	=6
+4C	4cc)	16eLL	4cc
+.	.	16g	.
+.	.	16e	.
+.	.	16gJJ	.
+4r	(16cLL	4r	8r
+.	16e	.	.
+.	16g	.	16g
+.	16ccJJ)	.	16cc
+*	*v	*v	*
+=7	=7	=7
+*^	*	*
+16CLL	(4.C	(8.eeL	8.ee
+16E	.	.	.
+16G	.	.	.
+16FJJ	.	16ddJk)	16dd
+16ELL	.	(16ddLL	(16ddLL
+16GJJ	.	16ccJJ)	16ccJJ)
+8c	8E)	8g	(16ccLL
+.	.	.	16bJJ)
+*v	*v	*	*
+=8	=8	=8
+4.F 4.c	4g (4b	(8.bL
+.	.	16aJk)
+.	8f 8aL)	8a
+8F	8f 8a 8ddJ	16dd
+.	.	16dd
+=9	=9	=9
+*	*^	*
+4G	(4cc	16eLL	8.cc
+.	.	16g	.
+.	.	16e	.
+.	.	16gJJ	16cc
+4GG	4b	16fLL	8.b
+.	.	16g	.
+.	.	16f	.
+.	.	16gJJ	16b
+=10	=10	=10	=10
+(8.CL	4cc)	16eLL	4cc
+.	.	16gJ	.
+.	.	8eJ	.
+16BBJk	.	.	.
+16AALL	4r	4r	8r
+16GG	.	.	.
+16FF	.	.	16a
+16EEJJ)	.	.	16a
+*	*v	*v	*
+=11	=11	=11
+2DD	(16d 16fLL	8.dd
+.	16A	.
+.	16d 16f	.
+.	16AJJ)	16dd
+.	(16e 16gLL	(8cc#L
+.	16A	.
+.	16c# 16g	16ddJk)
+.	16AJJ)	16ee
+=12	=12	=12
+4.D	16d 16fLL	(8.ffL
+.	16A	.
+.	16d 16f	.
+.	16AJJ	16eeJk)
+.	16d 16fLL	8dd
+.	16A	.
+8BB	16d 16f	16dd
+.	16GJJ	16dd
+=13	=13	=13
+8CL	16cn 16eLL	8ccn
+.	16G	.
+8BB	16d 16f	8dd
+.	16GJJ	.
+8C	16c 16eLL	8cc
+.	16G	.
+8AAJ	16c 16f#	8cc
+.	16AJJ	.
+=14	=14	=14
+4.GG;	16B 16gLL	4.dd;
+.	16d	.
+.	16B 16g	.
+.	16dJJ	.
+.	8B; 8g;	.
+8r	8r	16g
+.	.	16g
+=15	=15	=15
+4r	8r	8cc
+.	8g' (8dd'L	8dd
+8r	8cc' 8ee'	8ee
+8GG	8g' 8dd'J)	8dd
+=16	=16	=16
+4C	4.e 4.cc	4cc
+(8AL	.	8cc
+8GJ)	8r	16cc#
+.	.	16cc#
+=17	=17	=17
+4F	8aL	8dd
+.	8f 8a 8dd	8dd
+4G	8e 8g 8cc	8ccn
+.	8d 8g 8bJ	8b
+=18	=18	=18
+*	*^	*
+(8F#L	8a (8ddL	4.d	4.dd
+8D	8f# 8cc	.	.
+8G)	8g 8bJ)	.	.
+8GJ	8r	8r	16g
+.	.	.	16g
+*	*v	*v	*
+=19	=19	=19
+8E 8cL	8r	8cc
+8G (8d	4g 4gg	8dd
+8c 8e)	.	8ee
+8G 8dJ	8ff 8bb	8dd
+=20	=20	=20
+*^	*	*
+4c	2A	8.ee (8.cccL	4cc
+.	.	16bbJk	.
+4r	.	16aaLL	8cc
+.	.	16gg	.
+.	.	16ff	16cc#
+.	.	16eeJJ)	16cc#
+*v	*v	*	*
+=21	=21	=21
+4F 4f	4a 4dd	8.dd
+.	.	16dd
+8G 8eL	8g 8ccL	8ccn
+8G 8dJ	8f 8g 8bJ	8b
+=22	=22	=22
+8cL	8e 8g 8ccL	4cc
+8C	8g 8cc 8ee	.
+8cJ	8e 8g 8ccJ	4r
+*clefG2	*	*
+8e	(8gg	.
+=23	=23	=23
+*>C	*>C	*>C
+8c 8gL	8ee 8cccL)	2r
+8e	(8gg	.
+8c 8g	8ee) 8ccc	.
+8eJ	(8ggJ	.
+=24	=24	=24
+4.c; 4.g;	4.ee; 4.ccc;)	4r
+.	.	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/16/
+!!!EFL: 060/651

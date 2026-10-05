@@ -1,0 +1,108 @@
+!!!!SEGMENT: erk070.krn
+!!!OTL@@DE: Abschied
+!!!ONB: Ältere Volksweise (1816) gedruckt
+!!!ODT: <1816
+!!!OMD: Sehr mässig
+!!!ONB: Nach dem Volksliede "Schätzchen, ade!"
+!!!ONB: Strophe 2 u. 3 von Ottmar Schönhuth (1827)
+!!!LDT: 1827
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/8	*M3/8	*M3/8
+*MM72	*MM72	*MM72
+*^	*^	*
+8r	4.GG	8bL	16gLL	8b
+.	.	.	16d	.
+8DL	.	8b	16g	8b
+.	.	.	16d	.
+8F#J	.	8aJ	16c	8a
+.	.	.	16dJJ	.
+=2	=2	=2	=2	=2
+8r	4.GG	4.g	16BLL	4g
+.	.	.	16d	.
+8DL	.	.	16B	.
+.	.	.	16d	.
+8GJ	.	.	16B	8r
+.	.	.	16dJJ	.
+=3	=3	=3	=3	=3
+8r	4.GG	8bL	16gLL	8b
+.	.	.	16d	.
+8DL	.	8b	16g	8b
+.	.	.	16d	.
+8F#J	.	8aJ	16c	8a
+.	.	.	16dJJ	.
+=4	=4	=4	=4	=4
+8r	4.GG	4.g	16BLL	4g
+.	.	.	16d	.
+8DL	.	.	16B	.
+.	.	.	16d	.
+8GJ	.	.	16B	8r
+.	.	.	16dJJ	.
+*	*	*v	*v	*
+=5	=5	=5	=5
+8r	4.GG	16g 16bLL	8b
+.	.	16d	.
+8DL	.	16a 16cc	8cc
+.	.	16dJJ	.
+8GJ	.	16b 16ddLL	8dd
+.	.	16dJJ	.
+=6	=6	=6	=6
+8F#L	4.D	16b 16ddLL	8dd
+.	.	16d	.
+8F#	.	16a 16cc	(16ccLL
+.	.	16g# 16bJJ	16bJJ)
+8F#J	.	16a 16ccLL	8cc
+.	.	16dJJ	.
+=7	=7	=7	=7
+4D	8DL	16f# 16aLL	8a
+.	.	16d	.
+.	8D	16gn 16b	8b
+.	.	16dJJ	.
+8F#	8DJ	16a 16ccLL	8cc
+.	.	16dJJ	.
+=8	=8	=8	=8
+8r	4.GG	16a 16ccLL	8cc
+.	.	16d	.
+8DL	.	16g 16b	(16bLL
+.	.	16f# 16aJJ	16aJJ)
+8GJ	.	16g 16bLL	8b
+.	.	16dJJ	.
+=9	=9	=9	=9
+8r	4.GG	16g 16bLL	8b
+.	.	16d	.
+8DL	.	16g 16b	8b
+.	.	16dJJ	.
+8GJ	.	16a 16ccLL	8cc
+.	.	16dJJ	.
+=10	=10	=10	=10
+8r	4.GG	16b 16ddLL	4.dd
+.	.	16d	.
+8DL	.	16g 16b	.
+.	.	16dJJ	.
+8GJ	.	16B 16gLL	.
+.	.	16dJJ	.
+=11	=11	=11	=11
+8r	8DD	16BLL	8b
+.	.	16d	.
+8DL	4D	16g 16b	8b
+.	.	16dJJ	.
+8F#J	.	16c 16aLL	8a
+.	.	16dJJ	.
+*v	*v	*	*
+=12	=12	=12
+8GG 8DL	8B 8gL	4g
+8G 8dJ	8g 8b 8ggJ	.
+8r	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/03/
+!!!EFL: 070/651

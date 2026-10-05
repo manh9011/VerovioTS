@@ -1,0 +1,92 @@
+!!!!SEGMENT: erk165.krn
+!!!OTL@@DE: Reiterlied
+!!!COM: Zahn, Christian Jacob
+!!!ODT: 1797
+!!!OMD: Marschmässig
+!!!LYR: Schiller, Friedrich von
+!!!LDT: 1797
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,A,B,B]	*>[A,A,B,B]	*>[A,A,B,B]
+*>norep[A,B]	*>norep[A,B]	*>norep[A,B]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[b-e-]	*k[b-e-]	*k[b-e-]
+*B-:	*B-:	*B-:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM110	*MM110	*MM110
+4F	4f	4f
+=1	=1	=1
+4BB- 4B-	4d 4f 4b-	4b-
+8B-L	8b-L	8b-
+8B-J	8b-J	8b-
+(8B-L	(8b-L	8b-L
+8F)	8f)	8fJ
+8D	8d	8d
+8BB-J	8B-J	8B-
+=2	=2	=2
+4FF 4F	4A 4c 4f	4f
+8FL	8fL	4f
+8FJ	8fJ	.
+4F	4f	4f
+8D (8B-L	(8f 8b-L	8b-L
+8F 8cJ)	8a) 8ccJ	8ccJ
+=3	=3	=3
+4B- 4d	4b- 4dd	4dd
+8F 8cL	8f 8a 8ccL	8cc
+8B- 8dJ	8f 8b- 8ddJ	8dd
+4A 4c	4f 4cc 4ee-	4ee-
+4B- 4d	8f 8b- 8ddL	8dd
+.	8f 8b- 8ddJ	8dd
+=4	=4	=4
+4F	4f 4b- 4dd	4dd
+4FF 4F	4f 4a 4cc	4cc
+4r	4r	4r
+=:|!|:	=:|!|:	=:|!|:
+*>B	*>B	*>B
+*^	*	*
+(8AL	4F	(8fL	8fL
+8cJ)	.	8aJ)	8aJ
+*v	*v	*	*
+=5	=5	=5
+4F	4f 4a 4cc	4cc
+4r	8f 8a 8ccL	4cc
+.	8f 8a 8ccJ	.
+4FF 4F	4f 4a 4cc	4cc
+4r	8d 8f 8b-L	8b-
+.	8f 8a 8ccJ	8cc
+=6	=6	=6
+4BB- 4B-	4f 4b- 4dd	4dd
+4FF 4F	4f 4a 4cc	4cc
+4BB- 4B-	4d 4f 4b-	4b-
+*^	*	*
+(8FL	8DL	8f 8b-L	8b-
+8B-J)	8BB-J	8f 8ddJ	8dd
+=7	=7	=7	=7
+4A	4F	4f 4ff	4ff
+*v	*v	*	*
+8FF 8FL	8fL	8f
+8FF 8FJ	8fJ	8f
+4FF 4F	4f	4f
+8F 8c 8e-L	8f 8gL	8gL
+8F 8c 8e-J	8f 8aJ	8aJ
+=8	=8	=8
+*	*^	*
+4B- 4d	(8b-L	4f	(8b-L
+.	8ddJ)	.	8ddJ)
+*^	*	*	*
+(8e-L	4F	(8ccL	4f	(8ccL
+8cJ	.	8aJ	.	8aJ)
+4ryy	4B- 4d)	4b-)	4f	4b-
+*v	*v	*	*	*
+*	*v	*v	*
+==:|!	==:|!	==:|!
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/27/
+!!!EFL: 165/651

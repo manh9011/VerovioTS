@@ -1,0 +1,166 @@
+!!!!SEGMENT: erk208.krn
+!!!OTL@@DE: Der Jüngling am Bache
+!!!ONB: Volkweise
+!!!CDT: ~1810
+!!!OMD: Langsam
+!!!LYR: Schiller, Fr. v.
+!!!LDT: 1803
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 2
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G: 	*G: 	*G: 
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM54	*MM54	*MM54
+4r	4r	8b
+.	.	8a
+=1	=1	=1
+2GG	8BL	4.g
+.	8d	.
+.	8g	.
+.	8dJ	8g
+2BB	8GL	4.g
+.	8d	.
+.	8g	.
+.	8dJ	8f#
+=2	=2	=2
+2C	8GL	(8f#L
+.	8c	8eJ)
+.	8e	4e
+.	8cJ	.
+2CC 2C	8GL	4r
+.	8c	.
+.	8e	8cc
+.	8dJ	8b
+=3	=3	=3
+2DD 2D	8cL	4.a
+.	8d	.
+.	8f#	.
+.	8dJ	8a
+2DD 2D	8cL	4.dd
+.	8d	.
+.	8f#	.
+.	8dJ	8f#
+=4	=4	=4
+[2GG	8BL	2g
+.	8d	.
+.	8g	.
+.	8dJ	.
+4GG] 4G	4B 4d 4g	4r
+4r	4r	8b
+.	.	8a
+=5	=5	=5
+2GG	8BL	4.g
+.	8d	.
+.	8g	.
+.	8dJ	8g
+2BB	8GL	4.g
+.	8d	.
+.	8g	.
+.	8dJ	8f#
+=6	=6	=6
+2C	8GL	(8f#L
+.	8c	8eJ)
+.	8e	4e
+.	8cJ	.
+2CC 2C	8GL	4r
+.	8c	.
+.	8e	8cc
+.	8dJ	8b
+=7	=7	=7
+2DD 2D	8cL	4.a
+.	8d	.
+.	8f#	.
+.	8dJ	8a
+2DD 2D	8cL	4.dd
+.	8d	.
+.	8f#	.
+.	8dJ	8f#
+=8	=8	=8
+[2GG	8BL	2g
+.	8d	.
+.	8g	.
+.	8dJ	.
+4GG] 4G	4B 4d 4g	4r
+4r	4r	8f#
+.	.	8g
+=9	=9	=9
+2D 2A	8cL	4.a
+.	8d	.
+.	8f#	.
+.	8dJ	8a
+2D 2A	8cL	(4dd
+.	8d	.
+.	8f#	8cc)
+.	8cJ	8a
+=10	=10	=10
+*^	*	*
+2D	2G	8BL	(8aL
+.	.	8d	8bJ)
+.	.	8g	4g
+.	.	8dJ	.
+4G	2D	8BL	4r
+.	.	8d	.
+4r	.	8A 8c	8a
+.	.	8G 8BJ	8b
+*v	*v	*	*
+=11	=11	=11
+2D	8F#L	(8dd
+.	8A	4cc)
+.	8d	.
+.	8AJ	8a
+2DD 2D	8GL	(8cc
+.	8B	4b)
+.	8d	.
+.	8BJ	8g
+=12	=12	=12
+4DD 4D	8F# 8AL	2a;
+.	8d	.
+4D 4A	8f#	.
+.	8aJ	.
+4D; 4A;	4d; 4f#; 4dd;	4r
+4r	4r	8b
+.	.	8a
+=13	=13	=13
+2GG	8BL	4.g
+.	8d	.
+.	8g	.
+.	8dJ	8g
+2BB	8GL	4.g
+.	8d	.
+.	8B 8g	.
+.	8A 8f#J	8f#
+=14	=14	=14
+2C	8A 8f#L	(8f#L
+.	8G 8e	8eJ)
+.	8G 8e	4e
+.	8EJ	.
+2CC 2C	8GL	4r
+.	8c	.
+.	8e	8cc
+.	8dJ	8b
+=15	=15	=15
+2DD 2D	8cL	4.a
+.	8d	.
+.	8f#	.
+.	8dJ	8a
+2DD 2D	8cL	4.dd
+.	8d	.
+.	8f#	.
+.	8dJ	8f#
+=16	=16	=16
+8GGL	2B 2d 2g	2g
+8G	.	.
+8D	.	.
+8BBJ	.	.
+4GG	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/19/
+!!!EFL: 208/600

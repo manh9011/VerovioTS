@@ -1,0 +1,63 @@
+!!!!SEGMENT: erk213.krn
+!!!OTL@@DE: Lied des Alten im Bart
+!!!COM: Löffler, A.
+!!!OMD: Mit Würde und Kraft
+!!!LYR: Geibel, Em.
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 2
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-e-a-d-]	*k[b-e-a-d-]	*k[b-e-a-d-]
+*f:	*f:	*f:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM116	*MM116	*MM116
+4CC 4C	4c	4c
+=1	=1	=1
+4FF 4F	4f	4f
+4FF 4F	4f	4f
+4.AA- 4.A-	4.a-	4.a-
+8AA- 8A-	8a-	8a-
+=2	=2	=2
+4.GG 4.G	4.g	4.g
+8EEn 8En	8en	8en
+4FF 4F	4f	4f
+4FF 4F	4c 4f 4a-	4a-
+=3	=3	=3
+4.AA- 4.A-	4.c 4.f 4.cc	4.cc
+8FF 8F	8c 8f 8a-	8a-
+4AA- 4A-	4c 4f 4cc	4cc
+8BB- 8B-L	8d- 8f 8b-L	8b-L
+8BBn 8BnJ	8dn 8f 8a-J	8a-J
+=4	=4	=4
+4C 4c	4f 4a-	4a-
+4CC 4C	4c 4en 4g	4g
+4r	4r	4r
+4FF 4F	4f	4f
+=5	=5	=5
+4DD- 4D-	4f 4a-	4a-
+4DD- 4D-	4a-	4a-
+4.AAA- 4.AA-	4.e- 4.a- 4.cc	4.cc
+8AAA- 8AA-	8e- 8a- 8cc	8cc
+=6	=6	=6
+4DD- 4D-	4d- 4f 4b-	4b-
+4EE- 4E-	4B- 4d- 4g	4g
+4AA- 4E-	4c 4a-	4a-
+8AA- 8A-L	4e- 4a- 4cc	4cc
+8GG 8GJ	.	.
+=7	=7	=7
+4FF 4F	4f 4a- 4cc 4ff	4ff
+4AA- 4A-	4c 4f 4cc	4cc
+4.BB- 4.B-	4.d- 4.f 4.b-	4.b-
+8FF 8F	8c 8f 8a-	8a-
+=8	=8	=8
+2CC; 2C;	2c; 2en; 2g;	2g;
+4FFF; 4FF;	4c; 4f; 4an;	4an;
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/20/
+!!!EFL: 213/600

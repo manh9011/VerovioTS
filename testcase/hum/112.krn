@@ -1,0 +1,127 @@
+!!!!SEGMENT: erk112.krn
+!!!OTL@@DE: Zufriedenheit
+!!!ONB: 2. Melodie
+!!!COM: Mozart, Wolfgang Amadeus
+!!!CDT: -1791///
+!!!OMD: Mässig
+!!!LYR: Miller, Joh. Martin
+!!!LDT: 1776
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[P,A,A]	*>[P,A,A]	*>[P,A,A]
+*>P	*>P	*>P
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M6/8	*M6/8	*M6/8
+*MM88	*MM88	*MM88
+8GG 8GL	8b 8ggL	4r
+8GG 8G	8b 8gg	.
+8GG 8GJ	8dd 8bbJ	8r
+4GG 4G	4b 4gg	4r
+=	=	=
+*>A	*>A	*>A
+8r	8r	8d
+=1	=1	=1
+4GG 4G	(8BL	(8ddL
+.	8d	8bJ)
+8r	8gJ)	8g
+4GG 4G	(8cL	(8eL
+.	8e	8ccJ)
+8r	8gJ)	8b
+=2	=2	=2
+4GG 4G	(8AL	(8aL
+.	8c	8ddJ)
+8r	8f#J)	8cc
+4GG 4G	(8BL	4b
+.	8d	.
+8r	8gJ)	8b
+=3	=3	=3
+4F#	(8aL	8aL
+.	8d	8ddJ
+8D	8f#) 8aJ	8a
+(8GL	(8e 8gL	(8gL
+8A)	8d) 8f#	8f#J)
+8AAJ	8c# 8eJ	8e
+=4	=4	=4
+4D	16dLL	4d
+.	16f#	.
+.	16g	.
+.	16a	.
+8r	16b	8r
+.	16cc#JJ	.
+4r	8dd	4r
+.	8r	.
+8r	8r	8dd
+=5	=5	=5
+4D	(8AL	4a
+.	8d	.
+8Cn	8f#J)	8a
+4BB	(8BL	(8bL
+.	8d	8aJ)
+8E	8g#J)	8b
+=6	=6	=6
+4AA	(8cL	4cc
+.	8e	.
+8r	8aJ)	8dd
+4r	(8cL	4ee
+.	8e	.
+8r	8aJ)	(16ccLL
+.	.	16aJJ)
+=7	=7	=7
+4D	(8AL	4f#
+.	8d	.
+8C	8f#J)	8f#
+4BB	(8BL	(8gL
+.	8d	8aJ)
+8GG	8gJ)	8b
+=8	=8	=8
+4D	16f#LL	4a
+.	16d	.
+.	16f#	.
+.	16a	.
+8r	16cc#	8r
+.	16ddJJ	.
+4r	4d	4r
+8r	8r	8a
+=9	=9	=9
+4G	(8BL	4b
+.	8d	.
+8Fn	8gJ)	8b
+4E	(8cL	(8ccL
+.	8e	8bJ)
+8r	8gJ)	8cc
+=10	=10	=10
+4.BB	(8dL	4dd
+.	8fn	.
+.	8gJ)	8dd#
+4C	(8cL	4ee
+.	8e	.
+8r	8gJ)	8ee
+=11	=11	=11
+4.C	(8AL	(8ddnL
+.	8d	8f#J)
+.	8f#J)	8f#
+8BB	(8gL	(8gL
+4C	8e	8ccJ)
+.	8cJ)	8a
+=12	=12	=12
+4.D	(8BL	[4.g
+.	8d	.
+.	8gJ)	.
+4.DD	(8cL	8gL]
+.	8d	8bJ
+.	8f#J)	8a
+=13	=13	=13
+4GG	4B 4g	4g
+8r	8r	8r
+4r	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/07/
+!!!EFL: 112/651

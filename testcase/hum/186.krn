@@ -1,0 +1,142 @@
+!!!!SEGMENT: erk185.krn
+!!!OTL@@DE: Rückblick
+!!!ONB: Neuere Volksweise
+!!!OMD: Kräftig
+!!!LDT: 1825
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#c#g#d#]	*k[f#c#g#d#]	*k[f#c#g#d#]
+*E:	*E:	*E:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM110	*MM110	*MM110
+*	*^	*
+4EE 4E	8g#L	4B 4e	(8g#L
+.	8aJ	.	8aJ)
+*	*v	*v	*
+=1	=1	=1
+4GG# 4G#	4B 4e 4b	4b
+4EE 4E	4e 4g# 4b	4b
+*	*^	*
+4DD# 4D#	(8bL	4f#	(8bL
+.	8cc#	.	8cc#J)
+4BBB 4BB	8a	4d#	(8aL
+.	8f#J)	.	8f#J)
+*	*v	*v	*
+=2	=2	=2
+*^	*	*
+2EE	(4BB	4G# (4e	4e
+.	4E)	4B 4g#)	4g#
+*v	*v	*	*
+4E 4B	4e 4g#	4g#
+8r	8r	8r
+8E 8B	8e 8g#	8g#
+=3	=3	=3
+*	*^	*
+4AA 4A	4.f#	2c# 2e	4.f#
+4GG# 4G#	.	.	.
+.	8g#	.	8g#
+4FF# 4F#	4c# 4f# 4a	2r	4a
+4BBB 4BB	4d# 4f# 4b	.	4b
+*	*v	*v	*
+=4	=4	=4
+*^	*	*
+4E	2EE	4B 4f# 4a	4a
+4E	.	4B 4e 4g#	4g#
+2ryy	4r	4r	4r
+.	4D# 4B	4f# 4b	4b
+*v	*v	*	*
+=5	=5	=5
+2E 2B	4.g# 4.b	4.b
+.	8e 8g#	8g#
+2GG# 2E	4.e 4.b 4.ee	4.ee
+.	8e 8b 8dd#	8dd#
+=6	=6	=6
+2AA 2A	4.e 4.b 4.dd#	4.dd#
+.	8e 8a 8cc#	8cc#
+4AAA 4AA	4e 4a 4cc#	4cc#
+4AA 4A	4e 4cc#	4cc#
+=7	=7	=7
+*	*^	*
+4GG# 4E	4.b	2e	4.b
+4AA 4A	.	.	.
+.	8cc#	.	8cc#
+4BB 4G#	8bL	4e	(8bL
+.	8g#J	.	8g#
+*^	*	*	*
+8F#L	4BB	8aL	4d#	8aJ)
+8AJ	.	8f#J	.	8f#
+*	*	*v	*v	*
+=8	=8	=8	=8
+4A	4E	4B 4d# 4f#	4f#
+4G#	4E	4B 4e	4e
+2ryy	4r	4r	4r
+.	4E 4B	4e 4g#	4g#
+*v	*v	*	*
+=9	=9	=9
+4BB 4B	4d# 4f#	4f#
+4FF# 4F#	4d# 4f# 4b	4b
+4DD# 4D#	4d# 4f# 4b	4b
+4BBB 4BB	4f# 4b 4dd#	4dd#
+=10	=10	=10
+*	*^	*
+2FF# 2F#	8b (8dd#L	2f#	(8dd#L
+.	8a# 8cc#	.	8cc#
+.	8cc# 8ee	.	8eeJ)
+.	8b 8dd#J)	.	8dd#
+*	*v	*v	*
+4FFF# 4FF#	4f# 4a# 4cc#	4cc#
+4r	4f#	4f#
+=11	=11	=11
+4F#	4f#	4f#
+4C# 4c#	4f# 4a# 4cc#	4cc#
+4AA# 4A#	4f# 4a# 4cc#	4cc#
+4FF# 4F#	4f# 4a# 4cc# 4ee	4ee
+=12	=12	=12
+2BB 2B	8f# 8cc# (8eeL	(8eeL
+.	8b 8dd#	8dd#
+.	8dd# 8ff#)	8ff#J)
+.	8cc#' 8ee'J	8ee
+4BBB 4BB	(8b' 8dd#'L	(8dd#L
+.	8an' 8cc#'	8cc#
+4r	8g#' 8b'	8bJ)
+.	8f#') 8a' 8b'J	8b
+=13	=13	=13
+2E 2B	4.e 4.g# 4.b	4.b
+.	8e 8g#	8g#
+2GG# 2E	4.e 4.b 4.ee	4.ee
+.	8b 8dd#	8dd#
+=14	=14	=14
+*	*^	*
+4AA 4A	8b (8dd#L	4e	(8dd#L
+.	8a 8cc#J	.	8cc#J)
+*	*v	*v	*
+4AA 4A	4e 4a 4cc#)	4cc#
+4AAA 4AA	4r	4r
+4AA 4A	4e 4a 4cc#	4cc#
+=15	=15	=15
+4GG# 4G#	4.e 4.b	4.b
+4AA 4A	.	.
+.	8e 8a 8cc#	8cc#
+4BB 4B	8e 8g# 8bL	(8bL
+.	8g#J	8g#
+*	*^	*
+4BBB 4BB	8d# 8aL	4B	8aJ)
+.	8f#J	.	8f#
+*	*v	*v	*
+=16	=16	=16
+*^	*	*
+[2BB	4EE	2A 2d# 2f#	2f#
+.	4BBB	.	.
+4BB;]	4EE;	4G#; 4B; 4e;	4e;
+*v	*v	*	*
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/28/
+!!!EFL: 185/651

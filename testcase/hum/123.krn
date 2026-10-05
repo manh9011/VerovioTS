@@ -1,0 +1,260 @@
+!!!!SEGMENT: erk123.krn
+!!!OTL@@DE: Aufmunterung zur Freude
+!!!ONB: Componist unbekannt
+!!!OMD: Mässig und heiter
+!!!LYR: Hölty, Ludwig Heinrich Christoph
+!!!LDT: 1776
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[P,A,A,B]	*>[P,A,A,B]	*>[P,A,A,B]
+*>norep[P,A,B]	*>norep[P,A,B]	*>norep[P,A,B]
+*>P	*>P	*>P
+*clefF4	*clefG2	*clefG2
+*k[]	*k[]	*k[]
+*C:	*C:	*C:
+*M3/8	*M3/8	*M3/8
+*MM64	*MM64	*MM64
+8r	8G	8g
+=1!|:	=1!|:	=1!|:
+*>A	*>A	*>A
+4CC	16c 16eLL	(8.ccL
+.	16G	.
+.	16c 16e	.
+.	16G	16bJk
+8C	16c 16f	8a)
+.	16AJJ	.
+=2	=2	=2
+4CC	16c 16eLL	4g
+.	16G	.
+.	16c 16e	.
+.	16G	.
+8C	16c 16e	8e
+.	16GJJ	.
+=3	=3	=3
+4GG 4D	16B 16fLL	4f
+.	16G	.
+.	16B 16f	.
+.	16G	.
+8BB	16d 16g	8g
+.	16GJJ	.
+=4	=4	=4
+*^	*	*
+4C	8CL	16c 16eLL	8e
+.	.	16G	.
+.	8EJ	16c	8c
+.	.	16GJJ	.
+*v	*v	*	*
+8GG 8D	16B 16fLL	(16.fLL
+.	16GJJ	.
+.	.	32eJJk)
+=5	=5	=5
+4C	16c 16eLL	4e
+.	16G	.
+.	16e 16g	.
+.	16cJJ	.
+8D 8A	16f# 16ccLL	(16.ccLL
+.	16cJJ	.
+.	.	32bJJk)
+=6	=6	=6
+8D# 8AL	16f# 16bLL	4b
+.	16B	.
+8E 8G	16e 16b	.
+.	16BJJ	.
+8CJ	16e 16aLL	(16.ddLL
+.	16cJJ	.
+.	.	32ccJJk)
+=7	=7	=7
+4Dn	16d 16gLL	(16.bLL
+.	16B	.
+.	.	32aJk
+.	16d 16g	8gJ)
+.	16BJJ	.
+8DD 8D	16d 16f#LL	8f#
+.	16cJJ	.
+=8	=8	=8
+4GG	16B 16gLL	4g
+.	16G	.
+.	16B 16d	.
+.	16GJJ	.
+8r	16B 16gLL	8g
+.	16GJJ	.
+=9:|!	=9:|!	=9:|!
+*>B	*>B	*>B
+4GG	16B 16dLL	(8.bL
+.	16G	.
+.	16B 16d	.
+.	16GJJ	16aJk)
+8Fn	16B 16d 16gLL	8g
+.	16GJJ	.
+=10	=10	=10
+4E	16c 16gLL	4cc
+.	16G	.
+.	16c 16g	.
+.	16GJJ	.
+8C	16c 16eLL	8g
+.	16GJJ	.
+=11	=11	=11
+4BB	16d 16gLL	8gL
+.	16G	.
+.	16d 16f	8fJ
+.	16G	.
+8C	16c 16e	8e
+.	16GJJ	.
+=12	=12	=12
+4GG	16c 16eLL	8e
+.	16G	.
+.	16B 16d	8d
+.	16GJJ	.
+8GG	16B 16d 16gLL	8g
+.	16GJJ	.
+=13	=13	=13
+4GG	16B 16dLL	(8.bL
+.	16G	.
+.	16B 16d	.
+.	16GJJ	16aJk)
+8F	16B 16d 16gLL	8b
+.	16GJJ	.
+=14	=14	=14
+4E	16c 16gLL	4cc
+.	16G	.
+.	16c 16g	.
+.	16GJJ	.
+8C	16c 16eLL	8e
+.	16GJJ	.
+=15	=15	=15
+4AA	16c 16f#LL	8f#L
+.	16A	.
+.	16c 16e	8eJ
+.	16A	.
+8D	16c 16f#	8f#
+.	16AJJ	.
+=16	=16	=16
+4GG	16B 16gLL	4g
+.	16G	.
+.	16B 16g	.
+.	16GJJ	.
+8GG	16d 16gLL	8g
+.	16BJJ	.
+=17	=17	=17
+4F	16d 16gLL	8ddL
+.	16B	.
+.	16d 16g	16ccL
+.	16B	16bJJ
+8G	16d 16g	16aLL
+.	16BJJ	16bJJ
+=18	=18	=18
+4E	16e 16gLL	4cc
+.	16c	.
+.	16e 16g	.
+.	16c	.
+8G	16e 16g	8cc
+.	16cJJ	.
+=19	=19	=19
+4F	16d 16gLL	16cc#LL
+.	16B	16dd
+.	16d 16g	16ccn
+.	16B	16bJJ
+8G	16d 16g	16aLL
+.	16BJJ	16gJJ
+=20	=20	=20
+8EL	16e 16gLL	8g
+.	16c	.
+8C	16e 16cc	8cc
+.	16cJJ	.
+8EJ	16g 16b-LL	8b-
+.	16cJJ	.
+=21	=21	=21
+4F	16f 16aLL	4a
+.	16c	.
+.	16f 16a	.
+.	16cJJ	.
+16GLL	16f 16bnLL	8bn
+16G#JJ	16dJJ	.
+=22	=22	=22
+8.AL	16e 16ccLL	4cc
+.	16c	.
+.	16e 16cc	.
+16GnJk	16cJJ	.
+16FLL	16a 16ddLL	8dd
+16DJJ	16fJJ	.
+=23	=23	=23
+*	*^	*
+8GL	8.bL	16fLL	(8.bL
+.	.	16d	.
+8GG	.	16f	.
+.	16ak	16d	16aJk)
+8GJ	8bJ	16f	8b
+.	.	16dJJ	.
+*	*v	*v	*
+=24	=24	=24
+*^	*	*
+(16CLL	4.C	8.e 8.ccL	4cc
+16GJJ	.	.	.
+4G 4c)	.	.	.
+.	.	(16eeL	.
+.	.	16gg	8r
+.	.	16cccJJ)	.
+=25	=25	=25	=25
+16GLL	4.F	(8dddL	4.r
+16d	.	.	.
+16G	.	16cccL	.
+16d	.	16bb	.
+16G	.	16aa	.
+16dJJ	.	16ggJJ)	.
+=26	=26	=26	=26
+16GLL	4.E	4ccc	4.r
+16c	.	.	.
+16G	.	.	.
+16c	.	.	.
+16G	.	8ccc	.
+16cJJ	.	.	.
+*v	*v	*	*
+=27	=27	=27
+16GLL	(16ccc#LL	4.r
+16d	16ddd	.
+16G	16cccn	.
+16d	16bb	.
+16G	16aa	.
+16dJJ	16ggJJ)	.
+=28	=28	=28
+*^	*	*
+16GLL	4E	(8ggL	4.r
+16c	.	.	.
+16G	.	8cc 8ccc)	.
+16c	.	.	.
+16G#	8E	8b 8bbJ	.
+16dJJ	.	.	.
+=29	=29	=29	=29
+16FLL	4F	4a 4aa	4.r
+16A	.	.	.
+16c	.	.	.
+16fJJ	.	.	.
+16dLL	8G	8b 8bb	.
+16fJJ	.	.	.
+=30	=30	=30	=30
+16ALL	4A	4cc 4ccc	4.r
+16c	.	.	.
+16e	.	.	.
+16aJJ	.	.	.
+16ALL	8F	8dd 8ddd	.
+16fJJ	.	.	.
+=31	=31	=31	=31
+16dLL	4G	8.b 8.bbL	4.r
+16f	.	.	.
+16d	.	.	.
+16f	.	16a 16aak	.
+16d	8G	8b 8bbJ	.
+16fJJ	.	.	.
+*v	*v	*	*
+=32	=32	=32
+8c 8eL	4cc 4ee 4ccc	4r
+8CJ	.	.
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/03/
+!!!EFL: 123/651

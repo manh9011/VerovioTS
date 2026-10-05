@@ -1,0 +1,172 @@
+!!!!SEGMENT: erk044.krn
+!!!OTL@@DE: An die Freude
+!!!ONB: Compoinst unbekannt
+!!!ODT: 1799
+!!!OMD: Mässig geschwind
+!!!LYR: Schiller, Friedrich
+!!!LDT: 1785
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,A,B]	*>[A,A,B]	*>[A,A,B]
+*>norep[A,B]	*>norep[A,B]	*>norep[A,B]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[f#c#g#]	*k[f#c#g#]	*k[f#c#g#]
+*A:	*A:	*A:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM110	*MM110	*MM110
+8EL	8eL	8e
+8EJ	8eJ	8e
+=1	=1	=1
+4AA	4c# 4e 4a	4a
+4AA 4A	4c# 4e 4a	4a
+4GG# 4G#	4e 4b	4b
+4EE 4E	4e 4g# 4b	4b
+=2	=2	=2
+4AA 4A	8a (8cc#L	8cc#L
+.	8b 8ddJ)	8ddJ
+4AAA 4AA	4cc# 4ee	4ee
+4r	4r	4r
+4CC# 4C#	8eeL	8ee
+.	8cc#J	8cc#
+=3	=3	=3
+4DD 4D	(8cc#L	(8cc#L
+.	8b)	8bJ)
+4DD 4D	(8dd	(8ddL
+.	8bJ)	8bJ)
+4EE 4E	4c# 4e 4a	4a
+4EE 4E	4B 4d 4e 4g#	4g#
+=4	=4	=4
+2AAA 2AA	2c# 2e 2a	2a
+4r	4r	4r
+=:|!	=:|!	=:|!
+*>B	*>B	*>B
+8E 8G#L	8e 8g#L	8g#
+8E 8F# 8AJ	8e 8f# 8aJ	8a
+=5	=5	=5
+4E 4G# 4B	4e 4g# 4b	4b
+4E 4G# 4B	4e 4g# 4b	4b
+4E 4A 4c#	4e 4a 4cc#	4cc#
+4E 4A 4c#	4e 4a 4cc#	4cc#
+=6	=6	=6
+4E	8b (8ddL	(8ddL
+.	8a# 8cc#J	8cc#J)
+4E	4e 4b 4dd)	4dd
+4r	4r	4r
+8E 8G# 8BL	8e 8g# 8bL	8b
+8E 8G# 8BJ	8e 8g# 8bJ	8b
+=7	=7	=7
+4A 4c#	4e 4an 4cc#	4cc#
+4AA 4A	4e 4a 4cc#	4cc#
+4FF# 4F#	4a 4b 4dd#	4dd#
+4BB 4B	4f# 4a 4b 4dd#	4dd#
+=8	=8	=8
+2EE 2E	2g# 2b 2ee	2ee
+4r	4r	4r
+8EL	8eL	8e
+8EJ	8eJ	8e
+=9	=9	=9
+4C# 4A	4e 4a	4a
+4C# 4A	4e 4a	4a
+4E 4B	4e 4g# 4b	4b
+4E 4B	4e 4g# 4b	4b
+=10	=10	=10
+4A	8a (8cc#L	8cc#L
+.	8b 8ddJ)	8ddJ
+4AA 4A	4cc# 4ee	4ee
+4r	4r	4r
+4CC# 4C#	8eeL	8ee
+.	8cc#J	8cc#
+=11	=11	=11
+4DD 4D	(8cc#L	(8cc#L
+.	8b)	8bJ)
+4DD 4D	(8dd	(8ddL
+.	8bJ)	8bJ)
+4EE 4E	4c# 4e 4a	4a
+4EE 4E	4B 4d 4e 4g#	4g#
+=12	=12	=12
+2AAA 2AA	2c# 2e 2a	2a
+4r	4r	4r
+8EL	8eL	8e
+8EJ	8eJ	8e
+=13	=13	=13
+4AA 4A	4c# 4e 4a	4a
+4E	4c# 4e 4a	4a
+4C#	4.c# 4.e 4.a	4.a
+4AA	.	.
+.	8c# 8e 8a	8a
+=14	=14	=14
+4E	(8c# 8e 8aL	(8aL
+.	8B) 8e 8g#J	8g#J)
+4EE	4B 4e 4g#	4g#
+4E	4r	4r
+4E	8eL	8e
+.	8e 8g#J	8g#
+=15	=15	=15
+4E	4e 4g# 4b	4b
+4BB	4e 4g# 4b	4b
+4GG#	4.e 4.g# 4.b	4.b
+4EE	.	.
+.	8e 8g# 8b	8b
+=16	=16	=16
+4AA	8g# (8bL	(8bL
+.	8a 8cc#J	8cc#J)
+4AAA	4e 4a 4cc#)	4cc#
+4AA	4r	4r
+8EL	8eL	8e
+8EJ	8eJ	8e
+=17	=17	=17
+4.AA 4.A	4.a	4.a
+8GG# 8G#	8g#	8g#
+(8FF# 8F#L	(8f#L	8f#L
+8EE) 8E	8e)	8eJ
+(8DD 8D	(8d	8dL
+8CC#) 8C#J	8c#J)	8c#J
+=18	=18	=18
+2FF# 2F#	2f#	2f#
+4.DD 4.D	4.d	4.d
+8CC# 8C#	8c#	8c#
+=19	=19	=19
+4BBB 4BB	4B	4B
+4BBB 4BB	4B	4B
+4EE 4E	4e	4e
+4EE 4E	4e	4e
+=20	=20	=20
+2AAA 2AA	2A	2A 2a
+4r	4r	4r
+4AA 4A	8c# 8e 8aL	8a
+.	8c# 8e 8aJ	8a
+=21	=21	=21
+4E 4G#	4d 4e 4b	4b
+4E 4A	4c# 4e 4a	4a
+4E 4G#	4.d 4.b	4.b
+4E 4G#	.	.
+.	8e 8cc#	8cc#
+=22	=22	=22
+4A	(8d 8bL	8bL
+.	8c#) 8aJ	8aJ
+4AA	4c# 4e 4a	4a
+4r	4r	4r
+4AA 4A	8c# 8e 8aL	8a
+.	8c# 8e 8aJ	8a
+=23	=23	=23
+4E 4G#	4d 4e 4b	4b
+4E 4A	4c# 4e 4a	4a
+4E 4G#	4.d 4.b	4b
+4E 4G#	.	4cc#
+.	8e 8cc#	.
+=24	=24	=24
+4A	(8d 8bL	(8bL
+.	8c#) 8aJ	8aJ)
+4AA	4c# 4e 4a	4a
+4r;	4r;	4r;
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/26/
+!!!EFL: 044/651

@@ -1,0 +1,101 @@
+!!!!SEGMENT: erk198.krn
+!!!OTL@@DE: Wer niemals einen Rausch gehabt
+!!!COM: Müller, Wenzel
+!!!ODT: 1794
+!!!ONB: Aus dem kom. Singspiel "Das neue Sonntagskind".
+!!!OMD: Allegretto
+!!!LYR: Perinet, Joachim
+!!!LDT: 1794
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*>[A,A,B,A,A]	*>[A,A,B,A,A]	*>[A,A,B,A,A]
+*>norep[A,B,A]	*>norep[A,B,A]	*>norep[A,B,A]
+*>A	*>A	*>A
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*M2/4	*M2/4	*M2/4
+*MM116	*MM116	*MM116
+8r	8r	16fLL
+.	.	16aJJ
+=1	=1	=1
+4FF	8r	16ccLL
+.	.	16ddJJ
+.	8c 8f 8aL	16ccLL
+.	.	16bnJJ
+4r	8c 8f 8a	16ccLL
+.	.	16ddJJ
+.	8c 8f 8aJ	16ccLL
+.	.	16bJJ
+=2	=2	=2
+4F	8r	8cc
+.	8c 8f 8aL	8a
+8AL	8c 8f	8f
+8FJ	8c 8f 8aJ	8a
+=3	=3	=3
+4C	8r	8g
+.	8c 8e 8b-L	8b-
+4r	8c 8e	8c
+.	8c 8e 8gJ	8e
+=4	=4	=4
+4FF	8r	(8fL
+.	8c 8f 8aL	8a
+4r	8c 8f 8a 8cc	8ccJ)
+.	8c 8f 8aJ	8a
+=5	=5	=5
+*	*k[]	*
+4C	2r	8g
+.	.	8b-
+4r	.	8c'
+.	.	8e
+=6	=6	=6
+4F	4.r	4f
+8r	.	8r
+=:|!	=:|!	=:|!
+*>B	*>B	*>B
+8r	8r	8a
+=7	=7	=7
+4CC 4C	2r	8g
+.	.	8g
+4r	.	8a
+.	.	8a
+=8	=8	=8
+4CC 4C	2r	8b-
+.	.	8b-
+4r	.	8a
+.	.	8a
+=9	=9	=9
+4CC 4C	2r	8g
+.	.	8g
+4r	.	8a
+.	.	8a
+=10	=10	=10
+*clefG2	*clefF4	*
+*	*k[b-]	*
+8c 8g 8b-L	4CC 4C	8b-
+8g 8b-	.	8b-
+8f 8a	4r	8a
+8f 8aJ	.	8a
+=11	=11	=11
+8c 8e 8gL	8CCL	8g
+8e 8gJ	8C	8g
+8f 8aL	8C	8a
+8f 8aJ	8CJ	8a
+=12	=12	=12
+4c 4g 4b-	4CC 4C	4b-
+4r	4r	4r
+=13	=13	=13
+4c 4f 4a	4C	4a
+4r	4r	4r
+=14	=14	=14
+4.c; 4.e; 4.g;	4.CC; 4.C;	4.g;
+!! D.C. al Fine
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/28/
+!!!EFL: 198/651

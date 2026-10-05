@@ -1,0 +1,95 @@
+!!!!SEGMENT: erk117.krn
+!!!OTL@@DE: Untreue
+!!!ONB: Volksweise
+!!!OMD: Ziemlich langsam
+!!!ONB: Volkslied
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#c#g#d#]	*k[f#c#g#d#]	*k[f#c#g#d#]
+*E:	*E:	*E:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM72	*MM72	*MM72
+4r	8eL	(8eL
+.	8g#J	8g#J)
+=1	=1	=1
+4G#	4e 4b	4b
+4E	4g# 4b	8b
+.	.	8b
+4D#	8f# 8bL	(8bL
+.	8cc#	8cc#J)
+4BB	8d# 8b	8b
+.	8aJ	8a
+=2	=2	=2
+4E	4B 4f# 4a	4a
+4EE	4B 4e 4g#	8g#
+.	.	8g#
+4E	4B 4g# 4b	(4b
+8F#L	8f# 8aL	8a)
+8G#J	8e 8g#J	8g#
+=3	=3	=3
+*	*^	*
+2A	4g#	2c#	4g#
+*^	*	*	*
+.	.	4f#	.	8f#
+.	.	.	.	8f#
+4A	2BB	4cc#	2d#	4cc#
+8G#L	.	8bL	.	8b
+8F#J	.	8aJ	.	8a
+*v	*v	*	*	*
+*	*v	*v	*
+=4	=4	=4
+4E	4B 4d# 4a	4a
+4EE	4B 4e 4g#	8.g#
+.	.	16g#
+4E	4B 4e 4g#	4g#
+8r	8r	8r
+8E	8e 8g# 8b	8b
+=5	=5	=5
+4BB	4.d# (4.b	4b
+4F#	.	8.f#
+.	8f#	.
+.	.	16b
+4D#	4f# 4b	(4b
+4BB 4B	4f# 4dd#)	8dd#)
+.	.	8dd#
+=6	=6	=6
+*^	*^	*
+4A#	4F#	8dd#L	4f#	(8dd#L
+.	.	8cc#	.	8cc#
+4c#	4F#	8.ff#	4a#	8.ff#J)
+.	.	16eeJk	.	16ee
+*	*	*v	*v	*
+4.B	4B	8.f# 8.dd#L	8.dd#L
+.	.	16e 16cc#k	16cc#k
+.	8BBL	8d# 8bJ	8bJ
+8B	8AnJ	8d# 8b	8b
+*v	*v	*	*
+=7	=7	=7
+4G# 4B	4e 4ee	8ee
+.	.	8.dd#
+4A	8.e 8.a 8.dd#L	.
+.	.	16cc#
+.	.	(8.b
+.	16cc#Jk	.
+4G# 4B	8.e 8.bL	.
+.	.	16cc#')
+.	.	4b
+.	16cc#Jk	.
+8GG#L	8dn 8e 8bL	.
+8AAJ	8c# 8e 8aJ	8a
+=8	=8	=8
+4BB	4B 4e 4g#	4g#
+4BB 4A	4d# 4f#	8f#
+.	.	8f#
+4E 4G#	4B 4e	4e
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/27/
+!!!EFL: 117/651

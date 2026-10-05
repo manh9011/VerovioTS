@@ -1,0 +1,150 @@
+!!!!SEGMENT: erk122.krn
+!!!OTL@@DE: Der Jäger Abschied
+!!!COM: Mendelssohn-Bartholdy, Felix
+!!!ODT: 1840
+!!!OMD: Alla marcia
+!!!LYR: Eichendorff, Joseph von
+!!!LDT: 1837
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#c#g#]	*k[f#c#g#]	*k[f#c#g#]
+*A:	*A:	*A:
+*M3/4	*M3/4	*M3/4
+*MM118	*MM118	*MM118
+8.AL	8.c# 8.eL	8.e
+16AJk	16c# 16e 16aJk	16a
+=1	=1	=1
+4.E	4.c# 4.e 4.a	4.a
+8EL	8B 8e 8g#L	8g#
+8.E	8.e 8.g# 8.cc#	8.cc#
+16EJk	16d 16g# 16bJk	16b
+=2	=2	=2
+4F#	4c# 4a	4a
+4C#	4e 4g# 4a	4a
+4D	4d 4f# 4a	4a
+=3	=3	=3
+4.E	4.c# 4.e 4.a	4.a
+8EL	8A 8c# 8eL	8e
+8.E	8.G# 8.B 8.e	8.e
+16EJk	16G# 16B 16dJk	16d
+=4	=4	=4
+4E	4G# 4B (4d	4d
+4AA	&(4A&) 4c#)	4c#
+8.F#L	8.A 8.c#L	8.c#
+16F#Jk	16A 16c# 16f#Jk	16f#
+=5	=5	=5
+4F#	4A 4c# 4f#	4f#
+4C#	4G# 4c# 4e	4e
+4r	8.c#L	8.c#
+.	16c# 16f# 16aJk	16a
+=6	=6	=6
+4C#	4c# 4f# 4a	4a
+4CC#	4c# 4e 4g#	4g#
+8.C#L	8.c#L	8.c#
+16FF#Jk	16f# 16a 16cc#Jk	16cc#
+=7	=7	=7
+4.FF#	4.f# 4.a 4.cc#	4.cc#
+8FF#L	8c# 8f# 8aL	8a
+8.FF#	8.f# 8.a 8.cc#	8.cc#
+16FF#Jk	16c# 16f# 16aJk	16a
+=8	=8	=8
+*	*^	*
+4GG#	[2.g#	4c# 4e	[2.g#
+4.G#	.	4.g#	.
+8F#	.	8f#	.
+=9	=9	=9	=9
+4E	4e	(4g#]	2g#]
+4D#	4g#	4g#	.
+8.C#L	4f#)	8.c# 8.e 8.g#L	8.g#
+16C#Jk	.	16c# 16e 16g#Jk	16g#
+=10	=10	=10	=10
+4BB	(8.bL	4d# 4f#	(8.b^L
+.	16aJk	.	16aJk)
+*	*v	*v	*
+4E	4e 4g#)	4g#
+8.EL	8.B 8.e 8.g#L	8.g#
+16F#Jk	16A 16d# 16f#Jk	16f#
+=11	=11	=11
+8.G#L	8.c# 8.eL	8.e
+16G#Jk	16e 16g#Jk	16g#
+4G#	4c# 4e	4e
+4G#	4B# 4d#	4d#
+=12	=12	=12
+2C#	2c#	2c#
+4r	8.eL	8.e
+.	16f#Jk	16f#
+=13	=13	=13
+*	*^	*
+2.r	4r	2.e	2e
+.	4r	.	.
+.	8.a 8.cc#L	.	8.cc#
+.	16e 16bJk	.	16b
+*	*v	*v	*
+=14	=14	=14
+2.r	2e 2b	2b
+*	*^	*
+.	8.eL	4r	8.e
+.	16f#Jk	.	16f#
+*	*v	*v	*
+=15	=15	=15
+*	*^	*
+4r	4r	[2.e	2e
+4r	4r	.	.
+8.c#L	8.aL	.	8.a
+16BJk	16g#Jk	.	16g#
+=16	=16	=16	=16
+2B	2g#	2e]	2g#
+4r	4r	8.eL	8.e
+.	.	16f#Jk	16f#
+*	*v	*v	*
+=17	=17	=17
+4r	4e	4e
+4.C# 4.A	4.e 4.gn	4.gn
+8C# 8A	8e 8g	8g
+=18	=18	=18
+*	*^	*
+2D 2A	2f#	2e	2f#
+*	*v	*v	*
+4D 4B	4dn 4f#	4f#
+=19	=19	=19
+2E	4c# (4e	(4e
+.	4B 4e 4a)	4a)
+4E	4d 4e 4g#	4g#
+=20	=20	=20
+*	*^	*
+4A	(4e	2c# 2cc#	2cc#
+4E	4a)	.	.
+4C#	8.aL	4e 4gn	8.a
+.	16bJk	.	16b
+*	*v	*v	*
+=21	=21	=21
+2D	2f# 2a	2a
+*	*^	*
+4C#	8.aL	4e 4gn	8.a
+.	16bJk	.	16b
+*	*v	*v	*
+=22	=22	=22
+*^	*	*
+4r	2D	2f# 2a	2a
+*	*	*^	*
+4A	.	.	.	.
+4A	4D#	(8.g#L	4B	(8.g#L
+.	.	16f#Jk	.	16f#Jk)
+*	*	*v	*v	*
+=23	=23	=23	=23
+4A	2E	4c# (4e)	(4e
+2ryy	.	4c# 4e 4a)	4a)
+.	4E	4B 4dn 4e 4g#	4g#
+*v	*v	*	*
+=24	=24	=24
+2AA; 2E;	2A; 2c#; 2e; 2a;	2a;
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/07/
+!!!EFL: 122/651

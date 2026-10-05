@@ -1,0 +1,66 @@
+!!!!SEGMENT: erk013.krn
+!!!OTL@@DE: Das Ringlein
+!!!ONB: Volksweise (1830)
+!!!ONB: Volkslied aus "Des Knaben Wunderhorn" (1808)
+!!!OMD: Mässig bewegt
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M3/8	*M3/8	*M3/8
+*MM72	*MM72	*MM72
+8r	8r	16bLL
+.	.	16ccJJ
+=1	=1	=1
+8D	8r	8b
+8r	8c 8d 8f#L	8a
+8r	8c 8d 8f#J	8a
+=2	=2	=2
+8G	8r	8g
+8r	8B 8d 8gL	8b
+8r	8B 8d 8gJ	8b
+=3	=3	=3
+8D	8r	8dd
+8r	8c 8d 8f#L	8a
+8r	8c 8d 8f#J	8a
+=4	=4	=4
+8GG	8r	4dd
+8r	8B 8d 8gL	.
+8r	8B 8d 8gJ	16bLL
+.	.	16ccJJ
+=5	=5	=5
+8D	16r	8b
+.	16dLL	.
+8r	16c 16f#	8a
+.	16d	.
+8D	16c 16f#	8a
+.	16dJJ	.
+=6	=6	=6
+8G	16r	8g
+.	16dLL	.
+8r	16B 16g	8b
+.	16d	.
+8G	16B 16g	8b
+.	16dJJ	.
+=7	=7	=7
+8D	16r	8dd
+.	16dLL	.
+8r	16c 16f#	8a
+.	16d	.
+8D	16c 16f#	16aLL
+.	16dJJ	16bJJ
+=8	=8	=8
+*^	*	*
+8GGL	4GG	4B 4d 4g	4g
+8GJ	.	.	.
+*v	*v	*	*
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/18/
+!!!EFL: 013/651

@@ -1,0 +1,70 @@
+!!!!SEGMENT: erk141.krn
+!!!OTL@@DE: Deutsches Weihelied
+!!!COM: Methfessel, Albert
+!!!ODT: 1818
+!!!OMD: Frisch und kräftig
+!!!LYR: Claudius, Matthias
+!!!LDT: 1772
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM120	*MM120	*MM120
+4C	4c	4c
+=1	=1	=1
+*^	*	*
+2F	4AA	4.c 4.f	4.f
+.	4FF	.	.
+.	.	8A 8c	8c
+4F	4AA	4c 4f	4f
+4C	4C	4c 4e 4g	4g
+*v	*v	*	*
+=2	=2	=2
+4F	4.c 4.f 4.a	4.a
+4C	.	.
+.	8B- 8e 8g	8g
+4FF	4A 4c 4f	4f
+4C'	4c' 4e' 4g'	4g'
+=3	=3	=3
+4F'	4c' 4f' 4a'	4a'
+4C'	4c' 4e' 4g'	4g'
+4FF'	4c' 4f' 4a'	4a'
+4F'	4c' 4g' 4b-'	4b-'
+=4	=4	=4
+4FF	2c 2a 2cc	2cc
+4AA	.	.
+4C	4c 4f 4a	4a
+4F	4f	4f
+=5	=5	=5
+2.BBB- 2.BB-	4.f^ 4.b-^ 4.dd^	4.dd^
+.	8d 8f 8b-	8b-
+.	4B- 4d 4f	4f
+4BB- 4B-	4f 4b- 4dd	4dd
+=6	=6	=6
+2.FF 2.F	4.f^ 4.a^ 4.cc^	4.cc^
+.	8c 8f 8a	8a
+.	4A 4c 4f	4f
+4AA' 4F'	4c'	4c'
+=7	=7	=7
+4BB-' 4F'	4B-' 4d'	4d'
+4GG' 4G'	4B-' 4c' 4e'	4e'
+4AA' 4A'	4c' 4f'	4f'
+4D	4B- 4f 4b-	4b-
+=8	=8	=8
+[2C	2c 2f (2a	(2a
+2CC 2C]	&(2B-&) 2c 2e 2g)	2g)
+=9	=9	=9
+2FF	2A 2c 2f	2f
+4r	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/27/
+!!!EFL: 141/651

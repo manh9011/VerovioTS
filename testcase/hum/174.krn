@@ -1,0 +1,123 @@
+!!!!SEGMENT: erk173.krn
+!!!OTL@@DE: Abschied
+!!!COM: Methfessel, Albert
+!!!ONB: Meist nach Mel. No. 41 gesungen
+!!!ODT: 1820
+!!!OMD: Nicht schleppend
+!!!LYR: Schwab, Gustav
+!!!LDT: 1814
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*F:	*F:	*F:
+*M6/8	*M6/8	*M6/8
+*MM88	*MM88	*MM88
+8r	(16a 16ccLL	(16ccLL
+.	16g) 16b-JJ	16b-JJ)
+=1	=1	=1
+4F 4c	4f 4a	4a
+8F 8c	8f 8a	8a
+*	*^	*
+4F 4c	8.aL	4f	(8.aL
+.	16b-Jk	.	16b-Jk)
+*	*v	*v	*
+8E 8c	8g 8cc	8cc
+=2	=2	=2
+4D 4A	4f	4f
+8D	8A 8f	8f
+(8.DL	4A 4f	4f
+16CJk	.	.
+16BB-LL	8d 8f	8f
+16AAJJ)	.	.
+=3	=3	=3
+4GG	4d 4g 4b-	4b-
+8G	8d 8g 8b-	8b-
+(8.GL	8.b- (8.ddL	(8.ddL
+16AJk	16a 16ccJk	16ccJk)
+16B-LL	16g 16b-LL	(16b-LL
+16BnJJ)	16f 16aJJ)	16aJJ)
+=4	=4	=4
+4c	(8.e 8.gL	(8.gL
+.	16ak	16aJk)
+8C 8c	8e) 8gJ	8g
+4C 4c	4e 4g	4g
+8r	8a 8cc	8cc
+=5	=5	=5
+4FF 4C	(8a 8ccL	(8ccL
+.	8f) 8a	8aJ)
+8FF 8C	8g 8b-J	8b-
+(8FF 8FL	4a 4cc	4cc
+8C	.	.
+8AAJ)	8cc 8ff	8ff
+=6	=6	=6
+4FF	(8a 8ccL	(8ccL
+.	8f) 8a	8aJ)
+8FF 8C	8g 8b-J	8b-
+(8FF 8FL	4a 4cc	4cc
+8C	.	.
+8AAJ)	8f	8f
+=7	=7	=7
+8BB-L	(8.b- 8.ddL	(8.dd^L
+(8B-	.	.
+.	16a) 16cck	16ccJk)
+8dJ)	8g 8b-J	8b-
+8CL	(8.a 8.ccL	(8.cc^L
+(8A	.	.
+.	16g) 16b-k	16b-Jk)
+8cJ)	8f 8aJ	8a
+=8	=8	=8
+8CL	(8.g 8.b-L	(8.b-^L
+(8B-	.	.
+.	16f) 16ak	16aJk)
+8cJ)	8e 8gJ	8g
+8F 8AL	4f 4a	4a
+8C	.	.
+8AAJ	8cc	8cc
+=9	=9	=9
+4FF 4C	(8a 8ccL	(8ccL
+.	8f) 8a	8aJ)
+8FF 8C	8g 8b-J	8b-
+(8FF 8FL	4a 4cc	4cc
+8C	.	.
+8AAJ)	8cc 8ff	8ff
+=10	=10	=10
+4FF	(8a 8ccL	(8ccL
+.	8f) 8a	8aJ)
+8FF 8C	8g 8b-J	8b-
+(8FF 8FL	4a 4cc	4cc
+8C	.	.
+8AAJ)	8f	8f
+=11	=11	=11
+8BB-L	8.b- (8.ddL	(8.dd^L
+(8B-	.	.
+.	16a 16cck)	16ccJk)
+8dJ)	8g 8b-J	8b-
+8CL	(8.a 8.ccL	(8.cc^L
+(8A	.	.
+.	16g) 16b-k	16b-Jk)
+8cJ)	8f 8aJ	8a
+=12	=12	=12
+*	*^	*
+4.C	4.g 4.b-	8r	4.b-^
+.	.	8cL	.
+.	.	8dJ	.
+4.C 4.B-	4.g	8.eL	4.g^
+.	.	16dk	.
+.	.	8eJ	.
+*	*v	*v	*
+=13	=13	=13
+8FL	[4.A [4.f	[4.f
+8C	.	.
+8AAJ	.	.
+8FF	8A] 8f]	8f]
+8r	8r	8r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/28/
+!!!EFL: 173/651

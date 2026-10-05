@@ -1,0 +1,116 @@
+!!!!SEGMENT: erk101.krn
+!!!OTL@@DE: Schweizerlied
+!!!ONB: Volksweise
+!!!ODT: 1829
+!!!OMD: Mässig bewegt
+!!!LYR: Goethe, Wolfgang von
+!!!LDT: 1811
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*clefF4	*clefG2	*clefG2
+*k[]	*k[]	*k[]
+*C:	*C:	*C:
+*M3/4	*M3/4	*M3/4
+*MM108	*MM108	*MM108
+4r	8c 8eL	8e
+.	8d 8fJ	8f
+=1	=1	=1
+4C	(8e 8gL	(8gL
+.	8eeJ)	8eeJ)
+4G 4c	4e 4cc	4cc
+4G	8c 8eL	8e
+.	8d 8fJ	8f
+=2	=2	=2
+4C	(8e 8gL	(8gL
+.	8eeJ)	8eeJ)
+4G 4c	4e 4cc	4cc
+*	*^	*
+4G 4c	8gL	4e	8g
+.	8gJ	.	8g
+*	*v	*v	*
+!!LO:LB:g=original
+=3	=3	=3
+4GG	(8f 8gL>	(8gL
+.	8eeJ)	8eeJ)
+4G 4B	4f 4dd	4dd
+*	*^	*
+4G 4B	8fL	4d	8f
+.	8fJ	.	8f
+*	*v	*v	*
+=4	=4	=4
+(8CL	4c 4e	4.e
+8GJ	.	.
+4c)	4r	.
+.	.	8r
+4r	8c 8eL	8e
+.	8d 8fJ	8f
+=5	=5	=5
+4GG	8e (8gL<	(8gL
+.	8g 8eeJ)	8eeJ)
+4G 4B	4f 4dd	4dd
+*	*^	*
+4G 4B	8fL	4d	8f
+.	8fJ	.	8f
+*	*v	*v	*
+!!LO:LB:g=original
+=6	=6	=6
+4GG	(8c 8eL	(8eL
+.	8e) 8ccJ	8ccJ)
+4G 4B	4d 4b	4b
+4G 4B	(8fL	8fL
+.	8dJ)	8dJ
+=7	=7	=7
+4GG	(8BL	(8BL
+.	8aJ)	8aJ)
+4F 4G 4B	4g	4g
+4F 4G 4B	(8fL	8fL
+.	8dJ)	8dJ
+=8	=8	=8
+4C 4E 4G	4.c	4.c
+4CC	.	.
+!	!	!LO:TX:a:t=Jodler:vg=1
+.	8r	8r
+!	!LO:TUP:b	!LO:TUP:b
+4r	(12eL	(12eL
+!	!	!LO:TX:a:i:t=ad libitum.:vg=1
+.	12g	12g
+.	12ccJ)	12ccJ)
+!!LO:LB:g=original
+=9	=9	=9
+4GG	4g (4ee	(4ee
+4G 4B 4f	4dd)	4dd)
+!	!LO:TUP:a	!LO:TUP:a
+4G 4B 4f	(12gL	(12gL
+.	12b	12b
+.	12ddJ)	12ddJ)
+=10	=10	=10
+*	*^	*
+4C	(4ff	2g 2cc	(4ff
+4G 4c 4e	4ee)	.	4ee)
+!	!	!LO:TUP:a	!LO:TUP:a
+4c 4e	4ryy	(12ccL	(12ccL
+.	.	12ee	12ee
+.	.	12ggJ)	12ggJ)
+*	*v	*v	*
+=11	=11	=11
+4G 4B 4f	(4.aa	(4.aa
+4G 4B 4f	.	.
+.	8ggL	8ggL
+4G 4B 4f	8dd	8dd
+.	8eeJ)	8eeJ)
+=12	=12	=12
+4c 4e	4cc	4cc
+4C	4r	4r
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!RDF**kern: > = above
+!!!RDF**kern: < = below
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/27
+!!!EED: Craig Stuart Sapp
+!!!EEV: 2025/07/21
+!!!EFL: 101/651

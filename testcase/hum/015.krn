@@ -1,0 +1,107 @@
+!!!!SEGMENT: erk015.krn
+!!!OTL@@DE: Der Knabe an das Veilchen
+!!!COM: Schulz, Joh. Abraham Peter
+!!!CDT: 1779
+!!!OMD: Allegretto
+!!!LYR: Overbeck, Christian Adolf
+!!!LDT: 1777 and 1794
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*M2/4	*M2/4	*M2/4
+*MM92	*MM92	*MM92
+4GG	8.b 8.ddL	8.dd
+.	16a 16cck	16cc
+4G	8g 8b	8b
+.	8g 8bJ	8b
+=2	=2	=2
+8r	4a 4cc	4cc
+8DL	.	.
+8F#	4d 4a	4a
+8DJ	.	.
+=3	=3	=3
+4G	8d 8bL	8b
+.	8B 8g	8g
+4D	8c 8a	8a
+.	8d 8f#J	8f#
+=4	=4	=4
+8r	4B 4g	4g
+8GL	.	.
+8GGJ	4r	4r
+8r	.	.
+=5	=5	=5
+*^	*^	*
+8.F#L	2D	8.aL	2d	8.a
+16Gk	.	16bk	.	16b
+8A	.	8cc	.	8cc
+8GJ	.	8bJ	.	8b
+=6	=6	=6	=6	=6
+(4G	4.D	4b	2d	4b
+8F#L)	.	4a	.	4a
+*	*	*v	*v	*
+8DJ	8D	.	.
+*v	*v	*	*
+=7	=7	=7
+8GGL	8g 8bL	8.b
+(16GL	8g 8b	.
+16F#JJ	.	16b
+8E'L)	8g 8cc#	8cc#
+8AA'J	8e 8g 8cc#J	8cc#
+=8	=8	=8
+8DL	4d 4f# 4dd	4dd
+8AA	.	.
+8DDJ	4r	4r
+8r	.	.
+=9	=9	=9
+4D	8.f# 8.aL	8.a
+.	16e 16gk	16g
+4r	8d 8f#	8f#
+.	8f# 8aJ	8a
+=10	=10	=10
+8r	4a 4cc	4cc
+8dL	.	.
+8D	4f# 4a	4a
+8dJ	.	.
+=11	=11	=11
+8G 8d	8.g 8.bL	8.b
+8r	.	.
+.	16d 16ak	16a
+4r	8B 8g	8g
+.	8d 8g 8bJ	8b
+=12	=12	=12
+8r	4d 4b 4dd	4dd
+8GL	.	.
+8GG	4d 4g 4b	4b
+8GJ	.	.
+=13	=13	=13
+4E	8.b 8.ddL	8.dd
+.	16a 16cck	16cc
+8eL	8g# 8b	8b
+8dJ	8g# 8bJ	8b
+=14	=14	=14
+8.cL	4e 4a 4cc	4cc
+16Bk	.	.
+8A	4r	4r
+8CJ	.	.
+=15	=15	=15
+4D	8d 8g 8bL	8b
+.	8B 8g	8g
+4DD 4D	8c 8d 8a	8a
+.	8A 8d 8f#J	8f#
+=16	=16	=16
+8GL	2B 2d 2g	4g
+8D	.	.
+8GGJ	.	4r
+8r	.	.
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/18/
+!!!EFL: 014/651

@@ -1,0 +1,125 @@
+!!!!SEGMENT: erk196.krn
+!!!OTL@@DE: Vom hoh'n Olymp.
+!!!COM: Schnoor, Heinrich Christian
+!!!ODT: 1801
+!!!OMD: Mässig bewegt
+!!!ONB: Zuerst gedruckt im "Taschenbuch für Freunde des Gesanges. Stuttgart 1796"
+!!!LDT: 1795
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+*>[A,B,B1,B,B2]	*>[A,B,B1,B,B2]	*>[A,B,B1,B,B2]
+*>norep[A,B,B2]	*>norep[A,B,B2]	*>norep[A,B,B2]
+*>A	*>A	*>A
+*clefF4	*clefG2	*clefG2
+*k[f#c#g#]	*k[f#c#g#]	*k[f#c#g#]
+*A:	*A:	*A:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM112	*MM112	*MM112
+8EL	8eL	8e
+8F#	8f#	8f#
+8G#J	8g#J	8g#
+=1	=1	=1
+4.A	4.a	4.a
+8G#	8g#	8g#
+8F#L	8f#L	8f#
+8E	8e	8e
+8D	8d	8d
+8C#J	8c#J	8c#
+=2	=2	=2
+4D	4A 4d 4f#	4f#
+4AA	4A 4c# 4e	4e
+8r	8r	8r
+8AAL	8e 8a 8cc#L	8cc#
+8C#	8e 8a 8cc#	8cc#
+8AAJ	8e 8a 8cc#J	8cc#
+=3	=3	=3
+*	*^	*
+4D	(8cc#L	4f#	(8cc#L
+.	16bL	.	16bL
+.	16cc#J	.	16cc#J
+8BBL	8dd)	4d 4f#	8ddJ)
+8DJ	8bJ	.	8b
+*	*v	*v	*
+4E	4c# 4e 4a	4a
+4EE 4E	4B 4e 4g#	4g#
+=4	=4	=4
+2AA	2c# 2e 2a	2a
+8r	8r	8r
+*	*^	*
+(8EL	8eL	(4e	8e
+8C#)	8a)	.	8a
+8AAJ	8a 8cc#J	8e	8cc#
+=5	=5	=5	=5
+4EE	4.g# 4.b	4.e	4.b
+4E	.	.	.
+.	8e 8g#	8B	8g#
+4BB	8.f# 8.aL	4B	8.a
+.	16e 16g#k	.	16g#
+4BB	8.f# 8.a	4B	8.a
+.	16d# 16f#Jk	.	16f#
+=6	=6	=6	=6
+4E	8.e (8.g#L	4B	(8.g#L
+.	16f# 16aJk)	.	16aJk)
+4EE	4g# 4b	4e	4b
+*	*v	*v	*
+8r	8r	8r
+8EL	8e 8g# 8bL	8b
+8G#	8e 8g# 8b	8b
+8EJ	8e 8g# 8eeJ	8ee
+=7	=7	=7
+4A	4.e 4.a 4.cc#	4.cc#
+4AA	.	.
+.	8c# 8f# 8a	8a
+4BB	4B 4e 4g#	4g#
+4BB 4A	4B 4d# 4f#	4f#
+=8	=8	=8
+2E 2G#	2B 2e	2e
+2r	2r	2r
+=9!|:	=9!|:	=9!|:
+*M3/4	*M3/4	*M3/4
+*>B	*>B	*>B
+4.A 4.c#	4.e 4.a 4.cc#	4.cc#
+8E 8B	8g# 8b	8b
+4A 4c#	4e 4a 4cc#	4cc#
+=10	=10	=10
+4.C# 4.A	4.e 4.a	4.a
+8E 8B	8e 8g# 8b	8b
+4A 4c#	4e 4a 4cc#	4cc#
+=11	=11	=11
+4.E 4.B 4.d	4.b 4.dd	4.dd
+8A 8c#	8a 8cc#	8cc#
+4E 4B 4d	4b 4dd	4dd
+=12	=12	=12
+2.E 2.B	2.e 2.g# 2.b	2.b
+=13	=13	=13
+4AA 4A	4e 4cc# 4ee	4ee
+4C#	4e 4cc# 4ee	4ee
+4E	4e 4cc# 4ee	4ee
+=14	=14	=14
+4.A	4.e 4.cc# 4.ee	4.ee
+8B	8e 8b 8dd	8dd
+4c#	4e 4a 4cc#	4cc#
+=15	=15	=15
+*^	*^	*
+(4.d	2E	4.g# (4.b	2e	(4.b
+8c#)	.	8a	.	8a)
+4d	4E	4g# 4b)	4e	4b
+*v	*v	*	*	*
+*	*v	*v	*
+=16	=16	=16
+*>B1	*>B1	*>B1
+2A 2c#	2e 2a	2a
+4r	4e	4e
+=17:|!	=17:|!	=17:|!
+*>B2	*>B2	*>B2
+4.A; 4.c#;	4.e; 4.a;	4.a;
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/28/
+!!!EFL: 196/651

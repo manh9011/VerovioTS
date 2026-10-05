@@ -1,0 +1,175 @@
+!!!!SEGMENT: erk086.krn
+!!!OTL@@DE: Lang, lang ist's her!
+!!!COM: Bayly, T.H.
+!!!OMD: Sehr mässig
+!!!ONB: Englisches Lied "Long, Long Ago" Ged. u. Mel. von T.H. Bayly
+!!!ONB: Deutsch von Wilhelm Weidling
+!!!LDT: 1858
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:
+*met(c)	*met(c)	*met(c)
+*M4/4	*M4/4	*M4/4
+*MM88	*MM88	*MM88
+2GG	(8BL	4g
+.	8d	.
+.	8g	8g
+.	8dJ)	8a
+2G	(8BL	4b
+.	8d	.
+.	8g	8b
+.	8dJ)	8cc
+=2	=2	=2
+2GG 2D	(8BL	4dd
+.	8d	.
+.	8g	8ee
+.	8dJ)	8dd
+2G	(8BL	4.b
+.	8d	.
+.	8g	.
+.	8dJ)	8r
+=3	=3	=3
+2D	(8cL	4dd^
+.	8d	.
+.	8f#	8cc
+.	8dJ)	8b
+2F#	(8cL	4.a
+.	8d	.
+.	8a	.
+.	8dJ)	8r
+=4	=4	=4
+2GG 2G	8r	4cc
+.	(8dL	.
+.	8g	8b
+.	8dJ)	8a
+2r	(8BL	4.g
+.	8d	.
+.	8g	.
+.	8dJ)	8r
+=5	=5	=5
+2GG 2D	(8BL	4g
+.	8d	.
+.	8g	8g
+.	8dJ)	8a
+2G	(8BL	4b
+.	8d	.
+.	8g	8b
+.	8dJ)	8cc
+=6	=6	=6
+2GG 2D	(8BL	4dd
+.	8d	.
+.	8g	8ee
+.	8dJ)	8dd
+2G	(8BL	4.b
+.	8d	.
+.	8g	.
+.	8dJ)	8r
+=7	=7	=7
+2D	(8cL	4dd^
+.	8d	.
+.	8f#	8cc
+.	8dJ)	8b
+2DD	(8cL	4a
+.	8d	.
+.	8f#	8b
+.	8dJ)	8a
+=8	=8	=8
+2GG	(8BL	2g
+.	8d	.
+.	8g	.
+.	8dJ	.
+2r	8BL	2r
+.	8d	.
+.	8g	.
+.	8bJ)	.
+=9	=9	=9
+2DD 2D	(8b 8ddL	(8ddL
+.	8a) 8cc	8ccJ)
+.	8a 8cc	8cc
+.	8g 8bJ	8b
+2D	(8f# 8aL	4a
+.	8d	.
+.	8f# 8a	8d
+.	8dJ)	8d
+=10	=10	=10
+2GG 2D	(8a 8ccL	(8ccL
+.	8g) 8b	8bJ)
+.	8g 8b	8b
+.	8d 8aJ	8a
+2G	(8B 8gL	4g
+.	8d	.
+.	8g 8b	4r
+.	8dJ)	.
+=11	=11	=11
+2DD 2D	(8b 8ddL	(8ddL
+.	8a) 8cc	8ccJ)
+.	8a 8cc	8cc
+.	8g 8bJ	8b
+2D	(8f# 8aL	4a
+.	8d	.
+.	8f# 8a	8d
+.	8dJ)	8d
+=12	=12	=12
+*^	*	*
+4G	2GG	(8a 8ccL	(8ccL
+.	.	8g) 8b	8bJ)
+4D	.	8g 8b	8b
+.	.	8d 8aJ	8a
+*v	*v	*	*
+2GG 2G	(8B 8gL	4g
+.	8d	.
+.	8B	4r
+.	8dJ)	.
+=13	=13	=13
+*^	*	*
+8GGL	4GG	4B (4g	4g
+8D	.	.	.
+*v	*v	*	*
+8G	8B 8gL	8g
+8DJ	8d 8aJ	8a
+*^	*	*
+8GGL	4GG	4g 4b	4b
+8D	.	.	.
+*v	*v	*	*
+8G	8g 8bL	8b
+8DJ	8a 8ccJ	8cc
+=14	=14	=14
+*^	*	*
+8GGL	2GG	4b 4dd	4dd
+8D	.	.	.
+8G	.	8cc 8eeL	8ee
+8DJ	.	8b 8ddJ	8dd
+8GGL	4GG	2g 2b)	4.b
+8D	.	.	.
+8G	4ryy	.	.
+8DJ	.	.	8r
+*v	*v	*	*
+=15	=15	=15
+(8GG#L	(4fn 4dd	4dd
+8BBJ	.	.
+4E)	8e 8ccL	8cc
+.	8d) 8bJ	8b
+4AA	4c 4a	4a
+*	*^	*
+4DD 4D	8bL	4c 4f#	8b
+.	8aJ	.	8a
+*	*v	*v	*
+=16	=16	=16
+2.GG 2.G	(8B 8gL	2g
+.	8d	.
+.	8g	.
+.	8dJ	.
+.	4B) 4g	2r
+4r	4r	.
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/06/04/
+!!!EFL: 086/651

@@ -1,0 +1,76 @@
+!!!!SEGMENT: erk403.krn
+!!!OTL@@DE: Ach, wie flieht das Leben so geschwind!
+!!!COM: André, Anton
+!!!ODT: 1810
+!!!OMD: Mässig bewegt
+!!!LYR: Rudolphi, Karoline
+!!!LDT: 1787
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 3
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ipiano	*Ipiano	*Ivox
+=1-	=1-	=1-
+*clefF4	*clefG2	*clefG2
+*k[f#c#g#]	*k[f#c#g#]	*k[f#c#g#]
+*A:	*A:	*A:
+*M2/4	*M2/4	*M2/4
+*MM96	*MM96	*MM96
+*^	*^	*
+8G#L	4C#	8cc#L	4e	8cc#
+8A	.	8cc#	.	8cc#
+8d	4D	8b	4f#	8b
+8c#J	.	8aJ	.	8a
+=2	=2	=2	=2	=2
+4B	4E	4g#	4d	4g#
+4A	4AA	4a	4c#	4a
+=3	=3	=3	=3	=3
+4c#^	4F#^	4a^	4f#^	4a^
+4F#^	4D^	4b^	4f#^	4b^
+=4	=4	=4	=4	=4
+2G#^	2C#^	2cc#^	2e#^	2cc#^
+*v	*v	*	*	*
+=5	=5	=5	=5
+8A	8cc#L	8enL	8cc#
+*^	*	*	*
+4E	8AAL	8cc#	8c#	8cc#
+.	8BB	8b	8d	8b
+8A	8C#J	8aJ	8eJ	8a
+=6	=6	=6	=6	=6
+8BL	4D	8g#L	8eL	8g#
+8G#J	.	8eJ	8eJ	8e
+4A	8C#L	8aL	8eL	8a
+.	8EJ	8eJ	8c#J	8e
+=7	=7	=7	=7	=7
+8E	4GG#	8bL	8dL	8b
+4E	.	8e	8d	8e
+.	4AA	8cc#	8c#	8cc#
+8A	.	8eJ	8c#J	8e
+=8	=8	=8	=8	=8
+4E^ 4G#^	4BB^	4dd^	4e^	4dd
+4E^ 4A^	4C#^	4cc#^	4e^	4cc#
+=9	=9	=9	=9	=9
+8BL	8DL	8bL	8dL	8b
+8B	8D 8F#J	8bJ	8d	8b
+8G# 8B	8EL	16bLL	8d	16bLL
+.	.	16a	.	16aJJ
+8G#J	8EJ	16b	8dJ	16bLL
+.	.	16cc#JJ	.	16cc#JJ
+=10	=10	=10	=10	=10
+4E 4A	4AA	4a	4c#	4a
+*	*	*v	*v	*
+8E' 8G#'L	8BB'L	8e' 8b' 8dd'L	8dd
+8E' 8A'J	8C#'J	8e' 8a' 8cc#'J	8cc#
+=11	=11	=11	=11
+4F#^ 4B^	4D^	4d^ 4f#^ 4b^	4b^
+4G#^ 4B^	4E^	4d^ 4e^ 4g#^	4g#^
+=12	=12	=12	=12
+4E 4A	4AA	4c# 4e 4a	4a
+*v	*v	*	*
+4r;	4r;	4r;
+==	==	==
+*-	*-	*-
+!!!system-decoration: s1{(s2,s3)}
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/20/
+!!!EFL: 403/600
