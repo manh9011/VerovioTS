@@ -1,12 +1,21 @@
 {
   "name": "verovio-ts",
   "type": "commonjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pure TypeScript port of Verovio music engraving.",
-  "keywords": ["verovio", "mei", "musicxml", "humdrum", "music-engraving", "typescript"],
+  "keywords": [
+    "verovio",
+    "mei",
+    "musicxml",
+    "humdrum",
+    "music-engraving",
+    "typescript"
+  ],
   "author": "manh9011",
   "license": "ISC",
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -16,7 +25,13 @@
     },
     "./browser": "./dist/browser/verovio-ts.mjs"
   },
-  "files": ["dist/**/*.js", "dist/**/*.d.ts", "dist/browser/verovio-ts.mjs", "README.md", "LICENSE"],
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "dist/browser/verovio-ts.mjs",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json --module node16 --moduleResolution node16 --outDir dist --pretty false",
     "build:bundle": "vite build --config vite.browser.config.mts",
