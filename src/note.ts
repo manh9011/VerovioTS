@@ -202,14 +202,29 @@ export class DiatonicSort {
 /**
  * Unary predicate for sorting notes by course number (C++ TabCourseSort).
  */
-export class TabCourseSort {
-  public call(first: VrvObject, second: VrvObject): boolean {
+export class TabCourseSort {  public call(first: VrvObject, second: VrvObject): boolean {
     const n1 = first as unknown as Note;
     const n2 = second as unknown as Note;
     if (!n1 || !n2 || typeof n1.GetTabCourse !== 'function' || typeof n2.GetTabCourse !== 'function') {
       throw new Error('TabCourseSort: both objects must be Note instances');
     }
     return n1.GetTabCourse() > n2.GetTabCourse();
+  }
+}
+
+// ponytail: module-level subclass replaces per-note anonymous class.
+// ensureAttributes ran `new (class extends ...)` per Note (185: 324ms self).
+// The delegate only forwards to its owner; class object is shared.
+class NoteStemmedDrawingInterface extends StemmedDrawingInterface {
+  constructor(private owner: Note) { super(); }
+  override GetStemUpSE(doc: NoteDocLike, staffSize: number, isCueSize: boolean): Point {
+    return this.owner.GetStemUpSE(doc, staffSize, isCueSize);
+  }
+  override GetStemDownNW(doc: NoteDocLike, staffSize: number, isCueSize: boolean): Point {
+    return this.owner.GetStemDownNW(doc, staffSize, isCueSize);
+  }
+  override CalcStemLenInThirdUnits(staff: NoteStaffLike & { m_drawingLines: number }, stemDir: number): number {
+    return this.owner.CalcStemLenInThirdUnits(staff, stemDir);
   }
 }
 
@@ -279,19 +294,8 @@ export class Note extends LayerElement {
   }
 
   protected ensureAttributes(): void {
-    const self = this;
     // C++ interface cast retains Note's virtual overrides; composition must too.
-    this.stemmedDrawingInterface ??= new (class extends StemmedDrawingInterface {
-      GetStemUpSE(doc: NoteDocLike, staffSize: number, isCueSize: boolean): Point {
-        return self.GetStemUpSE(doc, staffSize, isCueSize);
-      }
-      GetStemDownNW(doc: NoteDocLike, staffSize: number, isCueSize: boolean): Point {
-        return self.GetStemDownNW(doc, staffSize, isCueSize);
-      }
-      CalcStemLenInThirdUnits(staff: NoteStaffLike & { m_drawingLines: number }, stemDir: number): number {
-        return self.CalcStemLenInThirdUnits(staff, stemDir);
-      }
-    })();
+    this.stemmedDrawingInterface ??= new NoteStemmedDrawingInterface(this);
     this.altSymInterface ??= new AltSymInterface();
     this.durationInterface ??= new DurationInterface();
     this.offsetInterface ??= new OffsetInterface();

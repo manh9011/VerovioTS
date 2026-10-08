@@ -117,6 +117,20 @@ class ChordListInterface extends ObjectListInterface {
 }
 
 /** Pure TypeScript translation of Verovio's `Chord`. */
+// ponytail: shared subclass replaces per-chord anonymous class (see note.ts P21).
+class ChordStemmedDrawingInterface extends StemmedDrawingInterface {
+  constructor(private owner: Chord) { super(); }
+  public override GetStemUpSE(doc: any, staffSize: number, isCueSize: boolean): Point {
+    return this.owner.GetStemUpSE(doc, staffSize, isCueSize);
+  }
+  public override GetStemDownNW(doc: any, staffSize: number, isCueSize: boolean): Point {
+    return this.owner.GetStemDownNW(doc, staffSize, isCueSize);
+  }
+  public override CalcStemLenInThirdUnits(staff: any, stemDir: number): number {
+    return this.owner.CalcStemLenInThirdUnits(staff, stemDir);
+  }
+}
+
 export class Chord extends LayerElement {
   private readonly objectList: ChordListInterface;
   private readonly drawingList: DrawingListInterface;
@@ -142,18 +156,7 @@ export class Chord extends LayerElement {
     this.objectList.SetInterfaceOwner(this as unknown as VrvObject);
     this.drawingList = new DrawingListInterface();
 
-    const self = this;
-    this.stemmedDrawingInterface = new (class extends StemmedDrawingInterface {
-      public GetStemUpSE(doc: any, staffSize: number, isCueSize: boolean): Point {
-        return self.GetStemUpSE(doc, staffSize, isCueSize);
-      }
-      public GetStemDownNW(doc: any, staffSize: number, isCueSize: boolean): Point {
-        return self.GetStemDownNW(doc, staffSize, isCueSize);
-      }
-      public CalcStemLenInThirdUnits(staff: any, stemDir: number): number {
-        return self.CalcStemLenInThirdUnits(staff, stemDir);
-      }
-    })();
+    this.stemmedDrawingInterface = new ChordStemmedDrawingInterface(this);
 
     this.durationInterface = new DurationInterface();
     this.chordVis = new InstChordVis();

@@ -16,6 +16,11 @@ import { Options, OptionDurationEq } from './options.js';
 import { Transposer } from './transposition.js';
 import { xml_document } from './pugixml.js';
 import { FontInfo, Point } from './devicecontextbase.js';
+// Per-call literal replaced by keyed static tables (see Doc.marginOption).
+const MARGIN_LEFT_NAMES: Record<number, string> = { [ClassId.ACCID]:'m_leftMarginAccid',[ClassId.BARLINE]:'m_leftMarginBarLine',[ClassId.BEATRPT]:'m_leftMarginBeatRpt',[ClassId.CHORD]:'m_leftMarginChord',[ClassId.CLEF]:'m_leftMarginClef',[ClassId.KEYSIG]:'m_leftMarginKeySig',[ClassId.MENSUR]:'m_leftMarginMensur',[ClassId.METERSIG]:'m_leftMarginMeterSig',[ClassId.MREST]:'m_leftMarginMRest',[ClassId.MRPT2]:'m_leftMarginMRpt2',[ClassId.MULTIREST]:'m_leftMarginMultiRest',[ClassId.MULTIRPT]:'m_leftMarginMultiRpt',[ClassId.NOTE]:'m_leftMarginNote',[ClassId.STEM]:'m_leftMarginNote',[ClassId.REST]:'m_leftMarginRest',[ClassId.TABDURSYM]:'m_leftMarginTabDurSym' };
+const MARGIN_RIGHT_NAMES: Record<number, string> = { [ClassId.ACCID]:'m_rightMarginAccid',[ClassId.BARLINE]:'m_rightMarginBarLine',[ClassId.BEATRPT]:'m_rightMarginBeatRpt',[ClassId.CHORD]:'m_rightMarginChord',[ClassId.CLEF]:'m_rightMarginClef',[ClassId.KEYSIG]:'m_rightMarginKeySig',[ClassId.MENSUR]:'m_rightMarginMensur',[ClassId.METERSIG]:'m_rightMarginMeterSig',[ClassId.MREST]:'m_rightMarginMRest',[ClassId.MRPT2]:'m_rightMarginMRpt2',[ClassId.MULTIREST]:'m_rightMarginMultiRest',[ClassId.MULTIRPT]:'m_rightMarginMultiRpt',[ClassId.NOTE]:'m_rightMarginNote',[ClassId.STEM]:'m_rightMarginNote',[ClassId.REST]:'m_rightMarginRest',[ClassId.TABDURSYM]:'m_rightMarginTabDurSym' };
+const MARGIN_BOTTOM_NAMES: Record<number, string> = { [ClassId.ARTIC]:'m_bottomMarginArtic',[ClassId.HARM]:'m_bottomMarginHarm',[ClassId.OCTAVE]:'m_bottomMarginOctave' };
+const MARGIN_TOP_NAMES: Record<number, string> = { [ClassId.ARTIC]:'m_topMarginArtic',[ClassId.HARM]:'m_topMarginHarm' };
 import { SUPER_SCRIPT_FACTOR } from './vrvdef.js';
 import { GetVersion, UTF8to32 } from './vrv.js';
 import { ExpansionMap } from './expansionmap.js';
@@ -1422,12 +1427,12 @@ export class Doc extends VrvObject {
     return option?.getKey?.() ?? name;
   }
   private marginOption(kind: 'left'|'right'|'top'|'bottom', id: ClassId): number {
-    const names: Record<string,string> = {
-      [`left:${ClassId.ACCID}`]:'m_leftMarginAccid',[`left:${ClassId.BARLINE}`]:'m_leftMarginBarLine',[`left:${ClassId.BEATRPT}`]:'m_leftMarginBeatRpt',[`left:${ClassId.CHORD}`]:'m_leftMarginChord',[`left:${ClassId.CLEF}`]:'m_leftMarginClef',[`left:${ClassId.KEYSIG}`]:'m_leftMarginKeySig',[`left:${ClassId.MENSUR}`]:'m_leftMarginMensur',[`left:${ClassId.METERSIG}`]:'m_leftMarginMeterSig',[`left:${ClassId.MREST}`]:'m_leftMarginMRest',[`left:${ClassId.MRPT2}`]:'m_leftMarginMRpt2',[`left:${ClassId.MULTIREST}`]:'m_leftMarginMultiRest',[`left:${ClassId.MULTIRPT}`]:'m_leftMarginMultiRpt',[`left:${ClassId.NOTE}`]:'m_leftMarginNote',[`left:${ClassId.STEM}`]:'m_leftMarginNote',[`left:${ClassId.REST}`]:'m_leftMarginRest',[`left:${ClassId.TABDURSYM}`]:'m_leftMarginTabDurSym',
-      [`right:${ClassId.ACCID}`]:'m_rightMarginAccid',[`right:${ClassId.BARLINE}`]:'m_rightMarginBarLine',[`right:${ClassId.BEATRPT}`]:'m_rightMarginBeatRpt',[`right:${ClassId.CHORD}`]:'m_rightMarginChord',[`right:${ClassId.CLEF}`]:'m_rightMarginClef',[`right:${ClassId.KEYSIG}`]:'m_rightMarginKeySig',[`right:${ClassId.MENSUR}`]:'m_rightMarginMensur',[`right:${ClassId.METERSIG}`]:'m_rightMarginMeterSig',[`right:${ClassId.MREST}`]:'m_rightMarginMRest',[`right:${ClassId.MRPT2}`]:'m_rightMarginMRpt2',[`right:${ClassId.MULTIREST}`]:'m_rightMarginMultiRest',[`right:${ClassId.MULTIRPT}`]:'m_rightMarginMultiRpt',[`right:${ClassId.NOTE}`]:'m_rightMarginNote',[`right:${ClassId.STEM}`]:'m_rightMarginNote',[`right:${ClassId.REST}`]:'m_rightMarginRest',[`right:${ClassId.TABDURSYM}`]:'m_rightMarginTabDurSym',
-      [`bottom:${ClassId.ARTIC}`]:'m_bottomMarginArtic',[`bottom:${ClassId.HARM}`]:'m_bottomMarginHarm',[`bottom:${ClassId.OCTAVE}`]:'m_bottomMarginOctave',
-      [`top:${ClassId.ARTIC}`]:'m_topMarginArtic',[`top:${ClassId.HARM}`]:'m_topMarginHarm' };
-    return this.maybeOption(names[`${kind}:${id}`] ?? `m_default${kind[0].toUpperCase()+kind.slice(1)}Margin`, 0);
+    // ponytail: keyed lookup replaced a per-call object literal + template key.
+    // Upgrade path: precompute option refs if marginOption stays in flame.
+    const LR = kind === 'left' ? MARGIN_LEFT_NAMES : kind === 'right' ? MARGIN_RIGHT_NAMES : null;
+    if (LR !== null) return this.maybeOption((LR as Record<number, string>)[id as number] ?? (kind === 'left' ? 'm_defaultLeftMargin' : 'm_defaultRightMargin'), 0);
+    if (kind === 'bottom') return this.maybeOption((MARGIN_BOTTOM_NAMES as Record<number, string>)[id as number] ?? 'm_defaultBottomMargin', 0);
+    return this.maybeOption((MARGIN_TOP_NAMES as Record<number, string>)[id as number] ?? 'm_defaultTopMargin', 0);
   }
   public GetLeftMargin(idOrObject: ClassId | VrvObject): number {
     const obj: any = idOrObject;

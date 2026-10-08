@@ -38,6 +38,23 @@ import { Input, type DocLike } from './iobase.js';
 import { Fraction } from './fraction.js';
 import { DocType } from './doc.js';
 import { xml_document, xml_node, xml_node_type } from './pugixml.js';
+import type { NodeData } from './pugixml.js';
+
+/** Raw attribute lookup; null when absent (mirrors `!node.attribute(name)`). */
+function rawAttr(n: NodeData, name: string): string | null {
+  for (let a = n.firstAttribute; a; a = a.nextAttribute) {
+    if (a.alive && a.name === name) return a.value;
+  }
+  return null;
+}
+
+/** Raw first-pcdata/cdata value (mirrors `node.text().as_string()`). */
+function rawText(n: NodeData): string {
+  for (let c = n.firstChild; c; c = c.nextSibling) {
+    if (c.type === xml_node_type.node_pcdata || c.type === xml_node_type.node_cdata) return c.value;
+  }
+  return '';
+}
 import { VrvObject } from './object.js';
 import { Mdiv } from './mdiv.js';
 import { Score } from './score.js';
@@ -744,6 +761,46 @@ export class MusicXmlAccidental {
 export interface MusicXmlDocLike extends DocLike {
   Reset(): void;
   SetType(t: DocType): void;
+}
+
+/** Cached parse of one xpath step; avoids per-call regex in selectNodes/selectFirst. */
+interface ParsedStep {
+  kind: 'dot' | 'ancestor' | 'desc' | 'sibling' | 'wild' | 'child';
+  name?: string;
+  attr?: string;
+  val?: string;
+  pred?: string;
+  contains?: string[];
+  alts?: Array<{ name: string; notAttr?: string; notVal?: string; attr?: string; val?: string; text?: string }>;
+}
+
+function parseStep(step: string): ParsedStep {
+  if (step === '.') return { kind: 'dot' };
+  if (step.startsWith('ancestor::')) return { kind: 'ancestor', name: step.slice('ancestor::'.length) };
+  if (step.startsWith('.//')) {
+    const m = /^(.+?)(?:\[@(.+?)(?:='(.+?)')?\])?$/.exec(step.slice(3))!;
+    return { kind: 'desc', name: m[1], attr: m[2], val: m[3] };
+  }
+  if (step.startsWith('following-sibling::')) {
+    const rest = step.slice('following-sibling::'.length);
+    const m = /^(.+?)(?:\[(.+?)\])?$/.exec(rest)!;
+    return { kind: 'sibling', name: m[1], pred: m[2] };
+  }
+  if (step === '*' || step.startsWith('*[')) {
+    if (step === '*') return { kind: 'wild' };
+    const m = /^\*\[contains\(name\(\),\s*'([^']+)'\)\]$/.exec(step);
+    const m2 = /^\*\[contains\(name\(\),\s*'([^']+)'\) or contains\(name\(\),\s*'([^']+)'\)\]$/.exec(step);
+    const contains: string[] = [];
+    if (m) contains.push(m[1]);
+    else if (m2) contains.push(m2[1], m2[2]);
+    return { kind: 'wild', contains };
+  }
+  const alts = step.split('|').map((alt) => {
+    const m = /^(.+?)(?:\[not\(@(.+?)='(.+?)'\)\])?(?:\[@(.+?)(?:='(.+?)')?(?: and text\(\)='(.+?)')?\])?(?:\[text\(\)='(.+?)'\])?$/.exec(alt);
+    if (!m) return null;
+    return { name: m[1], notAttr: m[2], notVal: m[3], attr: m[4], val: m[5], text: m[6] ?? m[7] };
+  }).filter(Boolean) as ParsedStep['alts'];
+  return { kind: 'child', alts: alts ?? [] };
 }
 
 export class MusicXmlInput extends Input {
@@ -3470,18 +3527,199 @@ export class MusicXmlInput extends Input {
     this.m_harmStack.push(harm);
   }
   //--- Mini XPath for the note reader (TS pugixml has no select_node) ------------------
+  private m_xpathCache = new Map<string, { steps: string[]; branches: string[]; parsed: ParsedStep[] }>();
   /** Evaluate the small XPath subset used by ReadMusicXmlNote. */
   protected selectNode(context: xml_node | null | undefined, xpath: string): xml_node | null {
     if (!context || context.empty()) return null;
-    return this.selectNodes(context, xpath)[0] ?? null;
+    // ponytail: first-match short-circuit replaces full selectNodes()[0].
+    // Upgrade path: compiled step matchers if selectNode stays in flame.
+    const plan = this.xpathPlan(xpath);
+    if (plan.branches.length > 1) return this.selectNodes(context, xpath)[0] ?? null;
+    return this.selectFirst(context, plan.parsed);
   }
 
+  /** First-match walk for single-branch paths; mirrors selectNodes step semantics. */
+  protected selectFirst(context: xml_node, steps: ParsedStep[]): xml_node | null {
+    let current: xml_node[] = [context];
+    for (let i = 0; i < steps.length; i++) {
+      const last = i === steps.length - 1;
+      const step = steps[i];
+      if (step.kind === 'dot') continue;
+      if (step.kind === 'ancestor') {
+        const name = step.name!;
+        const out: xml_node[] = [];
+        for (const c of current) {
+          for (let a = c.parent(); !a.empty(); a = a.parent()) {
+            if (a.name() === name) out.push(a);
+          }
+        }
+        current = out;
+        continue;
+      }
+      if (step.kind === 'desc') {
+        const target = step.name!;
+        const attr = step.attr;
+        const val = step.val;
+        if (last) {
+          for (const c of current) {
+            const hit = this.findDescendant(c, target, attr, val);
+            if (hit) return hit;
+          }
+          return null;
+        }
+        const out: xml_node[] = [];
+        for (const c of current) {
+          this.collectDescendants(c, target, attr, val, out);
+        }
+        current = out;
+        continue;
+      }
+      if (step.kind === 'sibling') {
+        const target = step.name!;
+        const pred = step.pred;
+        if (last) {
+          for (const c of current) {
+            for (let sib = c.next_sibling(target); !sib.empty(); sib = sib.next_sibling(target)) {
+              if (!pred || this.matchesPredicate(sib, pred)) return sib;
+            }
+          }
+          return null;
+        }
+        const out: xml_node[] = [];
+        for (const c of current) {
+          for (let sib = c.next_sibling(target); !sib.empty(); sib = sib.next_sibling(target)) {
+            if (!pred || this.matchesPredicate(sib, pred)) out.push(sib);
+          }
+        }
+        current = out;
+        continue;
+      }
+      if (step.kind === 'wild') {
+        const contains = step.contains ?? [];
+        const all: xml_node[] = [];
+        for (const c of current) {
+          for (let ch = c.first_child(); !ch.empty(); ch = ch.next_sibling()) {
+            if (ch.type() !== xml_node_type.node_element) continue;
+            if (contains.length > 0) {
+              const nm = ch.name();
+              if (!contains.some((s) => nm.includes(s))) continue;
+            }
+            if (last) return ch;
+            all.push(ch);
+          }
+        }
+        if (all.length === 0) return null;
+        current = all;
+        continue;
+      }
+      const all = this.matchAllChildSteps(current, step.alts ?? []);
+      if (all.length === 0) return null;
+      if (last) return all[0];
+      current = all;
+      continue;
+    }
+    return current[0] ?? null;
+  }
+
+  /** Match one plain/predicated child step against candidate parents.
+   * ponytail: raw NodeData walk. Wrapper first_child/next_sibling/name/attribute
+   * allocated an xml_node (+ xml_attribute) per child visit (185: 400ms self
+   * in selectNodes). Semantics identical: element-only, document order. */
+  private matchAllChildSteps(current: xml_node[], parsed: NonNullable<ParsedStep['alts']>): xml_node[] {
+    const out: xml_node[] = [];
+    const single = parsed.length === 1 ? parsed[0] : null;
+    for (const c of current) {
+      const root = c.internal_object();
+      if (!root) continue;
+      for (let n = root.firstChild; n; n = n.nextSibling) {
+        if (n.type !== xml_node_type.node_element) continue;
+        if (single) {
+          if (n.name !== single.name) continue;
+          if (single.notAttr && rawAttr(n, single.notAttr) === single.notVal) continue;
+          if (single.attr) {
+            const v = rawAttr(n, single.attr);
+            if (v === null) continue;
+            if (single.val !== undefined && v !== single.val) continue;
+          }
+          if (single.text && rawText(n) !== single.text) continue;
+          out.push(new xml_node(n));
+          continue;
+        }
+        for (const { name, notAttr, notVal, attr, val, text } of parsed) {
+          if (n.name !== name) continue;
+          if (notAttr && rawAttr(n, notAttr) === notVal) continue;
+          if (attr) {
+            const v = rawAttr(n, attr);
+            if (v === null) continue;
+            if (val !== undefined && v !== val) continue;
+          }
+          if (text && rawText(n) !== text) continue;
+          out.push(new xml_node(n));
+          break;
+        }
+      }
+    }
+    return out;
+  }
+
+  /** Depth-first first match for .// steps (document order, mirrors collectDescendants).
+   * ponytail: raw NodeData walk (see matchAllChildSteps P24). */
+  private findDescendant(root: xml_node, target: string, attr: string | undefined, val: string | undefined): xml_node | null {
+    const m = /^(.+?)(?:\[@(.+?)(?:='(.+?)')?\])?$/.exec(target);
+    if (!m) return null;
+    const name = m[1];
+    const start = root.internal_object();
+    if (!start) return null;
+    const visit = (node: NodeData): NodeData | null => {
+      for (let ch = node.firstChild; ch; ch = ch.nextSibling) {
+        if (ch.type === xml_node_type.node_element) {
+          if (name === '*' || ch.name === name) {
+            if (!attr) return ch;
+            const v = rawAttr(ch, attr);
+            if (v !== null && (val === undefined || v === val)) return ch;
+          }
+          const nested = visit(ch);
+          if (nested) return nested;
+        }
+      }
+      return null;
+    };
+    const hit = visit(start);
+    return hit ? new xml_node(hit) : null;
+  }
+
+  /** Split xpath into cached steps + top-level union branches. */
+  private xpathPlan(xpath: string): { steps: string[]; branches: string[]; parsed: ParsedStep[] } {
+    const hit = this.m_xpathCache.get(xpath);
+    if (hit) return hit;
+    const branches = this.splitTopLevelUnion(xpath);
+    const steps: string[] = [];
+    if (branches.length <= 1) {
+      let depth = 0, cur = '';
+      for (const ch of xpath) {
+        if (ch === '[') depth++;
+        else if (ch === ']') depth = Math.max(0, depth - 1);
+        if (ch === '/' && depth === 0) { if (cur.length > 0) steps.push(cur); cur = ''; }
+        else cur += ch;
+      }
+      if (cur.length > 0) steps.push(cur);
+    }
+    // ponytail: per-step regex parse hoisted into the cached plan.
+    // selectNodes/selectFirst ran 4 regexes per step per call (037: 197ms self).
+    const parsed = steps.map((s) => parseStep(s));
+    const plan = { steps, branches, parsed };
+    if (this.m_xpathCache.size < 512) this.m_xpathCache.set(xpath, plan);
+    return plan;
+  }
+
+  /** Parsed single child-step; cached per step string (see s_stepCache). */
   protected selectNodes(context: xml_node | null | undefined, xpath: string): xml_node[] {
     if (!context || context.empty()) return [];
     // C++ pugi XPath union (a|b) at top level returns nodes in document order.
     // Split top-level '|' (outside [...] predicates), evaluate each branch,
     // then merge in document order.
-    const branches = this.splitTopLevelUnion(xpath);
+    const plan = this.xpathPlan(xpath);
+    const branches = plan.branches;
     if (branches.length > 1) {
       const merged: xml_node[] = [];
       const seen = new Set<string>();
@@ -3496,22 +3734,15 @@ export class MusicXmlInput extends Input {
     }
     // Split on '/' but not '/' inside [...] predicates (e.g. note[notations/tuplet[@type='stop']]).
     // C++ pugi parses the full XPath grammar; the subset engine must keep predicates intact.
-    const steps: string[] = [];
-    let depth = 0, cur = '';
-    for (const ch of xpath) {
-      if (ch === '[') depth++;
-      else if (ch === ']') depth = Math.max(0, depth - 1);
-      if (ch === '/' && depth === 0) { if (cur.length > 0) steps.push(cur); cur = ''; }
-      else cur += ch;
-    }
-    if (cur.length > 0) steps.push(cur);
+    // ponytail: cached plan replaces per-call split + per-step regex parse.
+    const steps = plan.parsed;
     if (steps.length === 0) return [];
     let current: xml_node[] = [context];
     // 'ancestor::measure' and './/' handled per step
     for (const step of steps) {
-      if (step === '.') continue;
-      if (step.startsWith('ancestor::')) {
-        const name = step.slice('ancestor::'.length);
+      if (step.kind === 'dot') continue;
+      if (step.kind === 'ancestor') {
+        const name = step.name!;
         const out: xml_node[] = [];
         for (const c of current) {
           for (let a = c.parent(); !a.empty(); a = a.parent()) {
@@ -3521,12 +3752,11 @@ export class MusicXmlInput extends Input {
         current = out;
         continue;
       }
-      if (step.startsWith('.//')) {
+      if (step.kind === 'desc') {
         // descendant-or-self with optional predicate
-        const m = /^(.+?)(?:\[@(.+?)(?:='(.+?)')?\])?$/.exec(step.slice(3))!;
-        const target = m[1];
-        const attr = m[2];
-        const val = m[3];
+        const target = step.name!;
+        const attr = step.attr;
+        const val = step.val;
         const out: xml_node[] = [];
         for (const c of current) {
           this.collectDescendants(c, target, attr, val, out);
@@ -3535,11 +3765,9 @@ export class MusicXmlInput extends Input {
         continue;
       }
       // 'name' | 'name[@attr="v"]' | 'name[@attr]' | 'following-sibling::note[pred]'
-      if (step.startsWith('following-sibling::')) {
-        const rest = step.slice('following-sibling::'.length);
-        const m = /^(.+?)(?:\[(.+?)\])?$/.exec(rest)!;
-        const target = m[1];
-        const pred = m[2];
+      if (step.kind === 'sibling') {
+        const target = step.name!;
+        const pred = step.pred;
         const out: xml_node[] = [];
         for (const c of current) {
           for (let sib = c.next_sibling(target); !sib.empty(); sib = sib.next_sibling(target)) {
@@ -3549,18 +3777,16 @@ export class MusicXmlInput extends Input {
         current = out;
         continue;
       }
-      if (step === '*' || step.startsWith('*[')) {
+      if (step.kind === 'wild') {
         // wildcard children with optional contains(name(),...) predicate
+        const contains = step.contains ?? [];
         const out: xml_node[] = [];
         for (const c of current) {
           for (let ch = c.first_child(); !ch.empty(); ch = ch.next_sibling()) {
             if (ch.type() !== xml_node_type.node_element) continue;
-            if (step !== '*') {
-              const m = /^\*\[contains\(name\(\),\s*'([^']+)'\)\]$/.exec(step);
-              const m2 = /^\*\[contains\(name\(\),\s*'([^']+)'\) or contains\(name\(\),\s*'([^']+)'\)\]$/.exec(step);
+            if (contains.length > 0) {
               const nm = ch.name();
-              if (m && !nm.includes(m[1])) continue;
-              if (m2 && !nm.includes(m2[1]) && !nm.includes(m2[2])) continue;
+              if (!contains.some((s) => nm.includes(s))) continue;
             }
             out.push(ch);
           }
@@ -3569,13 +3795,7 @@ export class MusicXmlInput extends Input {
         continue;
       }
       // plain/predicated child step; also allow 'a|b' unions
-      const names = step.split('|').flatMap((alt) => alt.split('|'));
-      const parsed = names.map((alt) => {
-        const m = /^(.+?)(?:\[not\(@(.+?)='(.+?)'\)\])?(?:\[@(.+?)(?:='(.+?)')?(?: and text\(\)='(.+?)')?\])?(?:\[text\(\)='(.+?)'\])?$/.exec(alt);
-        if (!m) return null;
-        return { name: m[1], notAttr: m[2], notVal: m[3], attr: m[4], val: m[5], text: m[6] ?? m[7] } as
-          { name: string; notAttr?: string; notVal?: string; attr?: string; val?: string; text?: string };
-      }).filter(Boolean) as Array<{ name: string; notAttr?: string; notVal?: string; attr?: string; val?: string; text?: string }>;
+      const parsed = step.alts ?? [];
       const out: xml_node[] = [];
       for (const c of current) {
         // C++ pugi XPath union (a|b) returns nodes in document order, not grouped by name.
@@ -3631,25 +3851,65 @@ export class MusicXmlInput extends Input {
     const m = /^(.+?)(?:\[@(.+?)(?:='(.+?)')?\])?$/.exec(target);
     if (!m) return;
     const name = m[1];
-    for (let ch = root.first_child(); !ch.empty(); ch = ch.next_sibling()) {
-      if (ch.type() === 1) {
-        if (name === '*' || ch.name() === name) {
-          if (!attr || (ch.attribute(attr) && (val === undefined || ch.attribute(attr).as_string() === val))) {
-            out.push(ch);
+    const start = root.internal_object();
+    if (!start) return;
+    // ponytail: raw NodeData walk (see matchAllChildSteps P24).
+    const visit = (node: NodeData): void => {
+      for (let ch = node.firstChild; ch; ch = ch.nextSibling) {
+        if (ch.type === xml_node_type.node_element) {
+          if (name === '*' || ch.name === name) {
+            if (!attr) {
+              out.push(new xml_node(ch));
+            }
+            else {
+              const v = rawAttr(ch, attr);
+              if (v !== null && (val === undefined || v === val)) out.push(new xml_node(ch));
+            }
           }
+          visit(ch);
         }
-        this.collectDescendants(ch, target, attr, val, out);
       }
-    }
+    };
+    visit(start);
   }
 
+  private m_predCache = new Map<string, { kind: number; a?: string; b?: string; c?: string; d?: string }>();
+  // ponytail: per-staff ScoreDef info cache. ReadMusicXmlNote ran
+  // GetFirstScoreDef().FindDescendantByComparison + FindDescendantByType(TUNING)
+  // per note (185: 935ms + descendants). StaffDefs are built once per part
+  // before notes; cleared at each ReadMusicXml entry.
+  private m_staffInfoCache = new Map<number, { isTablature: boolean; tuning: Tuning | null; tabGuitar: boolean }>();
+  private parsePred(pred: string): { kind: number; a?: string; b?: string; c?: string; d?: string } {
+    const hit = this.m_predCache.get(pred);
+    if (hit) return hit;
+    let out: { kind: number; a?: string; b?: string; c?: string; d?: string } = { kind: 0 };
+    let m: RegExpExecArray | null;
+    if ((m = /^([^@\[]+)\[@(.+?)(?:='(.+?)')? and text\(\)='(.+?)'\]$/.exec(pred))) {
+      out = { kind: 1, a: m[1], b: m[2], c: m[3], d: m[4] };
+    }
+    else if ((m = /^@(.+?)(?:='(.+?)')? and text\(\)='(.+?)'$/.exec(pred))) {
+      out = { kind: 2, a: m[1], b: m[2], c: m[3] };
+    }
+    else if ((m = /^@(.+?)(?:='(.+?)')?$/.exec(pred))) {
+      out = { kind: 3, a: m[1], b: m[2] };
+    }
+    else if ((m = /^text\(\)='(.+?)'$/.exec(pred))) {
+      out = { kind: 4, a: m[1] };
+    }
+    else if ((m = /^([^@\[\]]+)\[@([^=\]]+)(?:='([^']*)')?\]$/.exec(pred))) {
+      out = { kind: 5, a: m[1], b: m[2], c: m[3] };
+    }
+    if (this.m_predCache.size < 512) this.m_predCache.set(pred, out);
+    return out;
+  }
   private matchesPredicate(node: xml_node, pred: string): boolean {
     // supports single "child[...]" or combined "beam[@number='1' and text()='begin']"
     // element-child predicate: beam[@number='1' and text()='end'] — a child element
     // with attribute and/or text; C++ xpath "note[beam[...]]" requires a descendant match.
-    const elementPred = /^([^@\[]+)\[@(.+?)(?:='(.+?)')? and text\(\)='(.+?)'\]$/.exec(pred);
-    if (elementPred) {
-      const [, childName, attr, attrVal, textVal] = elementPred;
+    // ponytail: parsed-predicate cache replaces 6 regexes per sibling test.
+    const p = this.parsePred(pred);
+    if (p.kind === 1) {
+      const childName = p.a!, attr = p.b!, attrVal = p.c, textVal = p.d!;
       for (let ch = node.child(childName); !ch.empty(); ch = ch.next_sibling(childName)) {
         if (ch.attribute(attr).empty()) continue;
         if (attrVal !== undefined && ch.attribute(attr).as_string() !== attrVal) continue;
@@ -3657,26 +3917,22 @@ export class MusicXmlInput extends Input {
       }
       return false;
     }
-    const attrAndText = /^@(.+?)(?:='(.+?)')? and text\(\)='(.+?)'$/.exec(pred);
-    if (attrAndText) {
-      const [, attr, attrVal, textVal] = attrAndText;
+    if (p.kind === 2) {
+      const attr = p.a!, attrVal = p.b, textVal = p.c!;
       if (attrVal !== undefined && node.attribute(attr).as_string() !== attrVal) return false;
       return node.text().as_string() === textVal;
     }
-    const attrOnly = /^@(.+?)(?:='(.+?)')?$/.exec(pred);
-    if (attrOnly) {
-      const [, attr, attrVal] = attrOnly;
+    if (p.kind === 3) {
+      const attr = p.a!, attrVal = p.b;
       if (attrVal !== undefined) return node.attribute(attr).as_string() === attrVal;
       return !!node.attribute(attr);
     }
-    const textOnly = /^text\(\)='(.+?)'$/.exec(pred);
-    if (textOnly) return node.text().as_string() === textOnly[1];
+    if (p.kind === 4) return node.text().as_string() === p.a;
     // Nested child path with attribute predicate: notations/tuplet[@type='stop'].
     // C++ pugi evaluates the full XPath; the subset engine must resolve the
     // child element and test its attribute instead of stripping brackets.
-    const nestedAttr = /^([^@\[\]]+)\[@([^=\]]+)(?:='([^']*)')?\]$/.exec(pred);
-    if (nestedAttr) {
-      const [, childPath, attr, attrVal] = nestedAttr;
+    if (p.kind === 5) {
+      const childPath = p.a!, attr = p.b!, attrVal = p.c;
       const kids = this.selectNodes(node, childPath);
       for (const k of kids) {
         if (k.attribute(attr).empty()) continue;
@@ -3747,6 +4003,15 @@ export class MusicXmlInput extends Input {
 
   //--- iomusxml.cpp 4216-4289: beams/tuplets pre-pass --------------------------------
   protected ReadMusicXmlBeamsAndTuplets(node: xml_node, layer: Layer, isChord: boolean): boolean {
+    // ponytail: fast reject for plain notes (Q13). Every branch below needs
+    // beamStart or tupletStart; notes with neither <beam> nor <notations> run
+    // 5 xpath probes + a measure-children copy for nothing. Direct child
+    // scan is O(children); fall through to the full path on any hit (exact
+    // predicates like @number='1'/@type='start' stay in the slow path).
+    if (node.child('beam').empty()) {
+      const notationsChild = node.child('notations');
+      if (notationsChild.empty() || notationsChild.child('tuplet').empty()) return true;
+    }
     const beamStart = this.selectNode(node, "beam[@number='1' and text()='begin']");
     const tupletStart = this.selectNode(node, "notations/tuplet[@type='start']");
     const currentMeasure = this.selectNode(node, 'ancestor::measure');
@@ -3981,22 +4246,28 @@ export class MusicXmlInput extends Input {
 
     const staff = layer.GetFirstAncestor(ClassId.STAFF) as unknown as Staff;
     if (!staff) throw new Error('MusicXmlInput::ReadMusicXmlNote: staff is null');
-    const cnc = new AttNIntegerComparison(ClassId.STAFFDEF, staff.GetN());
-    const firstScoreDef = (this.m_docRef as unknown as { GetFirstScoreDef(): { FindDescendantByComparison(c: unknown): unknown } | null })
-      .GetFirstScoreDef();
-    const staffDef = (firstScoreDef ? firstScoreDef.FindDescendantByComparison(cnc) : null) as unknown as StaffDef | null;
-    let isTablature = false;
-    let tuning: Tuning | null = null;
-
-    if (staffDef) {
-      tuning = staffDef.FindDescendantByType(ClassId.TUNING) as unknown as Tuning | null;
-      const notationType = staffDef.GetNotationtype();
-      isTablature = (notationType as number === 9 /* NOTATIONTYPE_tab */
-        || notationType as number === NOTATIONTYPE_tab_guitar
-        || notationType as number === NOTATIONTYPE_tab_lute_italian
-        || notationType as number === NOTATIONTYPE_tab_lute_french
-        || notationType as number === NOTATIONTYPE_tab_lute_german);
+    const staffN = staff.GetN();
+    let cached = this.m_staffInfoCache.get(staffN);
+    if (!cached) {
+      cached = { isTablature: false, tuning: null, tabGuitar: false };
+      const cnc = new AttNIntegerComparison(ClassId.STAFFDEF, staffN);
+      const firstScoreDef = (this.m_docRef as unknown as { GetFirstScoreDef(): { FindDescendantByComparison(c: unknown): unknown } | null })
+        .GetFirstScoreDef();
+      const staffDef = (firstScoreDef ? firstScoreDef.FindDescendantByComparison(cnc) : null) as unknown as StaffDef | null;
+      if (staffDef) {
+        cached.tuning = staffDef.FindDescendantByType(ClassId.TUNING) as unknown as Tuning | null;
+        const notationType = staffDef.GetNotationtype();
+        cached.tabGuitar = notationType as number === NOTATIONTYPE_tab_guitar;
+        cached.isTablature = (notationType as number === 9 /* NOTATIONTYPE_tab */
+          || notationType as number === NOTATIONTYPE_tab_guitar
+          || notationType as number === NOTATIONTYPE_tab_lute_italian
+          || notationType as number === NOTATIONTYPE_tab_lute_french
+          || notationType as number === NOTATIONTYPE_tab_lute_german);
+      }
+      this.m_staffInfoCache.set(staffN, cached);
     }
+    const isTablature = cached.isTablature;
+    const tuning = cached.tuning;
 
     const isChord = !node.child('chord').empty();
 
@@ -4144,7 +4415,7 @@ export class MusicXmlInput extends Input {
           if (dots > 0) tabGrp.SetDots(dots);
           tabGrp.AddChild(new TabDurSym());
           // modern guitar tablature has CMN rests
-          if (staffDef!.GetNotationtype() as number === NOTATIONTYPE_tab_guitar) {
+          if (cached.tabGuitar) {
             tabGrp.AddChild(new Rest());
           }
           this.AddLayerElement(layer, tabGrp, duration);

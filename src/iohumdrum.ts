@@ -175,6 +175,24 @@ const BOOLEAN_false = 2;
 const NEIGHBORINGLAYER_above = 1;
 const NEIGHBORINGLAYER_below = 2;
 const tupletVis_NUMFORMAT_count = 1;
+
+// ponytail: hoisted loaccid table (Q14). Was a 25-entry object literal
+// allocated per note carrying an LO accid (C++ iohumdrum.cpp:26760ff).
+const LOACCID_MAP = new Map<string, number>([
+  ['n#', ACCIDENTAL_WRITTEN_ns], ['#', ACCIDENTAL_WRITTEN_s],
+  ['n', ACCIDENTAL_WRITTEN_n], ['##', ACCIDENTAL_WRITTEN_ss],
+  ['x', ACCIDENTAL_WRITTEN_x], ['-', ACCIDENTAL_WRITTEN_f],
+  ['--', ACCIDENTAL_WRITTEN_ff], ['#x', ACCIDENTAL_WRITTEN_sx],
+  ['###', ACCIDENTAL_WRITTEN_ts], ['n-', ACCIDENTAL_WRITTEN_nf],
+  ['---', ACCIDENTAL_WRITTEN_tf], ['su', ACCIDENTAL_WRITTEN_su],
+  ['sd', ACCIDENTAL_WRITTEN_sd], ['fu', ACCIDENTAL_WRITTEN_fu],
+  ['fd', ACCIDENTAL_WRITTEN_fd], ['nu', ACCIDENTAL_WRITTEN_nu],
+  ['nd', ACCIDENTAL_WRITTEN_nd], ['xu', ACCIDENTAL_WRITTEN_xu],
+  ['xd', ACCIDENTAL_WRITTEN_xd], ['ffu', ACCIDENTAL_WRITTEN_ffu],
+  ['ffd', ACCIDENTAL_WRITTEN_ffd], ['1qf', ACCIDENTAL_WRITTEN_1qf],
+  ['3qf', ACCIDENTAL_WRITTEN_3qf], ['1qs', ACCIDENTAL_WRITTEN_1qs],
+  ['3qs', ACCIDENTAL_WRITTEN_3qs],
+]);
 // C++ mensural/ligature/plica/dot/bracket ordinals (libmei atttypes.h).
 const LIGATUREFORM_recta = 1;
 const LIGATUREFORM_obliqua = 2;
@@ -2636,24 +2654,9 @@ export class HumdrumInput extends Input {
         }
       }
       else if (loaccid !== '') {
-        // C++ non-editorial loaccid table (iohumdrum.cpp:26760ff), inline.
-        const loMap: Record<string, number> = {
-          'n#': ACCIDENTAL_WRITTEN_ns, '#': ACCIDENTAL_WRITTEN_s,
-          n: ACCIDENTAL_WRITTEN_n, '##': ACCIDENTAL_WRITTEN_ss,
-          x: ACCIDENTAL_WRITTEN_x, '-': ACCIDENTAL_WRITTEN_f,
-          '--': ACCIDENTAL_WRITTEN_ff, '#x': ACCIDENTAL_WRITTEN_sx,
-          '###': ACCIDENTAL_WRITTEN_ts, 'n-': ACCIDENTAL_WRITTEN_nf,
-          '---': ACCIDENTAL_WRITTEN_tf, su: ACCIDENTAL_WRITTEN_su,
-          sd: ACCIDENTAL_WRITTEN_sd, fu: ACCIDENTAL_WRITTEN_fu,
-          fd: ACCIDENTAL_WRITTEN_fd, nu: ACCIDENTAL_WRITTEN_nu,
-          nd: ACCIDENTAL_WRITTEN_nd, xu: ACCIDENTAL_WRITTEN_xu,
-          xd: ACCIDENTAL_WRITTEN_xd, ffu: ACCIDENTAL_WRITTEN_ffu,
-          ffd: ACCIDENTAL_WRITTEN_ffd, '1qf': ACCIDENTAL_WRITTEN_1qf,
-          '3qf': ACCIDENTAL_WRITTEN_3qf, '1qs': ACCIDENTAL_WRITTEN_1qs,
-          '3qs': ACCIDENTAL_WRITTEN_3qs,
-        };
-        if (loMap[loaccid] !== undefined) {
-          accid.SetAccid(loMap[loaccid]);
+        const hit = LOACCID_MAP.get(loaccid);
+        if (hit !== undefined) {
+          accid.SetAccid(hit);
           showInAccidGes = true;
         }
         else LogWarning('In HumdrumInput::convertNote: Unknown accidental type: ' + loaccid);
@@ -11642,6 +11645,18 @@ export class HumdrumInput extends Input {
     }
     let myfontstyle = fontstyle;
     let data = content;
+
+    // ponytail: plain-text fast path (Q26). Typical lyrics contain no markup,
+    // music codes, entities or line breaks; skip both HumRegex allocations
+    // and all searches. Mirrors the tail of this function for single-piece
+    // content without spacer/entity handling.
+    if (myfontstyle === '' && label === '' && !addSpacer
+      && data.indexOf('<i>') === -1 && data.indexOf('[') === -1
+      && data.indexOf('&') === -1 && data.indexOf('\\') === -1) {
+      text.SetText(UTF8to32(data));
+      element.AddChild(text);
+      return;
+    }
 
     if (data.indexOf('<i>') !== -1) {
       // Convert <i>..</i> into italic. Currently only entire syllable can be

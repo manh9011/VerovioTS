@@ -37,6 +37,7 @@ import { AttModule, type ArrayOfStrAttr, type AttModuleElementLike } from './att
 import { AttConverterBase } from './attconverter.js';
 import { Transposer, TransPitch, INVALID_INTERVAL_CLASS } from './transposition.js';
 import { FindAllReferencedObjectsFunctor } from './findfunctor.js';
+import type { AttributeData, NodeData } from './pugixml.js';
 import { AttNIntegerComparison } from './comparison.js';
 import { SaveFunctor } from './savefunctor.js';
 import {
@@ -223,24 +224,6 @@ import { InstKeySigDefaultAnl } from './atts_analytical.js';
 import { InstMensuralLog, InstMensuralShared } from './atts_mensural.js';
 import { InstAccidentalGes } from './atts_gestural.js';
 
-import { Att } from './att.js';
-
-/** Shared converter fallback: TS domain classes carry attribute state but
- * no *ToStr methods; C++ resolves them via Att base-class inheritance. */
-const attFallback = new Att();
-
-function withConverters(object: AnyObj): AnyObj {
-  return new Proxy(object, {
-    get(target: AnyObj, prop: string | symbol, receiver: unknown): unknown {
-      const value = Reflect.get(target as object, prop, receiver);
-      if (value !== undefined) {
-        return typeof value === 'function' ? (value as (...a: never[]) => unknown).bind(target) : value;
-      }
-      const fb = (attFallback as unknown as Record<string | symbol, unknown>)[prop];
-      return typeof fb === 'function' ? (fb as (...a: never[]) => unknown).bind(attFallback) : fb;
-    },
-  });
-}
 function saveThrough(output: Output, root: VrvObject): void {
   const save = new CanonicalSaveFunctor(output);
   save.SetVisibleOnly(false);
@@ -834,7 +817,7 @@ export class MEIOutput extends Output {
 
   private writeAttrs(node: xml_node, object: AnyObj, skipXmlId = false): void {
     const attrs: ArrayOfStrAttr = [];
-    AttModule.GetAll(withConverters(object) as unknown as Parameters<typeof AttModule.GetAll>[0], attrs);
+    AttModule.GetAll(object as unknown as Parameters<typeof AttModule.GetAll>[0], attrs);
     // ponytail: generic GetAll order puts mm before tstamp, but C++
     // MEIOutput::WriteTempo writes TimeSpanning before MmTempo. Reorder
     // tempo attrs to C++ order; lift to per-class writers if more diverge.
@@ -1739,39 +1722,58 @@ function findAllDescendants(node: xml_node, predicate: (n: xml_node) => boolean)
   return result;
 }
 
+type AttSetFn = (element: AttModuleElementLike, attrType: string, attrValue: string) => boolean;
+const ATT_SETS: AttSetFn[] = [
+  AttModule.SetShared, AttModule.SetCmn, AttModule.SetVisual, AttModule.SetGestural,
+  AttModule.SetMensural, AttModule.SetAnalytical, AttModule.SetEdittrans, AttModule.SetHeader,
+  AttModule.SetMidi, AttModule.SetNeumes, AttModule.SetPagebased, AttModule.SetPerformance,
+  AttModule.SetStringtab, AttModule.SetUsersymbols, AttModule.SetFigtable, AttModule.SetFingering,
+  AttModule.SetHarmony, AttModule.SetCritapp, AttModule.SetExternalsymbols, AttModule.SetFacsimile,
+  AttModule.SetMei,
+];
+// ponytail: attr-name memo replaces the 21-deep Set* OR-chain per attribute.
+// The union of Sets that ever handled a name is sufficient: extra Sets return
+// false harmlessly, and a newly-seen class falls back to the full chain once.
+// Upgrade path: static attr->Set table generated from attmodule if union grows.
+const attSetMemo = new Map<string, AttSetFn[]>();
+
+function setAttr(target: AttModuleElementLike, name: string, value: string): boolean {
+  const memo = attSetMemo.get(name);
+  if (memo !== undefined) {
+    for (const fn of memo) {
+      if (fn(target, name, value)) return true;
+    }
+    // Union missed (new class combo): full scan once, extend union.
+    for (const fn of ATT_SETS) {
+      if (memo.includes(fn)) continue;
+      if (fn(target, name, value)) { memo.push(fn); return true; }
+    }
+    return false;
+  }
+  const hit: AttSetFn[] = [];
+  let handled = false;
+  for (const fn of ATT_SETS) {
+    if (fn(target, name, value)) { hit.push(fn); handled = true; break; }
+  }
+  attSetMemo.set(name, hit);
+  return handled;
+}
+
 function readAttrs(obj: VrvObject, node: xml_node): void {
-  // C++ domain classes inherit the Att converter surface; TS domain classes
-  // do not. Reuse the MEIOutput converter-proxy so AttModule.Set* finds
-  // StrToInt/IntToStr etc. on the Att fallback instance (same seam as part 1).
-  const target = withConverters(obj as unknown as AnyObj) as unknown as AttModuleElementLike;
+  // Att converters now live on VrvObject.prototype (see object.ts mixin);
+  // no Proxy needed. Raw object keeps HasAttClass/SetX monomorphic.
+  // ponytail: raw AttributeData walk. node.attributes() allocated an
+  // xml_attribute wrapper per attribute (mei/033: setAttr 73ms self +
+  // wrappers). Semantics identical: skip xml:id, remove handled names.
+  const target = obj as unknown as AttModuleElementLike;
+  const root: NodeData | null = node.internal_object();
+  if (!root) return;
   const toRemove: string[] = [];
-  for (const attr of node.attributes() as Iterable<xml_attribute>) {
-    const name = attr.name();
+  for (let a: AttributeData | null = root.firstAttribute; a; a = a.nextAttribute) {
+    if (!a.alive) continue;
+    const name = a.name;
     if (name === 'xml:id') continue;
-    const value = attr.value();
-    const handled =
-      AttModule.SetShared(target, name, value)
-      || AttModule.SetCmn(target, name, value)
-      || AttModule.SetVisual(target, name, value)
-      || AttModule.SetGestural(target, name, value)
-      || AttModule.SetMensural(target, name, value)
-      || AttModule.SetAnalytical(target, name, value)
-      || AttModule.SetEdittrans(target, name, value)
-      || AttModule.SetHeader(target, name, value)
-      || AttModule.SetMidi(target, name, value)
-      || AttModule.SetNeumes(target, name, value)
-      || AttModule.SetPagebased(target, name, value)
-      || AttModule.SetPerformance(target, name, value)
-      || AttModule.SetStringtab(target, name, value)
-      || AttModule.SetUsersymbols(target, name, value)
-      || AttModule.SetFigtable(target, name, value)
-      || AttModule.SetFingering(target, name, value)
-      || AttModule.SetHarmony(target, name, value)
-      || AttModule.SetCritapp(target, name, value)
-      || AttModule.SetExternalsymbols(target, name, value)
-      || AttModule.SetFacsimile(target, name, value)
-      || AttModule.SetMei(target, name, value);
-    if (handled) toRemove.push(name);
+    if (setAttr(target, name, a.value)) toRemove.push(name);
   }
   for (const name of toRemove) node.remove_attribute(name);
 }

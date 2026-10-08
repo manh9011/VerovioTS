@@ -116,6 +116,7 @@ export class Alignment extends VrvObject {
   private m_time: Fraction = new Fraction(0);
   private m_type: AlignmentType = AlignmentType.ALIGNMENT_DEFAULT;
   private m_graceAligners: Map<number, GraceAligner> | null = null;
+  private m_alignmentRefCache: Map<number, AlignmentReference> | null = null;
 
   public constructor(time?: Fraction, type?: AlignmentType) {
     super(ClassId.ALIGNMENT);
@@ -196,12 +197,20 @@ export class Alignment extends VrvObject {
   }
 
   public GetAlignmentReference(staffN: number): AlignmentReference {
+    // ponytail: memo staffN -> ref (Q24). Called per element during
+    // AlignHorizontally; the comparison walk + alloc repeat on a frozen
+    // child list. Refs are only appended via AddChild below.
+    this.m_alignmentRefCache ??= new Map();
+    const cached = this.m_alignmentRefCache.get(staffN);
+    // ponytail: guard against detached refs (editor ClearChildren paths).
+    if (cached && cached.GetParent() === (this as unknown as never)) return cached;
     const match = new AlignmentReferenceNComparison(ClassId.ALIGNMENT_REFERENCE, staffN);
     let ref = this.FindDescendantByComparison(match, 1) as AlignmentReference | null;
     if (!ref) {
       ref = new AlignmentReference(staffN);
       this.AddChild(ref);
     }
+    this.m_alignmentRefCache.set(staffN, ref);
     return ref;
   }
 
@@ -325,6 +334,10 @@ export class Alignment extends VrvObject {
 export class AlignmentReference extends VrvObject {
   private attNInteger: InstNInteger;
   private m_layerCount = 0;
+  // ponytail: memo HasCrossStaffElements (Q23). Called per reference per
+  // AdjustXPos measure pass; the walk + comparison alloc repeat on frozen
+  // trees. Invalidated on AddChild (sole mutator of reference children).
+  private m_hasCrossStaff: boolean | null = null;
 
   public constructor(staffN?: number) {
     super(ClassId.ALIGNMENT_REFERENCE);
@@ -360,6 +373,7 @@ export class AlignmentReference extends VrvObject {
     }
     assertInvariant(child.GetParent() && this.IsReferenceObject(), 'AlignmentReference::AddChild: child parent required.');
     children.push(child);
+    this.m_hasCrossStaff = null;
     this.Modify();
     return true;
   }
@@ -385,12 +399,17 @@ export class AlignmentReference extends VrvObject {
   public HasMultipleLayer(): boolean { return this.m_layerCount > 1; }
 
   public HasCrossStaffElements(): boolean {
+    if (this.m_hasCrossStaff !== null) return this.m_hasCrossStaff;
     const children: VrvObject[] = [];
     const match = new ClassIdsAnyComparison([ClassId.NOTE, ClassId.CHORD]);
     this.FindAllDescendantsByComparison(children, match);
     for (const child of children) {
-      if ((child as unknown as { m_crossStaff: unknown }).m_crossStaff) return true;
+      if ((child as unknown as { m_crossStaff: unknown }).m_crossStaff) {
+        this.m_hasCrossStaff = true;
+        return true;
+      }
     }
+    this.m_hasCrossStaff = false;
     return false;
   }
 

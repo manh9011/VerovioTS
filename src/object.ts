@@ -10,6 +10,8 @@ import {
   VRV_UNSET,
 } from './core-types';
 import { BoundingBox } from './boundingbox';
+import { Att } from './att.js';
+import { AttConverterBase } from './attconverter.js';
 import { AttModule } from './attmodule.js';
 import { ClassIdComparison, Comparison, IsEditorialElementComparison } from './comparison.js';
 import { Functor, ConstFunctor } from './functor.js';
@@ -73,6 +75,7 @@ export class VrvObject extends BoundingBox {
   private m_iteratorCurrent = -1;
   private m_iteratorElementType: ClassIdLike = ClassId.UNSPECIFIED;
   private m_attClasses: number[] = [];
+  private m_attClassSet = new Set<number>();
   private m_interfaces: InterfaceId[] = [];
   private m_comment = '';
   private m_closingComment = '';
@@ -177,10 +180,11 @@ export class VrvObject extends BoundingBox {
     return classId > ClassId.TEXT_ELEMENT && classId < ClassId.TEXT_ELEMENT_max;
   }
 
-  public RegisterAttClass(attClassId: number): void { this.m_attClasses.push(attClassId); }
-  public HasAttClass(attClassId: number): boolean { return this.m_attClasses.includes(attClassId); }
+  public RegisterAttClass(attClassId: number): void { this.m_attClasses.push(attClassId); this.m_attClassSet.add(attClassId); }
+  public HasAttClass(attClassId: number): boolean { return this.m_attClassSet.has(attClassId); }
   public RegisterInterface(attClasses: number[], interfaceId: InterfaceId): void {
     this.m_attClasses.push(...attClasses);
+    for (const c of attClasses) this.m_attClassSet.add(c);
     this.m_interfaces.push(interfaceId);
   }
   public HasInterface(interfaceId: InterfaceId): boolean { return this.m_interfaces.includes(interfaceId); }
@@ -234,6 +238,7 @@ export class VrvObject extends BoundingBox {
       this.m_isModified = true;
       this.m_isReferenceObject = source.m_isReferenceObject;
       this.m_attClasses = [...source.m_attClasses];
+      this.m_attClassSet = new Set(source.m_attClasses);
       this.m_interfaces = [...source.m_interfaces];
       this.CopyAttributesFrom(source);
       this.GenerateID();
@@ -643,15 +648,27 @@ export class VrvObject extends BoundingBox {
   }
 
   public GetFirstAncestor(classId: ClassIdLike, maxDepth = -1): VrvObject | null {
-    if (maxDepth === 0 || !this.m_parent) return null;
-    if (this.m_parent.m_classId === classId) return this.m_parent;
-    return this.m_parent.GetFirstAncestor(classId, maxDepth - 1);
+    // ponytail: iterative walk replaces recursion; GetFirstAncestor was 1s self + 2.5s chain on 185.
+    let current = this.m_parent;
+    let depth = maxDepth;
+    while (current && depth !== 0) {
+      if (current.m_classId === classId) return current;
+      current = current.m_parent;
+      if (depth > 0) depth--;
+    }
+    return null;
   }
 
   public GetFirstAncestorInRange(classIdMin: ClassIdLike, classIdMax: ClassIdLike, maxDepth = -1): VrvObject | null {
-    if (maxDepth === 0 || !this.m_parent) return null;
-    if (this.m_parent.m_classId > classIdMin && this.m_parent.m_classId < classIdMax) return this.m_parent;
-    return this.m_parent.GetFirstAncestorInRange(classIdMin, classIdMax, maxDepth - 1);
+    // ponytail: iterative walk, same as GetFirstAncestor (P4).
+    let current = this.m_parent;
+    let depth = maxDepth;
+    while (current && depth !== 0) {
+      if (current.m_classId > classIdMin && current.m_classId < classIdMax) return current;
+      current = current.m_parent;
+      if (depth > 0) depth--;
+    }
+    return null;
   }
 
   public GetLastAncestorNot(classId: ClassIdLike, maxDepth = -1): VrvObject | null {
@@ -680,24 +697,60 @@ export class VrvObject extends BoundingBox {
   }
 
   public Process(functor: any, deepness = UNLIMITED_DEPTH, skipFirst = false): void {
+    // ponytail: hoist per-functor invariants out of the per-node recursion.
+    // GetDirection/GetFilters/VisibleOnly/ImplementsEndInterface are loop-
+    // invariant (set once before traversal) but cost a megamorphic call per
+    // node per pass (mei/005: Process 209ms self). Accept/SetCode/GetCode
+    // stay per-node: visitors mutate the code during traversal.
+    this.processCached(functor, deepness, skipFirst, functor.GetDirection(),
+      functor.GetFilters(), functor.VisibleOnly(), functor.ImplementsEndInterface());
+  }
+
+  private processCached(functor: any, deepness: number, skipFirst: boolean,
+    backward: boolean, filters: FilterMock | null, visibleOnly: boolean, endIface: boolean): void {
     if (functor.GetCode() === FunctorCode.FUNCTOR_STOP) return;
     if (!skipFirst) functor.SetCode(this.Accept(functor));
     if (functor.GetCode() === FunctorCode.FUNCTOR_SIBLINGS) {
       functor.SetCode(FunctorCode.FUNCTOR_CONTINUE);
       return;
-    } else if (this.IsEditorialElement()) {
+    } else if (this.m_classId > ClassId.EDITORIAL_ELEMENT && this.m_classId < ClassId.EDITORIAL_ELEMENT_max) {
+      // ponytail: inlined IsEditorialElement (P30). Two static-call hops per
+      // node per pass for a two-compare range check; m_classId is in scope.
       ++deepness;
     }
     if (deepness === 0) return;
     --deepness;
-    if (!this.SkipChildren(functor.VisibleOnly())) {
-      const children = functor.GetDirection() === BACKWARD ? [...this.m_children].reverse() : this.m_children;
-      const filters = functor.GetFilters();
-      for (const child of children) {
-        if (this.FiltersApply(filters, child)) child.Process(functor, deepness);
+    // ponytail: SkipChildren returns false unconditionally when visibleOnly
+    // is false, and FiltersApply(null) is true. Skip both calls per node in
+    // that common case (mei/005: processCached 190ms self).
+    if (visibleOnly ? !this.SkipChildren(true) : true) {
+      // NB: BACKWARD === false; forward (true) keeps document order.
+      // ponytail: index loops replace [...m_children].reverse() (Q11).
+      // Old code allocated + copied the child array per node per pass;
+      // reverse-order iteration walks indexes directly, zero alloc.
+      const kids = this.m_children;
+      if (backward) {
+        if (filters) {
+          for (let i = 0, n = kids.length; i < n; ++i) {
+            const child = kids[i];
+            if (this.FiltersApply(filters, child)) child.processCached(functor, deepness, false, backward, filters, visibleOnly, endIface);
+          }
+        }
+        else {
+          for (let i = 0, n = kids.length; i < n; ++i) kids[i].processCached(functor, deepness, false, backward, filters, visibleOnly, endIface);
+        }
+      }
+      else if (filters) {
+        for (let i = kids.length - 1; i >= 0; --i) {
+          const child = kids[i];
+          if (this.FiltersApply(filters, child)) child.processCached(functor, deepness, false, backward, filters, visibleOnly, endIface);
+        }
+      }
+      else {
+        for (let i = kids.length - 1; i >= 0; --i) kids[i].processCached(functor, deepness, false, backward, filters, visibleOnly, endIface);
       }
     }
-    if (functor.ImplementsEndInterface() && !skipFirst) functor.SetCode(this.AcceptEnd(functor));
+    if (endIface && !skipFirst) functor.SetCode(this.AcceptEnd(functor));
   }
 
   public Accept(functor: any): FunctorCode { return functor.VisitObject(this); }
@@ -1049,3 +1102,22 @@ export class ObjectFactory {
 }
 
 export { VrvObject as Object };
+
+// ponytail: Att converter mixin replaces the per-element withConverters Proxy.
+// C++ domain classes inherit Att; TS ones carry state but no StrTo*/IntToStr.
+// Att methods are stateless (only call each other), so missing methods are
+// filled on the prototype once. Own methods (HasAttClass, SetX, GetX) win.
+// Upgrade path: real inheritance if TS domain classes ever extend Att.
+{
+  const skip = new Set(Object.getOwnPropertyNames(VrvObject.prototype));
+  for (const proto of [AttConverterBase.prototype, Att.prototype]) {
+    for (const name of Object.getOwnPropertyNames(proto)) {
+      if (name === 'constructor' || skip.has(name)) continue;
+      const desc = Object.getOwnPropertyDescriptor(proto, name);
+      if (desc && typeof desc.value === 'function') {
+        Object.defineProperty(VrvObject.prototype, name, desc);
+        skip.add(name);
+      }
+    }
+  }
+}

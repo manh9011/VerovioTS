@@ -141,6 +141,10 @@ export class SvgDeviceContext extends DeviceContextCompat {
   protected m_pageNode!: xml_node;
   protected m_currentNode: xml_node;
   protected m_svgNodeStack: xml_node[] = [];
+  protected m_graphicIdMap = new Map<string, xml_node>();
+  // Graphic id -> node index. C++ resolves ResumeGraphic with an XPath
+  // descendant lookup; without an XPath engine the port did a full DFS per
+  // call. Nodes are only appended during a page draw, so the index stays valid.
 
   // output as mm (for pdf generation with a 72 dpi)
   protected m_mmOutput = false;
@@ -516,12 +520,32 @@ export class SvgDeviceContext extends DeviceContextCompat {
     // C++ uses an XPath descendant lookup for the graphic id; the migrated
     // pugixml layer has no XPath engine, so the same node set is resolved with
     // a document-order descendant traversal.
+    // Fast path: AppendIdAndClass indexes every id/data-id node. The cached
+    // node is used only when it is still a descendant of the current node,
+    // preserving the fallback traversal semantics on miss.
     const attrName = this.m_html5 ? 'data-id' : 'id';
-    const found = this.FindDescendantByAttribute(this.m_currentNode, attrName, gId);
+    const cached = this.m_graphicIdMap.get(gId);
+    let found: xml_node | null = null;
+    if (cached !== undefined && !cached.empty() && this.isDescendantOf(cached, this.m_currentNode)) {
+      found = cached;
+    }
+    else {
+      found = this.FindDescendantByAttribute(this.m_currentNode, attrName, gId);
+    }
     if (found) {
       this.m_currentNode = found;
     }
     this.m_svgNodeStack.push(this.m_currentNode);
+  }
+
+  /** Ancestor-chain check backing the ResumeGraphic id index. */
+  private isDescendantOf(node: xml_node, root: xml_node): boolean {
+    const rootData = root.internal_object();
+    if (!rootData) return false;
+    for (let cur = node.parent(); !cur.empty(); cur = cur.parent()) {
+      if (cur.internal_object() === rootData) return true;
+    }
+    return false;
   }
 
   /** Document-order descendant lookup equivalent to the C++ select_node. */
@@ -1298,11 +1322,13 @@ export class SvgDeviceContext extends DeviceContextCompat {
     if (gId.length > 0) {
       if (this.m_html5) {
         this.m_currentNode.append_attribute('data-id').set_value(gId);
+        if (!this.m_graphicIdMap.has(gId)) this.m_graphicIdMap.set(gId, this.m_currentNode);
       }
       else if (graphicID === GraphicID.PRIMARY) {
         // Don't write ids for HTML5 to avoid id clashes when embedding into
         // an HTML document.
         this.m_currentNode.append_attribute('id').set_value(gId);
+        if (!this.m_graphicIdMap.has(gId)) this.m_graphicIdMap.set(gId, this.m_currentNode);
       }
     }
 

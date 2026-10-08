@@ -206,12 +206,18 @@ export function BaseEncodeInt(value: number, base: number): string {
   if (!(base > 10 && base < 63)) throw new Error('base must satisfy 10 < base < 63');
   value = value >>> 0;
   if (value < base) return base62Chars[value];
-  let encoded = '';
-  while (value) {
-    encoded += base62Chars[value % base];
+  // ponytail: collect digits MSB-first into pre-sized array; single join.
+  // Old `+=` + split/reverse/join ran per VrvObject id (185: 150ms self).
+  let len = 0;
+  for (let v = value; v >= base; v = Math.floor(v / base)) ++len;
+  const out = new Array<string>(len + 1);
+  let i = len;
+  while (value >= base) {
+    out[i--] = base62Chars[value % base];
     value = Math.floor(value / base);
   }
-  return encoded.split('').reverse().join('');
+  out[0] = base62Chars[value];
+  return out.join('');
 }
 
 export function FromCamelCase(s: string): string {

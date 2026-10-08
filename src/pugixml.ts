@@ -117,7 +117,7 @@ export class xml_parse_result {
   description(): string { return STATUS_DESCRIPTIONS[this.status] ?? 'Unknown error'; }
 }
 
-interface AttributeData {
+export interface AttributeData {
   name: string;
   value: string;
   owner: NodeData;
@@ -126,7 +126,7 @@ interface AttributeData {
   nextAttribute: AttributeData | null;
 }
 
-interface NodeData {
+export interface NodeData {
   type: xml_node_type;
   name: string;
   value: string;
@@ -177,9 +177,24 @@ function allowInsertChild(parent: xml_node_type, child: xml_node_type): boolean 
 function escapeXml(s: string, attribute: boolean): string {
   // C++ text_output_escaped: pcdata escapes & < >; attributes escape & < "
   // (' only with format_attribute_single_quote). '>' stays literal in attrs.
-  let r = s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
-  if (attribute) r = r.replace(/"/g, '&quot;');
-  else r = r.replace(/>/g, '&gt;');
+  // ponytail: single-pass scan replaces 3 chained regex replaces.
+  // SVG output has ~10k+ attr/text values per page; most contain no metachar.
+  let i = 0;
+  const n = s.length;
+  while (i < n) {
+    const c = s.charCodeAt(i);
+    if (c === 38 || c === 60 || c === (attribute ? 34 : 62)) break;
+    i++;
+  }
+  if (i === n) return s;
+  let r = s.slice(0, i);
+  for (; i < n; i++) {
+    const c = s.charCodeAt(i);
+    if (c === 38) r += '&amp;';
+    else if (c === 60) r += '&lt;';
+    else if (attribute ? c === 34 : c === 62) r += attribute ? '&quot;' : '&gt;';
+    else r += s[i];
+  }
   return r;
 }
 
@@ -375,6 +390,9 @@ export class xml_document extends xml_node {
 }
 
 function decodeEntities(s: string): string {
+  // ponytail: most PCDATA has no entities; regex replace per chunk (185: 153ms).
+  // Fast-path out before running the global regex.
+  if (s.indexOf('&') < 0) return s;
   return s.replace(/&(#x[0-9a-fA-F]+|#[0-9]+|lt|gt|amp|apos|quot);/g, (_, k: string) => {
     if (k === 'lt') return '<'; if (k === 'gt') return '>'; if (k === 'amp') return '&'; if (k === 'apos') return "'"; if (k === 'quot') return '"';
     const n = k[1].toLowerCase() === 'x' ? Number.parseInt(k.slice(2), 16) : Number.parseInt(k.slice(1), 10); return Number.isFinite(n) ? String.fromCodePoint(n) : `&${k};`;

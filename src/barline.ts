@@ -108,10 +108,21 @@ export class BarLine extends LayerElement {
 
   public HasRepetitionDots(): boolean {
     const form = this.GetForm();
-    return form === this.barrendition('rptstart')
-      || form === this.barrendition('rptend')
-      || form === this.barrendition('rptboth');
+    // ponytail: static enum cache (Q20). barrendition() allocated a probe
+    // object + bound converter per call, 3x per barline per staff.
+    if (BarLine.s_rptStart === null) {
+      BarLine.s_rptStart = this.barrendition('rptstart');
+      BarLine.s_rptEnd = this.barrendition('rptend');
+      BarLine.s_rptBoth = this.barrendition('rptboth');
+    }
+    return form === BarLine.s_rptStart
+      || form === BarLine.s_rptEnd
+      || form === BarLine.s_rptBoth;
   }
+
+  private static s_rptStart: number | null = null;
+  private static s_rptEnd: number | null = null;
+  private static s_rptBoth: number | null = null;
 
   public GetPosition(): BarLinePosition { return this.m_position; }
   public SetPosition(position: BarLinePosition): void { this.m_position = position; }

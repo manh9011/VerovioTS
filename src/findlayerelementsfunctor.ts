@@ -109,6 +109,9 @@ export class LayersInTimeSpanFunctor extends ConstFunctor {
 
     // Add the layerN to the list of layers occurring in this time frame
     this.m_layers.add(layerElement.GetAlignmentLayerN());
+    // ponytail: early STOP once 3 distinct layers seen (Q21). All callers
+    // only distinguish 1 vs 2 vs many (GetLayerCount* < 2 / == 2 checks).
+    if (this.m_layers.size >= 3) return FunctorCode.FUNCTOR_STOP;
 
     // Not need to recurse for chords? Not quite sure about it.
     return (layerElement.Is(ClassId.CHORD)) ? FunctorCode.FUNCTOR_SIBLINGS : FunctorCode.FUNCTOR_CONTINUE;

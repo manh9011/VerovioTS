@@ -912,6 +912,7 @@ export interface ViewPageObjectLike {
   IsAnyOf?(classes: number[]): boolean;
   HasInterface?(interfaceId: InterfaceId): boolean;
   GetChildren?(): ViewPageObjectLike[];
+  GetChildrenForModification?(): ViewPageObjectLike[];
   GetChildCount?(classId?: number): number;
   GetChild?(i: number, classId?: number): ViewPageObjectLike | null;
   GetFirstAncestor?(id: number): ViewPageObjectLike | null;
@@ -4117,6 +4118,27 @@ export class View {
     if (!measure) throw new Error('View::DrawBarLines requires a measure.');
     if (!staffGrp) throw new Error('View::DrawBarLines requires a staffGrp.');
     if (!barLine) throw new Error('View::DrawBarLines requires a barLine.');
+    // ponytail: per-measure staff index (P31). The loop ran
+    // measure.FindDescendantByComparison(new AttNIntegerComparison(...), 1)
+    // per staffDef (functor alloc + full Process for a direct-child scan).
+    // Deepness-1 STAFF match == direct child with same N; index once.
+    const staffByN = new Map<number, ViewPageStaffLike>();
+    const mCount = measure.GetChildCount?.() ?? 0;
+    for (let mi = 0; mi < mCount; ++mi) {
+      const mChild = measure.GetChild?.(mi) as (ViewPageStaffLike & { GetN?: () => number }) | null;
+      if (mChild?.Is?.(ClassId.STAFF) && typeof mChild.GetN === 'function') {
+        if (!staffByN.has(mChild.GetN())) staffByN.set(mChild.GetN(), mChild);
+      }
+    }
+    this.drawBarLinesIndexed(dc, measure, staffGrp, barLine, isLastMeasure, isLastSystem, yBottomPrevious, staffByN);
+  }
+
+  private drawBarLinesIndexed(dc: ViewPageDeviceContextLike, measure: ViewPageMeasureLike, staffGrp: ViewPageStaffGrpLike, barLine: ViewPageBarLineLike, isLastMeasure: boolean,
+    isLastSystem: boolean, yBottomPrevious: { value: number }, staffByN: Map<number, ViewPageStaffLike>): void {
+    if (!dc) throw new Error('View::DrawBarLines requires a device context.');
+    if (!measure) throw new Error('View::DrawBarLines requires a measure.');
+    if (!staffGrp) throw new Error('View::DrawBarLines requires a staffGrp.');
+    if (!barLine) throw new Error('View::DrawBarLines requires a barLine.');
 
     const showHidden = (this.m_doc!.GetOptions().m_showHidden!.GetValue());
 
@@ -4132,7 +4154,7 @@ export class View {
 
       // Recursive call for staff group
       if (child.Is?.(ClassId.STAFFGRP)) {
-        this.DrawBarLines(dc, measure, child as ViewPageStaffGrpLike, barLine, isLastMeasure, isLastSystem, yBottomPrevious);
+        this.drawBarLinesIndexed(dc, measure, child as ViewPageStaffGrpLike, barLine, isLastMeasure, isLastSystem, yBottomPrevious, staffByN);
         if (!barlineThrough) yBottomPrevious.value = VRV_UNSET;
         continue;
       }
@@ -4163,7 +4185,7 @@ export class View {
       const methodTakt = hasMethod && (method === BARMETHOD_takt);
 
       // Get the corresponding staff
-      const staff = measure.FindDescendantByComparison?.(new AttNIntegerComparison(ClassId.STAFF, staffDef.GetN()), 1) as ViewPageStaffLike | null;
+      const staff = staffByN.get(staffDef.GetN()) ?? null;
       const hiddenStaff = (!staff || (staff.HasVisible?.() && (staff.GetVisible?.() === BOOLEAN_false)));
       if (!showHidden && hiddenStaff) {
         yBottomPrevious.value = VRV_UNSET;
@@ -5106,7 +5128,7 @@ export class View {
     if (!parent) throw new Error('View::DrawSystemChildren requires a parent.');
     if (!system) throw new Error('View::DrawSystemChildren requires a system.');
 
-    for (const current of parent.GetChildren?.() ?? []) {
+    for (const current of parent.GetChildrenForModification?.() ?? parent.GetChildren?.() ?? []) {
       if (current.Is?.(ClassId.MEASURE)) {
         // cast to Measure check in DrawMeasure
         this.DrawMeasure(dc, current as unknown as ViewPageMeasureLike, system);
@@ -5165,7 +5187,7 @@ export class View {
       }
     }
 
-    for (const current of parent.GetChildren?.() ?? []) {
+    for (const current of parent.GetChildrenForModification?.() ?? parent.GetChildren?.() ?? []) {
       if (current.Is?.(ClassId.OSSIA)) {
         this.DrawOssia(dc, current, measure, system);
       }
@@ -5193,7 +5215,7 @@ export class View {
     if (!staff) throw new Error('View::DrawStaffChildren requires a staff.');
     if (!measure) throw new Error('View::DrawStaffChildren requires a measure.');
 
-    for (const current of parent.GetChildren?.() ?? []) {
+    for (const current of parent.GetChildrenForModification?.() ?? parent.GetChildren?.() ?? []) {
       if (current.Is?.(ClassId.LAYER)) {
         // cast to Layer check in DrawLayer
         this.DrawLayer(dc, current as ViewPageLayerLike, staff, measure);
@@ -5215,7 +5237,7 @@ export class View {
     if (!staff) throw new Error('View::DrawLayerChildren requires a staff.');
     if (!measure) throw new Error('View::DrawLayerChildren requires a measure.');
 
-    for (const current of parent.GetChildren?.() ?? []) {
+    for (const current of parent.GetChildrenForModification?.() ?? parent.GetChildren?.() ?? []) {
       if (current.IsLayerElement?.()) {
         (this as unknown as { DrawLayerElement?(d: unknown, e: unknown, l: unknown, st: unknown, m: unknown): void }).DrawLayerElement?.(dc, current, layer, staff, measure);
       }
@@ -5243,7 +5265,7 @@ export class View {
       }
     }
 
-    for (const current of parent.GetChildren?.() ?? []) {
+    for (const current of parent.GetChildrenForModification?.() ?? parent.GetChildren?.() ?? []) {
       if (current.IsTextElement?.()) {
         this.DrawTextElement(dc, current as unknown as ViewTextElementLike, params);
       }
@@ -5261,7 +5283,7 @@ export class View {
     if (!dc) throw new Error('View::DrawFbChildren requires a device context.');
     if (!parent) throw new Error('View::DrawFbChildren requires a parent.');
 
-    for (const current of parent.GetChildren?.() ?? []) {
+    for (const current of parent.GetChildrenForModification?.() ?? parent.GetChildren?.() ?? []) {
       if (current.IsTextElement?.()) {
         this.DrawTextElement(dc, current as unknown as ViewTextElementLike, params);
       }
@@ -5279,7 +5301,7 @@ export class View {
     if (!dc) throw new Error('View::DrawRunningChildren requires a device context.');
     if (!parent) throw new Error('View::DrawRunningChildren requires a parent.');
 
-    for (const current of parent.GetChildren?.() ?? []) {
+    for (const current of parent.GetChildrenForModification?.() ?? parent.GetChildren?.() ?? []) {
       if (current.Is?.(ClassId.FIG)) {
         this.DrawFig(dc, current as unknown as ViewTextFigLike, params);
       }

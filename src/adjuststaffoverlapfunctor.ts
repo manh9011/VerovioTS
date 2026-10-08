@@ -22,6 +22,9 @@ export interface AdjustStaffOverlapObjectLike {
 export interface AdjustStaffOverlapBoundingBoxLike {
   Is(classId: ClassId): boolean;
   IsAnyOf(classIds: readonly ClassId[]): boolean;
+  HasContentBB(): boolean;
+  GetContentLeft(): number;
+  GetContentRight(): number;
   HorizontalContentOverlap(other: AdjustStaffOverlapBoundingBoxLike, margin?: number): boolean;
   VerticalContentOverlap(other: AdjustStaffOverlapBoundingBoxLike, margin?: number): boolean;
 }
@@ -60,6 +63,8 @@ function isExtenderFloatingPositioner(box: AdjustStaffOverlapBoundingBoxLike): b
   if (!box.Is(ClassId.FLOATING_POSITIONER)) return false;
   return 'GetObject' in box;
 }
+
+const EXTENDER_OBJECTS = [ClassId.DIR, ClassId.DYNAM, ClassId.TEMPO] as const;
 
 export class AdjustStaffOverlapFunctor extends DocFunctor {
   private m_previous: AdjustStaffOverlapStaffAlignmentLike | null = null;
@@ -102,27 +107,48 @@ export class AdjustStaffOverlapFunctor extends DocFunctor {
 
     const staffSize = staffAlignment.GetStaffSize();
     const drawingUnit = this.m_doc.GetDrawingUnit(staffSize);
+    // ponytail: extent caching replaces per-pair GetDrawingX ancestor walks.
+    // Upgrade path: sweep-line if overlap loop stays in flame.
+    const extMargin = drawingUnit * 4;
+    const bboxesBelow = previous.GetBBoxesBelow();
+    const bboxesAboveAll = staffAlignment.GetBBoxesAbove();
+    const aboveLeft = new Array<number>(bboxesAboveAll.length);
+    const aboveRight = new Array<number>(bboxesAboveAll.length);
+    const aboveHas = new Array<boolean>(bboxesAboveAll.length);
+    for (let a = 0; a < bboxesAboveAll.length; a++) {
+      const box = bboxesAboveAll[a];
+      const has = box.HasContentBB();
+      aboveHas[a] = has;
+      aboveLeft[a] = has ? box.GetContentLeft() : 0;
+      aboveRight[a] = has ? box.GetContentRight() : 0;
+    }
 
-    for (const bboxBelow of previous.GetBBoxesBelow()) {
-      const bboxesAbove = staffAlignment.GetBBoxesAbove();
+    for (const bboxBelow of bboxesBelow) {
+      const bboxesAbove = bboxesAboveAll;
+      const belowHas = bboxBelow.HasContentBB();
+      const belowLeft = belowHas ? bboxBelow.GetContentLeft() : 0;
+      const belowRight = belowHas ? bboxBelow.GetContentRight() : 0;
+      const belowIsExtender = isExtenderFloatingPositioner(bboxBelow)
+        && bboxBelow.GetObject().IsAnyOf(EXTENDER_OBJECTS)
+        && bboxBelow.GetObject().IsExtenderElement();
+      const belowIsArtic = !belowIsExtender && bboxBelow.Is(ClassId.ARTIC);
+      const belowIsNote = !belowIsExtender && !belowIsArtic && bboxBelow.Is(ClassId.NOTE);
       let index = 0;
       while (index < bboxesAbove.length) {
         let bboxAbove: AdjustStaffOverlapBoundingBoxLike | undefined;
         for (; index < bboxesAbove.length; index++) {
+          if (!belowHas || !aboveHas[index]) continue;
           const candidate = bboxesAbove[index];
-          if (isExtenderFloatingPositioner(bboxBelow)) {
-            const object = bboxBelow.GetObject();
-            if (object.IsAnyOf([ClassId.DIR, ClassId.DYNAM, ClassId.TEMPO]) && object.IsExtenderElement()) {
-              if (bboxBelow.HorizontalContentOverlap(candidate, drawingUnit * 4)
-                || bboxBelow.VerticalContentOverlap(candidate)) {
-                bboxAbove = candidate;
-                break;
-              }
-            } else if (bboxBelow.HorizontalContentOverlap(candidate)) {
+          if (belowIsExtender) {
+            // C++: HorizontalContentOverlap(margin) || VerticalContentOverlap.
+            // The vertical test must still run when there is no horizontal
+            // overlap (178 regressed when continue skipped it).
+            if ((belowRight > aboveLeft[index] - extMargin && belowLeft < aboveRight[index] + extMargin)
+              || bboxBelow.VerticalContentOverlap(candidate)) {
               bboxAbove = candidate;
               break;
             }
-          } else if (bboxBelow.HorizontalContentOverlap(candidate)) {
+          } else if (belowRight > aboveLeft[index] && belowLeft < aboveRight[index]) {
             bboxAbove = candidate;
             break;
           }
@@ -133,8 +159,16 @@ export class AdjustStaffOverlapFunctor extends DocFunctor {
         const elementOverflowBelow = previous.CalcOverflowBelow(bboxBelow);
         const elementOverflowAbove = staffAlignment.CalcOverflowAbove(bboxAbove);
         let minSpaceBetween = 0;
-        if ((bboxBelow.Is(ClassId.ARTIC) && bboxAbove.IsAnyOf([ClassId.ARTIC, ClassId.NOTE]))
-          || (bboxBelow.Is(ClassId.NOTE) && bboxAbove.Is(ClassId.ARTIC))) {
+        if (belowIsArtic) {
+          if (bboxAbove.IsAnyOf([ClassId.ARTIC, ClassId.NOTE])) minSpaceBetween = drawingUnit;
+        }
+        else if (belowIsNote && bboxAbove.Is(ClassId.ARTIC)) {
+          minSpaceBetween = drawingUnit;
+        }
+        else if (!belowIsExtender
+          && ((bboxBelow.Is(ClassId.ARTIC) && bboxAbove.IsAnyOf([ClassId.ARTIC, ClassId.NOTE]))
+            || (bboxBelow.Is(ClassId.NOTE) && bboxAbove.Is(ClassId.ARTIC)))) {
+          // Fallback preserves C++ semantics if class flags above ever diverge.
           minSpaceBetween = drawingUnit;
         }
         if (spacing < elementOverflowBelow + elementOverflowAbove + minSpaceBetween) {

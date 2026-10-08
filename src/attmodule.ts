@@ -728,6 +728,2599 @@ function resolveAttLabelled(el: AttModuleElementLike): any {
   return el;
 }
 
+// ponytail: generated per-attr dispatch for SetShared (P27).
+// Replaces the 149-deep HasAttClass+string-compare chain per attribute
+// (mei/033: SetShared 83ms self). Each handler preserves the legacy
+// block order (first match wins); exotic blocks stay in legacySetShared.
+const SHARED_SET_HANDLERS = new Map<string, (element: AttModuleElementLike, attrValue: string) => boolean>([
+  ['aboveorder', (element, attrValue) => { if (element.HasAttClass(ATT_STAFFITEMS)) { const att = element; assertAtt(att); att.SetAboveorder(att.StrToStaffitem(attrValue)); return true; } return false; }],
+  ['accid', (element, attrValue) => { if (element.HasAttClass(ATT_ACCIDENTAL)) { const att = element; assertAtt(att); att.SetAccid(att.StrToAccidentalWritten(attrValue)); return true; } return false; }],
+  ['altrend', (element, attrValue) => { if (element.HasAttClass(ATT_TEXTRENDITION)) { const att = element; assertAtt(att); att.SetAltrend(att.StrToStr(attrValue)); return true; } return false; }],
+  ['analog', (element, attrValue) => { if (element.HasAttClass(ATT_BIBL)) { const att = element; assertAtt(att); att.SetAnalog(att.StrToStr(attrValue)); return true; } return false; }],
+  ['artic', (element, attrValue) => { if (element.HasAttClass(ATT_ARTICULATION)) { const att = element; assertAtt(att); att.SetArtic(att.StrToArticulationList(attrValue)); return true; } return false; }],
+  ['atleast', (element, attrValue) => { if (element.HasAttClass(ATT_RANGING)) { const att = element; assertAtt(att); att.SetAtleast(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['atmost', (element, attrValue) => { if (element.HasAttClass(ATT_RANGING)) { const att = element; assertAtt(att); att.SetAtmost(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['audience', (element, attrValue) => { if (element.HasAttClass(ATT_AUDIENCE)) { const att = element; assertAtt(att); att.SetAudience(att.StrToAudienceAudience(attrValue)); return true; } return false; }],
+  ['auth', (element, attrValue) => { if (element.HasAttClass(ATT_AUTHORIZED)) { const att = element; assertAtt(att); att.SetAuth(att.StrToStr(attrValue)); return true; } return false; }],
+  ['auth.uri', (element, attrValue) => { if (element.HasAttClass(ATT_AUTHORIZED)) { const att = element; assertAtt(att); att.SetAuthUri(att.StrToStr(attrValue)); return true; } return false; }],
+  ['bar.len', (element, attrValue) => { if (element.HasAttClass(ATT_BARRING)) { const att = element; assertAtt(att); att.SetBarLen(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['bar.method', (element, attrValue) => { if (element.HasAttClass(ATT_BARRING)) { const att = element; assertAtt(att); att.SetBarMethod(att.StrToBarmethod(attrValue)); return true; } return false; }],
+  ['bar.place', (element, attrValue) => { if (element.HasAttClass(ATT_BARRING)) { const att = element; assertAtt(att); att.SetBarPlace(att.StrToInt(attrValue)); return true; } return false; }],
+  ['begin', (element, attrValue) => { if (element.HasAttClass(ATT_MEDIABOUNDS)) { const att = element; assertAtt(att); att.SetBegin(att.StrToStr(attrValue)); return true; } return false; }],
+  ['beloworder', (element, attrValue) => { if (element.HasAttClass(ATT_STAFFITEMS)) { const att = element; assertAtt(att); att.SetBeloworder(att.StrToStaffitem(attrValue)); return true; } return false; }],
+  ['betweenorder', (element, attrValue) => { if (element.HasAttClass(ATT_STAFFITEMS)) { const att = element; assertAtt(att); att.SetBetweenorder(att.StrToStaffitem(attrValue)); return true; } return false; }],
+  ['betype', (element, attrValue) => { if (element.HasAttClass(ATT_MEDIABOUNDS)) { const att = element; assertAtt(att); att.SetBetype(att.StrToBetype(attrValue)); return true; } return false; }],
+  ['bezier', (element, attrValue) => { if (element.HasAttClass(ATT_CURVATURE)) { const att = element; assertAtt(att); att.SetBezier(att.StrToStr(attrValue)); return true; } return false; }],
+  ['bulge', (element, attrValue) => { if (element.HasAttClass(ATT_CURVATURE)) { const att = element; assertAtt(att); att.SetBulge(att.StrToBulge(attrValue)); return true; } return false; }],
+  ['calendar', (element, attrValue) => { if (element.HasAttClass(ATT_CALENDARED)) { const att = element; assertAtt(att); att.SetCalendar(att.StrToStr(attrValue)); return true; } return false; }],
+  ['cautionary', (element, attrValue) => { if (element.HasAttClass(ATT_CLEFLOG)) { const att = element; assertAtt(att); att.SetCautionary(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['cert', (element, attrValue) => { if (element.HasAttClass(ATT_EVIDENCE)) { const att = element; assertAtt(att); att.SetCert(att.StrToCertainty(attrValue)); return true; } return false; }],
+  ['class', (element, attrValue) => { if (element.HasAttClass(ATT_CLASSED)) { const att = element; assertAtt(att); att.SetClass(att.StrToStr(attrValue)); return true; } return false; }],
+  ['clef.dis', (element, attrValue) => { if (element.HasAttClass(ATT_CLEFFINGLOG)) { const att = element; assertAtt(att); att.SetClefDis(att.StrToOctaveDis(attrValue)); return true; } return false; }],
+  ['clef.dis.place', (element, attrValue) => { if (element.HasAttClass(ATT_CLEFFINGLOG)) { const att = element; assertAtt(att); att.SetClefDisPlace(att.StrToStaffrelBasic(attrValue)); return true; } return false; }],
+  ['clef.line', (element, attrValue) => { if (element.HasAttClass(ATT_CLEFFINGLOG)) { const att = element; assertAtt(att); att.SetClefLine(att.StrToInt(attrValue)); return true; } return false; }],
+  ['clef.shape', (element, attrValue) => { if (element.HasAttClass(ATT_CLEFFINGLOG)) { const att = element; assertAtt(att); att.SetClefShape(att.StrToClefshape(attrValue)); return true; } return false; }],
+  ['codedval', (element, attrValue) => { if (element.HasAttClass(ATT_CANONICAL)) { const att = element; assertAtt(att); att.SetCodedval(att.StrToStr(attrValue)); return true; } return false; }],
+  ['color', (element, attrValue) => { if (element.HasAttClass(ATT_COLOR)) { const att = element; assertAtt(att); att.SetColor(att.StrToStr(attrValue)); return true; } return false; }],
+  ['colored', (element, attrValue) => { if (element.HasAttClass(ATT_COLORATION)) { const att = element; assertAtt(att); att.SetColored(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['con', (element, attrValue) => { if (element.HasAttClass(ATT_SYLLOG)) { const att = element; assertAtt(att); att.SetCon(att.StrToSylLogCon(attrValue)); return true; } return false; }],
+  ['confidence', (element, attrValue) => { if (element.HasAttClass(ATT_RANGING)) { const att = element; assertAtt(att); att.SetConfidence(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['control', (element, attrValue) => { if (element.HasAttClass(ATT_METERCONFORMANCEBAR)) { const att = element; assertAtt(att); att.SetControl(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['coord.x1', (element, attrValue) => { if (element.HasAttClass(ATT_COORDX1)) { const att = element; assertAtt(att); att.SetCoordX1(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['coord.x2', (element, attrValue) => { if (element.HasAttClass(ATT_COORDX2)) { const att = element; assertAtt(att); att.SetCoordX2(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['coord.y1', (element, attrValue) => { if (element.HasAttClass(ATT_COORDY1)) { const att = element; assertAtt(att); att.SetCoordY1(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['copyof', (element, attrValue) => { if (element.HasAttClass(ATT_LINKING)) { const att = resolveAttLinking(element); assertAtt(att); att.SetCopyof(att.StrToStr(attrValue)); return true; } return false; }],
+  ['corresp', (element, attrValue) => { if (element.HasAttClass(ATT_LINKING)) { const att = resolveAttLinking(element); assertAtt(att); att.SetCorresp(att.StrToStr(attrValue)); return true; } return false; }],
+  ['count', (element, attrValue) => { if (element.HasAttClass(ATT_METERSIGLOG)) { const att = element; assertAtt(att); att.SetCount(att.StrToMetercountPair(attrValue)); return true; } return false; }],
+  ['cue', (element, attrValue) => { if (element.HasAttClass(ATT_CUE)) { const att = element; assertAtt(att); att.SetCue(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['curvedir', (element, attrValue) => { if (element.HasAttClass(ATT_CURVATURE)) { const att = element; assertAtt(att); att.SetCurvedir(att.StrToCurvatureCurvedir(attrValue)); return true; } return false; }],
+  ['data', (element, attrValue) => { if (element.HasAttClass(ATT_DATAPOINTING)) { const att = element; assertAtt(att); att.SetData(att.StrToStr(attrValue)); return true; } return false; }],
+  ['decls', (element, attrValue) => { if (element.HasAttClass(ATT_METADATAPOINTING)) { const att = element; assertAtt(att); att.SetDecls(att.StrToStr(attrValue)); return true; } return false; }],
+  ['def', (element, attrValue) => { if (element.HasAttClass(ATT_LAYERLOG)) { const att = element; assertAtt(att); att.SetDef(att.StrToStr(attrValue)); return true; } if (element.HasAttClass(ATT_STAFFLOG)) { const att = element; assertAtt(att); att.SetDef(att.StrToStr(attrValue)); return true; } return false; }],
+  ['dir.dist', (element, attrValue) => { if (element.HasAttClass(ATT_DISTANCES)) { const att = element; assertAtt(att); att.SetDirDist(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['dis', (element, attrValue) => { if (element.HasAttClass(ATT_OCTAVEDISPLACEMENT)) { const att = element; assertAtt(att); att.SetDis(att.StrToOctaveDis(attrValue)); return true; } return false; }],
+  ['dis.place', (element, attrValue) => { if (element.HasAttClass(ATT_OCTAVEDISPLACEMENT)) { const att = element; assertAtt(att); att.SetDisPlace(att.StrToStaffrelBasic(attrValue)); return true; } return false; }],
+  ['dots', (element, attrValue) => { if (element.HasAttClass(ATT_AUGMENTDOTS)) { const att = resolveAttDuration(element); assertAtt(att); att.SetDots(att.StrToInt(attrValue)); return true; } return false; }],
+  ['dur', (element, attrValue) => { if (element.HasAttClass(ATT_DURATIONADDITIVE)) { const att = element; assertAtt(att); att.SetDur(att.StrToDuration(attrValue)); return true; } if (element.HasAttClass(ATT_DURATIONLOG)) { const att = resolveAttDuration(element); assertAtt(att); att.SetDur(att.StrToDuration(attrValue)); return true; } if (element.HasAttClass(ATT_RESTDURATIONLOG)) { const att = element; assertAtt(att); att.SetDur(att.StrToDuration(attrValue)); return true; } return false; }],
+  ['dur.default', (element, attrValue) => { if (element.HasAttClass(ATT_DURATIONDEFAULT)) { const att = element; assertAtt(att); att.SetDurDefault(att.StrToDuration(attrValue)); return true; } return false; }],
+  ['dynam.dist', (element, attrValue) => { if (element.HasAttClass(ATT_DISTANCES)) { const att = element; assertAtt(att); att.SetDynamDist(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['enclose', (element, attrValue) => { if (element.HasAttClass(ATT_ENCLOSINGCHARS)) { const att = element; assertAtt(att); att.SetEnclose(att.StrToEnclosure(attrValue)); return true; } return false; }],
+  ['end', (element, attrValue) => { if (element.HasAttClass(ATT_MEDIABOUNDS)) { const att = element; assertAtt(att); att.SetEnd(att.StrToStr(attrValue)); return true; } return false; }],
+  ['enddate', (element, attrValue) => { if (element.HasAttClass(ATT_DATABLE)) { const att = element; assertAtt(att); att.SetEnddate(att.StrToStr(attrValue)); return true; } return false; }],
+  ['endho', (element, attrValue) => { if (element.HasAttClass(ATT_VISUALOFFSET2HO)) { const att = resolveAttOffsetSpanning(element); assertAtt(att); att.SetEndho(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['endid', (element, attrValue) => { if (element.HasAttClass(ATT_STARTENDID)) { const att = resolveAttTimeSpanning(element); assertAtt(att); att.SetEndid(att.StrToStr(attrValue)); return true; } return false; }],
+  ['ending.rend', (element, attrValue) => { if (element.HasAttClass(ATT_ENDINGS)) { const att = element; assertAtt(att); att.SetEndingRend(att.StrToEndingsEndingrend(attrValue)); return true; } return false; }],
+  ['endto', (element, attrValue) => { if (element.HasAttClass(ATT_VISUALOFFSET2TO)) { const att = resolveAttOffsetSpanning(element); assertAtt(att); att.SetEndto(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['endvo', (element, attrValue) => { if (element.HasAttClass(ATT_VISUALOFFSET2VO)) { const att = resolveAttOffsetSpanning(element); assertAtt(att); att.SetEndvo(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['evaluate', (element, attrValue) => { if (element.HasAttClass(ATT_TARGETEVAL)) { const att = element; assertAtt(att); att.SetEvaluate(att.StrToTargetEvalEvaluate(attrValue)); return true; } return false; }],
+  ['evidence', (element, attrValue) => { if (element.HasAttClass(ATT_EVIDENCE)) { const att = element; assertAtt(att); att.SetEvidence(att.StrToStr(attrValue)); return true; } return false; }],
+  ['extender', (element, attrValue) => { if (element.HasAttClass(ATT_EXTENDER)) { const att = element; assertAtt(att); att.SetExtender(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['extent', (element, attrValue) => { if (element.HasAttClass(ATT_EXTENT)) { const att = element; assertAtt(att); att.SetExtent(att.StrToStr(attrValue)); return true; } return false; }],
+  ['fermata', (element, attrValue) => { if (element.HasAttClass(ATT_FERMATAPRESENT)) { const att = resolveAttDuration(element); assertAtt(att); att.SetFermata(att.StrToStaffrelBasic(attrValue)); return true; } return false; }],
+  ['follows', (element, attrValue) => { if (element.HasAttClass(ATT_LINKING)) { const att = resolveAttLinking(element); assertAtt(att); att.SetFollows(att.StrToStr(attrValue)); return true; } return false; }],
+  ['fontfam', (element, attrValue) => { if (element.HasAttClass(ATT_TYPOGRAPHY)) { const att = element; assertAtt(att); att.SetFontfam(att.StrToStr(attrValue)); return true; } return false; }],
+  ['fontname', (element, attrValue) => { if (element.HasAttClass(ATT_TYPOGRAPHY)) { const att = element; assertAtt(att); att.SetFontname(att.StrToStr(attrValue)); return true; } return false; }],
+  ['fontsize', (element, attrValue) => { if (element.HasAttClass(ATT_TYPOGRAPHY)) { const att = element; assertAtt(att); att.SetFontsize(att.StrToFontsize(attrValue)); return true; } return false; }],
+  ['fontstyle', (element, attrValue) => { if (element.HasAttClass(ATT_TYPOGRAPHY)) { const att = element; assertAtt(att); att.SetFontstyle(att.StrToFontstyle(attrValue)); return true; } return false; }],
+  ['fontweight', (element, attrValue) => { if (element.HasAttClass(ATT_TYPOGRAPHY)) { const att = element; assertAtt(att); att.SetFontweight(att.StrToFontweight(attrValue)); return true; } return false; }],
+  ['form', (element, attrValue) => { if (element.HasAttClass(ATT_BARLINELOG)) { const att = element; assertAtt(att); att.SetForm(att.StrToBarrendition(attrValue)); return true; } if (element.HasAttClass(ATT_DOTLOG)) { const att = element; assertAtt(att); att.SetForm(att.StrToDotLogForm(attrValue)); return true; } return false; }],
+  ['func', (element, attrValue) => { if (element.HasAttClass(ATT_ACCIDLOG)) { const att = element; assertAtt(att); att.SetFunc(att.StrToAccidLogFunc(attrValue)); return true; } if (element.HasAttClass(ATT_ANNOTLOG)) { const att = element; assertAtt(att); att.SetFunc(att.StrToStr(attrValue)); return true; } if (element.HasAttClass(ATT_FORMEWORK)) { const att = element; assertAtt(att); att.SetFunc(att.StrToPgfunc(attrValue)); return true; } if (element.HasAttClass(ATT_REPEATMARKLOG)) { const att = element; assertAtt(att); att.SetFunc(att.StrToRepeatMarkLogFunc(attrValue)); return true; } if (element.HasAttClass(ATT_TEMPOLOG)) { const att = element; assertAtt(att); att.SetFunc(att.StrToTempoLogFunc(attrValue)); return true; } return false; }],
+  ['halign', (element, attrValue) => { if (element.HasAttClass(ATT_HORIZONTALALIGN)) { const att = resolveAttAreaPos(element); assertAtt(att); att.SetHalign(att.StrToHorizontalalignment(attrValue)); return true; } return false; }],
+  ['hand', (element, attrValue) => { if (element.HasAttClass(ATT_HANDIDENT)) { const att = element; assertAtt(att); att.SetHand(att.StrToStr(attrValue)); return true; } return false; }],
+  ['harm.dist', (element, attrValue) => { if (element.HasAttClass(ATT_DISTANCES)) { const att = element; assertAtt(att); att.SetHarmDist(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['head.altsym', (element, attrValue) => { if (element.HasAttClass(ATT_NOTEHEADS)) { const att = element; assertAtt(att); att.SetHeadAltsym(att.StrToStr(attrValue)); return true; } return false; }],
+  ['head.auth', (element, attrValue) => { if (element.HasAttClass(ATT_NOTEHEADS)) { const att = element; assertAtt(att); att.SetHeadAuth(att.StrToStr(attrValue)); return true; } return false; }],
+  ['head.color', (element, attrValue) => { if (element.HasAttClass(ATT_NOTEHEADS)) { const att = element; assertAtt(att); att.SetHeadColor(att.StrToStr(attrValue)); return true; } return false; }],
+  ['head.fill', (element, attrValue) => { if (element.HasAttClass(ATT_NOTEHEADS)) { const att = element; assertAtt(att); att.SetHeadFill(att.StrToFill(attrValue)); return true; } return false; }],
+  ['head.fillcolor', (element, attrValue) => { if (element.HasAttClass(ATT_NOTEHEADS)) { const att = element; assertAtt(att); att.SetHeadFillcolor(att.StrToStr(attrValue)); return true; } return false; }],
+  ['head.mod', (element, attrValue) => { if (element.HasAttClass(ATT_NOTEHEADS)) { const att = element; assertAtt(att); att.SetHeadMod(att.StrToNoteheadmodifier(attrValue)); return true; } return false; }],
+  ['head.rotation', (element, attrValue) => { if (element.HasAttClass(ATT_NOTEHEADS)) { const att = element; assertAtt(att); att.SetHeadRotation(att.StrToRotation(attrValue)); return true; } return false; }],
+  ['head.shape', (element, attrValue) => { if (element.HasAttClass(ATT_NOTEHEADS)) { const att = element; assertAtt(att); att.SetHeadShape(att.StrToHeadshape(attrValue)); return true; } return false; }],
+  ['head.visible', (element, attrValue) => { if (element.HasAttClass(ATT_NOTEHEADS)) { const att = element; assertAtt(att); att.SetHeadVisible(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['height', (element, attrValue) => { if (element.HasAttClass(ATT_HEIGHT)) { const att = element; assertAtt(att); att.SetHeight(att.StrToMeasurementunsigned(attrValue)); return true; } return false; }],
+  ['ho', (element, attrValue) => { if (element.HasAttClass(ATT_VISUALOFFSETHO)) { const att = resolveAttOffset(element); assertAtt(att); att.SetHo(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['isodate', (element, attrValue) => { if (element.HasAttClass(ATT_DATABLE)) { const att = element; assertAtt(att); att.SetIsodate(att.StrToStr(attrValue)); return true; } return false; }],
+  ['join', (element, attrValue) => { if (element.HasAttClass(ATT_JOINED)) { const att = element; assertAtt(att); att.SetJoin(att.StrToStr(attrValue)); return true; } return false; }],
+  ['keysig', (element, attrValue) => { if (element.HasAttClass(ATT_KEYSIGDEFAULTLOG)) { const att = element; assertAtt(att); att.SetKeysig(att.StrToKeysignature(attrValue)); return true; } return false; }],
+  ['layer', (element, attrValue) => { if (element.HasAttClass(ATT_LAYERIDENT)) { const att = element; assertAtt(att); att.SetLayer(att.StrToInt(attrValue)); return true; } return false; }],
+  ['lendsym', (element, attrValue) => { if (element.HasAttClass(ATT_LINEREND)) { const att = element; assertAtt(att); att.SetLendsym(att.StrToLinestartendsymbol(attrValue)); return true; } return false; }],
+  ['lendsym.size', (element, attrValue) => { if (element.HasAttClass(ATT_LINEREND)) { const att = element; assertAtt(att); att.SetLendsymSize(att.StrToInt(attrValue)); return true; } return false; }],
+  ['letterspacing', (element, attrValue) => { if (element.HasAttClass(ATT_TYPOGRAPHY)) { const att = element; assertAtt(att); att.SetLetterspacing(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['level', (element, attrValue) => { if (element.HasAttClass(ATT_GRPSYMLOG)) { const att = element; assertAtt(att); att.SetLevel(att.StrToInt(attrValue)); return true; } if (element.HasAttClass(ATT_MENSURLOG)) { const att = element; assertAtt(att); att.SetLevel(att.StrToDuration(attrValue)); return true; } return false; }],
+  ['lform', (element, attrValue) => { if (element.HasAttClass(ATT_LINERENDBASE)) { const att = element; assertAtt(att); att.SetLform(att.StrToLineform(attrValue)); return true; } return false; }],
+  ['line', (element, attrValue) => { if (element.HasAttClass(ATT_LINELOC)) { const att = element; assertAtt(att); att.SetLine(att.StrToInt(attrValue)); return true; } return false; }],
+  ['lineheight', (element, attrValue) => { if (element.HasAttClass(ATT_TYPOGRAPHY)) { const att = element; assertAtt(att); att.SetLineheight(att.StrToStr(attrValue)); return true; } return false; }],
+  ['lines', (element, attrValue) => { if (element.HasAttClass(ATT_STAFFDEFLOG)) { const att = element; assertAtt(att); att.SetLines(att.StrToInt(attrValue)); return true; } return false; }],
+  ['loc', (element, attrValue) => { if (element.HasAttClass(ATT_STAFFLOC)) { const att = resolveAttPosition(element); assertAtt(att); att.SetLoc(att.StrToInt(attrValue)); return true; } return false; }],
+  ['lrx', (element, attrValue) => { if (element.HasAttClass(ATT_COORDINATED)) { const att = element; assertAtt(att); att.SetLrx(att.StrToInt(attrValue)); return true; } return false; }],
+  ['lry', (element, attrValue) => { if (element.HasAttClass(ATT_COORDINATED)) { const att = element; assertAtt(att); att.SetLry(att.StrToInt(attrValue)); return true; } return false; }],
+  ['lsegs', (element, attrValue) => { if (element.HasAttClass(ATT_LINERENDBASE)) { const att = element; assertAtt(att); att.SetLsegs(att.StrToInt(attrValue)); return true; } return false; }],
+  ['lstartsym', (element, attrValue) => { if (element.HasAttClass(ATT_LINEREND)) { const att = element; assertAtt(att); att.SetLstartsym(att.StrToLinestartendsymbol(attrValue)); return true; } return false; }],
+  ['lstartsym.size', (element, attrValue) => { if (element.HasAttClass(ATT_LINEREND)) { const att = element; assertAtt(att); att.SetLstartsymSize(att.StrToInt(attrValue)); return true; } return false; }],
+  ['lwidth', (element, attrValue) => { if (element.HasAttClass(ATT_LINERENDBASE)) { const att = element; assertAtt(att); att.SetLwidth(att.StrToLinewidth(attrValue)); return true; } return false; }],
+  ['lyric.align', (element, attrValue) => { if (element.HasAttClass(ATT_LYRICSTYLE)) { const att = element; assertAtt(att); att.SetLyricAlign(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['lyric.fam', (element, attrValue) => { if (element.HasAttClass(ATT_LYRICSTYLE)) { const att = element; assertAtt(att); att.SetLyricFam(att.StrToStr(attrValue)); return true; } return false; }],
+  ['lyric.name', (element, attrValue) => { if (element.HasAttClass(ATT_LYRICSTYLE)) { const att = element; assertAtt(att); att.SetLyricName(att.StrToStr(attrValue)); return true; } return false; }],
+  ['lyric.size', (element, attrValue) => { if (element.HasAttClass(ATT_LYRICSTYLE)) { const att = element; assertAtt(att); att.SetLyricSize(att.StrToFontsize(attrValue)); return true; } return false; }],
+  ['lyric.style', (element, attrValue) => { if (element.HasAttClass(ATT_LYRICSTYLE)) { const att = element; assertAtt(att); att.SetLyricStyle(att.StrToFontstyle(attrValue)); return true; } return false; }],
+  ['lyric.weight', (element, attrValue) => { if (element.HasAttClass(ATT_LYRICSTYLE)) { const att = element; assertAtt(att); att.SetLyricWeight(att.StrToFontweight(attrValue)); return true; } return false; }],
+  ['max', (element, attrValue) => { if (element.HasAttClass(ATT_RANGING)) { const att = element; assertAtt(att); att.SetMax(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['medium', (element, attrValue) => { if (element.HasAttClass(ATT_MEDIUM)) { const att = element; assertAtt(att); att.SetMedium(att.StrToStr(attrValue)); return true; } return false; }],
+  ['meiversion', (element, attrValue) => { if (element.HasAttClass(ATT_MEIVERSION)) { const att = element; assertAtt(att); att.SetMeiversion(att.StrToMeiVersionMeiversion(attrValue)); return true; } return false; }],
+  ['metcon', (element, attrValue) => { if (element.HasAttClass(ATT_METERCONFORMANCE)) { const att = element; assertAtt(att); att.SetMetcon(att.StrToMeterConformanceMetcon(attrValue)); return true; } if (element.HasAttClass(ATT_METERCONFORMANCEBAR)) { const att = element; assertAtt(att); att.SetMetcon(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['meter.count', (element, attrValue) => { if (element.HasAttClass(ATT_METERSIGDEFAULTLOG)) { const att = element; assertAtt(att); att.SetMeterCount(att.StrToMetercountPair(attrValue)); return true; } return false; }],
+  ['meter.sym', (element, attrValue) => { if (element.HasAttClass(ATT_METERSIGDEFAULTLOG)) { const att = element; assertAtt(att); att.SetMeterSym(att.StrToMetersign(attrValue)); return true; } return false; }],
+  ['meter.unit', (element, attrValue) => { if (element.HasAttClass(ATT_METERSIGDEFAULTLOG)) { const att = element; assertAtt(att); att.SetMeterUnit(att.StrToInt(attrValue)); return true; } return false; }],
+  ['mimetype', (element, attrValue) => { if (element.HasAttClass(ATT_INTERNETMEDIA)) { const att = element; assertAtt(att); att.SetMimetype(att.StrToStr(attrValue)); return true; } return false; }],
+  ['min', (element, attrValue) => { if (element.HasAttClass(ATT_RANGING)) { const att = element; assertAtt(att); att.SetMin(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['mm', (element, attrValue) => { if (element.HasAttClass(ATT_MMTEMPO)) { const att = element; assertAtt(att); att.SetMm(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['mm.dots', (element, attrValue) => { if (element.HasAttClass(ATT_MMTEMPO)) { const att = element; assertAtt(att); att.SetMmDots(att.StrToInt(attrValue)); return true; } return false; }],
+  ['mm.unit', (element, attrValue) => { if (element.HasAttClass(ATT_MMTEMPO)) { const att = element; assertAtt(att); att.SetMmUnit(att.StrToDuration(attrValue)); return true; } return false; }],
+  ['mnum.visible', (element, attrValue) => { if (element.HasAttClass(ATT_MEASURENUMBERS)) { const att = element; assertAtt(att); att.SetMnumVisible(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['multi.number', (element, attrValue) => { if (element.HasAttClass(ATT_MULTINUMMEASURES)) { const att = element; assertAtt(att); att.SetMultiNumber(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['music.name', (element, attrValue) => { if (element.HasAttClass(ATT_NOTATIONSTYLE)) { const att = element; assertAtt(att); att.SetMusicName(att.StrToStr(attrValue)); return true; } return false; }],
+  ['music.size', (element, attrValue) => { if (element.HasAttClass(ATT_NOTATIONSTYLE)) { const att = element; assertAtt(att); att.SetMusicSize(att.StrToFontsize(attrValue)); return true; } return false; }],
+  ['n', (element, attrValue) => { if (element.HasAttClass(ATT_NINTEGER)) { const att = element; assertAtt(att); att.SetN(att.StrToInt(attrValue)); return true; } if (element.HasAttClass(ATT_NNUMBERLIKE)) { const att = element; assertAtt(att); att.SetN(att.StrToStr(attrValue)); return true; } return false; }],
+  ['next', (element, attrValue) => { if (element.HasAttClass(ATT_LINKING)) { const att = resolveAttLinking(element); assertAtt(att); att.SetNext(att.StrToStr(attrValue)); return true; } return false; }],
+  ['nonfiling', (element, attrValue) => { if (element.HasAttClass(ATT_FILING)) { const att = element; assertAtt(att); att.SetNonfiling(att.StrToInt(attrValue)); return true; } return false; }],
+  ['notafter', (element, attrValue) => { if (element.HasAttClass(ATT_DATABLE)) { const att = element; assertAtt(att); att.SetNotafter(att.StrToStr(attrValue)); return true; } return false; }],
+  ['notbefore', (element, attrValue) => { if (element.HasAttClass(ATT_DATABLE)) { const att = element; assertAtt(att); att.SetNotbefore(att.StrToStr(attrValue)); return true; } return false; }],
+  ['num', (element, attrValue) => { if (element.HasAttClass(ATT_DURATIONRATIO)) { const att = resolveAttDuration(element); assertAtt(att); att.SetNum(att.StrToInt(attrValue)); return true; } return false; }],
+  ['num.default', (element, attrValue) => { if (element.HasAttClass(ATT_DURATIONDEFAULT)) { const att = element; assertAtt(att); att.SetNumDefault(att.StrToInt(attrValue)); return true; } return false; }],
+  ['numbase', (element, attrValue) => { if (element.HasAttClass(ATT_DURATIONRATIO)) { const att = resolveAttDuration(element); assertAtt(att); att.SetNumbase(att.StrToInt(attrValue)); return true; } return false; }],
+  ['numbase.default', (element, attrValue) => { if (element.HasAttClass(ATT_DURATIONDEFAULT)) { const att = element; assertAtt(att); att.SetNumbaseDefault(att.StrToInt(attrValue)); return true; } return false; }],
+  ['nymref', (element, attrValue) => { if (element.HasAttClass(ATT_NAME)) { const att = element; assertAtt(att); att.SetNymref(att.StrToStr(attrValue)); return true; } return false; }],
+  ['oct', (element, attrValue) => { if (element.HasAttClass(ATT_OCTAVE)) { const att = resolveAttPitch(element); assertAtt(att); att.SetOct(att.StrToOctave(attrValue)); return true; } return false; }],
+  ['oct.default', (element, attrValue) => { if (element.HasAttClass(ATT_OCTAVEDEFAULT)) { const att = element; assertAtt(att); att.SetOctDefault(att.StrToOctave(attrValue)); return true; } return false; }],
+  ['oloc', (element, attrValue) => { if (element.HasAttClass(ATT_STAFFLOCPITCHED)) { const att = resolveAttPosition(element); assertAtt(att); att.SetOloc(att.StrToOctave(attrValue)); return true; } return false; }],
+  ['onstaff', (element, attrValue) => { if (element.HasAttClass(ATT_PLACEMENTONSTAFF)) { const att = element; assertAtt(att); att.SetOnstaff(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['ontheline', (element, attrValue) => { if (element.HasAttClass(ATT_ONELINESTAFF)) { const att = element; assertAtt(att); att.SetOntheline(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['optimize', (element, attrValue) => { if (element.HasAttClass(ATT_OPTIMIZATION)) { const att = element; assertAtt(att); att.SetOptimize(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['origin.endid', (element, attrValue) => { if (element.HasAttClass(ATT_ORIGINSTARTENDID)) { const att = element; assertAtt(att); att.SetOriginEndid(att.StrToStr(attrValue)); return true; } return false; }],
+  ['origin.layer', (element, attrValue) => { if (element.HasAttClass(ATT_ORIGINLAYERIDENT)) { const att = element; assertAtt(att); att.SetOriginLayer(att.StrToStr(attrValue)); return true; } return false; }],
+  ['origin.staff', (element, attrValue) => { if (element.HasAttClass(ATT_ORIGINSTAFFIDENT)) { const att = element; assertAtt(att); att.SetOriginStaff(att.StrToStr(attrValue)); return true; } return false; }],
+  ['origin.startid', (element, attrValue) => { if (element.HasAttClass(ATT_ORIGINSTARTENDID)) { const att = element; assertAtt(att); att.SetOriginStartid(att.StrToStr(attrValue)); return true; } return false; }],
+  ['origin.tstamp', (element, attrValue) => { if (element.HasAttClass(ATT_ORIGINTIMESTAMPLOG)) { const att = element; assertAtt(att); att.SetOriginTstamp(att.StrToMeasurebeat(attrValue)); return true; } return false; }],
+  ['origin.tstamp2', (element, attrValue) => { if (element.HasAttClass(ATT_ORIGINTIMESTAMPLOG)) { const att = element; assertAtt(att); att.SetOriginTstamp2(att.StrToMeasurebeat(attrValue)); return true; } return false; }],
+  ['page.botmar', (element, attrValue) => { if (element.HasAttClass(ATT_PAGES)) { const att = element; assertAtt(att); att.SetPageBotmar(att.StrToMeasurementunsigned(attrValue)); return true; } return false; }],
+  ['page.height', (element, attrValue) => { if (element.HasAttClass(ATT_PAGES)) { const att = element; assertAtt(att); att.SetPageHeight(att.StrToMeasurementunsigned(attrValue)); return true; } return false; }],
+  ['page.leftmar', (element, attrValue) => { if (element.HasAttClass(ATT_PAGES)) { const att = element; assertAtt(att); att.SetPageLeftmar(att.StrToMeasurementunsigned(attrValue)); return true; } return false; }],
+  ['page.panels', (element, attrValue) => { if (element.HasAttClass(ATT_PAGES)) { const att = element; assertAtt(att); att.SetPagePanels(att.StrToStr(attrValue)); return true; } return false; }],
+  ['page.rightmar', (element, attrValue) => { if (element.HasAttClass(ATT_PAGES)) { const att = element; assertAtt(att); att.SetPageRightmar(att.StrToMeasurementunsigned(attrValue)); return true; } return false; }],
+  ['page.scale', (element, attrValue) => { if (element.HasAttClass(ATT_PAGES)) { const att = element; assertAtt(att); att.SetPageScale(att.StrToStr(attrValue)); return true; } return false; }],
+  ['page.topmar', (element, attrValue) => { if (element.HasAttClass(ATT_PAGES)) { const att = element; assertAtt(att); att.SetPageTopmar(att.StrToMeasurementunsigned(attrValue)); return true; } return false; }],
+  ['page.width', (element, attrValue) => { if (element.HasAttClass(ATT_PAGES)) { const att = element; assertAtt(att); att.SetPageWidth(att.StrToMeasurementunsigned(attrValue)); return true; } return false; }],
+  ['part', (element, attrValue) => { if (element.HasAttClass(ATT_PARTIDENT)) { const att = resolveAttTimePoint(element); assertAtt(att); att.SetPart(att.StrToStr(attrValue)); return true; } return false; }],
+  ['partstaff', (element, attrValue) => { if (element.HasAttClass(ATT_PARTIDENT)) { const att = resolveAttTimePoint(element); assertAtt(att); att.SetPartstaff(att.StrToStr(attrValue)); return true; } return false; }],
+  ['place', (element, attrValue) => { if (element.HasAttClass(ATT_PLACEMENTRELEVENT)) { const att = element; assertAtt(att); att.SetPlace(att.StrToStaffrel(attrValue)); return true; } if (element.HasAttClass(ATT_PLACEMENTRELSTAFF)) { const att = resolveAttPlacementRelStaff(element); assertAtt(att); att.SetPlace(att.StrToStaffrel(attrValue)); return true; } return false; }],
+  ['plist', (element, attrValue) => { if (element.HasAttClass(ATT_PLIST)) { const att = resolveAttPlist(element); assertAtt(att); att.SetPlist(att.StrToXsdAnyURIList(attrValue)); return true; } return false; }],
+  ['ploc', (element, attrValue) => { if (element.HasAttClass(ATT_STAFFLOCPITCHED)) { const att = resolveAttPosition(element); assertAtt(att); att.SetPloc(att.StrToPitchname(attrValue)); return true; } return false; }],
+  ['pname', (element, attrValue) => { if (element.HasAttClass(ATT_PITCH)) { const att = resolveAttPitch(element); assertAtt(att); att.SetPname(att.StrToPitchname(attrValue)); return true; } return false; }],
+  ['precedes', (element, attrValue) => { if (element.HasAttClass(ATT_LINKING)) { const att = resolveAttLinking(element); assertAtt(att); att.SetPrecedes(att.StrToStr(attrValue)); return true; } return false; }],
+  ['prev', (element, attrValue) => { if (element.HasAttClass(ATT_LINKING)) { const att = resolveAttLinking(element); assertAtt(att); att.SetPrev(att.StrToStr(attrValue)); return true; } return false; }],
+  ['quantity', (element, attrValue) => { if (element.HasAttClass(ATT_QUANTITY)) { const att = element; assertAtt(att); att.SetQuantity(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['reh.dist', (element, attrValue) => { if (element.HasAttClass(ATT_DISTANCES)) { const att = element; assertAtt(att); att.SetRehDist(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['rend', (element, attrValue) => { if (element.HasAttClass(ATT_TEXTRENDITION)) { const att = element; assertAtt(att); att.SetRend(att.StrToTextrendition(attrValue)); return true; } return false; }],
+  ['resp', (element, attrValue) => { if (element.HasAttClass(ATT_RESPONSIBILITY)) { const att = element; assertAtt(att); att.SetResp(att.StrToStr(attrValue)); return true; } return false; }],
+  ['role', (element, attrValue) => { if (element.HasAttClass(ATT_NAME)) { const att = element; assertAtt(att); att.SetRole(att.StrToRelators(attrValue)); return true; } return false; }],
+  ['rotate', (element, attrValue) => { if (element.HasAttClass(ATT_COORDINATED)) { const att = element; assertAtt(att); att.SetRotate(att.StrToDegrees(attrValue)); return true; } return false; }],
+  ['sameas', (element, attrValue) => { if (element.HasAttClass(ATT_LINKING)) { const att = resolveAttLinking(element); assertAtt(att); att.SetSameas(att.StrToStr(attrValue)); return true; } return false; }],
+  ['scale', (element, attrValue) => { if (element.HasAttClass(ATT_SCALABLE)) { const att = element; assertAtt(att); att.SetScale(att.StrToPercent(attrValue)); return true; } return false; }],
+  ['select', (element, attrValue) => { if (element.HasAttClass(ATT_DATASELECTING)) { const att = element; assertAtt(att); att.SetSelect(att.StrToStr(attrValue)); return true; } return false; }],
+  ['seq', (element, attrValue) => { if (element.HasAttClass(ATT_SEQUENCE)) { const att = element; assertAtt(att); att.SetSeq(att.StrToInt(attrValue)); return true; } return false; }],
+  ['shape', (element, attrValue) => { if (element.HasAttClass(ATT_CLEFSHAPE)) { const att = element; assertAtt(att); att.SetShape(att.StrToClefshape(attrValue)); return true; } return false; }],
+  ['sig', (element, attrValue) => { if (element.HasAttClass(ATT_KEYSIGLOG)) { const att = element; assertAtt(att); att.SetSig(att.StrToKeysignature(attrValue)); return true; } return false; }],
+  ['slash', (element, attrValue) => { if (element.HasAttClass(ATT_SLASHCOUNT)) { const att = element; assertAtt(att); att.SetSlash(att.StrToInt(attrValue)); return true; } return false; }],
+  ['slur', (element, attrValue) => { if (element.HasAttClass(ATT_SLURPRESENT)) { const att = element; assertAtt(att); att.SetSlur(att.StrToStr(attrValue)); return true; } return false; }],
+  ['source', (element, attrValue) => { if (element.HasAttClass(ATT_SOURCE)) { const att = element; assertAtt(att); att.SetSource(att.StrToStr(attrValue)); return true; } return false; }],
+  ['spacing.packexp', (element, attrValue) => { if (element.HasAttClass(ATT_SPACING)) { const att = element; assertAtt(att); att.SetSpacingPackexp(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['spacing.packfact', (element, attrValue) => { if (element.HasAttClass(ATT_SPACING)) { const att = element; assertAtt(att); att.SetSpacingPackfact(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['spacing.staff', (element, attrValue) => { if (element.HasAttClass(ATT_SPACING)) { const att = element; assertAtt(att); att.SetSpacingStaff(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['spacing.system', (element, attrValue) => { if (element.HasAttClass(ATT_SPACING)) { const att = element; assertAtt(att); att.SetSpacingSystem(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['staff', (element, attrValue) => { if (element.HasAttClass(ATT_STAFFIDENT)) { const att = resolveAttStaffIdent(element); assertAtt(att); att.SetStaff(att.StrToXsdPositiveIntegerList(attrValue)); return true; } return false; }],
+  ['startdate', (element, attrValue) => { if (element.HasAttClass(ATT_DATABLE)) { const att = element; assertAtt(att); att.SetStartdate(att.StrToStr(attrValue)); return true; } return false; }],
+  ['startho', (element, attrValue) => { if (element.HasAttClass(ATT_VISUALOFFSET2HO)) { const att = resolveAttOffsetSpanning(element); assertAtt(att); att.SetStartho(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['startid', (element, attrValue) => { if (element.HasAttClass(ATT_STARTID)) { const att = resolveAttTimePoint(element); assertAtt(att); att.SetStartid(att.StrToStr(attrValue)); return true; } return false; }],
+  ['startto', (element, attrValue) => { if (element.HasAttClass(ATT_VISUALOFFSET2TO)) { const att = resolveAttOffsetSpanning(element); assertAtt(att); att.SetStartto(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['startvo', (element, attrValue) => { if (element.HasAttClass(ATT_VISUALOFFSET2VO)) { const att = resolveAttOffsetSpanning(element); assertAtt(att); att.SetStartvo(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['status', (element, attrValue) => { if (element.HasAttClass(ATT_DOCSTATUS)) { const att = element; assertAtt(att); att.SetStatus(att.StrToStr(attrValue)); return true; } return false; }],
+  ['stem.dir', (element, attrValue) => { if (element.HasAttClass(ATT_STEMS)) { const att = element; assertAtt(att); att.SetStemDir(att.StrToStemdirection(attrValue)); return true; } return false; }],
+  ['stem.len', (element, attrValue) => { if (element.HasAttClass(ATT_STEMS)) { const att = element; assertAtt(att); att.SetStemLen(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['stem.mod', (element, attrValue) => { if (element.HasAttClass(ATT_STEMS)) { const att = element; assertAtt(att); att.SetStemMod(att.StrToStemmodifier(attrValue)); return true; } return false; }],
+  ['stem.pos', (element, attrValue) => { if (element.HasAttClass(ATT_STEMS)) { const att = element; assertAtt(att); att.SetStemPos(att.StrToStemposition(attrValue)); return true; } return false; }],
+  ['stem.sameas', (element, attrValue) => { if (element.HasAttClass(ATT_STEMS)) { const att = element; assertAtt(att); att.SetStemSameas(att.StrToStr(attrValue)); return true; } return false; }],
+  ['stem.visible', (element, attrValue) => { if (element.HasAttClass(ATT_STEMS)) { const att = element; assertAtt(att); att.SetStemVisible(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['stem.x', (element, attrValue) => { if (element.HasAttClass(ATT_STEMS)) { const att = element; assertAtt(att); att.SetStemX(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['stem.y', (element, attrValue) => { if (element.HasAttClass(ATT_STEMS)) { const att = element; assertAtt(att); att.SetStemY(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['syl', (element, attrValue) => { if (element.HasAttClass(ATT_SYLTEXT)) { const att = element; assertAtt(att); att.SetSyl(att.StrToStr(attrValue)); return true; } return false; }],
+  ['sym', (element, attrValue) => { if (element.HasAttClass(ATT_METERSIGLOG)) { const att = element; assertAtt(att); att.SetSym(att.StrToMetersign(attrValue)); return true; } return false; }],
+  ['symbol', (element, attrValue) => { if (element.HasAttClass(ATT_STAFFGROUPINGSYM)) { const att = element; assertAtt(att); att.SetSymbol(att.StrToStaffGroupingSymSymbol(attrValue)); return true; } return false; }],
+  ['synch', (element, attrValue) => { if (element.HasAttClass(ATT_LINKING)) { const att = resolveAttLinking(element); assertAtt(att); att.SetSynch(att.StrToStr(attrValue)); return true; } return false; }],
+  ['system.leftline', (element, attrValue) => { if (element.HasAttClass(ATT_SYSTEMS)) { const att = element; assertAtt(att); att.SetSystemLeftline(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['system.leftmar', (element, attrValue) => { if (element.HasAttClass(ATT_SYSTEMS)) { const att = element; assertAtt(att); att.SetSystemLeftmar(att.StrToMeasurementunsigned(attrValue)); return true; } return false; }],
+  ['system.rightmar', (element, attrValue) => { if (element.HasAttClass(ATT_SYSTEMS)) { const att = element; assertAtt(att); att.SetSystemRightmar(att.StrToMeasurementunsigned(attrValue)); return true; } return false; }],
+  ['system.topmar', (element, attrValue) => { if (element.HasAttClass(ATT_SYSTEMS)) { const att = element; assertAtt(att); att.SetSystemTopmar(att.StrToMeasurementunsigned(attrValue)); return true; } return false; }],
+  ['target', (element, attrValue) => { if (element.HasAttClass(ATT_ATTACCALOG)) { const att = element; assertAtt(att); att.SetTarget(att.StrToStr(attrValue)); return true; } if (element.HasAttClass(ATT_CUSTOSLOG)) { const att = element; assertAtt(att); att.SetTarget(att.StrToStr(attrValue)); return true; } if (element.HasAttClass(ATT_POINTING)) { const att = element; assertAtt(att); att.SetTarget(att.StrToStr(attrValue)); return true; } return false; }],
+  ['targettype', (element, attrValue) => { if (element.HasAttClass(ATT_POINTING)) { const att = element; assertAtt(att); att.SetTargettype(att.StrToStr(attrValue)); return true; } return false; }],
+  ['tempo.dist', (element, attrValue) => { if (element.HasAttClass(ATT_DISTANCES)) { const att = element; assertAtt(att); att.SetTempoDist(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['text.fam', (element, attrValue) => { if (element.HasAttClass(ATT_TEXTSTYLE)) { const att = element; assertAtt(att); att.SetTextFam(att.StrToStr(attrValue)); return true; } return false; }],
+  ['text.name', (element, attrValue) => { if (element.HasAttClass(ATT_TEXTSTYLE)) { const att = element; assertAtt(att); att.SetTextName(att.StrToStr(attrValue)); return true; } return false; }],
+  ['text.size', (element, attrValue) => { if (element.HasAttClass(ATT_TEXTSTYLE)) { const att = element; assertAtt(att); att.SetTextSize(att.StrToFontsize(attrValue)); return true; } return false; }],
+  ['text.style', (element, attrValue) => { if (element.HasAttClass(ATT_TEXTSTYLE)) { const att = element; assertAtt(att); att.SetTextStyle(att.StrToFontstyle(attrValue)); return true; } return false; }],
+  ['text.weight', (element, attrValue) => { if (element.HasAttClass(ATT_TEXTSTYLE)) { const att = element; assertAtt(att); att.SetTextWeight(att.StrToFontweight(attrValue)); return true; } return false; }],
+  ['tie', (element, attrValue) => { if (element.HasAttClass(ATT_TIEPRESENT)) { const att = element; assertAtt(att); att.SetTie(att.StrToTie(attrValue)); return true; } return false; }],
+  ['to', (element, attrValue) => { if (element.HasAttClass(ATT_VISUALOFFSETTO)) { const att = resolveAttOffset(element); assertAtt(att); att.SetTo(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['trans.diat', (element, attrValue) => { if (element.HasAttClass(ATT_TRANSPOSITION)) { const att = element; assertAtt(att); att.SetTransDiat(att.StrToInt(attrValue)); return true; } return false; }],
+  ['trans.semi', (element, attrValue) => { if (element.HasAttClass(ATT_TRANSPOSITION)) { const att = element; assertAtt(att); att.SetTransSemi(att.StrToInt(attrValue)); return true; } return false; }],
+  ['translit', (element, attrValue) => { if (element.HasAttClass(ATT_LANG)) { const att = element; assertAtt(att); att.SetTranslit(att.StrToStr(attrValue)); return true; } return false; }],
+  ['tstamp', (element, attrValue) => { if (element.HasAttClass(ATT_TIMESTAMPLOG)) { const att = resolveAttTimePoint(element); assertAtt(att); att.SetTstamp(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['tstamp2', (element, attrValue) => { if (element.HasAttClass(ATT_TIMESTAMP2LOG)) { const att = resolveAttTimeSpanning(element); assertAtt(att); att.SetTstamp2(att.StrToMeasurebeat(attrValue)); return true; } return false; }],
+  ['tune.Hz', (element, attrValue) => { if (element.HasAttClass(ATT_TUNING)) { const att = element; assertAtt(att); att.SetTuneHz(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['tune.pname', (element, attrValue) => { if (element.HasAttClass(ATT_TUNING)) { const att = element; assertAtt(att); att.SetTunePname(att.StrToPitchname(attrValue)); return true; } return false; }],
+  ['tune.temper', (element, attrValue) => { if (element.HasAttClass(ATT_TUNING)) { const att = element; assertAtt(att); att.SetTuneTemper(att.StrToTemperament(attrValue)); return true; } return false; }],
+  ['tuning.standard', (element, attrValue) => { if (element.HasAttClass(ATT_TUNINGLOG)) { const att = element; assertAtt(att); att.SetTuningStandard(att.StrToCoursetuning(attrValue)); return true; } return false; }],
+  ['tuplet', (element, attrValue) => { if (element.HasAttClass(ATT_TUPLETPRESENT)) { const att = element; assertAtt(att); att.SetTuplet(att.StrToStr(attrValue)); return true; } return false; }],
+  ['type', (element, attrValue) => { if (element.HasAttClass(ATT_TYPED)) { const att = element; assertAtt(att); att.SetType(att.StrToStr(attrValue)); return true; } return false; }],
+  ['ulx', (element, attrValue) => { if (element.HasAttClass(ATT_COORDINATEDUL)) { const att = element; assertAtt(att); att.SetUlx(att.StrToInt(attrValue)); return true; } return false; }],
+  ['uly', (element, attrValue) => { if (element.HasAttClass(ATT_COORDINATEDUL)) { const att = element; assertAtt(att); att.SetUly(att.StrToInt(attrValue)); return true; } return false; }],
+  ['unit', (element, attrValue) => { if (element.HasAttClass(ATT_MEASUREMENT)) { const att = element; assertAtt(att); att.SetUnit(att.StrToStr(attrValue)); return true; } if (element.HasAttClass(ATT_METERSIGLOG)) { const att = element; assertAtt(att); att.SetUnit(att.StrToInt(attrValue)); return true; } return false; }],
+  ['valign', (element, attrValue) => { if (element.HasAttClass(ATT_VERTICALALIGN)) { const att = resolveAttAreaPos(element); assertAtt(att); att.SetValign(att.StrToVerticalalignment(attrValue)); return true; } return false; }],
+  ['vgrp', (element, attrValue) => { if (element.HasAttClass(ATT_VERTICALGROUP)) { const att = element; assertAtt(att); att.SetVgrp(att.StrToInt(attrValue)); return true; } return false; }],
+  ['visible', (element, attrValue) => { if (element.HasAttClass(ATT_VISIBILITY)) { const att = element; assertAtt(att); att.SetVisible(att.StrToBoolean(attrValue)); return true; } return false; }],
+  ['vo', (element, attrValue) => { if (element.HasAttClass(ATT_VISUALOFFSETVO)) { const att = resolveAttOffset(element); assertAtt(att); att.SetVo(att.StrToMeasurementsigned(attrValue)); return true; } return false; }],
+  ['voltasym', (element, attrValue) => { if (element.HasAttClass(ATT_VOLTAGROUPINGSYM)) { const att = element; assertAtt(att); att.SetVoltasym(att.StrToVoltaGroupingSymVoltasym(attrValue)); return true; } return false; }],
+  ['width', (element, attrValue) => { if (element.HasAttClass(ATT_WIDTH)) { const att = element; assertAtt(att); att.SetWidth(att.StrToMeasurementunsigned(attrValue)); return true; } return false; }],
+  ['wordpos', (element, attrValue) => { if (element.HasAttClass(ATT_SYLLOG)) { const att = element; assertAtt(att); att.SetWordpos(att.StrToSylLogWordpos(attrValue)); return true; } return false; }],
+  ['x', (element, attrValue) => { if (element.HasAttClass(ATT_XY)) { const att = element; assertAtt(att); att.SetX(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['x2', (element, attrValue) => { if (element.HasAttClass(ATT_XY2)) { const att = element; assertAtt(att); att.SetX2(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['xlink:actuate', (element, attrValue) => { if (element.HasAttClass(ATT_POINTING)) { const att = element; assertAtt(att); att.SetActuate(att.StrToStr(attrValue)); return true; } return false; }],
+  ['xlink:role', (element, attrValue) => { if (element.HasAttClass(ATT_POINTING)) { const att = element; assertAtt(att); att.SetRole(att.StrToStr(attrValue)); return true; } return false; }],
+  ['xlink:show', (element, attrValue) => { if (element.HasAttClass(ATT_POINTING)) { const att = element; assertAtt(att); att.SetShow(att.StrToStr(attrValue)); return true; } return false; }],
+  ['xml:base', (element, attrValue) => { if (element.HasAttClass(ATT_BASIC)) { const att = element; assertAtt(att); att.SetBase(att.StrToStr(attrValue)); return true; } return false; }],
+  ['xml:lang', (element, attrValue) => { if (element.HasAttClass(ATT_LANG)) { const att = element; assertAtt(att); att.SetLang(att.StrToStr(attrValue)); return true; } return false; }],
+  ['xml:space', (element, attrValue) => { if (element.HasAttClass(ATT_WHITESPACE)) { const att = element; assertAtt(att); att.SetSpace(att.StrToStr(attrValue)); return true; } return false; }],
+  ['y', (element, attrValue) => { if (element.HasAttClass(ATT_XY)) { const att = element; assertAtt(att); att.SetY(att.StrToDbl(attrValue)); return true; } return false; }],
+  ['y2', (element, attrValue) => { if (element.HasAttClass(ATT_XY2)) { const att = element; assertAtt(att); att.SetY2(att.StrToDbl(attrValue)); return true; } return false; }],
+]);
+
+// ponytail: per-attr fast dispatch for legacySetShared (Q12).
+// Generated verbatim from the 149 HasAttClass blocks below: same class
+// order (first match wins), same stmts. Map probe replaces the
+// 149-deep chain for attrs that miss SHARED_SET_HANDLERS.
+const LEGACY_SET_HANDLERS = new Map<string, (element: AttModuleElementLike, attrValue: string) => boolean>([
+  ["accid", (element, attrValue) => {
+    if (element.HasAttClass(ATT_ACCIDENTAL)) {
+              const att = element;
+      assertAtt(att);
+      att.SetAccid(att.StrToAccidentalWritten(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["dots", (element, attrValue) => {
+    if (element.HasAttClass(ATT_AUGMENTDOTS)) {
+              const att = resolveAttDuration(element);
+      assertAtt(att);
+      att.SetDots(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["codedval", (element, attrValue) => {
+    if (element.HasAttClass(ATT_CANONICAL)) {
+              const att = element;
+      assertAtt(att);
+      att.SetCodedval(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["bezier", (element, attrValue) => {
+    if (element.HasAttClass(ATT_CURVATURE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetBezier(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["bulge", (element, attrValue) => {
+    if (element.HasAttClass(ATT_CURVATURE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetBulge(att.StrToBulge(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["curvedir", (element, attrValue) => {
+    if (element.HasAttClass(ATT_CURVATURE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetCurvedir(att.StrToCurvatureCurvedir(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["dur", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DURATIONADDITIVE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetDur(att.StrToDuration(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_DURATIONLOG)) {
+              const att = resolveAttDuration(element);
+      assertAtt(att);
+      att.SetDur(att.StrToDuration(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_RESTDURATIONLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetDur(att.StrToDuration(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["n", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NINTEGER)) {
+              const att = element;
+      assertAtt(att);
+      att.SetN(att.StrToInt(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_NNUMBERLIKE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetN(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["oct", (element, attrValue) => {
+    if (element.HasAttClass(ATT_OCTAVE)) {
+              const att = resolveAttPitch(element);
+      assertAtt(att);
+      att.SetOct(att.StrToOctave(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["pname", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PITCH)) {
+              const att = resolveAttPitch(element);
+      assertAtt(att);
+      att.SetPname(att.StrToPitchname(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["place", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PLACEMENTRELEVENT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetPlace(att.StrToStaffrel(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_PLACEMENTRELSTAFF)) {
+              const att = resolveAttPlacementRelStaff(element);
+      assertAtt(att);
+      att.SetPlace(att.StrToStaffrel(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["staff", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STAFFIDENT)) {
+              const att = resolveAttStaffIdent(element);
+      assertAtt(att);
+      att.SetStaff(att.StrToXsdPositiveIntegerList(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["endid", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STARTENDID)) {
+              const att = resolveAttTimeSpanning(element);
+      assertAtt(att);
+      att.SetEndid(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["startid", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STARTID)) {
+              const att = resolveAttTimePoint(element);
+      assertAtt(att);
+      att.SetStartid(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["stem.dir", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetStemDir(att.StrToStemdirection(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["stem.len", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetStemLen(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["stem.mod", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetStemMod(att.StrToStemmodifier(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["stem.pos", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetStemPos(att.StrToStemposition(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["stem.sameas", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetStemSameas(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["stem.visible", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetStemVisible(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["stem.x", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetStemX(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["stem.y", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetStemY(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["tstamp", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TIMESTAMPLOG)) {
+              const att = resolveAttTimePoint(element);
+      assertAtt(att);
+      att.SetTstamp(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["tstamp2", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TIMESTAMP2LOG)) {
+              const att = resolveAttTimeSpanning(element);
+      assertAtt(att);
+      att.SetTstamp2(att.StrToMeasurebeat(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["fontfam", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TYPOGRAPHY)) {
+              const att = element;
+      assertAtt(att);
+      att.SetFontfam(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["fontname", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TYPOGRAPHY)) {
+              const att = element;
+      assertAtt(att);
+      att.SetFontname(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["fontsize", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TYPOGRAPHY)) {
+              const att = element;
+      assertAtt(att);
+      att.SetFontsize(att.StrToFontsize(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["fontstyle", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TYPOGRAPHY)) {
+              const att = element;
+      assertAtt(att);
+      att.SetFontstyle(att.StrToFontstyle(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["fontweight", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TYPOGRAPHY)) {
+              const att = element;
+      assertAtt(att);
+      att.SetFontweight(att.StrToFontweight(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["letterspacing", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TYPOGRAPHY)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLetterspacing(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lineheight", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TYPOGRAPHY)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLineheight(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["func", (element, attrValue) => {
+    if (element.HasAttClass(ATT_ACCIDLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetFunc(att.StrToAccidLogFunc(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_ANNOTLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetFunc(att.StrToStr(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_FORMEWORK)) {
+              const att = element;
+      assertAtt(att);
+      att.SetFunc(att.StrToPgfunc(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_REPEATMARKLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetFunc(att.StrToRepeatMarkLogFunc(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_TEMPOLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetFunc(att.StrToTempoLogFunc(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["artic", (element, attrValue) => {
+    if (element.HasAttClass(ATT_ARTICULATION)) {
+              const att = element;
+      assertAtt(att);
+      att.SetArtic(att.StrToArticulationList(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["target", (element, attrValue) => {
+    if (element.HasAttClass(ATT_ATTACCALOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTarget(att.StrToStr(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_CUSTOSLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTarget(att.StrToStr(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_POINTING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTarget(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["audience", (element, attrValue) => {
+    if (element.HasAttClass(ATT_AUDIENCE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetAudience(att.StrToAudienceAudience(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["auth", (element, attrValue) => {
+    if (element.HasAttClass(ATT_AUTHORIZED)) {
+              const att = element;
+      assertAtt(att);
+      att.SetAuth(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["auth.uri", (element, attrValue) => {
+    if (element.HasAttClass(ATT_AUTHORIZED)) {
+              const att = element;
+      assertAtt(att);
+      att.SetAuthUri(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["form", (element, attrValue) => {
+    if (element.HasAttClass(ATT_BARLINELOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetForm(att.StrToBarrendition(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_DOTLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetForm(att.StrToDotLogForm(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["bar.len", (element, attrValue) => {
+    if (element.HasAttClass(ATT_BARRING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetBarLen(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["bar.method", (element, attrValue) => {
+    if (element.HasAttClass(ATT_BARRING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetBarMethod(att.StrToBarmethod(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["bar.place", (element, attrValue) => {
+    if (element.HasAttClass(ATT_BARRING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetBarPlace(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["xml:base", (element, attrValue) => {
+    if (element.HasAttClass(ATT_BASIC)) {
+              const att = element;
+      assertAtt(att);
+      att.SetBase(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["analog", (element, attrValue) => {
+    if (element.HasAttClass(ATT_BIBL)) {
+              const att = element;
+      assertAtt(att);
+      att.SetAnalog(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["calendar", (element, attrValue) => {
+    if (element.HasAttClass(ATT_CALENDARED)) {
+              const att = element;
+      assertAtt(att);
+      att.SetCalendar(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["class", (element, attrValue) => {
+    if (element.HasAttClass(ATT_CLASSED)) {
+              const att = element;
+      assertAtt(att);
+      att.SetClass(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["cautionary", (element, attrValue) => {
+    if (element.HasAttClass(ATT_CLEFLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetCautionary(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["shape", (element, attrValue) => {
+    if (element.HasAttClass(ATT_CLEFSHAPE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetShape(att.StrToClefshape(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["clef.shape", (element, attrValue) => {
+    if (element.HasAttClass(ATT_CLEFFINGLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetClefShape(att.StrToClefshape(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["clef.line", (element, attrValue) => {
+    if (element.HasAttClass(ATT_CLEFFINGLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetClefLine(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["clef.dis", (element, attrValue) => {
+    if (element.HasAttClass(ATT_CLEFFINGLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetClefDis(att.StrToOctaveDis(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["clef.dis.place", (element, attrValue) => {
+    if (element.HasAttClass(ATT_CLEFFINGLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetClefDisPlace(att.StrToStaffrelBasic(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["color", (element, attrValue) => {
+    if (element.HasAttClass(ATT_COLOR)) {
+              const att = element;
+      assertAtt(att);
+      att.SetColor(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["colored", (element, attrValue) => {
+    if (element.HasAttClass(ATT_COLORATION)) {
+              const att = element;
+      assertAtt(att);
+      att.SetColored(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["coord.x1", (element, attrValue) => {
+    if (element.HasAttClass(ATT_COORDX1)) {
+              const att = element;
+      assertAtt(att);
+      att.SetCoordX1(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["coord.x2", (element, attrValue) => {
+    if (element.HasAttClass(ATT_COORDX2)) {
+              const att = element;
+      assertAtt(att);
+      att.SetCoordX2(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["coord.y1", (element, attrValue) => {
+    if (element.HasAttClass(ATT_COORDY1)) {
+              const att = element;
+      assertAtt(att);
+      att.SetCoordY1(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lrx", (element, attrValue) => {
+    if (element.HasAttClass(ATT_COORDINATED)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLrx(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lry", (element, attrValue) => {
+    if (element.HasAttClass(ATT_COORDINATED)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLry(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["rotate", (element, attrValue) => {
+    if (element.HasAttClass(ATT_COORDINATED)) {
+              const att = element;
+      assertAtt(att);
+      att.SetRotate(att.StrToDegrees(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["ulx", (element, attrValue) => {
+    if (element.HasAttClass(ATT_COORDINATEDUL)) {
+              const att = element;
+      assertAtt(att);
+      att.SetUlx(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["uly", (element, attrValue) => {
+    if (element.HasAttClass(ATT_COORDINATEDUL)) {
+              const att = element;
+      assertAtt(att);
+      att.SetUly(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["cue", (element, attrValue) => {
+    if (element.HasAttClass(ATT_CUE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetCue(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["data", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DATAPOINTING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetData(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["select", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DATASELECTING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSelect(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["enddate", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DATABLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetEnddate(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["isodate", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DATABLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetIsodate(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["notafter", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DATABLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetNotafter(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["notbefore", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DATABLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetNotbefore(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["startdate", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DATABLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetStartdate(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["dir.dist", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DISTANCES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetDirDist(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["dynam.dist", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DISTANCES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetDynamDist(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["harm.dist", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DISTANCES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetHarmDist(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["reh.dist", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DISTANCES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetRehDist(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["tempo.dist", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DISTANCES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTempoDist(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["status", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DOCSTATUS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetStatus(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["dur.default", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DURATIONDEFAULT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetDurDefault(att.StrToDuration(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["num.default", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DURATIONDEFAULT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetNumDefault(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["numbase.default", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DURATIONDEFAULT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetNumbaseDefault(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["num", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DURATIONRATIO)) {
+              const att = resolveAttDuration(element);
+      assertAtt(att);
+      att.SetNum(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["numbase", (element, attrValue) => {
+    if (element.HasAttClass(ATT_DURATIONRATIO)) {
+              const att = resolveAttDuration(element);
+      assertAtt(att);
+      att.SetNumbase(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["enclose", (element, attrValue) => {
+    if (element.HasAttClass(ATT_ENCLOSINGCHARS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetEnclose(att.StrToEnclosure(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["ending.rend", (element, attrValue) => {
+    if (element.HasAttClass(ATT_ENDINGS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetEndingRend(att.StrToEndingsEndingrend(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["cert", (element, attrValue) => {
+    if (element.HasAttClass(ATT_EVIDENCE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetCert(att.StrToCertainty(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["evidence", (element, attrValue) => {
+    if (element.HasAttClass(ATT_EVIDENCE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetEvidence(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["extender", (element, attrValue) => {
+    if (element.HasAttClass(ATT_EXTENDER)) {
+              const att = element;
+      assertAtt(att);
+      att.SetExtender(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["extent", (element, attrValue) => {
+    if (element.HasAttClass(ATT_EXTENT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetExtent(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["fermata", (element, attrValue) => {
+    if (element.HasAttClass(ATT_FERMATAPRESENT)) {
+              const att = resolveAttDuration(element);
+      assertAtt(att);
+      att.SetFermata(att.StrToStaffrelBasic(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["nonfiling", (element, attrValue) => {
+    if (element.HasAttClass(ATT_FILING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetNonfiling(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["level", (element, attrValue) => {
+    if (element.HasAttClass(ATT_GRPSYMLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLevel(att.StrToInt(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_MENSURLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLevel(att.StrToDuration(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["hand", (element, attrValue) => {
+    if (element.HasAttClass(ATT_HANDIDENT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetHand(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["height", (element, attrValue) => {
+    if (element.HasAttClass(ATT_HEIGHT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetHeight(att.StrToMeasurementunsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["halign", (element, attrValue) => {
+    if (element.HasAttClass(ATT_HORIZONTALALIGN)) {
+              const att = resolveAttAreaPos(element);
+      assertAtt(att);
+      att.SetHalign(att.StrToHorizontalalignment(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["mimetype", (element, attrValue) => {
+    if (element.HasAttClass(ATT_INTERNETMEDIA)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMimetype(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["join", (element, attrValue) => {
+    if (element.HasAttClass(ATT_JOINED)) {
+              const att = element;
+      assertAtt(att);
+      att.SetJoin(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["sig", (element, attrValue) => {
+    if (element.HasAttClass(ATT_KEYSIGLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSig(att.StrToKeysignature(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["keysig", (element, attrValue) => {
+    if (element.HasAttClass(ATT_KEYSIGDEFAULTLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetKeysig(att.StrToKeysignature(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["label", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LABELLED)) {
+              const att = resolveAttLabelled(element);
+      assertAtt(att);
+      att.SetLabel(att.StrToStr ? att.StrToStr(attrValue) : attrValue);
+      return true;
+    }
+    return false;
+  }],
+  ["xml:lang", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LANG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLang(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["translit", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LANG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTranslit(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["def", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LAYERLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetDef(att.StrToStr(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_STAFFLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetDef(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["layer", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LAYERIDENT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLayer(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["line", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINELOC)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLine(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lendsym", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINEREND)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLendsym(att.StrToLinestartendsymbol(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lendsym.size", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINEREND)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLendsymSize(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lstartsym", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINEREND)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLstartsym(att.StrToLinestartendsymbol(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lstartsym.size", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINEREND)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLstartsymSize(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lform", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINERENDBASE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLform(att.StrToLineform(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lwidth", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINERENDBASE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLwidth(att.StrToLinewidth(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lsegs", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINERENDBASE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLsegs(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["copyof", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINKING)) {
+              const att = resolveAttLinking(element);
+      assertAtt(att);
+      att.SetCopyof(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["corresp", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINKING)) {
+              const att = resolveAttLinking(element);
+      assertAtt(att);
+      att.SetCorresp(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["follows", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINKING)) {
+              const att = resolveAttLinking(element);
+      assertAtt(att);
+      att.SetFollows(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["next", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINKING)) {
+              const att = resolveAttLinking(element);
+      assertAtt(att);
+      att.SetNext(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["precedes", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINKING)) {
+              const att = resolveAttLinking(element);
+      assertAtt(att);
+      att.SetPrecedes(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["prev", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINKING)) {
+              const att = resolveAttLinking(element);
+      assertAtt(att);
+      att.SetPrev(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["sameas", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINKING)) {
+              const att = resolveAttLinking(element);
+      assertAtt(att);
+      att.SetSameas(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["synch", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LINKING)) {
+              const att = resolveAttLinking(element);
+      assertAtt(att);
+      att.SetSynch(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lyric.align", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LYRICSTYLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLyricAlign(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lyric.fam", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LYRICSTYLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLyricFam(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lyric.name", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LYRICSTYLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLyricName(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lyric.size", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LYRICSTYLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLyricSize(att.StrToFontsize(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lyric.style", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LYRICSTYLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLyricStyle(att.StrToFontstyle(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lyric.weight", (element, attrValue) => {
+    if (element.HasAttClass(ATT_LYRICSTYLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLyricWeight(att.StrToFontweight(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["mnum.visible", (element, attrValue) => {
+    if (element.HasAttClass(ATT_MEASURENUMBERS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMnumVisible(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["unit", (element, attrValue) => {
+    if (element.HasAttClass(ATT_MEASUREMENT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetUnit(att.StrToStr(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_METERSIGLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetUnit(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["begin", (element, attrValue) => {
+    if (element.HasAttClass(ATT_MEDIABOUNDS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetBegin(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["end", (element, attrValue) => {
+    if (element.HasAttClass(ATT_MEDIABOUNDS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetEnd(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["betype", (element, attrValue) => {
+    if (element.HasAttClass(ATT_MEDIABOUNDS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetBetype(att.StrToBetype(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["medium", (element, attrValue) => {
+    if (element.HasAttClass(ATT_MEDIUM)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMedium(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["meiversion", (element, attrValue) => {
+    if (element.HasAttClass(ATT_MEIVERSION)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMeiversion(att.StrToMeiVersionMeiversion(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["decls", (element, attrValue) => {
+    if (element.HasAttClass(ATT_METADATAPOINTING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetDecls(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["metcon", (element, attrValue) => {
+    if (element.HasAttClass(ATT_METERCONFORMANCE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMetcon(att.StrToMeterConformanceMetcon(attrValue));
+      return true;
+    }
+    if (element.HasAttClass(ATT_METERCONFORMANCEBAR)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMetcon(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["control", (element, attrValue) => {
+    if (element.HasAttClass(ATT_METERCONFORMANCEBAR)) {
+              const att = element;
+      assertAtt(att);
+      att.SetControl(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["count", (element, attrValue) => {
+    if (element.HasAttClass(ATT_METERSIGLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetCount(att.StrToMetercountPair(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["sym", (element, attrValue) => {
+    if (element.HasAttClass(ATT_METERSIGLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSym(att.StrToMetersign(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["meter.count", (element, attrValue) => {
+    if (element.HasAttClass(ATT_METERSIGDEFAULTLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMeterCount(att.StrToMetercountPair(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["meter.unit", (element, attrValue) => {
+    if (element.HasAttClass(ATT_METERSIGDEFAULTLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMeterUnit(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["meter.sym", (element, attrValue) => {
+    if (element.HasAttClass(ATT_METERSIGDEFAULTLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMeterSym(att.StrToMetersign(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["mm", (element, attrValue) => {
+    if (element.HasAttClass(ATT_MMTEMPO)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMm(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["mm.unit", (element, attrValue) => {
+    if (element.HasAttClass(ATT_MMTEMPO)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMmUnit(att.StrToDuration(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["mm.dots", (element, attrValue) => {
+    if (element.HasAttClass(ATT_MMTEMPO)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMmDots(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["multi.number", (element, attrValue) => {
+    if (element.HasAttClass(ATT_MULTINUMMEASURES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMultiNumber(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["nymref", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NAME)) {
+              const att = element;
+      assertAtt(att);
+      att.SetNymref(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["role", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NAME)) {
+              const att = element;
+      assertAtt(att);
+      att.SetRole(att.StrToRelators(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["music.name", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NOTATIONSTYLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMusicName(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["music.size", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NOTATIONSTYLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMusicSize(att.StrToFontsize(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["head.altsym", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NOTEHEADS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetHeadAltsym(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["head.auth", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NOTEHEADS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetHeadAuth(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["head.color", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NOTEHEADS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetHeadColor(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["head.fill", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NOTEHEADS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetHeadFill(att.StrToFill(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["head.fillcolor", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NOTEHEADS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetHeadFillcolor(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["head.mod", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NOTEHEADS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetHeadMod(att.StrToNoteheadmodifier(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["head.rotation", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NOTEHEADS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetHeadRotation(att.StrToRotation(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["head.shape", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NOTEHEADS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetHeadShape(att.StrToHeadshape(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["head.visible", (element, attrValue) => {
+    if (element.HasAttClass(ATT_NOTEHEADS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetHeadVisible(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["oct.default", (element, attrValue) => {
+    if (element.HasAttClass(ATT_OCTAVEDEFAULT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetOctDefault(att.StrToOctave(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["dis", (element, attrValue) => {
+    if (element.HasAttClass(ATT_OCTAVEDISPLACEMENT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetDis(att.StrToOctaveDis(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["dis.place", (element, attrValue) => {
+    if (element.HasAttClass(ATT_OCTAVEDISPLACEMENT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetDisPlace(att.StrToStaffrelBasic(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["ontheline", (element, attrValue) => {
+    if (element.HasAttClass(ATT_ONELINESTAFF)) {
+              const att = element;
+      assertAtt(att);
+      att.SetOntheline(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["optimize", (element, attrValue) => {
+    if (element.HasAttClass(ATT_OPTIMIZATION)) {
+              const att = element;
+      assertAtt(att);
+      att.SetOptimize(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["origin.layer", (element, attrValue) => {
+    if (element.HasAttClass(ATT_ORIGINLAYERIDENT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetOriginLayer(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["origin.staff", (element, attrValue) => {
+    if (element.HasAttClass(ATT_ORIGINSTAFFIDENT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetOriginStaff(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["origin.startid", (element, attrValue) => {
+    if (element.HasAttClass(ATT_ORIGINSTARTENDID)) {
+              const att = element;
+      assertAtt(att);
+      att.SetOriginStartid(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["origin.endid", (element, attrValue) => {
+    if (element.HasAttClass(ATT_ORIGINSTARTENDID)) {
+              const att = element;
+      assertAtt(att);
+      att.SetOriginEndid(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["origin.tstamp", (element, attrValue) => {
+    if (element.HasAttClass(ATT_ORIGINTIMESTAMPLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetOriginTstamp(att.StrToMeasurebeat(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["origin.tstamp2", (element, attrValue) => {
+    if (element.HasAttClass(ATT_ORIGINTIMESTAMPLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetOriginTstamp2(att.StrToMeasurebeat(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["page.height", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PAGES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetPageHeight(att.StrToMeasurementunsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["page.width", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PAGES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetPageWidth(att.StrToMeasurementunsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["page.topmar", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PAGES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetPageTopmar(att.StrToMeasurementunsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["page.botmar", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PAGES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetPageBotmar(att.StrToMeasurementunsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["page.leftmar", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PAGES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetPageLeftmar(att.StrToMeasurementunsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["page.rightmar", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PAGES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetPageRightmar(att.StrToMeasurementunsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["page.panels", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PAGES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetPagePanels(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["page.scale", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PAGES)) {
+              const att = element;
+      assertAtt(att);
+      att.SetPageScale(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["part", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PARTIDENT)) {
+              const att = resolveAttTimePoint(element);
+      assertAtt(att);
+      att.SetPart(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["partstaff", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PARTIDENT)) {
+              const att = resolveAttTimePoint(element);
+      assertAtt(att);
+      att.SetPartstaff(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["onstaff", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PLACEMENTONSTAFF)) {
+              const att = element;
+      assertAtt(att);
+      att.SetOnstaff(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["plist", (element, attrValue) => {
+    if (element.HasAttClass(ATT_PLIST)) {
+              const att = resolveAttPlist(element);
+      assertAtt(att);
+      att.SetPlist(att.StrToXsdAnyURIList(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["xlink:actuate", (element, attrValue) => {
+    if (element.HasAttClass(ATT_POINTING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetActuate(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["xlink:role", (element, attrValue) => {
+    if (element.HasAttClass(ATT_POINTING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetRole(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["xlink:show", (element, attrValue) => {
+    if (element.HasAttClass(ATT_POINTING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetShow(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["targettype", (element, attrValue) => {
+    if (element.HasAttClass(ATT_POINTING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTargettype(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["quantity", (element, attrValue) => {
+    if (element.HasAttClass(ATT_QUANTITY)) {
+              const att = element;
+      assertAtt(att);
+      att.SetQuantity(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["atleast", (element, attrValue) => {
+    if (element.HasAttClass(ATT_RANGING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetAtleast(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["atmost", (element, attrValue) => {
+    if (element.HasAttClass(ATT_RANGING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetAtmost(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["min", (element, attrValue) => {
+    if (element.HasAttClass(ATT_RANGING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMin(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["max", (element, attrValue) => {
+    if (element.HasAttClass(ATT_RANGING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetMax(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["confidence", (element, attrValue) => {
+    if (element.HasAttClass(ATT_RANGING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetConfidence(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["resp", (element, attrValue) => {
+    if (element.HasAttClass(ATT_RESPONSIBILITY)) {
+              const att = element;
+      assertAtt(att);
+      att.SetResp(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["scale", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SCALABLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetScale(att.StrToPercent(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["seq", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SEQUENCE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSeq(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["slash", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SLASHCOUNT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSlash(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["slur", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SLURPRESENT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSlur(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["source", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SOURCE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSource(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["spacing.packexp", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SPACING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSpacingPackexp(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["spacing.packfact", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SPACING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSpacingPackfact(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["spacing.staff", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SPACING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSpacingStaff(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["spacing.system", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SPACING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSpacingSystem(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["lines", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STAFFDEFLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetLines(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["symbol", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STAFFGROUPINGSYM)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSymbol(att.StrToStaffGroupingSymSymbol(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["aboveorder", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STAFFITEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetAboveorder(att.StrToStaffitem(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["beloworder", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STAFFITEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetBeloworder(att.StrToStaffitem(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["betweenorder", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STAFFITEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetBetweenorder(att.StrToStaffitem(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["loc", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STAFFLOC)) {
+              const att = resolveAttPosition(element);
+      assertAtt(att);
+      att.SetLoc(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["ploc", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STAFFLOCPITCHED)) {
+              const att = resolveAttPosition(element);
+      assertAtt(att);
+      att.SetPloc(att.StrToPitchname(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["oloc", (element, attrValue) => {
+    if (element.HasAttClass(ATT_STAFFLOCPITCHED)) {
+              const att = resolveAttPosition(element);
+      assertAtt(att);
+      att.SetOloc(att.StrToOctave(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["con", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SYLLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetCon(att.StrToSylLogCon(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["wordpos", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SYLLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetWordpos(att.StrToSylLogWordpos(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["syl", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SYLTEXT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSyl(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["system.leftline", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SYSTEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSystemLeftline(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["system.leftmar", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SYSTEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSystemLeftmar(att.StrToMeasurementunsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["system.rightmar", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SYSTEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSystemRightmar(att.StrToMeasurementunsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["system.topmar", (element, attrValue) => {
+    if (element.HasAttClass(ATT_SYSTEMS)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSystemTopmar(att.StrToMeasurementunsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["evaluate", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TARGETEVAL)) {
+              const att = element;
+      assertAtt(att);
+      att.SetEvaluate(att.StrToTargetEvalEvaluate(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["altrend", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TEXTRENDITION)) {
+              const att = element;
+      assertAtt(att);
+      att.SetAltrend(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["rend", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TEXTRENDITION)) {
+              const att = element;
+      assertAtt(att);
+      att.SetRend(att.StrToTextrendition(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["text.fam", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TEXTSTYLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTextFam(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["text.name", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TEXTSTYLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTextName(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["text.size", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TEXTSTYLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTextSize(att.StrToFontsize(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["text.style", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TEXTSTYLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTextStyle(att.StrToFontstyle(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["text.weight", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TEXTSTYLE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTextWeight(att.StrToFontweight(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["tie", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TIEPRESENT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTie(att.StrToTie(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["trans.diat", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TRANSPOSITION)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTransDiat(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["trans.semi", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TRANSPOSITION)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTransSemi(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["tune.Hz", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TUNING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTuneHz(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["tune.pname", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TUNING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTunePname(att.StrToPitchname(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["tune.temper", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TUNING)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTuneTemper(att.StrToTemperament(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["tuning.standard", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TUNINGLOG)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTuningStandard(att.StrToCoursetuning(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["tuplet", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TUPLETPRESENT)) {
+              const att = element;
+      assertAtt(att);
+      att.SetTuplet(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["type", (element, attrValue) => {
+    if (element.HasAttClass(ATT_TYPED)) {
+              const att = element;
+      assertAtt(att);
+      att.SetType(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["valign", (element, attrValue) => {
+    if (element.HasAttClass(ATT_VERTICALALIGN)) {
+              const att = resolveAttAreaPos(element);
+      assertAtt(att);
+      att.SetValign(att.StrToVerticalalignment(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["vgrp", (element, attrValue) => {
+    if (element.HasAttClass(ATT_VERTICALGROUP)) {
+              const att = element;
+      assertAtt(att);
+      att.SetVgrp(att.StrToInt(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["visible", (element, attrValue) => {
+    if (element.HasAttClass(ATT_VISIBILITY)) {
+              const att = element;
+      assertAtt(att);
+      att.SetVisible(att.StrToBoolean(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["ho", (element, attrValue) => {
+    if (element.HasAttClass(ATT_VISUALOFFSETHO)) {
+              const att = resolveAttOffset(element);
+      assertAtt(att);
+      att.SetHo(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["to", (element, attrValue) => {
+    if (element.HasAttClass(ATT_VISUALOFFSETTO)) {
+              const att = resolveAttOffset(element);
+      assertAtt(att);
+      att.SetTo(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["vo", (element, attrValue) => {
+    if (element.HasAttClass(ATT_VISUALOFFSETVO)) {
+              const att = resolveAttOffset(element);
+      assertAtt(att);
+      att.SetVo(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["startho", (element, attrValue) => {
+    if (element.HasAttClass(ATT_VISUALOFFSET2HO)) {
+              const att = resolveAttOffsetSpanning(element);
+      assertAtt(att);
+      att.SetStartho(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["endho", (element, attrValue) => {
+    if (element.HasAttClass(ATT_VISUALOFFSET2HO)) {
+              const att = resolveAttOffsetSpanning(element);
+      assertAtt(att);
+      att.SetEndho(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["startto", (element, attrValue) => {
+    if (element.HasAttClass(ATT_VISUALOFFSET2TO)) {
+              const att = resolveAttOffsetSpanning(element);
+      assertAtt(att);
+      att.SetStartto(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["endto", (element, attrValue) => {
+    if (element.HasAttClass(ATT_VISUALOFFSET2TO)) {
+              const att = resolveAttOffsetSpanning(element);
+      assertAtt(att);
+      att.SetEndto(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["startvo", (element, attrValue) => {
+    if (element.HasAttClass(ATT_VISUALOFFSET2VO)) {
+              const att = resolveAttOffsetSpanning(element);
+      assertAtt(att);
+      att.SetStartvo(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["endvo", (element, attrValue) => {
+    if (element.HasAttClass(ATT_VISUALOFFSET2VO)) {
+              const att = resolveAttOffsetSpanning(element);
+      assertAtt(att);
+      att.SetEndvo(att.StrToMeasurementsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["voltasym", (element, attrValue) => {
+    if (element.HasAttClass(ATT_VOLTAGROUPINGSYM)) {
+              const att = element;
+      assertAtt(att);
+      att.SetVoltasym(att.StrToVoltaGroupingSymVoltasym(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["xml:space", (element, attrValue) => {
+    if (element.HasAttClass(ATT_WHITESPACE)) {
+              const att = element;
+      assertAtt(att);
+      att.SetSpace(att.StrToStr(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["width", (element, attrValue) => {
+    if (element.HasAttClass(ATT_WIDTH)) {
+              const att = element;
+      assertAtt(att);
+      att.SetWidth(att.StrToMeasurementunsigned(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["x", (element, attrValue) => {
+    if (element.HasAttClass(ATT_XY)) {
+              const att = element;
+      assertAtt(att);
+      att.SetX(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["y", (element, attrValue) => {
+    if (element.HasAttClass(ATT_XY)) {
+              const att = element;
+      assertAtt(att);
+      att.SetY(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["x2", (element, attrValue) => {
+    if (element.HasAttClass(ATT_XY2)) {
+              const att = element;
+      assertAtt(att);
+      att.SetX2(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }],
+  ["y2", (element, attrValue) => {
+    if (element.HasAttClass(ATT_XY2)) {
+              const att = element;
+      assertAtt(att);
+      att.SetY2(att.StrToDbl(attrValue));
+      return true;
+    }
+    return false;
+  }]
+]);
+
 export class AttModule {
   static SetMei(element: AttModuleElementLike, attrType: string, attrValue: string): boolean {
     if (element.HasAttClass(ATT_NOTATIONTYPE)) {
@@ -3514,20 +6107,254 @@ export class AttModule {
 
   }
 
+
   static SetShared(element: AttModuleElementLike, attrType: string, attrValue: string): boolean {
-    if (element.HasAttClass(ATT_ACCIDLOG)) {
-        const att = element;
-        assertAtt(att);
-        if (attrType == "func") {
-            att.SetFunc(att.StrToAccidLogFunc(attrValue));
-            return true;
-        }
-    }
+    const handler = SHARED_SET_HANDLERS.get(attrType);
+    // ponytail: fast reject for attrs outside the Shared group (P28).
+    // setAttr's memo union probes SetShared for every attr (e.g. cmn-only
+    // names); without this the 149-deep legacy chain ran to false each time
+    // (mei/033: legacySetShared 75ms self). 'label' stays known: its block
+    // is exotic and lives in legacySetShared.
+    if (handler !== undefined) return handler(element, attrValue) || AttModule.legacySetShared(element, attrType, attrValue);
+    if (attrType !== 'label') return false;
+    return AttModule.legacySetShared(element, attrType, attrValue);
+  }
+
+  static legacySetShared(element: AttModuleElementLike, attrType: string, attrValue: string): boolean {
+    // ponytail: per-attr dispatch (Q12) replaces the 149-deep chain walk.
+    // Same order, same stmts (generated verbatim above); old chain kept as
+    // fallback for attrs added later without regenerating the map.
+    const handler = LEGACY_SET_HANDLERS.get(attrType);
+    if (handler !== undefined) return handler(element, attrValue);
+    return AttModule.legacySetSharedChain(element, attrType, attrValue);
+  }
+
+  static legacySetSharedChain(element: AttModuleElementLike, attrType: string, attrValue: string): boolean {
     if (element.HasAttClass(ATT_ACCIDENTAL)) {
         const att = element;
         assertAtt(att);
         if (attrType == "accid") {
             att.SetAccid(att.StrToAccidentalWritten(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_AUGMENTDOTS)) {
+        const att = resolveAttDuration(element);
+        assertAtt(att);
+        if (attrType == "dots") {
+            att.SetDots(att.StrToInt(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_CANONICAL)) {
+        const att = element;
+        assertAtt(att);
+        if (attrType == "codedval") {
+            att.SetCodedval(att.StrToStr(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_CURVATURE)) {
+        const att = element;
+        assertAtt(att);
+        if (attrType == "bezier") {
+            att.SetBezier(att.StrToStr(attrValue));
+            return true;
+        }
+        if (attrType == "bulge") {
+            att.SetBulge(att.StrToBulge(attrValue));
+            return true;
+        }
+        if (attrType == "curvedir") {
+            att.SetCurvedir(att.StrToCurvatureCurvedir(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_DURATIONADDITIVE)) {
+        const att = element;
+        assertAtt(att);
+        if (attrType == "dur") {
+            att.SetDur(att.StrToDuration(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_DURATIONLOG)) {
+        const att = resolveAttDuration(element);
+        assertAtt(att);
+        if (attrType == "dur") {
+            att.SetDur(att.StrToDuration(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_NINTEGER)) {
+        const att = element;
+        assertAtt(att);
+        if (attrType == "n") {
+            att.SetN(att.StrToInt(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_NNUMBERLIKE)) {
+        const att = element;
+        assertAtt(att);
+        if (attrType == "n") {
+            att.SetN(att.StrToStr(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_OCTAVE)) {
+        const att = resolveAttPitch(element);
+        assertAtt(att);
+        if (attrType == "oct") {
+            att.SetOct(att.StrToOctave(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_PITCH)) {
+        const att = resolveAttPitch(element);
+        assertAtt(att);
+        if (attrType == "pname") {
+            att.SetPname(att.StrToPitchname(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_PLACEMENTRELEVENT)) {
+        const att = element;
+        assertAtt(att);
+        if (attrType == "place") {
+            att.SetPlace(att.StrToStaffrel(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_PLACEMENTRELSTAFF)) {
+        const att = resolveAttPlacementRelStaff(element);
+        assertAtt(att);
+        if (attrType == "place") {
+            att.SetPlace(att.StrToStaffrel(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_RESTDURATIONLOG)) {
+        const att = element;
+        assertAtt(att);
+        if (attrType == "dur") {
+            att.SetDur(att.StrToDuration(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_STAFFIDENT)) {
+        const att = resolveAttStaffIdent(element);
+        assertAtt(att);
+        if (attrType == "staff") {
+            att.SetStaff(att.StrToXsdPositiveIntegerList(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_STARTENDID)) {
+        const att = resolveAttTimeSpanning(element);
+        assertAtt(att);
+        if (attrType == "endid") {
+            att.SetEndid(att.StrToStr(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_STARTID)) {
+        const att = resolveAttTimePoint(element);
+        assertAtt(att);
+        if (attrType == "startid") {
+            att.SetStartid(att.StrToStr(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_STEMS)) {
+        const att = element;
+        assertAtt(att);
+        if (attrType == "stem.dir") {
+            att.SetStemDir(att.StrToStemdirection(attrValue));
+            return true;
+        }
+        if (attrType == "stem.len") {
+            att.SetStemLen(att.StrToDbl(attrValue));
+            return true;
+        }
+        if (attrType == "stem.mod") {
+            att.SetStemMod(att.StrToStemmodifier(attrValue));
+            return true;
+        }
+        if (attrType == "stem.pos") {
+            att.SetStemPos(att.StrToStemposition(attrValue));
+            return true;
+        }
+        if (attrType == "stem.sameas") {
+            att.SetStemSameas(att.StrToStr(attrValue));
+            return true;
+        }
+        if (attrType == "stem.visible") {
+            att.SetStemVisible(att.StrToBoolean(attrValue));
+            return true;
+        }
+        if (attrType == "stem.x") {
+            att.SetStemX(att.StrToDbl(attrValue));
+            return true;
+        }
+        if (attrType == "stem.y") {
+            att.SetStemY(att.StrToDbl(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_TIMESTAMPLOG)) {
+        const att = resolveAttTimePoint(element);
+        assertAtt(att);
+        if (attrType == "tstamp") {
+            att.SetTstamp(att.StrToDbl(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_TIMESTAMP2LOG)) {
+        const att = resolveAttTimeSpanning(element);
+        assertAtt(att);
+        if (attrType == "tstamp2") {
+            att.SetTstamp2(att.StrToMeasurebeat(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_TYPOGRAPHY)) {
+        const att = element;
+        assertAtt(att);
+        if (attrType == "fontfam") {
+            att.SetFontfam(att.StrToStr(attrValue));
+            return true;
+        }
+        if (attrType == "fontname") {
+            att.SetFontname(att.StrToStr(attrValue));
+            return true;
+        }
+        if (attrType == "fontsize") {
+            att.SetFontsize(att.StrToFontsize(attrValue));
+            return true;
+        }
+        if (attrType == "fontstyle") {
+            att.SetFontstyle(att.StrToFontstyle(attrValue));
+            return true;
+        }
+        if (attrType == "fontweight") {
+            att.SetFontweight(att.StrToFontweight(attrValue));
+            return true;
+        }
+        if (attrType == "letterspacing") {
+            att.SetLetterspacing(att.StrToDbl(attrValue));
+            return true;
+        }
+        if (attrType == "lineheight") {
+            att.SetLineheight(att.StrToStr(attrValue));
+            return true;
+        }
+    }
+    if (element.HasAttClass(ATT_ACCIDLOG)) {
+        const att = element;
+        assertAtt(att);
+        if (attrType == "func") {
+            att.SetFunc(att.StrToAccidLogFunc(attrValue));
             return true;
         }
     }
@@ -3560,14 +6387,6 @@ export class AttModule {
         assertAtt(att);
         if (attrType == "audience") {
             att.SetAudience(att.StrToAudienceAudience(attrValue));
-            return true;
-        }
-    }
-    if (element.HasAttClass(ATT_AUGMENTDOTS)) {
-        const att = resolveAttDuration(element);
-        assertAtt(att);
-        if (attrType == "dots") {
-            att.SetDots(att.StrToInt(attrValue));
             return true;
         }
     }
@@ -3628,14 +6447,6 @@ export class AttModule {
         assertAtt(att);
         if (attrType == "calendar") {
             att.SetCalendar(att.StrToStr(attrValue));
-            return true;
-        }
-    }
-    if (element.HasAttClass(ATT_CANONICAL)) {
-        const att = element;
-        assertAtt(att);
-        if (attrType == "codedval") {
-            att.SetCodedval(att.StrToStr(attrValue));
             return true;
         }
     }
@@ -3759,22 +6570,6 @@ export class AttModule {
             return true;
         }
     }
-    if (element.HasAttClass(ATT_CURVATURE)) {
-        const att = element;
-        assertAtt(att);
-        if (attrType == "bezier") {
-            att.SetBezier(att.StrToStr(attrValue));
-            return true;
-        }
-        if (attrType == "bulge") {
-            att.SetBulge(att.StrToBulge(attrValue));
-            return true;
-        }
-        if (attrType == "curvedir") {
-            att.SetCurvedir(att.StrToCurvatureCurvedir(attrValue));
-            return true;
-        }
-    }
     if (element.HasAttClass(ATT_CUSTOSLOG)) {
         const att = element;
         assertAtt(att);
@@ -3863,14 +6658,6 @@ export class AttModule {
             return true;
         }
     }
-    if (element.HasAttClass(ATT_DURATIONADDITIVE)) {
-        const att = element;
-        assertAtt(att);
-        if (attrType == "dur") {
-            att.SetDur(att.StrToDuration(attrValue));
-            return true;
-        }
-    }
     if (element.HasAttClass(ATT_DURATIONDEFAULT)) {
         const att = element;
         assertAtt(att);
@@ -3884,14 +6671,6 @@ export class AttModule {
         }
         if (attrType == "numbase.default") {
             att.SetNumbaseDefault(att.StrToInt(attrValue));
-            return true;
-        }
-    }
-    if (element.HasAttClass(ATT_DURATIONLOG)) {
-        const att = resolveAttDuration(element);
-        assertAtt(att);
-        if (attrType == "dur") {
-            att.SetDur(att.StrToDuration(attrValue));
             return true;
         }
     }
@@ -4323,22 +7102,6 @@ export class AttModule {
             return true;
         }
     }
-    if (element.HasAttClass(ATT_NINTEGER)) {
-        const att = element;
-        assertAtt(att);
-        if (attrType == "n") {
-            att.SetN(att.StrToInt(attrValue));
-            return true;
-        }
-    }
-    if (element.HasAttClass(ATT_NNUMBERLIKE)) {
-        const att = element;
-        assertAtt(att);
-        if (attrType == "n") {
-            att.SetN(att.StrToStr(attrValue));
-            return true;
-        }
-    }
     if (element.HasAttClass(ATT_NAME)) {
         const att = element;
         assertAtt(att);
@@ -4400,14 +7163,6 @@ export class AttModule {
         }
         if (attrType == "head.visible") {
             att.SetHeadVisible(att.StrToBoolean(attrValue));
-            return true;
-        }
-    }
-    if (element.HasAttClass(ATT_OCTAVE)) {
-        const att = resolveAttPitch(element);
-        assertAtt(att);
-        if (attrType == "oct") {
-            att.SetOct(att.StrToOctave(attrValue));
             return true;
         }
     }
@@ -4535,35 +7290,11 @@ export class AttModule {
             return true;
         }
     }
-    if (element.HasAttClass(ATT_PITCH)) {
-        const att = resolveAttPitch(element);
-        assertAtt(att);
-        if (attrType == "pname") {
-            att.SetPname(att.StrToPitchname(attrValue));
-            return true;
-        }
-    }
     if (element.HasAttClass(ATT_PLACEMENTONSTAFF)) {
         const att = element;
         assertAtt(att);
         if (attrType == "onstaff") {
             att.SetOnstaff(att.StrToBoolean(attrValue));
-            return true;
-        }
-    }
-    if (element.HasAttClass(ATT_PLACEMENTRELEVENT)) {
-        const att = element;
-        assertAtt(att);
-        if (attrType == "place") {
-            att.SetPlace(att.StrToStaffrel(attrValue));
-            return true;
-        }
-    }
-    if (element.HasAttClass(ATT_PLACEMENTRELSTAFF)) {
-        const att = resolveAttPlacementRelStaff(element);
-        assertAtt(att);
-        if (attrType == "place") {
-            att.SetPlace(att.StrToStaffrel(attrValue));
             return true;
         }
     }
@@ -4644,14 +7375,6 @@ export class AttModule {
         assertAtt(att);
         if (attrType == "resp") {
             att.SetResp(att.StrToStr(attrValue));
-            return true;
-        }
-    }
-    if (element.HasAttClass(ATT_RESTDURATIONLOG)) {
-        const att = element;
-        assertAtt(att);
-        if (attrType == "dur") {
-            att.SetDur(att.StrToDuration(attrValue));
             return true;
         }
     }
@@ -4739,14 +7462,6 @@ export class AttModule {
             return true;
         }
     }
-    if (element.HasAttClass(ATT_STAFFIDENT)) {
-        const att = resolveAttStaffIdent(element);
-        assertAtt(att);
-        if (attrType == "staff") {
-            att.SetStaff(att.StrToXsdPositiveIntegerList(attrValue));
-            return true;
-        }
-    }
     if (element.HasAttClass(ATT_STAFFITEMS)) {
         const att = element;
         assertAtt(att);
@@ -4780,58 +7495,6 @@ export class AttModule {
         }
         if (attrType == "oloc") {
             att.SetOloc(att.StrToOctave(attrValue));
-            return true;
-        }
-    }
-    if (element.HasAttClass(ATT_STARTENDID)) {
-        const att = resolveAttTimeSpanning(element);
-        assertAtt(att);
-        if (attrType == "endid") {
-            att.SetEndid(att.StrToStr(attrValue));
-            return true;
-        }
-    }
-    if (element.HasAttClass(ATT_STARTID)) {
-        const att = resolveAttTimePoint(element);
-        assertAtt(att);
-        if (attrType == "startid") {
-            att.SetStartid(att.StrToStr(attrValue));
-            return true;
-        }
-    }
-    if (element.HasAttClass(ATT_STEMS)) {
-        const att = element;
-        assertAtt(att);
-        if (attrType == "stem.dir") {
-            att.SetStemDir(att.StrToStemdirection(attrValue));
-            return true;
-        }
-        if (attrType == "stem.len") {
-            att.SetStemLen(att.StrToDbl(attrValue));
-            return true;
-        }
-        if (attrType == "stem.mod") {
-            att.SetStemMod(att.StrToStemmodifier(attrValue));
-            return true;
-        }
-        if (attrType == "stem.pos") {
-            att.SetStemPos(att.StrToStemposition(attrValue));
-            return true;
-        }
-        if (attrType == "stem.sameas") {
-            att.SetStemSameas(att.StrToStr(attrValue));
-            return true;
-        }
-        if (attrType == "stem.visible") {
-            att.SetStemVisible(att.StrToBoolean(attrValue));
-            return true;
-        }
-        if (attrType == "stem.x") {
-            att.SetStemX(att.StrToDbl(attrValue));
-            return true;
-        }
-        if (attrType == "stem.y") {
-            att.SetStemY(att.StrToDbl(attrValue));
             return true;
         }
     }
@@ -4935,22 +7598,6 @@ export class AttModule {
             return true;
         }
     }
-    if (element.HasAttClass(ATT_TIMESTAMPLOG)) {
-        const att = resolveAttTimePoint(element);
-        assertAtt(att);
-        if (attrType == "tstamp") {
-            att.SetTstamp(att.StrToDbl(attrValue));
-            return true;
-        }
-    }
-    if (element.HasAttClass(ATT_TIMESTAMP2LOG)) {
-        const att = resolveAttTimeSpanning(element);
-        assertAtt(att);
-        if (attrType == "tstamp2") {
-            att.SetTstamp2(att.StrToMeasurebeat(attrValue));
-            return true;
-        }
-    }
     if (element.HasAttClass(ATT_TRANSPOSITION)) {
         const att = element;
         assertAtt(att);
@@ -5000,38 +7647,6 @@ export class AttModule {
         assertAtt(att);
         if (attrType == "type") {
             att.SetType(att.StrToStr(attrValue));
-            return true;
-        }
-    }
-    if (element.HasAttClass(ATT_TYPOGRAPHY)) {
-        const att = element;
-        assertAtt(att);
-        if (attrType == "fontfam") {
-            att.SetFontfam(att.StrToStr(attrValue));
-            return true;
-        }
-        if (attrType == "fontname") {
-            att.SetFontname(att.StrToStr(attrValue));
-            return true;
-        }
-        if (attrType == "fontsize") {
-            att.SetFontsize(att.StrToFontsize(attrValue));
-            return true;
-        }
-        if (attrType == "fontstyle") {
-            att.SetFontstyle(att.StrToFontstyle(attrValue));
-            return true;
-        }
-        if (attrType == "fontweight") {
-            att.SetFontweight(att.StrToFontweight(attrValue));
-            return true;
-        }
-        if (attrType == "letterspacing") {
-            att.SetLetterspacing(att.StrToDbl(attrValue));
-            return true;
-        }
-        if (attrType == "lineheight") {
-            att.SetLineheight(att.StrToStr(attrValue));
             return true;
         }
     }
@@ -5170,7 +7785,8 @@ export class AttModule {
 
     return false;
 
-  }
+  
+}
 
   static GetShared(element: AttModuleElementLike, attributes: ArrayOfStrAttr): void {
     if (element.HasAttClass(ATT_ACCIDLOG)) {

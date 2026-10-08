@@ -21,6 +21,20 @@ const ATT_STRINGTAB = 241;
 const ATT_VISUALOFFSETVO = 231;
 
 /** Pure-TypeScript translation of Verovio's `TabDurSym` element. */
+// ponytail: shared subclass replaces per-instance anonymous classes (see note.ts P21).
+class TabDurSymStemmedDrawingInterface extends StemmedDrawingInterface {
+  constructor(private owner: TabDurSym) { super(); }
+  public override GetStemUpSE(_doc: any, _staffSize: number, _isCueSize: boolean): Point {
+    return new Point(0, 0);
+  }
+  public override GetStemDownNW(_doc: any, _staffSize: number, _isCueSize: boolean): Point {
+    return new Point(0, 0);
+  }
+  public override CalcStemLenInThirdUnits(staff: any, stemDir: number): number {
+    return this.owner.CalcStemLenInThirdUnits(staff, stemDir);
+  }
+}
+
 export class TabDurSym extends LayerElement {
   private stemmedDrawingInterface!: StemmedDrawingInterface;
   private nNumberLike!: InstNNumberLike;
@@ -29,18 +43,7 @@ export class TabDurSym extends LayerElement {
 
   public constructor() {
     super(ClassId.TABDURSYM);
-    this.stemmedDrawingInterface = new (class extends StemmedDrawingInterface {
-      public GetStemUpSE(_doc: any, _staffSize: number, _isCueSize: boolean): Point {
-        return new Point(0, 0);
-      }
-      public GetStemDownNW(_doc: any, _staffSize: number, _isCueSize: boolean): Point {
-        return new Point(0, 0);
-      }
-      public CalcStemLenInThirdUnits(staff: any, stemDir: number): number {
-        return self.CalcStemLenInThirdUnits(staff, stemDir);
-      }
-    })();
-    const self = this;
+    this.stemmedDrawingInterface = new TabDurSymStemmedDrawingInterface(this);
 
     this.nNumberLike = new InstNNumberLike();
     this.stringtab = new InstStringtab();
@@ -55,18 +58,7 @@ export class TabDurSym extends LayerElement {
 
   public override Reset(): void {
     super.Reset();
-    this.stemmedDrawingInterface ??= new (class extends StemmedDrawingInterface {
-      public GetStemUpSE(_doc: any, _staffSize: number, _isCueSize: boolean): Point {
-        return new Point(0, 0);
-      }
-      public GetStemDownNW(_doc: any, _staffSize: number, _isCueSize: boolean): Point {
-        return new Point(0, 0);
-      }
-      public CalcStemLenInThirdUnits(staff: any, stemDir: number): number {
-        return self.CalcStemLenInThirdUnits(staff, stemDir);
-      }
-    })();
-    const self = this;
+    this.stemmedDrawingInterface ??= new TabDurSymStemmedDrawingInterface(this);
     this.nNumberLike ??= new InstNNumberLike();
     this.stringtab ??= new InstStringtab();
     this.visualOffsetVo ??= new InstVisualOffsetVo();

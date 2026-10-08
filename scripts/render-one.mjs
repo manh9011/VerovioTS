@@ -1,0 +1,11 @@
+import { readFileSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
+const ROOT = process.cwd();
+const { Toolkit } = await import('../dist/toolkit.js');
+const { EnableLog } = await import('../dist/toolkitdef.js');
+EnableLog(0);
+const tk = new Toolkit(true);
+tk.SetOptions(JSON.stringify({ breaks: 'none', adjustPageHeight: true }));
+tk.LoadData(readFileSync(join(ROOT, 'testcase', process.argv[2]), 'utf8'));
+writeFileSync(process.argv[3], tk.RenderToSVG(1));
+console.log('wrote ' + process.argv[3]);

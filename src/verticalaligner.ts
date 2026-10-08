@@ -423,6 +423,10 @@ export class StaffAlignment extends VrvObject {
   /** verse@n counts above and below (std::map ordered). */
   private m_verseAboveNs = new Map<number, number>();
   private m_verseBelowNs = new Map<number, number>();
+  // ponytail: sorted-entry caches (Q25). GetVerseFlatPosition sorted the
+  // verse map per syl per draw; verses only change via AddVerseN.
+  private m_verseAboveSorted: [number, number][] | null = null;
+  private m_verseBelowSorted: [number, number][] | null = null;
 
   // overflow / overlap / spacing state
   private m_overflowAbove = 0;
@@ -668,6 +672,24 @@ export class StaffAlignment extends VrvObject {
     lineCount = Math.max(lineCount, 1);
     const verses = place === STAFFREL_above ? this.m_verseAboveNs : this.m_verseBelowNs;
     verses.set(verseN, Math.max(verses.get(verseN) ?? 0, lineCount));
+    if (place === STAFFREL_above) this.m_verseAboveSorted = null;
+    else this.m_verseBelowSorted = null;
+  }
+
+  /** Sorted verse entries, ascending by verseN (std::map order parity). */
+  public GetVerseAboveSorted(): [number, number][] {
+    if (!this.m_verseAboveSorted) {
+      this.m_verseAboveSorted = [...this.m_verseAboveNs].sort((a, b) => a[0] - b[0]);
+    }
+    return this.m_verseAboveSorted;
+  }
+
+  /** Sorted verse entries, ascending by verseN (std::map order parity). */
+  public GetVerseBelowSorted(): [number, number][] {
+    if (!this.m_verseBelowSorted) {
+      this.m_verseBelowSorted = [...this.m_verseBelowNs].sort((a, b) => a[0] - b[0]);
+    }
+    return this.m_verseBelowSorted;
   }
 
   public GetVerseCount(collapse: boolean): number {
@@ -712,7 +734,7 @@ export class StaffAlignment extends VrvObject {
       // Syl in neumatic notation - since verse count will be 0, position is -1
       return -1;
     }
-    return GetVerseFlatPosition(this.m_verseAboveNs, verseN, collapse, lineN);
+    return GetVerseFlatPosition(this.GetVerseAboveSorted(), verseN, collapse, lineN);
   }
 
   public GetVersePositionBelow(verseN: number, collapse: boolean, lineN = 1): number {
@@ -720,7 +742,7 @@ export class StaffAlignment extends VrvObject {
       // Syl in neumatic notation - since verse count will be 0, position is -1
       return -1;
     }
-    const flatPosition = GetVerseFlatPosition(this.m_verseBelowNs, verseN, collapse, lineN);
+    const flatPosition = GetVerseFlatPosition(this.GetVerseBelowSorted(), verseN, collapse, lineN);
     return this.GetVerseCountBelow(collapse) - flatPosition - 1;
   }
 
@@ -1075,12 +1097,14 @@ function visitor(functor: unknown, method: string, self: unknown): FunctorCode {
   return FunctorCode.FUNCTOR_CONTINUE;
 }
 
-function GetVerseFlatPosition(verses: Map<number, number>, verseN: number, collapse: boolean, lineN: number): number {
+function GetVerseFlatPosition(verses: Map<number, number> | [number, number][], verseN: number, collapse: boolean, lineN: number): number {
   verseN = Math.max(verseN, 1);
   lineN = Math.max(lineN, 1);
   let position = collapse ? 0 : verseN - 1;
+  // ponytail: accept pre-sorted entries (Q25). Callers pass the cached
+  // sorted arrays; Map input keeps the legacy sort for safety.
   // std::map iterates keys in ascending order; TS Map keeps insertion order
-  const ordered = [...verses].sort((a, b) => a[0] - b[0]);
+  const ordered = Array.isArray(verses) ? verses : [...verses].sort((a, b) => a[0] - b[0]);
   for (const [number, lineCount] of ordered) {
     if (number >= verseN) break;
     position += collapse ? lineCount : lineCount - 1;
